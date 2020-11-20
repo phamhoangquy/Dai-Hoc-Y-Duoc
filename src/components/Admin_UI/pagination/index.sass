@@ -1,0 +1,44 @@
+//Type 1 first child icon
+.modulepager
+	@apply flex items-center justify-center pt-8 pb-0
+	@media screen and ( max-width:1024px)
+	padding-bottom: 30px
+	ul
+		padding: 0
+		margin: 0
+		position: relative
+		li
+			display: inline-block
+			padding: 0 10px
+			&:last-child()
+				position: relative
+				&:after
+					font-family: 'Material Design Icons'
+					content: '\f142'
+					font-size: 20px
+			&.active
+				a,span
+					color: #ffffff
+					background: $blue-2
+					border: none
+			&:hover
+				a,span
+					color: #ffffff
+					background: $blue-2
+					border: none
+			span,a
+				display: flex
+				border: none
+				justify-content: center
+				align-items: center
+				width: 40px
+				height: 40px
+				background: #6bc0e7
+				text-decoration: none
+				color: #ffffff
+				border-radius: 50%
+				font-size: 1rem
+				@media screen and ( max-width:1024px)
+					height: 32px
+					width: 32px
+					

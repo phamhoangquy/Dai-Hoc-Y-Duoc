@@ -1,0 +1,46 @@
+.section-title
+	@apply flex flex-col items-center justify-center text-center
+	>span
+		@apply text-28 text-blue-1 pb-3 font-black uppercase z-10
+		@screen lg
+			@apply text-30
+	em
+		@apply text-azure relative px-2 z-10
+		font-size: 20px
+		line-height: 20px
+		height: 20px
+		span
+			content: ''
+			@apply block absolute pointer-events-none  top-50 translate-y-50 z-10 bg-blue-3 transition 
+			height: 1px
+			width: 40px
+			&:first-child
+				right: 100%
+			&:last-child
+				left: 100%
+			
+	&.white
+		span
+			@apply text-white
+	&.main
+		span
+			@apply text-main
+	&.primary
+		span
+			@apply text-primary
+	&.small
+		span
+			@apply text-24 font-normal
+.sub-title
+	@apply text-16 font-bold text-blue-2  transition uppercase
+	*
+		@apply text-16 font-bold text-blue-2  transition uppercase
+	&:hover
+		@apply text-white
+		*
+			@apply text-white
+	&.main
+		@apply text-main
+		*
+			@apply text-main
+.zone-description

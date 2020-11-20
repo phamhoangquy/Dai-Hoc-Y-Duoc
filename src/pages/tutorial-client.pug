@@ -1,0 +1,10 @@
+extends _layout.pug
+
+block var
+	- var title = 'Hướng dẫn khách hàng'
+	- var bodyClass = 'tutorial-client-page'
+
+block main
+	include ../components/Admin_UI/top-banner/index.pug
+	include ../components/tutorial-client/index.pug
+	include ../components/Admin_UI/pagination/index.pug

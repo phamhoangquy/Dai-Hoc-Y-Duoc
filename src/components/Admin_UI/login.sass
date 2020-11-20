@@ -1,0 +1,295 @@
+.flex-wrap
+	display: flex
+	justify-content: center
+.login-page
+	.login-panel
+		margin: 60px 0
+		background: #fff
+		border-radius: 5px
+		.sitelogo
+			text-align: center
+			margin-bottom: 40px
+			width: 100%
+		img
+			height: 80px
+		.headtitle
+			text-align: center
+			font-size: 30px
+			text-transform: uppercase
+			margin-bottom: 30px
+			&:after
+				content: ''
+				margin: 10px auto
+@media (max-width: 1199px)
+	.login-page .login-panel
+		margin: 60px 0
+@media (max-width: 543px)
+	.login-page .sitelogo
+		margin-bottom: 30px
+.login-form
+	width: 100%
+	margin: 0 auto
+	
+		
+	.fa-exclamation-triangle
+		@apply absolute top-100 left-0 text-12 text-primary pt-1
+	.panel-heading
+		display: none
+	.title
+		font-size: 1.5rem
+		font-weight: 500
+		text-transform: uppercase
+		border-left: 3px solid #8c0000
+		padding-left: 10px
+		margin-bottom: 30px
+	.module-title
+		font-size: 0.875rem
+		color: #666666
+		margin-bottom: 20px
+	a
+		color: #8c0000
+	.form-group
+		margin-bottom: 20px
+		position: relative
+		label
+			color: #999999
+			text-transform: uppercase
+			font-size: 0rem
+			display: block
+			width: 50px
+			height: 40px
+			line-height: 40px
+			text-align: center
+			position: absolute
+			top: 0
+			left: 0
+			border-right: 1px solid #e6e6e6
+			@apply text-14  text-main
+			.fa
+				font-size: 1.125rem
+				line-height: 40px
+	input
+		width: 350px
+		font-size: .875rem
+		border: 1px solid #d9d9d9
+		border-radius: 0
+		padding: 10px 30px 10px 60px
+		-webkit-transition: all, 0.5s
+		transition: all, 0.5s
+		&::placeholder
+			font-size: 15px
+			color: 
+		&:active, &:hover, &:focus
+			border-color: #999999
+		@media screen and ( max-width:400px)
+			width: 300px
+			
+	a
+		display: inline-block
+		color: #000
+		padding: 10px 0
+		margin-right: 15px
+		&:hover
+			color: #8c0000
+	.forget
+		font-size: 0.875rem
+		color: #999999
+		margin-bottom: 30px
+		input[type='checkbox']
+			@apply opacity-0 relative
+			&:checked ~ label::before
+				content: '\F0132'
+		label
+			color: #333333
+			font-weight: 300
+			width: auto
+			height: auto
+			text-align: left
+			padding-left: 30px
+			line-height: 1.5
+			font-size: 0.875rem
+			text-transform: none
+			position: relative
+			-webkit-transition: all, 0.5s
+			transition: all, 0.5s
+			&:before
+				font-family: 'Material Design Icons'
+				content: '\F0131'
+				font-size: 20px
+				display: block
+				line-height: 14px
+				font-size: 16px
+				color: #333333
+				position: absolute
+				top: 2px
+				left: 1px
+				-webkit-transition: all, 0.5s
+				transition: all, 0.5s
+			
+			&:hover
+				color: #333333
+	.btn-login
+		margin: 0 auto
+		width: 100%
+		text-align: center
+		position: relative
+		color: #fff
+		background: #8c0000
+		display: block
+		border-radius: 5px
+		overflow: hidden
+		&:hover
+			&::after
+				transform: translateX(3px)
+				
+		&:before
+			background: #c61017
+		&:after
+			transition: .3s all  ease-in-out
+			font: normal normal normal 24px/1 Material Design Icons
+			content: '\F0142'
+			position: absolute
+			top: 12px
+			right: 15px
+	input
+		&[type='reset']
+			display: none
+		&[type="submit"]
+			line-height: 100%
+			cursor: pointer
+			width: 100%
+			color: #fff !important
+			background: #171e26 !important
+			padding: 15px 60px
+			border: none
+			text-transform: uppercase
+			font-size: 1rem
+	.go-signup
+		text-align: center
+		margin-top: 15px
+		a
+			display: block
+			clear: both
+			color: #8c0000
+			&:hover
+				color: #000
+
+@media (max-width: 543px)
+	.login-form .btn-login
+		width: 100%
+
+.login-bg
+	width: 60%
+	position: relative
+	overflow: hidden
+	padding: 50px
+	border-radius: 5px
+	.login-img
+		position: absolute
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+		.login-overlay
+			display: block
+			position: absolute
+			top: 0
+			bottom: 0
+			left: 0
+			right: 0
+			background: #000
+			opacity: 0.5
+			z-index: 1
+	img
+		height: 100%
+		width: auto
+		max-width: unset
+		-webkit-filter: grayscale(100%)
+		filter: grayscale(100%)
+	.login-des
+		position: relative
+		z-index: 1
+		color: #fff
+		.title
+			font-size: 2.875rem
+			font-weight: 300
+			margin-bottom: 20px
+		.module-title
+			font-size: 1.625rem
+			font-weight: 200
+			opacity: 0.9
+		.des
+			margin-top: 180px
+			font-size: 1.25rem
+			span
+				opacity: 0.8
+				font-weight: 200
+				display: inline-block
+				margin-right: 10px
+			a
+				display: inline-block
+				opacity: 1
+				font-weight: 300
+				font-size: 2rem
+				color: #fff
+				&:after
+					content: '\f105'
+					font-family: 'fontawesome'
+					margin-left: 5px
+				&:hover
+					color: #8c0000
+
+@media (max-width: 991px)
+	.login-bg
+		width: 100%
+		-webkit-box-ordinal-group: 2
+		-webkit-order: 1
+		-ms-flex-order: 1
+		order: 1
+
+@media (max-width: 767px)
+	.login-bg
+		padding: 30px
+
+@media (max-width: 991px)
+	.login-bg .login-img img
+		height: auto
+		width: 100%
+
+@media (max-width: 767px)
+	.login-bg .login-img img
+		-webkit-transform: scale3d(1.1, 1.1, 1)
+		-khtml-transform: scale3d(1.1, 1.1, 1)
+		transform: scale3d(1.1, 1.1, 1)
+
+@media (max-width: 543px)
+	.login-bg .login-img img
+		width: auto
+		height: 100%
+
+@media (max-width: 767px)
+	.login-bg .login-des .title
+		font-size: 2.25rem
+		margin-bottom: 10px
+
+@media (max-width: 767px)
+	.login-bg .login-des .module-title
+		font-size: 1.25rem
+
+@media (max-width: 991px)
+	.login-bg .login-des .des
+		margin-top: 30px
+
+@media (max-width: 767px)
+	.login-bg .login-des .des
+		margin-top: 10px
+
+@media (max-width: 543px)
+	.login-bg .login-des .des a
+		font-size: 1.625rem
+.panel-primary
+	span
+		color: #eb0c22
+		font-style: italic
+#ctl00_mainContent_login1_LoginCtrl_lnkPasswordRecovery,#ctl00_mainContent_login1_LoginCtrl_lnkRegisterExtraLink
+	display: none

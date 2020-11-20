@@ -1,0 +1,36 @@
+.row 
+	@apply flex flex-wrap
+.col
+	flex: 0 0 auto
+	@apply flex flex-col
+	padding: 0 15px
+	.col
+		margin-bottom: 0
+.row
+	margin: 0 -15px -30px -15px
+	> *
+		margin-bottom: 30px
+.col-match-height
+	@apply flex w-full flex-col h-full
+section
+	display: block
+footer
+	@apply flex flex-col
+.container, .container-fluid
+	width: 100%
+	padding-right: 15px
+	padding-left: 15px
+	margin-right: auto
+	margin-left: auto
+@media (min-width: 768px)
+	.container
+		max-width: 740px
+@media (min-width: 960px)
+	.container
+		max-width: 900px
+@media (min-width: 1024px)
+	.container
+		max-width: 990px
+@media (min-width: 1280.1px)
+	.container
+		max-width: 1260px

@@ -1,0 +1,32 @@
+section.team-doctor
+    .container
+        .section-title
+            span Đội ngũ bác sĩ
+            em.mdi.mdi-gamepad
+                span
+                span
+        .row
+            .col(class="w-full lg:w-3/12")
+                .section-list
+                    .list-header Chuyên khoa
+                    .list-body
+                        -for(i=0;i<10;i++)
+                            a.list-item(href="") Chuẩn đoán hình ảnh
+            .col(class="w-full lg:w-9/12 pad-l-30")
+                .title Chuẩn đoán hình ảnh
+                -for(i=0;i<4;i++)
+                    .section-card
+                        a.image-wrap.shine(href="#")
+                            img(data-src="./img/team-doctor/1.jpg", alt="").lazyload
+                        .wrap-text
+                            .name PGS.TS.BS Lê Anh Thư
+                            .desc Số năm kinh nghiệm: 10 năm
+                            .desc Bằng cấp chuyên môn: Phó giáo sư tiến sĩ chuyên khoa Nhi
+                            .wrap-btn
+                                .btn-left
+                                    a.btn.btn-primary.blue(href="")
+                                        span Xem chi tiết
+                                .btn-left.medical-check-banner
+                                    a.btn.btn-booking(href="")
+                                        span Đặt lịch khám
+                                        em.mdi.mdi-calendar

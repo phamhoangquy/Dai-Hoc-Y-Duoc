@@ -1,0 +1,63 @@
+.subscribe
+	.subscribefrm
+		@apply relative
+		.fa-exclamation-triangle
+			@apply absolute  left-0 font-light text-primary italic text-18
+			bottom: -23px
+		input
+			height: 40px
+			border-radius: 25px
+			@apply  text-14 font-normal w-full text-main transition  text-white px-5
+			width: 430px
+			border-radius: 19px
+			background: rgba(white, .25)
+			border: 1px solid transparent
+			width: 
+			@media screen and ( max-width: 1280px)
+				width: 320px
+			@media screen and ( max-width: 1024px)
+				width: 720px
+			@media screen and ( max-width: 960px)
+				width: 560px
+			@media screen and ( max-width:  767px)
+				@apply w-full
+				
+				
+			&::placeholder
+				@apply text-14 font-light  text-main italic text-white
+			&:focus
+				outline: none
+				border: 1px solid #ffffff
+		button
+			@apply absolute  flex  items-center justify-center transition h-full bg-azure
+			bottom: 0
+			height: 40px
+			right: 0
+			width: 150px
+			border-radius: 23px
+			border: 1px solid transparent
+			@media screen and ( max-width: 1280px)
+				width: 120px
+			@media screen and ( max-width: 767px)
+				height: 38px
+				bottom: 1px
+				right: 1px
+				
+			&:focus
+				outline: none
+			&:hover
+				border-color: $azure
+				@apply bg-white text-black
+				span
+					@apply text-azure
+			span
+				@apply uppercase text-16 font-bold text-white inline-block mr-2 transition text-white
+				@media screen and ( max-width: 1280px)
+					@apply text-12
+					
+			em
+				@apply  text-white transition mr-2
+				font-size: 18px
+				transition: .3s all ease-in-out
+				height: 18px
+.subscribe-wrap

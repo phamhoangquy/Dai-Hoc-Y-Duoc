@@ -1,0 +1,83 @@
+.medical-check-banner
+	@apply py-24
+	@screen lg
+		@apply py-16
+	.container
+		@apply relative
+	
+	.image-wrap
+		@media screen and ( max-width:  1024px)
+			@apply hidden
+			
+
+	.banner-content
+		@apply absolute top-50 translate-y-50  px-14 pb-18
+		right: 75px
+		background-image: linear-gradient( 90deg, rgba(2,79,161,.6) 0%, rgba(0,137,200,.6) 100%)
+		border-top-left-radius: 30px
+		border-bottom-right-radius: 30px
+		@media screen and ( max-width:  1024px)
+			@apply static translate-0 px-8
+		@media screen and ( max-width:  350px)
+			@apply px-4
+			
+			
+		.brand-logo
+			@apply flex items-center justify-center
+			a
+				border-radius: 50%
+				width: 100px
+				height: 100px
+				@apply bg-white flex items-center justify-center relative
+				margin-top: -50px
+				@media screen and ( max-width:  1024px)
+					width: 80px
+					height: 80px
+
+					
+		.name
+			@apply text-16 text-white uppercase font-bold text-center pt-4 mb-5
+		.phone-wrap
+			@apply flex items-center justify-center py-1
+			border: 2px solid white
+			border-radius: 10px 
+			span
+				@apply text-30 text-white font-bold
+			em
+				font-size: 24px
+				height: 24px
+				line-height: 24px
+				@apply text-white inline-block pr-2
+		.text
+			@apply text-16 text-white font-bold text-center uppercase my-4
+		.time-wrap
+			@apply flex justify-center items-center
+			.item
+				@apply px-2
+				span
+					@apply text-16 text-white font-bold
+				em
+					font-size: 16px
+					height: 16px
+					line-height: 16px
+					@apply text-white inline-block pr-1
+				&:first-child
+					border-right: 1px solid #ffffff
+	.btn-center
+		@apply relative
+	.btn-booking
+
+		border-radius: 27px
+		height: 54px
+		@apply bg-azure relative px-10 pr-16
+		margin-bottom: -120px
+		span
+			@apply text-16 text-white font-bold uppercase
+		em
+			@apply flex items-center justify-center bg-white absolute text-azure
+			top: 2px
+			right: 2px
+			border-radius: 50%
+			font-size: 18px
+			height: 46px
+			width: 46px

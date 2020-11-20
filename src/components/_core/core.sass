@@ -1,0 +1,174 @@
+$primary: #e52322
+$main: #333333
+$azure: #6bc0e7
+$yl: #fbdb00 
+$blue-1: #27519e
+$blue-2: #3159a3 
+$blue-3: #79c5e8
+$grey-1: #f5faff
+$grey-2: #666666 
+$grey-3: #999999
+$grey-4: #f1f1f1
+$grey-5: #f5f5f5
+$grey-6: #f7f7f7
+$grey-7: #f8f8f8
+
+
+
+.tab-item
+	@apply hidden
+	&.active
+		@apply block
+.custom-select-material
+	overflow: hidden
+	position: relative
+	&:before
+		content: '\F035D'
+		font-family: 'Material Design Icons'
+		display: block
+		position: absolute
+		right: 15px
+		top: 50%
+		color: #333333
+		transform: translateY(-50%)
+		z-index: 1
+		pointer-events: none
+		font-size: 18px
+	select
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+		-webkit-appearance: none
+		-moz-appearance: none
+		font-size: 14px
+		&::-ms-expand 
+			display: none
+.custom-select
+	width: 100%
+	select
+		-webkit-appearance: none
+		-moz-appearance: none
+		background: url('../img/icon/chevron-down.png') no-repeat calc(100% - 15px), rgba(white,.5) !important
+		background-position: 95% 50%
+.custom-time
+	width: 100%
+	select
+		-webkit-appearance: none
+		-moz-appearance: none
+		background: url('../img/icon/clock.png') no-repeat calc(100% - 15px)  , rgba(white,.5) !important
+		background-position: 95% 50%
+.custom-magnify
+	width: 20px
+	height: 20px
+	background: url('../img/icon/ico-1.png')
+	background-repeat: no-repeat
+	background-size: contain
+	background-position: center
+.custom-note
+	width: 30px
+	height: 30px
+	background: url('../img/icon/ico-2.png')
+	background-repeat: no-repeat
+	background-size: contain
+	background-position: center
+.custom-form
+	width: 25px
+	height: 25px
+	background: url('../img/icon/ico-3.png')
+	background-repeat: no-repeat
+	background-size: contain
+	background-position: center
+.icon-chevron-left,.icon-chevron-right
+	@apply relative
+	&::before
+		content: ""
+		@apply absolute top-50 left-50 translate-50 transition
+		width: 15px
+		height: 25px
+		background-repeat: no-repeat !important
+		background-size: contain !important
+		background-position: center !important
+		@media screen and ( max-width: 1400px)
+			width: 10px
+			height: 18px
+			
+.icon-chevron-left
+	&::before
+		background: url('../img/icon/chevron-left.png')
+.icon-chevron-right
+	&::before
+		background: url('../img/icon/chevron-right.png')
+
+
+.table-responsive
+	@media screen and ( max-width:768px)
+		overflow-x: auto
+	table
+		@apply w-full
+		@media screen and ( max-width:768px)
+			white-space: nowrap
+		thead
+			tr
+				th
+					@apply bg-primary text-white text-16 font-bold text-left  py-4  px-6
+					@media screen and ( min-width:1024px)
+						&:first-child
+							@apply pl-12
+		tbody
+			tr
+				&:nth-child(even)
+					background: #f5f5f5
+				td
+					@apply py-4 px-6
+					&:first-child
+						width: 25%
+					@media screen and ( min-width:1024px)
+						@apply pl-12
+					&:last-child
+						width: 25%
+						@apply  text-right pr-12
+						.btn-view-more
+							span
+								color: #af9a56
+.scollbar-wrap
+	height: 300px
+	padding-right: 15px
+	overflow-y: auto
+	scrollbar-width: thin
+	scrollbar-color: $blue-1 #cccccc
+	@apply leading-relaxed text-justify
+	&::-webkit-scrollbar
+		background: #cccccc
+		width: 5px
+	&::-webkit-scrollbar-track
+		-webkit-box-shadow: inset 0 0 6px #cccccc
+		background-color: #cccccc
+	&::-webkit-scrollbar-thumb
+		background-color: $blue-1
+	@media screen and ( max-width:1024px)
+		height: 400px
+.qradio
+	input
+		background-repeat: no-repeat
+		background-position: center
+		appearance: none
+		@apply block
+		width: 20px
+		height: 20px
+		background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='black' width='20px' height='20px'><path d='M0 0h24v24H0z' fill='none'/><path d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z'/></svg>")
+		&:checked
+			background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ff0000' width='20px' height='20px'><path d='M0 0h24v24H0z' fill='none'/><path d='M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm0-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z'/></svg>")
+.qcheckbox
+	@apply flex
+	label
+		@apply inline-block pl-2
+	input
+		background-repeat: no-repeat
+		background-position: center
+		appearance: none
+		@apply block
+		width: 20px
+		height: 20px
+		background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ec1f27' width='18px' height='18px'><path d='M0 0h24v24H0z' fill='none'/><path d='M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z'/></svg>")
+		&:checked
+			background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ec1f27' width='18px' height='18px'><path d='M0 0h24v24H0z' fill='none'/><path d='M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z'/></svg>")

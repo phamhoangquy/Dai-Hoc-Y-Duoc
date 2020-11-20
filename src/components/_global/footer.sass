@@ -1,0 +1,196 @@
+
+footer
+	background: #e5f7ff
+.footer-top
+	background: linear-gradient( rgba(#024fa1, 0.9)), url('../img/bg/footer-1.jpg')
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
+	@apply py-8
+	*
+		@apply text-white
+	.item
+		@apply flex justify-start items-center
+		.image-wrap
+			@apply pr-8
+			img,svg
+				width: 60px
+		.title
+			@apply text-18 text-white uppercase font-bold mb-2
+		.caption
+			@apply text-14 text-white mb-0
+	.subscribe-wrap
+		@apply my-auto
+		
+.footer-middle
+	@apply pt-12 pb-8
+	@screen lg
+		@apply pt-16 pb-8
+	.title
+		@apply text-16 text-blue-1 uppercase font-bold relative pb-4 mb-3
+		&::after
+			content: ''
+			@apply block absolute pointer-events-none left-0 bottom-0 z-10  transition  bg-blue-3
+			height: 2px
+			width: 50px
+	.col
+		&:nth-child(2)
+			@screen xl
+				@apply pl-10 
+	.verify-icon
+		@apply pt-8
+		a
+			img,svg
+				max-width: 100%
+				height: auto
+				width: 130px
+	.wrapper
+		@apply pt-2
+	.link
+		@apply mb-2
+		.wrap
+			@apply flex items-center
+		.icon
+			width: 50px
+			height: 50px
+			@apply bg-white rounded-full flex items-center justify-center mr-3
+			img,svg
+				max-width: 100%
+				height: auto
+				width: 30px
+		span
+			@apply text-16 text-main
+	
+
+	.social-network-wrap
+		@apply pt-5
+	.social-wrapper
+		@apply flex justify-start items-center pt-6 
+		@screen lg
+			@apply pt-8
+		@media screen and ( max-width: 767px)
+			@apply justify-center
+			
+		a
+			@apply flex items-center justify-center bg-white  rounded-full
+			width: 32px
+			height: 32px
+			&:hover
+				em
+					transform: translateY(-2px)
+			&:nth-child(2)
+				em
+					color: #de4625
+			&:nth-child(3)
+				em
+					color: #00a7f7
+				
+			
+			+ a
+					@apply ml-2
+			em
+				@apply transition
+				font-size: 16px
+				height: 16px
+				line-height: 16px
+				color: #3853a1
+	.address
+		box-shadow: 0px 0px 0px 13px rgba(168,219,243,1)
+		@apply p-5
+		@media screen and ( max-width: 767px)
+			@apply m-5
+			
+		*
+			@apply text-white
+		background: linear-gradient( 90deg, rgb(55,137,196) 0%, rgb(104,192,230) 100%)
+	.item
+		border-bottom: 1px solid rgba(white, .5)
+		@apply flex
+		.text
+			@apply text-16 text-white font-bold uppercase leading-tight pl-3
+			@media screen and ( max-width: 1280px)
+				@apply flex items-center
+			@media screen and ( max-width: 576px)
+				@apply mb-2
+				
+				
+		.image
+			width: 50px
+			min-width: 50px
+			@media screen and ( max-width: 1280px)
+				@apply mb-4
+				
+			img,svg
+				max-width: 100%
+				height: auto
+				width: 50px
+				@media screen and ( max-width: 576px)
+					width: 40px
+					
+	ul
+		li
+			@apply py-2
+
+		a
+			@apply text-16 text-main font-normal 
+			+left-plus
+	ol
+		li
+			border-bottom: 1px solid rgba(white, .5)
+			@apply py-3 flex justify-start items-center
+			.icon
+				width: 30px
+				height: 30px
+				border: 1px solid white
+				min-width: 30px
+				@apply rounded-full flex items-center justify-center
+
+				img,svg
+					max-width: 100%
+					height: auto
+					width: 12px
+			.caption
+				@apply text-14 mb-0  pl-2
+			p
+				@apply text-14 mb-0
+				strong
+					@apply font-bold text-20 leading-tight
+					@screen lg
+						@apply text-24
+					@screen xl
+						@apply text-30
+			span
+				@apply text-14 leading-relaxed inline-block
+				&.mail
+					word-break: break-all
+.footer-bottom
+	@apply pb-6
+	.copyright
+		@apply text-main text-14 flex text-left leading-relaxed 
+		@media screen and ( max-width: 1024px)
+			@apply text-center
+			p
+				@apply w-full text-center
+	
+			
+		* 
+			@apply text-main text-14 mb-0
+		a
+			@apply inline-block mx-1
+	.wrapper
+		@apply flex justify-between items-center
+		@media screen and ( max-width: 1024px)
+			@apply justify-center flex-col  relative
+	.back-to-top
+		@apply cursor-pointer
+		@media screen and ( max-width: 1024px)
+			@apply absolute bottom-0 right-0
+		@media screen and ( max-width: 576px)
+			bottom: 50px
+			
+
+		em
+			font-size: 30px
+			line-height: 20px
+			height: 20px
+			@apply text-azure

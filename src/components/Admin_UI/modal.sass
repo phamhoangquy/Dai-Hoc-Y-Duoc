@@ -1,0 +1,49 @@
+.pop-up-modal
+	padding: 0
+	border-radius: 10px
+.fancybox-close-small
+	opacity: 0 !important
+.pop-upmodal-wrapper
+	height: 780px
+	overflow: hidden
+	@media screen and ( max-width: 1024px)
+		height: 500px
+		padding: 50px 0
+	.row
+		@apply m-0 p-0
+		.col
+			@apply m-0 p-0
+	.container
+		padding: 0 40px
+		@apply h-full flex items-center
+		@screen lg
+			padding: 0 80px
+	.title-modal
+		@apply text-24 font-medium text-white text-left pb-4 leading-relaxed uppercase relative
+		@screen lg
+			@apply text-32 pb-6
+		&::after
+			content: ''
+			@apply block absolute pointer-events-none left-0 bottom-0 z-10 bg-white transition
+			height: 2px
+			width: 95px
+	.sub-text
+		@apply text-18 text-white mb-2
+	.scroll-wrapper
+		@apply text-16 text-white pt-4
+		@screen lg
+			@apply pt-6
+		*
+			@apply text-16 text-white mb-4
+			@screen lg
+				@apply mb-5
+	.btn-left
+		@apply pt-4
+		@screen lg
+			@apply pt-6
+	.text-wrap
+		@apply flex flex-col items-start justify-center h-full
+	.scroll-wrapper
+		@media screen and ( max-width: 1024px)
+			height: 250px
+			

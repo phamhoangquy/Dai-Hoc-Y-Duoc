@@ -1,0 +1,55 @@
+.global-breadcrumb
+	@apply pt-5
+	@media screen and(max-width: 400px)
+		@apply hidden
+	ol
+		white-space: nowrap
+		padding: 0
+		list-style-type: none
+		li
+			display: inline-flex
+			font-size: 16px
+			line-height: 23px
+			padding-right: 15px
+			position: relative
+			&:after
+				content: ''
+				display: block
+				position: absolute
+				pointer-events: none
+				right: 5px
+				bottom: 2px
+				z-index: 9
+				height: 15px
+				width: 1px
+				background: #333333
+				transition: .3s all ease-in-out
+			&:last-child
+				&:after
+					display: none
+				a
+					color: #333333
+					@apply underline
+			a,span
+				text-decoration: none
+				font-size: 12px
+				font-weight: 400
+				line-height: 20px
+				color: #333333
+	@media screen and(max-width: 1200px)
+		margin-bottom: 0
+	@media screen and(max-width: 768px)
+		margin-bottom: 0
+	@media screen and(max-width: 576px)
+		.breadcrumb
+			li
+				font-size: 12px
+				line-height: 20px
+				a
+					font-size: 12px
+					line-height: 20px
+					@apply font-light
+					span
+						font-size: 12px
+						line-height: 20px
+						@apply font-light

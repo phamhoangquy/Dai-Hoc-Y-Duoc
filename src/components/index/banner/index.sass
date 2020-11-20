@@ -1,0 +1,161 @@
+.primary-banner
+	@apply relative
+	.banner-container
+		@media screen and ( max-width: 1024px)
+			position: relative
+			display: block
+			height: 0
+			overflow: hidden
+			padding-top: 140/375 *100%
+			.swiper-container
+				position: absolute
+				width: 100%
+				height: 100%
+				top: 0
+				left: 0
+		
+	.swiper-container
+		@screen lg
+			height: 550px
+	
+		.image-wrap
+			@media screen and ( max-width: 1024px)
+				img
+					height: 100%
+					width: 100%
+					object-fit: cover
+				
+			@screen lg
+				a
+					display: block
+					height: 550px
+					width: auto
+				
+					img
+						width: 100%
+						height: 100%
+						object-fit: cover
+	.swiper-pagination
+		@apply absolute  translate-x-50 w-auto
+		left: 50% !important
+		bottom: 30px !important
+		@media screen and ( max-width:  400px)
+			bottom: 15px !important
+		.swiper-pagination-bullet 
+			@apply z-20 pointer-events-auto  transition
+			background: none
+			border: 1px solid white 
+			border-radius: 50%
+			width: 10px
+			height: 10px
+			opacity: 1
+			&.swiper-pagination-bullet-active
+				background: linear-gradient( -88deg, rgb(104,192,230) 0%, rgb(55,105,220) 99%)
+	.title
+		@media screen and ( max-width: 400px)
+			@apply text-20
+			bottom: 35px 
+			
+		@apply text-32 text-white uppercase font-bold absolute left-50 translate-x-50 text-center w-full
+		bottom: 50px 
+		@screen lg
+			@apply text-36  left-0 translate-0 text-left
+			bottom: 80px
+		@screen xl
+			@apply text-48 
+	.wrap
+		.container
+			@apply absolute top-50 left-50 translate-50 h-full
+			.row
+				@apply h-full
+			.col
+				@screen lg
+					@apply relative
+
+.medical-form
+	@apply py-10 px-0
+	@screen md
+		@apply py-14
+	@screen lg
+		@apply absolute top-50 left-50 translate-50 z-20 flex justify-end  p-0 pointer-events-none
+	.container
+		@apply flex justify-end w-full
+	.icon-wrap
+		@apply bg-blue-1 flex items-center justify-center relative z-20
+		width: 50px
+		height: 50px
+		@media screen and ( max-width: 576px)
+			@apply hidden
+			
+	.medical-form-wrapper
+		border-top-right-radius: 25px
+		border-bottom-left-radius: 25px
+		background:  url('../img/bg/banner-bg.png'), linear-gradient( 160deg, rgb(0,168,230) 0%, rgb(0,55,155) 100%) 
+		background-repeat: no-repeat
+		background-size: cover 
+		background-position: bottom right
+		width: 420px
+		box-shadow: 0px 0px 0px 6px rgba(0,0,0,0.15)
+		@apply p-8
+		@media screen and ( max-width: 1280px)
+			background: linear-gradient( 160deg, rgb(0,168,230) 0%, rgb(0,55,155) 100%) 
+			width: 360px
+		@media screen and ( max-width: 1024px)
+			@apply w-full px-6
+			
+		.text
+			@apply text-20 text-white uppercase font-bold
+		.caption
+			@apply text-13 text-white font-normal
+	.wrap-form
+		@apply pointer-events-auto
+		.row
+			margin: 0 -5px
+			.col
+				padding: 0 5px
+				margin-bottom: 15px
+		.form-group
+			input[type='text'],select,textarea,input[type='date']
+				background: rgba(white, .5)
+				border-radius: 3px
+				border: 1px solid #0a72bf
+				height: 28px
+				@apply text-13 text-white
+				&::placeholder
+					@apply text-white text-13
+			input[type='date']
+				@apply text-white text-13
+			select
+				@apply text-white text-13 w-full px-4
+				option
+					@apply text-main text-13
+			textarea
+				height: 6rem
+				@apply pt-2
+		.frm-btnwrap
+			@apply m-0
+			.frm-btn
+				@apply flex w-full justify-end
+				input[type='submit']
+					@apply bg-azure text-16 text-white uppercase font-bold p-0 flex justify-center items-center
+					border-radius: 5px
+					border: none
+					height: 40px
+					line-height: 16px
+
+html body .RadInput_Default .riTextBox, html body .RadInputMgr_Default
+	border: none !important
+	height: 40px !important
+	font-family: 'Montserrat' !important
+	font-size: .875rem !important
+	font-weight: 600 !important
+html body .RadInput_Default .riError, html body .RadInput_Error_Default
+	background-position:  97% -290px !important
+.frm-btn-reset
+	display: none !important
+.RadPicker_Default a.rcCalPopup:hover, .RadPicker_Default a.rcCalPopup:focus, .RadPicker_Default a.rcCalPopup:active
+	background-position: 0 0 !important
+.RadPicker_Default .rcCalPopup,.RadPicker_Default .rcTimePopup
+	background-image: url('../img/icon/calendar.png') !important
+	&:hover
+		background-image: url('../img/icon/calendar.png') !important

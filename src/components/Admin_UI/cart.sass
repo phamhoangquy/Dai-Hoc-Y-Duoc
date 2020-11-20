@@ -1,0 +1,130 @@
+.shopping-cart-toggle
+	@apply flex items-center justify-center  static 
+	@screen lg
+		@apply relative
+	.ModuleContent
+		@apply flex items-center justify-center 
+	.cart-header
+		@apply flex
+	.cart-icon
+		width: 20px
+		height: 20px
+		background-repeat: no-repeat
+		background-position: center
+		background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' height='24' viewBox='0 0 24 24' fill='%23e52322'   stroke='white' stroke-linejoin='round' stroke-width='1' width='24'><path d='M0 0h24v24H0z' fill='none'/><path d='M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z'/></svg>")
+		@apply relative
+		&:before
+			content: ''
+			@apply absolute block pointer-events-none  z-10 transition
+			width: 2px
+			left: -20px
+			height: 26px
+			bottom: -3px
+			@media screen and ( max-width:  1024px)
+				@apply hidden
+	.cart-number
+		@apply ml-1  p-1 rounded-full text-12 text-main  flex items-center justify-center
+		.item-quantity
+			@apply  text-12 text-main block
+			height: .75rem
+			*
+				@apply  text-12 text-main 
+			
+			.text
+				@media screen and ( max-width:  1024px)
+					@apply hidden
+					
+.shopping-cart-wrapper
+	@apply flex flex-col items-center justify-between py-5 px-5 bg-white absolute top-100 right-0 z-50 opacity-0 pointer-events-none z-0 transition
+	box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.05)
+	width: 370px
+	@media screen and ( max-width: 576px)
+		width: 320px
+	&:hover
+		cursor: pointer
+	&.open
+		@apply pointer-events-auto opacity-100 z-50
+	.head
+		border-bottom: 3px solid #ebebeb
+		@apply flex justify-between items-center w-full pb-3
+	.cart-quantity
+		@apply flex
+		.cart-icon-dark
+			width: 20px
+			height: 20px
+			background-repeat: no-repeat
+			background-position: center
+			background-image: url("data:image/svg+xml;charset=utf-8,<svg viewBox='-35 0 512 512.00102' xmlns='http://www.w3.org/2000/svg' fill='%23333333' width='20px' height='20px'><path d='m443.054688 495.171875-38.914063-370.574219c-.816406-7.757812-7.355469-13.648437-15.15625-13.648437h-73.140625v-16.675781c0-51.980469-42.292969-94.273438-94.273438-94.273438-51.984374 0-94.277343 42.292969-94.277343 94.273438v16.675781h-73.140625c-7.800782 0-14.339844 5.890625-15.15625 13.648437l-38.9140628 370.574219c-.4492192 4.292969.9453128 8.578125 3.8320308 11.789063 2.890626 3.207031 7.007813 5.039062 11.324219 5.039062h412.65625c4.320313 0 8.4375-1.832031 11.324219-5.039062 2.894531-3.210938 4.285156-7.496094 3.835938-11.789063zm-285.285157-400.898437c0-35.175782 28.621094-63.796876 63.800781-63.796876 35.175782 0 63.796876 28.621094 63.796876 63.796876v16.675781h-127.597657zm-125.609375 387.25 35.714844-340.097657h59.417969v33.582031c0 8.414063 6.824219 15.238282 15.238281 15.238282s15.238281-6.824219 15.238281-15.238282v-33.582031h127.597657v33.582031c0 8.414063 6.824218 15.238282 15.238281 15.238282 8.414062 0 15.238281-6.824219 15.238281-15.238282v-33.582031h59.417969l35.714843 340.097657zm0 0'/></svg>")
+	.body
+		@apply w-full pb-8 pt-6
+		.scroll-wrapper
+			height: 330px
+			padding-right: 15px
+			overflow-y: auto
+			scrollbar-width: thin
+			scrollbar-color: $primary #cccccc
+			@apply leading-relaxed text-justify
+			&::-webkit-scrollbar
+				background: #cccccc
+				width: 3px
+			&::-webkit-scrollbar-track
+				-webkit-box-shadow: inset 0 0 6px #cccccc
+				background-color: #cccccc
+			&::-webkit-scrollbar-thumb
+				background-color: $primary
+			@media screen and ( max-width:1024px)
+				height: 330px
+	.btn-center
+		@apply w-full
+		.btn
+			@apply w-full bg-primary
+			em
+				@apply text-white inline-block ml-4 transition
+				font-size: 20px
+				height: 21px
+			&:hover
+				span
+					@apply text-white
+				em
+					transform: translateX(3px)
+	.cart-item
+		@apply flex justify-between items-center bg-white py-2
+		border-bottom: 1px solid #ebebeb
+		height: 110px
+		&:first-child
+			@apply pt-0
+		*
+			@apply mb-0
+		.image
+			a
+				@apply block
+				width: 85px
+				img
+					width: 100%
+					height: 100%
+					object-fit: scale-down
+		.caption
+			@apply pl-2
+			.bottom
+				@apply flex justify-between items-center mt-3
+			.title
+				@apply mb-0
+				a
+					@apply text-16 text-main mb-0 leading-tight font-medium transition
+					display: -webkit-box
+					-webkit-line-clamp: 2
+					-webkit-box-orient: vertical
+					overflow: hidden
+					&:hover
+						@apply text-primary
+			.price
+				@apply text-14 text-main font-bold mb-0
+			.quantity
+				@apply text-14 text-grey-3 font-medium
+				.number
+					@apply text-14 text-grey-3 font-medium
+	.sum-price
+		p
+			@apply text-16 text-main mb-0 font-medium
+			span
+				@apply text-primary

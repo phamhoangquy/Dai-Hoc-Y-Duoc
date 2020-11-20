@@ -1,0 +1,127 @@
+.wrap-form
+	.fa-exclamation-triangle
+		@apply absolute text-12 font-light italic text-primary left-0 opacity-100
+		bottom: -20px
+	.col
+		@apply mb-8 relative
+		&:last-child
+			@apply mb-6
+	input
+		height: 40px
+		@apply bg-white px-5
+		&::placeholder
+			@apply text-grey-3 text-14
+	textarea
+		@apply p-4
+		height: 8rem
+		&::placeholder
+			@apply text-grey-3 text-14
+	.frm-btnwrap
+		@apply mt-4
+		.frm-btn
+			input
+				@apply text-white inline-block text-center cursor-pointer bg-primary transition
+				vertical-align: top
+				line-height: 50px
+				border-radius: 5px
+				border: 2px solid $main
+				height: 50px
+				padding: 0 20px
+				min-width: 160px
+				@media screen and ( max-width:1024px)
+					@apply text-18
+				&::first-letter
+					text-transform: uppercase
+				&:hover
+					@apply text-primary bg-white 
+.frm-btn-reset
+	display: none
+.frm-captcha
+	margin: 0 !important
+	display: inline-flex
+	flex-direction: row-reverse
+	img
+		height: 30px !important
+		max-width: auto
+		max-width: 130px
+		@media screen and ( max-width:1200px)
+			max-width: 150px
+			
+	@media screen and(max-width:576px)
+		flex-direction: column-reverse
+	.frm-captcha-input
+		@apply mt-2
+		margin-left: 50px
+		@media screen and ( max-width:576px)
+			margin-left: 0
+			@apply mt-4
+		label
+			display: none
+		input
+			padding: 0 10px
+			margin-top: 0
+			height: 30px
+			@media screen and ( max-width:1280px)
+				max-width: 200px
+			@media screen and ( max-width:1200px)
+				max-width: 150px
+				
+			@media screen and ( max-width:1024px)
+				max-width: 200px
+				
+			@media (max-width: 767.98px)
+				margin-left: 20px
+			@media (max-width: 576.98px)
+				margin-left: 0
+	.rcRefreshImage
+		position: absolute
+		opacity: 1
+		cursor: pointer
+		height: 0
+		width: 0
+		right: -5px
+		top: 5px
+		color: #ffffff
+		z-index: 0
+		&:before
+			font-family: 'Material Design Icons'
+			position: absolute
+			top: 0
+			right: -40px
+			opacity: 1
+			z-index: 99
+			color: #9d9080
+			font-size: 30px
+			content: "\F0450"
+			display: flex
+			justify-content: center
+			align-items: flex-start
+			@media screen and ( max-width:576px)
+				height: 50px
+@media screen and ( max-width:500px )
+	#ctl00_mainContent_ctl05_captcha_ctl00
+		display: none
+#ctl00_mainContent_ctl02_captcha_ctl01
+	position: relative
+#ctl00_mainContent_ctl06_btnReset,#ctl00_mainContent_ctl05_captcha_ctl00,#ctl00_mainContent_ctl08_captcha_ctl00,#ctl00_mainContent_ctl07_captcha_ctl00
+	display: none
+#ctl00_mainContent_ctl06_txtCaptcha
+	margin-left: 10px
+#ctl00_mainContent_ctl06_captcha_CaptchaLinkButton
+	#text
+		display: none
+.RadCaptcha
+	@media screen and ( max-width:767.5px)
+		margin-left: 0
+	span
+		@apply hidden
+	>div
+		>div
+			display: flex
+			position: relative
+			flex-direction: column-reverse
+			height: 40px !important
+			margin-top: 0
+			@media (max-width: 767.98px)
+				margin-right: 0
+				width: 180px

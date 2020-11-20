@@ -1,0 +1,71 @@
+.primary-banner
+	.banner-container
+		.swiper-container
+			.swiper-pagination
+			.swiper-wrapper
+				.swiper-slide
+					.wrap
+						.image-wrap
+							a(href="#")
+								img(src="./img/banner/1.jpg", srcset="./img/banner/1-m375.jpg 1024w, ./img/banner/1.jpg", alt="")
+						.container
+							.row
+								.col.w-full(class='lg:w-9/12 xl:w-8/12')
+									h2.title Khám phá cùng chuyên gia
+								.col.w-full(class='lg:w-3/12 xl:w-4/12')
+				.swiper-slide
+					.wrap
+						.image-wrap
+							a(href="#")
+								img(data-src="./img/banner/1.jpg",  data-srcset="./img/banner/1-m375.jpg 1024w, ./img/banner/1.jpg", alt="").swiper-lazy
+						.container
+							.row
+								.col.w-full(class='lg:w-9/12 xl:w-8/12')
+									h2.title Khám phá cùng chuyên gia
+								.col.w-full(class='lg:w-3/12 xl:w-4/12')
+				.swiper-slide
+					.wrap
+						.image-wrap
+							a(href="#")
+								img(data-src="./img/banner/1.jpg",  data-srcset="./img/banner/1-m375.jpg 1024w, ./img/banner/1.jpg", alt="").swiper-lazy
+						.container
+							.row
+								.col.w-full(class='lg:w-9/12 xl:w-8/12')
+									h2.title Khám phá cùng chuyên gia
+								.col.w-full(class='lg:w-3/12 xl:w-4/12')
+	.medical-form.container
+		.container
+			.icon-wrap
+				.custom-form
+			.medical-form-wrapper
+				.text Đăng ký khám
+				.caption vui lòng điền thông tin vào form bên dưới để đẩ đ8ang ký khám bệnh theo yêu cầu
+				.wrap-form
+					.row
+						.col.w-full(class='lg:w-1/2').form-group
+							input(type="text", name="" placeholder='Họ và tên')
+						.col.w-full(class='lg:w-1/2').form-group
+							input(type="text", name="" placeholder='Email')
+						.col.w-full(class='lg:w-1/2').form-group
+							input(type="date", name="" placeholder='Ngày tháng năm sinh')
+						.col.w-full(class='lg:w-1/2').form-group
+							input(type="text", name="" placeholder='Số điện thoại')
+						.col.w-full.form-group
+							input(type="text", name="" placeholder='Địa chỉ')
+						.col.w-full.form-group
+							.custom-select
+								select
+									option(value="Chuyện khoa") Chuyên khoa
+									option(value="Chuyện khoa") Chuyên khoa
+						.col.w-full(class='lg:w-1/2').form-group
+							input(type="date", name="" placeholder='Ngày tháng năm sinh')
+						.col.w-full(class='lg:w-1/2').form-group
+							.custom-time
+								select
+									option(value="Chuyện khoa") Buổi khám
+									option(value="Chuyện khoa") Buổi khám
+						.col.w-full.form-group
+							textarea(placeholder='Triệu chứng')
+					.frm-btnwrap
+						.frm-btn
+							input(type="submit", value="Đăng ký")

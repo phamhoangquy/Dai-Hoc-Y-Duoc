@@ -1,0 +1,245 @@
+header
+	@apply fixed top-0 left-0 right-0 w-full bg-white
+	height: 100px
+	z-index: 99
+	@media screen and ( max-width: 1024px)
+		height: 60px
+		
+	.header-site
+		@apply h-full
+		.container
+			@apply flex h-full justify-between
+	.header-wrap-top
+		@apply flex justify-end items-center
+		height: 60px
+		@media screen and ( max-width: 1024px)
+			order: 2
+			@apply flex flex-col h-auto
+	.header-wrap-bottom
+		@media screen and ( max-width: 1024px)
+			order: 1
+	.header-wrap-left
+		@apply flex items-center justify-between 
+		@media screen and ( max-width: 1024px)
+			@apply w-full
+			
+	.header-wrap-right
+		@apply hidden
+		@screen lg
+			@apply flex flex-col justify-between items-end
+		@media screen and ( max-width: 1024px)
+			@apply fixed  h-full left-0  z-0 overflow-y-auto opacity-0  pointer-events-none 
+			transform: translateX(-100%)
+			transition: none
+			width: 320px
+			top: 60px
+			background: linear-gradient( -60deg, rgb(0,168,230) 0%, rgb(0,55,155) 100%)
+		
+			&.active
+				@apply flex flex-col  opacity-100 pointer-events-auto  z-50
+				transition: all .8s cubic-bezier(.68,-.55,.265,1.55)
+				transform: translateX(0)
+				.language-wrapper
+					@apply block
+				.button-wrap
+					@apply  flex flex-col pt-4  
+				.navbar-primary-menu
+					@apply flex items-start justify-center flex-col p-2
+	.language-wrapper
+		@apply mx-8 hidden
+		@screen lg
+			@apply  block
+		@media screen and ( max-width: 1024px)
+			order: 3
+			@apply pt-4 
+			
+		ul
+			@apply flex
+		li
+			&:not(:last-child)
+				@apply mr-2
+			&.active,&:hover
+				a
+					border: 2px solid white
+					@apply opacity-100
+		a
+		
+			width: 20px
+			height: 20px
+			border: 2px solid transparent
+			opacity: .5
+			@apply block rounded-full overflow-hidden transition
+	.button-wrap
+		@apply hidden
+		@screen lg
+			@apply flex flex  justify-between items-center h-full
+		@media screen and ( max-width: 1024px)
+			order: 2
+		.btn
+			@media screen and ( max-width: 1024px)
+				@apply w-full m-0 my-4
+				
+			&:first-child
+				@apply mr-3
+				@media screen and ( max-width: 1024px)
+					@apply m-0 
+					
+			.custom-note
+				@apply mr-1
+			span,strong
+				line-height: 18px
+	.nav-brand
+		@apply h-full
+		a
+			@apply flex justify-start items-center h-full
+			img,svg
+				max-width: 100%
+				height: auto
+				width: 300px
+			@media screen and ( max-width: 1280px)
+				width: 200px
+			@media screen and ( max-width:1024px)
+				img,svg
+					width: 170px
+					height: 50px
+.navbar-primary-menu
+	list-style-type: none
+	padding: 0
+	margin: 0
+	@apply h-full flex items-center  
+	@screen lg
+		height: 40px
+		border-top-left-radius: 5px
+		border-top-right-radius: 5px
+		@apply bg-grey-5 justify-end  flex
+	@media screen and ( max-width:1024px)
+		height: auto
+
+	ul
+		@apply h-full w-full 
+	li
+		@apply inline-block h-full px-2 relative transition
+		@media screen and ( max-width: 1024px)
+			@apply flex justify-start items-center
+			
+		&:first-child
+			@apply pl-6
+			border-top-left-radius: 5px
+			@media screen and ( max-width: 1280px)
+				@apply pl-4
+			@media screen and ( max-width: 1024px)
+				@apply pl-2
+		&:last-child
+			@apply pr-6
+			border-top-right-radius: 5px
+			@media screen and ( max-width: 1280px)
+				@apply pr-4
+		@screen lg
+			@apply px-1
+		@screen xl
+			@apply px-2
+		&.drop-down
+			@media screen and ( max-width: 1024px)
+				@apply flex flex-col
+				
+			@screen lg
+				&:hover
+					.sub-nav
+						@apply flex
+						-webkit-animation: fade-in .3s cubic-bezier(0.39, 0.575, 0.565, 1) both
+						animation: fade-in .3s cubic-bezier(0.39, 0.575, 0.565, 1) both
+						background: linear-gradient( -60deg, rgb(0,168,230) 0%, rgb(0,55,155) 100%)
+			.sub-nav
+				@apply hidden h-auto p-5
+				@screen lg
+					@apply absolute top-100 left-0   flex-col justify-start items-start 
+					width: max-content
+				@media screen and ( max-width: 1024px)
+					@apply p-0
+					
+				li
+					@apply p-0
+					@media screen and ( max-width: 1024px)
+						@apply flex text-left
+						height: 40px
+						
+					&:last-child
+						@apply pr-0
+						border-radius: 0
+					&:first-child
+						@apply pl-0
+						border-radius: 0
+					&:hover
+						background: none
+						a
+							@apply underline
+							background: none
+				a
+					@apply text-16 font-normal normal-case text-white  py-2
+		.title
+			@apply flex items-center justify-between relative h-full
+			@media screen and ( max-width: 1024px)
+				@apply w-full
+				
+			em
+				font-size: 14px
+				height: 14px
+				line-height: 14px
+				@apply text-blue-2 inline-block ml-1 transition
+				@media screen and ( max-width: 1024px)
+					@apply text-white
+					font-size: 24px
+					height: 24px
+					line-height: 24px
+					
+		a
+			@apply text-14 text-blue-2 font-bold uppercase flex items-center justify-center  py-3 relative transition
+			@media screen and ( max-width: 1024px)
+				@apply text-white
+			&:after
+				content: ''
+				@apply  opacity-0 absolute block transition  left-50 translate-x-50 bottom-0
+				width: 12px
+				height: 6px
+				border-style: solid
+				border-width: 0 6px 6px 6px
+				border-color: transparent transparent $blue-2 transparent
+				@media screen and ( max-width:1024px)
+					opacity: 0 !important
+			&:before
+				content: ''
+				height: 2px
+				@apply  opacity-0 absolute block transition  w-0 left-50 translate-x-50 bottom-0 bg-blue-2
+				@media screen and ( max-width:1024px)
+					opacity: 0 !important
+					
+			@media screen and ( max-width:1280px)
+				@apply text-12
+			@media screen and ( max-width:1024px)
+				@apply text-18  py-3
+		&.active
+			@media screen and ( max-width: 1024px)
+				@apply bg-azure
+				
+		&:hover
+
+			@screen lg
+				@apply bg-azure
+			a,em
+				@apply text-white
+			
+			
+		&.active
+			>a,.title a
+				&::after
+					opacity: 1
+				&::before
+					opacity: 1
+					@apply w-full
+
+.mobile-wrapper
+
+.main-menu-toggle
+	@apply hidden
+	@media screen and ( max-width:1024px)
+		@apply flex ml-4 items-center

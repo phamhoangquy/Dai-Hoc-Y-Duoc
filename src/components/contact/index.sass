@@ -1,0 +1,167 @@
+.contact
+    padding: 60/16*1rem 0
+    .row
+        margin-top: 25/16*1rem
+    .box-shaw
+        background: #f5f5f5
+        padding: 25/16*1rem
+    .left-wrapper
+        background-image: url('../img/bg/contact-bg.png')
+        background-position: center
+        background-repeat: no-repeat
+        // background: -webkit-gradient(linear,left top,left bottom,from(#299ae2),to(#27519e))
+        // background: -o-linear-gradient(top,#299ae2 0,#27519e 100%)
+        // background: linear-gradient(45deg,#9beaff 1%,#346fdb);
+        padding: 60/16*1rem
+        .logo-contact
+            display: flex
+            justify-content: center
+            align-items: center
+            a
+                background: #ffffff
+                border-radius: 50%
+                width: 130px
+                height: 130px
+                display: flex
+                justify-content: center
+                align-items: center
+                img
+                    width: 100%
+                    height: 100%
+                    object-fit: scale-down
+        .title-contact
+            font-size: 1rem
+            color: #ffffff
+            text-transform: uppercase
+            font-weight: 700
+            text-align: center
+            padding-top: 35/16*1rem
+        .card-body
+            padding-top: 40/16*1rem
+            ul
+                padding: 0
+                list-style: none
+                li
+                    display: flex
+                    font-size: 1rem
+                    color: #ffffff
+                    padding-bottom: 15/16*1rem
+                    p
+                        font-size: 1rem
+                        color: #ffffff
+                        padding-left: 20/16*1rem
+                        font-weight: 500
+    .map-wrapper
+        margin-left: -30px
+        @media screen and ( max-width: 1024.98px )
+            margin-left: 0
+            margin-top: -30/16*1rem
+
+    .text-form
+        font-size: 1rem
+        color: #333333
+        text-align: center
+        padding-top: 60/16*1rem
+    .wrap-form
+        @media screen and(max-width:1025px)
+            margin: 0
+            padding: 0 10px
+        .frm-btnwrap
+            display: flex
+            justify-content: flex-end
+            margin-top: 30/16*1rem
+            .frm-btn
+                input
+                    width: 160px
+                    height: 40px
+                    color: #ffffff
+                    background: #6bc0e7
+                    cursor: pointer
+                    font-size: 16px
+                    font-weight: 700
+                    text-align: center
+                    border: none
+                    border-radius: 50px
+                    line-height: 0
+
+                    &:nth-last-child(2)
+                        display: none
+                    @media screen and ( max-width:1024px  )
+                        input 
+                            padding: 0 15px
+        .form-group
+            margin: 0px 0 20px 0
+            span
+                color: #ffffff
+                font-size: 13px
+                &.fa-exclamation-triangle
+                    color: firebrick
+            input,textarea
+                padding-left: 20px
+                border: 1px solid #e0e0e0
+                height: 42px
+                width: 100%
+                color: #999999
+                background: #ffffff
+                transition: .3s all ease-in-out
+
+                &:focus
+                    outline: none
+                    box-shadow: 0px 5px 15px 0px rgba(56, 50, 44, 0.15)
+            label
+                // color: #666666
+                // font-size: 14px
+                // font-weight: 400
+                // margin-bottom: 5px
+                display: none
+            textarea
+                height: 10rem
+                padding: 10px 0 0 20px
+        .frm-captcha
+            display: flex
+            @media screen and ( max-width: 576px )
+                display: flex
+                flex-wrap: wrap
+            .frm-captcha-input
+                order: 2
+                padding-left: 50px
+                width: 45%
+                display: flex
+                justify-content: center
+                align-items: center
+                @media screen and ( max-width: 1200px )
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+                    padding-left: 20px
+                    width: 40%
+                @media screen and ( max-width: 1024px )
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+                    padding-left: 20px
+                @media screen and ( max-width: 768px )
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+                    padding-left: 20px
+                
+                @media screen and ( max-width: 576px )
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+                    padding-left: 20px
+                    width: 100%
+                @media screen and ( max-width: 576px )
+                    padding-top: 30px
+                    order: 1
+        .RadCaptcha_Default
+            width: 25%
+            max-width: 25%
+            @media screen and ( max-width: 576px )
+                flex: 0 0 100%
+                max-width: 100%
+            #ctl00_mainContent_ctl04_captcha_SpamProtectorPanel
+                #ctl00_mainContent_ctl04_captcha_ctl01
+                    .rcRefreshImage
+                        display: none

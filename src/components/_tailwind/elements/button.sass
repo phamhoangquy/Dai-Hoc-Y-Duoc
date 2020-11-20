@@ -1,0 +1,114 @@
+//Button variable
+.btn
+	@apply text-14 font-normal text-center cursor-pointer inline-flex items-center justify-center transition px-4
+	height: 35px
+	padding: 0 15px
+	border: 1px solid transparent
+	span
+		@apply text-14 transition text-center mb-0 
+		&::first-letter
+			text-transform: uppercase
+	em
+		@apply transition
+		font-size: 14px
+		height: 14px
+		line-height: 14px
+	&.btn-primary
+		@apply transition bg-blue-1
+		border-color: transparent
+		width: 120px
+		border-radius: 5px
+		span
+			@apply text-white uppercase  font-normal  text-14 uppercase font-normal 
+		em
+			@apply   inline-block ml-2 text-main
+			
+		&:hover
+			@apply bg-white
+			border-color: $blue-1
+			span,em
+				@apply text-blue-1
+			
+	
+	&.btn-modal-close
+		z-index: 9
+		width: 40px
+		height: 40px
+		@apply flex items-center justify-center absolute top-0 right-0 bg-primary pointer-events-auto
+		&:focus
+			outline: none
+		span
+			@apply text-24 text-white
+	&.btn-view-more
+		@apply p-0 h-auto
+		span
+			@apply text-14 text-grey-2 font-normal
+		em
+			@apply text-12 text-primary
+	&.btn-gradient
+		border-radius: 5px
+		border: none
+		height: 40px
+		@apply px-4 
+		span,strong
+			@apply text-14 text-white font-bold uppercase text-center inline-block
+			@media screen and ( max-width: 1280px)
+				@apply text-12
+
+				
+		strong
+			@apply text-18
+			@media screen and ( max-width: 1280px)
+				@apply text-16
+		&.blue
+			background: linear-gradient( 45deg, rgb(155,234,255) 1%, rgb(52,111,219) 100%)
+		&.red
+			background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,76,76,1) 0%, rgba(255,48,48,1) 25%)
+
+
+
+//Swiper navigation
+.nav-arrow-prev,.nav-arrow-next
+	@apply  flex z-10 items-center justify-center transition rounded-full
+	width: 50px
+	height: 50px
+	border: 1px solid $blue-1
+	@media screen and ( max-width:1400px)
+		width: 40px
+		height: 40px
+	&:hover
+		@apply bg-blue-1
+		.icon-chevron-left,.icon-chevron-right
+			&::before
+				filter: brightness(0) invert(1)
+
+		
+
+
+.swiper-nav-wrap
+
+	@media screen and ( max-width:  1100px)
+		@apply flex justify-center items-center my-4
+		
+.nav-arrow-next
+	right: -60px
+	@media screen and ( min-width: 1280px) and ( max-width: 1400px)
+		right: -40px
+.nav-arrow-prev
+	left:  -60px
+	@media screen  and ( min-width: 1280px) and ( max-width: 1400px)
+		left: -40px
+.btn-gap,.btn-center,.btn-left,.btn-right
+	@apply flex items-center
+	a
+		&:not(:last-child)
+			@apply mr-2
+.btn-center
+	@apply  justify-center
+.btn-left
+	@apply justify-start
+	
+.btn-right
+	@apply justify-end
+.btn-gap
+	@apply justify-between

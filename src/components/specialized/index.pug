@@ -1,0 +1,32 @@
+section.specialized
+	.container
+		.section-title
+			span Chuyên khoa
+			em.mdi.mdi-gamepad
+				span
+				span
+		.row
+			.col.w-full(class='md:w-6/12 lg:w-5/12 ml-auto')
+				-for(i=0;i<5;i++)
+					.specialist-item
+						.image-wrap
+							a(href="#")
+								img(data-src="./img/icon/ico-5.png", alt="").lazyload
+						.content
+							.sub-title
+								a(href="#") chuẩn đoán hình ảnh
+							.btn-left
+								a.btn.btn-view-more
+									span Xem chi tiết
+			.col.w-full(class='md:w-6/12 lg:w-5/12 mr-auto')
+				-for(i=0;i<5;i++)
+					.specialist-item
+						.image-wrap
+							a(href="#")
+								img(data-src="./img/icon/ico-5.png", alt="").lazyload
+						.content
+							.sub-title
+								a(href="#") chuẩn đoán hình ảnh
+							.btn-left
+								a.btn.btn-view-more
+									span Xem chi tiết

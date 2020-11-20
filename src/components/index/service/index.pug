@@ -1,0 +1,53 @@
+section.home-service
+	.container
+		.row
+			.col.w-full(class='lg:w-1/2')
+				.section-title
+					span Dịch vụ
+					em.mdi.mdi-gamepad
+						span
+						span
+				.swiper-home-service
+					.swiper-container
+						.swiper-wrapper
+							-for(i=0;i<5;i++)
+								.swiper-slide
+									.news-service
+										.image-wrap.zoom-in
+											a(href="#")
+												img(data-src="./img/news/1.jpg", alt="").lazyload
+										.content
+											.sub-title
+												a(href="#") Khám sức khỏe tổng quát cá nhân
+					.swiper-nav-wrap
+						.nav-arrow-prev
+							.icon-chevron-left
+						.nav-arrow-next
+							.icon-chevron-right 
+
+			.col.w-full(class='lg:w-1/2')
+				.section-title
+					span Chuyên khoa
+					em.mdi.mdi-gamepad
+						span
+						span
+				.swiper-home-specialist
+					.swiper-container
+						.swiper-wrapper
+							-for(i=0;i<15;i++)
+								.swiper-slide
+									.specialist-item
+										.image-wrap
+											a(href="#")
+												img(data-src="./img/icon/ico-5.png", alt="").lazyload
+										.content
+											.sub-title
+												a(href="#") chuẩn đoán hình ảnh
+											.btn-left
+												a.btn.btn-view-more
+													span Xem thêm
+					.swiper-nav-wrap
+						.nav-arrow-prev
+							.icon-chevron-left
+						.nav-arrow-next
+							.icon-chevron-right 
