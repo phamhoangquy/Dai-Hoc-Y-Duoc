@@ -13,7 +13,7 @@ $(document).ready(function() {
     toggleMobileMenu();
     //Declare NEW function Javascript
     backToTop();
-
+    watchMoreDetail();
 });
 
 
@@ -29,8 +29,53 @@ function backToTop() {
     });
 }
 
-function swiperInit() {
+function watchMoreDetail() {
+    let watchMore = $(".spe-detail-wrapper .btn-view-more");
+    let article = $(".spe-detail-wrapper  article");
+    let maxHeight = 1400;
+    let height = 0;
+    let cotent = $(".spe-detail-wrapper article .fullcontent");
+    let pArray = $(".spe-detail-wrapper  article .fullcontent").children();
+    watchMore.on("click", function() {
+        // console.log()
+        // console.log($(this).parents('article'))
+        if ($(this).parents('article').hasClass('active')) {
+            cotent.css({
+                "max-height": 1400 + "px"
+            });
+            article.removeClass("active");
+            $(this).removeClass('open')
+        } else {
+            $.each(pArray, function(indexInArray, valueOfElement) {
+                // height.push(element.height());
 
+                height += $(valueOfElement).height();
+            });
+            cotent.not($(this).parents("article").find('.fullcontent')).css({
+                "max-height": 1400 + "px"
+            });
+            article.not($(this).parents("article")).removeClass("active");
+            $(this).addClass('open')
+            $(this).parents("article").find('.fullcontent').css({
+                "max-height": "100%"
+            });
+            $(this).parents("article").addClass("active");
+            $("html, body").animate({
+                scrollTop: $(this).parents('.fullcontent').offset().top - 20
+            });
+        }
+    });
+    // cotent.each(function() {
+    //     console.log(cotent.height())
+
+    //     if (cotent.height() < maxHeight) {
+    //         $(this).find('.btn-view-more').hide()
+    //     }
+    // });
+}
+
+
+function swiperInit() {
     var homerSwiper = new Swiper(".primary-banner .swiper-container", {
         // Optional parameters
         slidesPerView: 1,
@@ -108,6 +153,76 @@ function swiperInit() {
         navigation: {
             nextEl: '.service-detail-4 .nav-arrow-next',
             prevEl: '.service-detail-4 .nav-arrow-prev',
+        },
+    });
+    var speDetail = new Swiper('.specialized-detail-2 .swiper-container', {
+        breakpointsInverse: true,
+        speed: 1205,
+        lazy: true,
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+
+            },
+            400: {
+                slidesPerView: 2,
+
+            },
+            480: {
+                slidesPerView: 3,
+
+            },
+            768: {
+                slidesPerView: 3,
+
+            },
+            1025: {
+                slidesPerView: 6,
+            },
+            1440: {
+                slidesPerView: 6,
+            },
+
+        },
+        spaceBetween: 30,
+        navigation: {
+            nextEl: '.specialized-detail-2 .nav-arrow-next',
+            prevEl: '.specialized-detail-2 .nav-arrow-prev',
+        },
+    });
+    var specializedDetail = new Swiper('.specialized-detail .swiper-container', {
+        breakpointsInverse: true,
+        speed: 1205,
+        lazy: true,
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+
+            },
+            400: {
+                slidesPerView: 1,
+
+            },
+            480: {
+                slidesPerView: 2,
+
+            },
+            768: {
+                slidesPerView: 2,
+
+            },
+            1025: {
+                slidesPerView: 3,
+            },
+            1440: {
+                slidesPerView: 3,
+            },
+
+        },
+        spaceBetween: 30,
+        navigation: {
+            nextEl: '.specialized-detail .nav-arrow-next',
+            prevEl: '.specialized-detail .nav-arrow-prev',
         },
     });
     var newsService = new Swiper('.swiper-home-service .swiper-container', {

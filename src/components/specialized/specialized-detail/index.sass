@@ -1,0 +1,274 @@
+.specialized-detail
+    padding: 50/16*1rem 0
+    .spe-detail-wrapper
+        padding-top: 25/16*1rem
+        article
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            .fullcontent
+                overflow: hidden
+                max-height: 400px
+                transition: max-height .5s ease-in-out
+                color: #333333
+                border-bottom: 1px solid #e0e0e0
+                @media(min-width: 1260px)
+                    max-height: 1400px
+                .content-read-more
+                    border-bottom: 1px solid #e0e0e0
+                    .img-wrapper
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        a
+                            display: block
+                            max-height: 100%
+                            height: 440px
+                            img
+                                width: 100%
+                                height: 100%
+                                object-fit: cover
+                    .desc
+                        p
+                            font-size: 1rem
+                            color: #333333
+                            padding-bottom: 20/16*1rem
+                            &:first-child
+                                padding-top: 20/16*1rem
+                    .title
+                        text-align: center
+                        font-size: 1.5rem
+                        color: #333333
+                        font-weight: 700
+                        padding-bottom: 15/16*1rem
+
+            .btn-wrapper-center
+                display: flex
+                align-items: center
+                justify-content: center
+                .btn-view-more
+                    margin-top: 20/16*1rem
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    border-bottom: 1px solid $blue-1
+                    cursor: pointer
+                    &.open
+                        .view-less-text
+                            display: inline-block
+                        .view-more-text
+                            display: none
+                        em 
+                            transform: rotate(180deg)
+                    span
+                        font-size: 1rem
+                        color: #ffffff
+                        font-weight: 400
+                        display: inline-block
+                        margin-right: 5px
+                    .view-more-text
+                        display: inline-block
+                    .view-less-text
+                        display: none
+                        
+                    a 
+                        font-size: 1rem
+                        color: $blue-1
+                        padding-right: .3125rem
+                    em 
+                        font-size: 1rem
+                        color: $blue-1
+            &.active
+                .fullcontent
+                    transition: max-height 1s ease-in-out
+                .view-more-text
+                    @apply hidden
+                .view-less-text
+                    @apply block
+                .btn-view-more
+                    .plus-icon
+                        &:after
+                            transition: .3s all ease-in-out
+                            opacity: 0
+    .spe-news-slide
+        padding-top: 55/16*1rem
+        .section-title-zone
+            display: flex
+            justify-content: center
+            align-items: center
+            span
+                font-size: 1.5rem
+                color: #333333
+                font-weight: 700
+        .silde-spe-detail
+            margin-top: 30/16*1rem
+            @apply relative
+            @media screen and ( max-width:  1024px)
+                @apply px-8
+            .swiper-nav-wrap
+                @media screen and ( max-width:  1024px)
+                    @apply flex items-center justify-center pt-6
+                    
+            .nav-arrow-prev,.nav-arrow-next
+                @apply absolute top-50 translate-y-50 z-30
+                @media screen and ( max-width:  1024px)
+                    @apply static mx-4
+
+        .swiper-container
+            .swiper-slide
+                @apply flex flex-col justify-center
+                height: auto
+                &.swiper-slide-prev,&.swiper-slide-next
+                    .item
+                        height: auto
+                        .title
+                            a
+                                @apply text-18
+                        .image-wrap
+                            a
+                                +img-ratio(230/400)
+                &.swiper-slide-active
+                    max-height: 650px
+                .image-wrap
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    a
+                        display: block
+                        width: auto
+                        height: 260px
+                        max-height: 100%
+                        img
+                            width: 100%
+                            height: 100%
+                            object-fit: cover
+
+.specialized-detail-2
+    .silde-spe-detail-2
+        margin-top: 30/16*1rem
+        @apply relative
+        @media screen and ( max-width:  1024px)
+            @apply px-8
+
+        .swiper-nav-wrap
+            @media screen and ( max-width:  1024px)
+                @apply flex items-center justify-center pt-6
+                
+        .nav-arrow-prev,.nav-arrow-next
+            @apply absolute top-50 translate-y-50 z-30
+            @media screen and ( max-width:  1024px)
+                @apply static mx-4
+
+    .swiper-container
+        .swiper-slide
+            flex: 1 0 auto
+            @apply flex items-center justify-center
+            &.swiper-slide-prev,&.swiper-slide-next
+                .item
+                    height: auto
+                    .title
+                        a
+                            @apply text-18
+                    .image-wrap
+                        a
+                            +img-ratio(230/400)
+            &.swiper-slide-active
+                max-height: 650px
+            .image-wrap
+                flex: 0 1 auto
+                background: linear-gradient( 180deg, rgb(41,154,226) 0%, rgb(39,81,158) 100%)
+                border-radius: 10px
+                @apply p-2 flex items-center justify-center
+                a
+                    display: block
+                    height: 50px
+                    width: auto
+                    img
+                        width: 100%
+                        height: 100%
+                        object-fit: contain
+            .text-icon
+                font-size: 1rem
+                color: $blue-1
+                text-align: center
+                padding-top: 15/16*1rem
+                font-weight: 700
+    .service-check-banner
+        position: relative
+        @apply py-24
+        @screen lg
+            @apply py-16
+        .container
+            @apply relative
+        .image-wrap
+            @media screen and ( max-width:  1024px)
+                @apply hidden
+            a
+                height: 500px
+        .banner-content
+            @apply absolute top-50 translate-y-50  px-14 pb-18
+            right: 75px
+            background-image: linear-gradient( 90deg, rgba(2,79,161,.6) 0%, rgba(0,137,200,.6) 100%)
+            border-top-left-radius: 30px
+            border-bottom-right-radius: 30px
+            @media screen and ( max-width:  1024px)
+                @apply static translate-0 px-8
+            @media screen and ( max-width:  350px)
+                @apply px-4
+            .brand-logo
+                @apply flex items-center justify-center
+                a
+                    border-radius: 50%
+                    width: 100px
+                    height: 100px
+                    @apply bg-white flex items-center justify-center relative
+                    margin-top: -50px
+                    @media screen and ( max-width:  1024px)
+                        width: 80px
+                        height: 80px
+
+            .name
+                @apply text-16 text-white uppercase font-bold text-center pt-4 mb-5
+            .phone-wrap
+                @apply flex items-center justify-center py-1
+                border: 2px solid white
+                border-radius: 10px 
+                span
+                    @apply text-30 text-white font-bold
+                em
+                    font-size: 24px
+                    height: 24px
+                    line-height: 24px
+                    @apply text-white inline-block pr-2
+            .text
+                @apply text-16 text-white font-bold text-center uppercase my-4
+            .time-wrap
+                @apply flex justify-center items-center
+                .item
+                    @apply px-2
+                    span
+                        @apply text-16 text-white font-bold
+                    em
+                        font-size: 16px
+                        height: 16px
+                        line-height: 16px
+                        @apply text-white inline-block pr-1
+                    &:first-child
+                        border-right: 1px solid #ffffff
+        .btn-center
+            @apply relative
+        .btn-booking
+            border-radius: 27px
+            height: 54px
+            @apply bg-azure relative px-10 pr-16
+            margin-bottom: -120px
+            span
+                @apply text-16 text-white font-bold uppercase
+            em
+                @apply flex items-center justify-center bg-white absolute text-azure
+                top: 2px
+                right: 2px
+                border-radius: 50%
+                font-size: 18px
+                height: 46px
+                width: 46px
