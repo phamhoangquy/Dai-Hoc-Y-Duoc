@@ -190,6 +190,41 @@ function swiperInit() {
             prevEl: '.specialized-detail-2 .nav-arrow-prev',
         },
     });
+    var doctorDetail = new Swiper('.doctor-detail-4 .swiper-container', {
+        breakpointsInverse: true,
+        speed: 1205,
+        lazy: true,
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+
+            },
+            400: {
+                slidesPerView: 2,
+
+            },
+            480: {
+                slidesPerView: 2,
+
+            },
+            768: {
+                slidesPerView: 3,
+
+            },
+            1025: {
+                slidesPerView: 3,
+            },
+            1440: {
+                slidesPerView: 3,
+            },
+
+        },
+        spaceBetween: 30,
+        navigation: {
+            nextEl: '.doctor-detail-4 .nav-arrow-next',
+            prevEl: '.doctor-detail-4 .nav-arrow-prev',
+        },
+    });
     var specializedDetail = new Swiper('.specialized-detail .swiper-container', {
         breakpointsInverse: true,
         speed: 1205,

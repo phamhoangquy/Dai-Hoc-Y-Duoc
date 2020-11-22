@@ -4735,3 +4735,192 @@ html body .RadInput_Default .riError, html body .RadInput_Error_Default {
       font-size: 18px;
       height: 46px;
       width: 46px; }
+
+.doctor-detail-1 {
+  padding: 3.125rem 0 1.875rem; }
+  .doctor-detail-1 .section-title {
+    margin-bottom: 3.125rem; }
+  .doctor-detail-1 .border-bottom {
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 1.875rem;
+    margin-bottom: 1.875rem; }
+    .doctor-detail-1 .border-bottom .section-card {
+      background-color: white; }
+      @media screen and (max-width: 1024px) {
+        .doctor-detail-1 .border-bottom .section-card .image-wrap {
+          width: 100%; }
+          .doctor-detail-1 .border-bottom .section-card .image-wrap img {
+            object-position: top; } }
+      .doctor-detail-1 .border-bottom .section-card .wrap-text {
+        padding-top: 1.25rem;
+        padding-left: 0; }
+        @media screen and (max-width: 1024px) {
+          .doctor-detail-1 .border-bottom .section-card .wrap-text {
+            padding-top: 0; } }
+        @media screen and (min-width: 1024.1px) {
+          .doctor-detail-1 .border-bottom .section-card .wrap-text .wrap-btn {
+            position: absolute;
+            bottom: 0;
+            left: 0; } }
+        @media screen and (max-width: 1024px) {
+          .doctor-detail-1 .border-bottom .section-card .wrap-text .wrap-btn {
+            position: unset;
+            margin-top: 1.875rem; } }
+        .doctor-detail-1 .border-bottom .section-card .wrap-text .wrap-btn .medical-check-banner {
+          margin-left: 0.9375rem; }
+          @media screen and (max-width: 1024px) {
+            .doctor-detail-1 .border-bottom .section-card .wrap-text .wrap-btn .medical-check-banner {
+              margin-left: 0; } }
+        .doctor-detail-1 .border-bottom .section-card .wrap-text .name {
+          margin-bottom: 1.5625rem; }
+        .doctor-detail-1 .border-bottom .section-card .wrap-text .content {
+          margin-top: 1.5625rem;
+          font-size: 1rem;
+          line-height: 1.5rem; }
+  .doctor-detail-1 .news-detail {
+    border-bottom: 1px solid #e0e0e0; }
+    .doctor-detail-1 .news-detail * {
+      margin-bottom: 1.875rem; }
+    .doctor-detail-1 .news-detail .image-wrap {
+      width: 100%;
+      height: 650px; }
+      @media screen and (max-width: 1024px) {
+        .doctor-detail-1 .news-detail .image-wrap {
+          height: 350px; } }
+      .doctor-detail-1 .news-detail .image-wrap img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .doctor-detail-1 .news-detail .content {
+      line-height: 1.5rem; }
+
+.doctor-detail-2 {
+  padding-bottom: 3.125rem; }
+  .doctor-detail-2 .section-title {
+    margin-bottom: 1.875rem; }
+  .doctor-detail-2 table {
+    width: 100%; }
+    .doctor-detail-2 table tr:not(:first-child) td:first-child {
+      color: #27519e;
+      font-weight: 500; }
+    .doctor-detail-2 table tr:not(:first-child) td {
+      border: 1px solid #e0e0e0; }
+    .doctor-detail-2 table tr:first-child td {
+      background-color: #6bc0e7;
+      color: #ffffff;
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 0.16px;
+      border-right: 1px solid #e0e0e0; }
+    .doctor-detail-2 table tr:first-child td:first-child {
+      border-radius: 5px 0 0 0; }
+    .doctor-detail-2 table tr:first-child td:last-child {
+      border-radius: 0 5px 0 0;
+      border-right: 0; }
+    .doctor-detail-2 table tr:last-child td:first-child {
+      border-radius: 0 0 0 5px; }
+    .doctor-detail-2 table tr:last-child td:last-child {
+      border-radius: 0 0 5px 0; }
+    .doctor-detail-2 table tr td {
+      text-align: center;
+      padding: 16px 0;
+      width: 150px; }
+      .doctor-detail-2 table tr td em {
+        background-color: white;
+        color: #6bc0e7;
+        font-size: 1.5625rem; }
+        .doctor-detail-2 table tr td em::before {
+          width: 20px;
+          height: 20px; }
+    .doctor-detail-2 table tr td:first-child {
+      width: 180px; }
+
+.doctor-detail-3 {
+  padding-bottom: 2.5rem; }
+  .doctor-detail-3 .section-title {
+    margin-bottom: 1.875rem; }
+  @media screen and (max-width: 576px) {
+    .doctor-detail-3 .news-figure {
+      margin-bottom: 0; } }
+  .doctor-detail-3 .news-figure .image-wrap a {
+    height: 200px; }
+    @media screen and (max-width: 1024px) {
+      .doctor-detail-3 .news-figure .image-wrap a {
+        height: 330px; } }
+  @media screen and (min-width: 1024.1px) {
+    .doctor-detail-3 .news-figure .content {
+      padding-top: 0.625rem; }
+    .doctor-detail-3 .news-figure .title a {
+      line-height: 1.5rem; } }
+
+.doctor-detail-4 {
+  padding-bottom: 5rem; }
+  .doctor-detail-4 .section-title {
+    margin-bottom: 1.5625rem; }
+  .doctor-detail-4 .silde-doctor-detail {
+    margin-top: 1.875rem;
+    @apply relative {} }
+    @media screen and (max-width: 1024px) {
+      .doctor-detail-4 .silde-doctor-detail {
+        @apply px-8 {} } }
+    @media screen and (max-width: 1024px) {
+      .doctor-detail-4 .silde-doctor-detail .swiper-nav-wrap {
+        @apply flex items-center justify-center pt-6 {} } }
+    .doctor-detail-4 .silde-doctor-detail .nav-arrow-prev, .doctor-detail-4 .silde-doctor-detail .nav-arrow-next {
+      @apply absolute top-50 translate-y-50 z-30 {} }
+      @media screen and (max-width: 1024px) {
+        .doctor-detail-4 .silde-doctor-detail .nav-arrow-prev, .doctor-detail-4 .silde-doctor-detail .nav-arrow-next {
+          @apply static mx-4 {} } }
+  .doctor-detail-4 .swiper-container .swiper-slide {
+    @apply flex flex-col justify-center {}    height: auto; }
+    .doctor-detail-4 .swiper-container .swiper-slide.swiper-slide-prev .item, .doctor-detail-4 .swiper-container .swiper-slide.swiper-slide-next .item {
+      height: auto; }
+      .doctor-detail-4 .swiper-container .swiper-slide.swiper-slide-prev .item .title a, .doctor-detail-4 .swiper-container .swiper-slide.swiper-slide-next .item .title a {
+        @apply text-18 {} }
+      .doctor-detail-4 .swiper-container .swiper-slide.swiper-slide-prev .item .image-wrap a, .doctor-detail-4 .swiper-container .swiper-slide.swiper-slide-next .item .image-wrap a {
+        position: relative;
+        display: block;
+        height: 0;
+        overflow: hidden;
+        padding-top: 57.5%; }
+        .doctor-detail-4 .swiper-container .swiper-slide.swiper-slide-prev .item .image-wrap a img, .doctor-detail-4 .swiper-container .swiper-slide.swiper-slide-prev .item .image-wrap a iframe, .doctor-detail-4 .swiper-container .swiper-slide.swiper-slide-prev .item .image-wrap a video, .doctor-detail-4 .swiper-container .swiper-slide.swiper-slide-next .item .image-wrap a img, .doctor-detail-4 .swiper-container .swiper-slide.swiper-slide-next .item .image-wrap a iframe, .doctor-detail-4 .swiper-container .swiper-slide.swiper-slide-next .item .image-wrap a video {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          object-fit: cover;
+          transition: .3s ease-in-out all; }
+    .doctor-detail-4 .swiper-container .swiper-slide.swiper-slide-active {
+      max-height: 650px; }
+    .doctor-detail-4 .swiper-container .swiper-slide .wapper-doctor {
+      margin-bottom: 1.25rem; }
+      .doctor-detail-4 .swiper-container .swiper-slide .wapper-doctor .image-wrap {
+        margin: 0 auto;
+        margin-bottom: -2.5625rem;
+        width: 82px;
+        height: 82px;
+        border-radius: 50%; }
+        .doctor-detail-4 .swiper-container .swiper-slide .wapper-doctor .image-wrap img {
+          border-radius: 50%;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: top; }
+      .doctor-detail-4 .swiper-container .swiper-slide .wapper-doctor .wrap-panel {
+        box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.1);
+        padding-top: 3.4375rem;
+        height: 121px;
+        text-align: center;
+        cursor: pointer; }
+        .doctor-detail-4 .swiper-container .swiper-slide .wapper-doctor .wrap-panel .name {
+          font-size: 1.1875rem;
+          font-weight: 400;
+          text-transform: uppercase;
+          margin-bottom: 0.875rem; }
+        .doctor-detail-4 .swiper-container .swiper-slide .wapper-doctor .wrap-panel .btn-view-more {
+          color: #999999;
+          font-size: 1rem;
+          letter-spacing: 0.12px; }
+        .doctor-detail-4 .swiper-container .swiper-slide .wapper-doctor .wrap-panel:hover .btn-view-more {
+          color: #27519e; }
