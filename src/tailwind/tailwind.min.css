@@ -1811,6 +1811,94 @@ footer {
         overflow: hidden;
         margin-bottom: 0; }
 
+.medicine-answer {
+  padding: 3.75rem 0 0; }
+  .medicine-answer .title {
+    color: #27519e;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.9375rem; }
+  .medicine-answer .section-social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 1.25rem; }
+    .medicine-answer .section-social time {
+      font-size: 0.875rem; }
+    .medicine-answer .section-social .social * {
+      font-size: 1.125rem;
+      color: #014293; }
+    .medicine-answer .section-social .social a:first-child {
+      margin-right: 1.25rem; }
+  .medicine-answer .section-card {
+    @apply bg-white {}    padding: 1.875rem 0 1.25rem;
+    border-bottom: 1px solid #27519e; }
+    .medicine-answer .section-card .image-wrap {
+      width: 100px;
+      height: 100px; }
+      @media screen and (max-width: 576px) {
+        .medicine-answer .section-card .image-wrap {
+          margin: 0 auto; } }
+      .medicine-answer .section-card .image-wrap img {
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top; }
+    .medicine-answer .section-card .wrap-text {
+      padding: 0.9375rem; }
+      .medicine-answer .section-card .wrap-text .name {
+        text-transform: uppercase;
+        margin-bottom: 1.25rem; }
+        @media screen and (max-width: 576px) {
+          .medicine-answer .section-card .wrap-text .name {
+            text-align: center; } }
+    .medicine-answer .section-card .wrap-btn {
+      margin-top: 1.5625rem; }
+      .medicine-answer .section-card .wrap-btn .btn span {
+        @apply normal-case {} }
+  .medicine-answer .anwser-question {
+    padding-bottom: 1.875rem; }
+    .medicine-answer .anwser-question * {
+      margin-bottom: 1.875rem; }
+    .medicine-answer .anwser-question .question {
+      font-weight: 700;
+      color: #333333;
+      font-size: 1rem; }
+    .medicine-answer .anwser-question .image-wrap img {
+      margin: 0 auto;
+      width: auto;
+      max-height: 355px; }
+
+.news-other {
+  padding: 3.4375rem 0 3.75rem;
+  background-color: #e5f7ff; }
+  .news-other .section-title {
+    margin-bottom: 1.875rem; }
+  .news-other .swiper-news-other {
+    margin-top: 1.875rem;
+    @apply relative {} }
+    @media screen and (max-width: 1024px) {
+      .news-other .swiper-news-other {
+        @apply px-8 {} } }
+    @media screen and (max-width: 1024px) {
+      .news-other .swiper-news-other .swiper-nav-wrap {
+        @apply flex items-center justify-center pt-6 {} } }
+    .news-other .swiper-news-other .nav-arrow-prev, .news-other .swiper-news-other .nav-arrow-next {
+      @apply absolute top-50 translate-y-50 z-30 {} }
+      @media screen and (max-width: 1024px) {
+        .news-other .swiper-news-other .nav-arrow-prev, .news-other .swiper-news-other .nav-arrow-next {
+          @apply static mx-4 {} } }
+  .news-other .swiper-container .swiper-slide {
+    @apply flex flex-col justify-center {}    height: auto; }
+    .news-other .swiper-container .swiper-slide.swiper-slide-prev .item, .news-other .swiper-container .swiper-slide.swiper-slide-next .item {
+      height: auto; }
+      .news-other .swiper-container .swiper-slide.swiper-slide-prev .item .title a, .news-other .swiper-container .swiper-slide.swiper-slide-next .item .title a {
+        @apply text-18 {} }
+    .news-other .swiper-container .swiper-slide.swiper-slide-active {
+      max-height: 650px; }
+
 .service {
   padding: 3.125rem 0 0 0; }
   .service .news-figure {

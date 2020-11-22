@@ -225,6 +225,41 @@ function swiperInit() {
             prevEl: '.doctor-detail-4 .nav-arrow-prev',
         },
     });
+    var otherNews = new Swiper('.news-other .swiper-container', {
+        breakpointsInverse: true,
+        speed: 1205,
+        lazy: true,
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+
+            },
+            400: {
+                slidesPerView: 2,
+
+            },
+            480: {
+                slidesPerView: 2,
+
+            },
+            768: {
+                slidesPerView: 3,
+
+            },
+            1025: {
+                slidesPerView: 3,
+            },
+            1440: {
+                slidesPerView: 3,
+            },
+
+        },
+        spaceBetween: 30,
+        navigation: {
+            nextEl: '.news-other .nav-arrow-next',
+            prevEl: '.news-other .nav-arrow-prev',
+        },
+    });
     var specializedDetail = new Swiper('.specialized-detail .swiper-container', {
         breakpointsInverse: true,
         speed: 1205,
