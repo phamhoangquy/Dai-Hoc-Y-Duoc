@@ -1731,81 +1731,81 @@ footer {
       .tab .tab-primary .tab-item:hover {
         color: #27519e; }
 
-.medicine {
+.medical {
   padding: 3.4375rem 0 0; }
-  .medicine .news-figure {
+  .medical .news-figure {
     border-radius: 10px;
     @apply overflow-hidden {} }
     @media screen and (max-width: 576px) {
-      .medicine .news-figure {
+      .medical .news-figure {
         @apply mb-8 {} } }
-    .medicine .news-figure:hover .content {
+    .medical .news-figure:hover .content {
       background: linear-gradient(180deg, #68c0e6 2%, #3789c4 99%); }
-    .medicine .news-figure:hover time {
+    .medical .news-figure:hover time {
       @apply text-white {} }
-    .medicine .news-figure:hover .title a {
+    .medical .news-figure:hover .title a {
       @apply text-white {} }
-    .medicine .news-figure:hover .caption {
+    .medical .news-figure:hover .caption {
       @apply text-white {} }
-      .medicine .news-figure:hover .caption * {
+      .medical .news-figure:hover .caption * {
         @apply text-white {} }
 
 @screen sm {
-  .medicine .news-figure.big {
+  .medical .news-figure.big {
     @apply mb-8 {} } }
-    .medicine .news-figure.big .title a {
+    .medical .news-figure.big .title a {
       @apply text-16 my-4 {} }
 
 @screen sm {
-  .medicine .news-figure.big .image-wrap a {
+  .medical .news-figure.big .image-wrap a {
     height: 300px; } }
-    .medicine .news-figure .image-wrap a {
+    .medical .news-figure .image-wrap a {
       display: block;
       height: 145px;
       width: auto; }
-      .medicine .news-figure .image-wrap a img {
+      .medical .news-figure .image-wrap a img {
         width: 100%;
         height: 100%;
         object-fit: cover; }
-    .medicine .news-figure .content {
+    .medical .news-figure .content {
       @apply p-5 bg-grey-7 transition {} }
-    .medicine .news-figure .title a {
+    .medical .news-figure .title a {
       @apply text-14 text-main font-bold uppercase transition my-2 {}      display: -webkit-box;
       -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
       overflow: hidden; }
-  .medicine .section-title {
+  .medical .section-title {
     margin-bottom: 1.875rem; }
-  .medicine .faq-figure {
+  .medical .faq-figure {
     border-radius: 10px 0 0 10px; }
   @media screen and (max-width: 1024px) {
-    .medicine .faq-figure {
+    .medical .faq-figure {
       border-radius: 10px 10px 0 0; } }
-  .medicine .image-wrap a {
+  .medical .image-wrap a {
     display: block;
     width: auto;
     height: 392px; }
     @media screen and (max-width: 1024px) {
-      .medicine .image-wrap a {
+      .medical .image-wrap a {
         height: 330px; } }
-    .medicine .image-wrap a img {
+    .medical .image-wrap a img {
       width: 100%;
       height: 100%;
       object-fit: cover; }
-  .medicine .wrap-text {
+  .medical .wrap-text {
     height: 392px;
     padding: 3.75rem 1.875rem 1.875rem 2.8125rem;
     border-radius: 0 10px 10px 0;
     background: #f8f8f8; }
     @media screen and (max-width: 1024px) {
-      .medicine .wrap-text {
+      .medical .wrap-text {
         height: auto; } }
     @media screen and (max-width: 1024px) {
-      .medicine .wrap-text {
+      .medical .wrap-text {
         border-radius: 0 0 10px 10px; } }
-    .medicine .wrap-text .title {
+    .medical .wrap-text .title {
       margin-bottom: 1.75rem; }
-      .medicine .wrap-text .title a {
+      .medical .wrap-text .title a {
         line-height: 1.5rem;
         font-size: 1.125rem;
         font-weight: 700;
@@ -1814,55 +1814,55 @@ footer {
         -webkit-box-orient: vertical;
         display: -webkit-box;
         overflow: hidden; }
-    .medicine .wrap-text .content {
+    .medical .wrap-text .content {
       color: #333333;
       font-weight: 400;
       font-size: 1rem;
       line-height: 1.5rem;
       margin-bottom: 2.9375rem; }
-    .medicine .wrap-text .btn-primary {
+    .medical .wrap-text .btn-primary {
       width: 150px; }
-      .medicine .wrap-text .btn-primary span {
+      .medical .wrap-text .btn-primary span {
         text-transform: none; }
-  .medicine .news-figure {
+  .medical .news-figure {
     box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.1); }
-    .medicine .news-figure .content {
+    .medical .news-figure .content {
       background-color: #ffffff; }
-      .medicine .news-figure .content .title a {
+      .medical .news-figure .content .title a {
         font-size: 1.125rem;
         font-weight: 700;
         text-transform: none; }
-    .medicine .news-figure .image-wrap a {
+    .medical .news-figure .image-wrap a {
       height: 244px; }
     @media screen and (max-width: 576px) {
-      .medicine .news-figure {
+      .medical .news-figure {
         margin-bottom: 0; } }
-  .medicine .row {
+  .medical .row {
     margin-bottom: 0; }
     @media screen and (max-width: 1024px) {
-      .medicine .row {
+      .medical .row {
         margin-bottom: 0; } }
   @media screen and (max-width: 1024px) {
-    .medicine .row:nth-child(n+2) > * {
+    .medical .row:nth-child(n+2) > * {
       margin-bottom: 1.875rem; } }
   @media screen and (max-width: 1024px) {
-    .medicine .pr-0 {
+    .medical .pr-0 {
       padding-right: 15px;
       margin-bottom: 0 !important; } }
   @media screen and (max-width: 1024px) {
-    .medicine .pl-0 {
+    .medical .pl-0 {
       padding-left: 15px; } }
-  .medicine .news-figure {
+  .medical .news-figure {
     box-shadow: none; }
-    .medicine .news-figure .image-wrap {
+    .medical .news-figure .image-wrap {
       height: 196px;
       width: auto; }
-      .medicine .news-figure .image-wrap img {
+      .medical .news-figure .image-wrap img {
         width: auto; }
-    .medicine .news-figure .content {
+    .medical .news-figure .content {
       padding: 0.9375rem 2.1875rem 1.5625rem 0.9375rem;
       background-color: #f8f8f8; }
-      .medicine .news-figure .content .title a {
+      .medical .news-figure .content .title a {
         margin-top: 0.6875rem;
         font-size: 1rem;
         line-height: 1.5rem;
@@ -1870,69 +1870,69 @@ footer {
         -webkit-box-orient: vertical;
         display: -webkit-box;
         overflow: hidden; }
-      .medicine .news-figure .content .caption {
+      .medical .news-figure .content .caption {
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
         display: -webkit-box;
         overflow: hidden;
         margin-bottom: 0; }
 
-.medicine-answer {
+.medical-answer {
   padding: 3.75rem 0 0; }
-  .medicine-answer .title {
+  .medical-answer .title {
     color: #27519e;
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 0.9375rem; }
-  .medicine-answer .section-social {
+  .medical-answer .section-social {
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #e5e5e5;
     padding-bottom: 1.25rem; }
-    .medicine-answer .section-social time {
+    .medical-answer .section-social time {
       font-size: 0.875rem; }
-    .medicine-answer .section-social .social * {
+    .medical-answer .section-social .social * {
       font-size: 1.125rem;
       color: #014293; }
-    .medicine-answer .section-social .social a:first-child {
+    .medical-answer .section-social .social a:first-child {
       margin-right: 1.25rem; }
-  .medicine-answer .section-card {
+  .medical-answer .section-card {
     @apply bg-white {}    padding: 1.875rem 0 1.25rem;
     border-bottom: 1px solid #27519e; }
-    .medicine-answer .section-card .image-wrap {
+    .medical-answer .section-card .image-wrap {
       width: 100px;
       height: 100px; }
       @media screen and (max-width: 576px) {
-        .medicine-answer .section-card .image-wrap {
+        .medical-answer .section-card .image-wrap {
           margin: 0 auto; } }
-      .medicine-answer .section-card .image-wrap img {
+      .medical-answer .section-card .image-wrap img {
         border-radius: 50%;
         width: 100%;
         height: 100%;
         object-fit: cover;
         object-position: top; }
-    .medicine-answer .section-card .wrap-text {
+    .medical-answer .section-card .wrap-text {
       padding: 0.9375rem; }
-      .medicine-answer .section-card .wrap-text .name {
+      .medical-answer .section-card .wrap-text .name {
         text-transform: uppercase;
         margin-bottom: 1.25rem; }
         @media screen and (max-width: 576px) {
-          .medicine-answer .section-card .wrap-text .name {
+          .medical-answer .section-card .wrap-text .name {
             text-align: center; } }
-    .medicine-answer .section-card .wrap-btn {
+    .medical-answer .section-card .wrap-btn {
       margin-top: 1.5625rem; }
-      .medicine-answer .section-card .wrap-btn .btn span {
+      .medical-answer .section-card .wrap-btn .btn span {
         @apply normal-case {} }
-  .medicine-answer .anwser-question {
+  .medical-answer .anwser-question {
     padding-bottom: 1.875rem; }
-    .medicine-answer .anwser-question * {
+    .medical-answer .anwser-question * {
       margin-bottom: 1.875rem; }
-    .medicine-answer .anwser-question .question {
+    .medical-answer .anwser-question .question {
       font-weight: 700;
       color: #333333;
       font-size: 1rem; }
-    .medicine-answer .anwser-question .image-wrap img {
+    .medical-answer .anwser-question .image-wrap img {
       margin: 0 auto;
       width: auto;
       max-height: 355px; }
