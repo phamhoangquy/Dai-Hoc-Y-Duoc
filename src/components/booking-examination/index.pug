@@ -1,0 +1,58 @@
+section.booking-examination
+    .container
+        .section-title
+            span Đăng ký khám
+            em.mdi.mdi-gamepad
+                span
+                span
+        .row.border
+            .col.w-full(class='lg:w-4/12')
+                .item-bg
+                    .content
+                        strong Lưu ý :
+                        p Lịch hẹn có hiệu lực sau khi xác nhận chính thức từ phòng khám bệnh viện đại học y dược 1
+                        p Vui lòng cung cấp thông tin chính xác để được phục vụ tốt nhất. Trong trường hợp cung cấp sai thông tin email & điện thoại, việc xác nhận cuộc hẹn sẽ không hiệu lực.
+                        p Quý khách sữ dụng dịch vụ đặt hẹn trực tuyến, xin vui lòng đặt ít nhất là 24 giờ trước khi đến khám.
+                        p Trong trường hợp khẩm cấp hoặc nghi ngờ có các triệu chứng nguy hiểm, quý khách nên ĐẾN TRỰC TIẾP hoặc trung tâm y tế gần nhất để kịp thời xử lý.
+            .col.w-full(class='lg:w-8/12')
+                .medical-booking
+                    .wrap-form
+                        .row
+                            .col.w-full(class='lg:w-full').text-group Thông tin bệnh nhân
+                            .col.w-full(class='lg:w-1/2').form-group
+                                label(for="") Họ và tên *
+                                input(type="text", name="" placeholder='')
+                            .col.w-full(class='lg:w-1/2').form-group
+                                label(for="") Ngày tháng năm sinh *
+                                input(type="date", name="" placeholder='')
+                            .col.w-full(class='lg:w-1/2').form-group
+                                label(for="") Email
+                                input(type="text", name="" placeholder='')
+                            .col.w-full(class='lg:w-1/2').form-group
+                                label(for="") Điện thoại *
+                                input(type="text", name="" placeholder='')
+                            .col.w-full.form-group
+                                label(for="") Địa chỉ
+                                input(type="text", name="" placeholder='')
+                            .col.w-full(class='lg:w-full').text-group Thông tin đăng ký
+                            .col.w-full.form-group
+                                label(for="") Chuyên khoa
+                                .custom-select
+                                    select
+                                        option(value="Chuyện khoa") Chuyên khoa
+                                        option(value="Chuyện khoa") Chuyên khoa
+                            .col.w-full(class='lg:w-1/2').form-group
+                                label(for="") Ngày khám
+                                input(type="date", name="" placeholder='')
+                            .col.w-full(class='lg:w-1/2').form-group
+                                label(for="") Buổi khám
+                                .custom-time
+                                    select
+                                        option(value="Chuyện khoa") Buổi khám
+                                        option(value="Chuyện khoa") Buổi khám
+                            .col.w-full.form-group
+                                label(for="") Mô tả triệu chứng
+                                textarea(placeholder='')
+                        .frm-btnwrap
+                            .frm-btn
+                                input(type="submit", value="Đăng ký khám")

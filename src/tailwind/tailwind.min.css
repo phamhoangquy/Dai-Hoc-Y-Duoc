@@ -1473,6 +1473,72 @@ footer {
       transition: .3s all ease-in-out;
       height: 18px; }
 
+.booking-examination {
+  padding: 3.125rem 0; }
+  .booking-examination .border {
+    margin-top: 1.5625rem; }
+  .booking-examination .item-bg {
+    background-image: url("../img/bg/banner-bg-2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px 0 0 10px;
+    height: 715px; }
+    .booking-examination .item-bg .content {
+      padding: 1.875rem; }
+      .booking-examination .item-bg .content strong {
+        font-size: 1rem;
+        color: #ffffff; }
+      .booking-examination .item-bg .content p {
+        font-size: 1rem;
+        color: #ffffff;
+        margin-top: .9375rem;
+        font-weight: 600; }
+  .booking-examination .medical-booking {
+    padding: 25px; }
+  .booking-examination .wrap-form {
+    @apply pointer-events-auto {} }
+    .booking-examination .wrap-form .row {
+      margin: 0 -5px; }
+      .booking-examination .wrap-form .row .col {
+        padding: 0 5px;
+        margin-bottom: 15px; }
+    .booking-examination .wrap-form .form-group input[type='text'], .booking-examination .wrap-form .form-group select, .booking-examination .wrap-form .form-group textarea, .booking-examination .wrap-form .form-group input[type='date'] {
+      background: rgba(255, 255, 255, 0.5);
+      border-radius: 3px;
+      border: 1px solid #e0e0e0;
+      height: 40px;
+      @apply text-13 text-white {} }
+      .booking-examination .wrap-form .form-group input[type='text']::placeholder, .booking-examination .wrap-form .form-group select::placeholder, .booking-examination .wrap-form .form-group textarea::placeholder, .booking-examination .wrap-form .form-group input[type='date']::placeholder {
+        @apply text-white text-13 {} }
+    .booking-examination .wrap-form .form-group input[type='date'] {
+      @apply text-white text-13 {} }
+    .booking-examination .wrap-form .form-group select {
+      @apply text-white text-13 w-full px-4 {} }
+      .booking-examination .wrap-form .form-group select option {
+        @apply text-main text-13 {} }
+    .booking-examination .wrap-form .form-group textarea {
+      height: 6rem;
+      @apply pt-2 {} }
+    .booking-examination .wrap-form .form-group label {
+      margin-bottom: 0.625rem;
+      font-size: 1rem;
+      color: #333333; }
+    .booking-examination .wrap-form .text-group {
+      font-size: 1.125rem;
+      color: #6bc0e7;
+      text-transform: uppercase;
+      border-bottom: 3px solid #6bc0e7; }
+    .booking-examination .wrap-form .frm-btnwrap {
+      @apply m-0 {} }
+      .booking-examination .wrap-form .frm-btnwrap .frm-btn {
+        @apply flex w-full justify-end {} }
+        .booking-examination .wrap-form .frm-btnwrap .frm-btn input[type='submit'] {
+          @apply bg-azure text-16 text-white uppercase font-bold p-0 flex justify-center items-center {}          border-radius: 5px;
+          border: none;
+          height: 40px;
+          line-height: 16px; }
+
 .contact {
   padding: 3.75rem 0; }
   .contact .row {
