@@ -11,6 +11,8 @@ footer
 		@apply text-white
 	.item
 		@apply flex justify-start items-center
+		.ModuleContent
+			@apply flex justify-start items-center
 		.image-wrap
 			@apply pr-8
 			img,svg
@@ -70,6 +72,10 @@ footer
 			@apply pt-8
 		@media screen and ( max-width: 767px)
 			@apply justify-center
+		.ModuleContent
+			@apply flex justify-start items-center pt-6 
+			@media screen and ( max-width: 767px)
+				@apply justify-center
 			
 		a
 			@apply flex items-center justify-center bg-white  rounded-full
@@ -187,10 +193,13 @@ footer
 			@apply absolute bottom-0 right-0
 		@media screen and ( max-width: 576px)
 			bottom: 50px
-			
-
-		em
-			font-size: 30px
-			line-height: 20px
-			height: 20px
-			@apply text-azure
+		width: 30px
+		height: 16px
+		.lnr-chevron-up
+			display: block
+			width: 30px
+			height: 16px
+			background: url('../img/icon/chevron-up.png')
+			background-repeat: no-repeat
+			background-size: contain
+			background-position: center

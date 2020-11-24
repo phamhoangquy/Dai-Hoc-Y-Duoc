@@ -1,129 +1,129 @@
 .tutorial-client
-    padding: 50/16*1rem 0 0 0
-    .news-figure
-        border-radius: 10px
-        @apply overflow-hidden
-        @media screen and ( max-width: 576px)
-            @apply mb-8
-            
-        &:hover
-            .content
-                background: linear-gradient( 180deg, rgb(104,192,230) 2%, rgb(55,137,196) 99%)
-            time
-                @apply text-white
-            .title
-                a
-                    @apply text-white
-            .caption
-                @apply text-white
-                *
-                    @apply text-white
-        &.big
-            @screen sm
-                @apply mb-8
-            .title
-                a
-                    @apply text-16 my-4
-            .image-wrap
-                @screen sm
-                    a
-                        height: 300px
-                // @media screen and ( max-width:  576px)
-                //     a
-                //         +img-ratio(300/600)
+	padding: 50/16*1rem 0 0 0
+	.news-figure
+		border-radius: 10px
+		@apply overflow-hidden
+		@media screen and ( max-width: 576px)
+			@apply mb-8
+			
+		&:hover
+			.content
+				background: linear-gradient( 180deg, rgb(104,192,230) 2%, rgb(55,137,196) 99%)
+			time
+				@apply text-white
+			.title
+				a
+					@apply text-white
+			.caption
+				@apply text-white
+				*
+					@apply text-white
+		&.big
+			@screen sm
+				@apply mb-8
+			.title
+				a
+					@apply text-16 my-4
+			.image-wrap
+				@screen sm
+					a
+						height: 300px
+				// @media screen and ( max-width:  576px)
+				//     a
+				//         +img-ratio(300/600)
 
-                        
-        .image-wrap
-            a
-                display: block
-                height: 145px
-                width: auto
-                img
-                    width: 100%
-                    height: 100%
-                    object-fit: cover
-        .content
-            @apply p-5 bg-grey-7 transition
-        .title
-            a
-                @apply text-14 text-main font-bold uppercase transition my-2
-                display: -webkit-box
-                -webkit-line-clamp: 2
-                -webkit-box-orient: vertical
-                overflow: hidden
-    .section-title
-        margin-bottom: 30/16*1rem
-    .faq-figure
-	    border-radius: 10px 0 0 10px
-    @media screen and ( max-width: 1024px )
-        .faq-figure
-            border-radius: 10px 10px 0 0 
-    .image-wrap
-        a
-            display: block
-            width: auto
-            height: 392px
-            @media screen and ( max-width: 1024px )
-                height: 330px
-            img
-                width: 100%
-                height: 100%
-                object-fit: cover
-    .wrap-text
-        height: 392px
-        @media screen and ( max-width: 1024px )
-            height: auto
-        padding: 60/16*1rem 30/16*1rem 30/16*1rem 45/16*1rem
-        border-radius: 0 10px 10px 0
-        box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.1)
-        @media screen and ( max-width: 1024px )
-            border-radius: 0 0 10px 10px
-        .title
-            margin-bottom: 28/16*1rem
-            a
-                line-height: 24/16*1rem
-                font-size: 18/16*1rem
-                font-weight: 700
-                color: #333333
-                -webkit-line-clamp: 3
-                -webkit-box-orient: vertical
-                display: -webkit-box
-                overflow: hidden
-        .content
-            color: #333333
-            font-weight: 400
-            font-size: 1rem
-            line-height: 24/16*1rem
-            margin-bottom: 47/16*1rem
-        .btn-primary
-            width: 150px
-            span
-                text-transform: none
-    .news-figure
-        box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.1)
-        .content
-            background-color: #ffffff
-            .title
-                a
-                    font-size: 18/16*1rem
-                    font-weight: 700
-                    text-transform: none
-        .image-wrap
-            a
-                height: 244px
-        @media screen and ( max-width: 576px )
-            margin-bottom: 0
-    .row
-        margin-bottom: 0
-        @media screen and ( max-width: 1024px )
-            margin-bottom: 0
-    .row:nth-child(n+2)>*
-        @media screen and ( max-width: 1024px )
-            margin-bottom: 30/16*1rem
-    .pr-0
-        @media screen and (max-width: 1024px)
-            padding-right: 15px
-            margin-bottom: 0!important
-    .pl-0
-        @media screen and (max-width: 1024px)
-            padding-left: 15px
+						
+		.image-wrap
+			a
+				display: block
+				height: 145px
+				width: auto
+				img
+					width: 100%
+					height: 100%
+					object-fit: cover
+		.content
+			@apply p-5 bg-grey-7 transition
+		.title
+			a
+				@apply text-14 text-main font-bold uppercase transition my-2
+				display: -webkit-box
+				-webkit-line-clamp: 2
+				-webkit-box-orient: vertical
+				overflow: hidden
+	.section-title
+		margin-bottom: 30/16*1rem
+	.faq-figure
+		border-radius: 10px 0 0 10px
+	@media screen and ( max-width: 1024px )
+		.faq-figure
+			border-radius: 10px 10px 0 0 
+	.image-wrap
+		a
+			display: block
+			width: auto
+			height: 392px
+			@media screen and ( max-width: 1024px )
+				height: 330px
+			img
+				width: 100%
+				height: 100%
+				object-fit: cover
+	.wrap-text
+		height: 392px
+		@media screen and ( max-width: 1024px )
+			height: auto
+		padding: 60/16*1rem 30/16*1rem 30/16*1rem 45/16*1rem
+		border-radius: 0 10px 10px 0
+		box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.1)
+		@media screen and ( max-width: 1024px )
+			border-radius: 0 0 10px 10px
+		.title
+			margin-bottom: 28/16*1rem
+			a
+				line-height: 24/16*1rem
+				font-size: 18/16*1rem
+				font-weight: 700
+				color: #333333
+				-webkit-line-clamp: 3
+				-webkit-box-orient: vertical
+				display: -webkit-box
+				overflow: hidden
+		.content
+			color: #333333
+			font-weight: 400
+			font-size: 1rem
+			line-height: 24/16*1rem
+			margin-bottom: 47/16*1rem
+		.btn-primary
+			width: 150px
+			span
+				text-transform: none
+	.news-figure
+		box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.1)
+		.content
+			background-color: #ffffff
+			.title
+				a
+					font-size: 18/16*1rem
+					font-weight: 700
+					text-transform: none
+		.image-wrap
+			a
+				height: 244px
+		@media screen and ( max-width: 576px )
+			margin-bottom: 0
+	.row
+		margin-bottom: 0
+		@media screen and ( max-width: 1024px )
+			margin-bottom: 0
+	.row:nth-child(n+2)>*
+		@media screen and ( max-width: 1024px )
+			margin-bottom: 30/16*1rem
+	.pr-0
+		@media screen and (max-width: 1024px)
+			padding-right: 15px
+			margin-bottom: 0!important
+	.pl-0
+		@media screen and (max-width: 1024px)
+			padding-left: 15px
