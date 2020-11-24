@@ -1,5 +1,10 @@
 .booking-examination
     padding: 50/16*1rem 0
+    @media screen and ( max-width: 1024px )
+        .pr-0
+            padding-right: 15px
+        .pl-0
+            padding-left: 15px
     .border
         margin-top: 1.5625rem
     //     border: 1px solid #6bc0e7
@@ -9,9 +14,17 @@
         background-image: url('../img/bg/banner-bg-2.png')
         background-position: center
         background-repeat: no-repeat
-        background-size: cover
-        border-radius: 10px 0 0 10px
-        height: 715px
+        background-size: 730px
+        height: 730px
+        border: 1px solid #6bc0e7
+        border-right: none
+        border-top-left-radius: 25px
+        border-bottom-left-radius: 25px
+        @media screen and ( max-width: 1024px )
+             border-radius: 25px
+             border-right: 1px solid #6bc0e7
+             background-size: 1024px
+             height: auto
         .content
             padding: 1.875rem
             strong
@@ -23,7 +36,16 @@
                 margin-top: .9375rem
                 font-weight: 600
     .medical-booking
-        padding: 25px
+        padding: 30/16*1rem 25px 40/16*1rem
+        border: 1px solid #6bc0e7
+        border-left: none
+        border-top-right-radius: 25px
+        border-bottom-right-radius: 25px
+        height: 730px
+        @media screen and ( max-width: 1024px )
+             border-radius: 25px
+             border-left: 1px solid #6bc0e7
+             height: auto
     .wrap-form
         @apply pointer-events-auto
         .row
@@ -64,7 +86,7 @@
                 @apply flex w-full justify-end
                 input[type='submit']
                     @apply bg-azure text-16 text-white uppercase font-bold p-0 flex justify-center items-center
-                    border-radius: 5px
+                    border-radius: 25px
                     border: none
                     height: 40px
                     line-height: 16px
