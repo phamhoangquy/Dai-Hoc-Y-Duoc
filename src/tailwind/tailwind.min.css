@@ -1475,15 +1475,29 @@ footer {
 
 .booking-examination {
   padding: 3.125rem 0; }
+  @media screen and (max-width: 1024px) {
+    .booking-examination .pr-0 {
+      padding-right: 15px; }
+    .booking-examination .pl-0 {
+      padding-left: 15px; } }
   .booking-examination .border {
     margin-top: 1.5625rem; }
   .booking-examination .item-bg {
     background-image: url("../img/bg/banner-bg-2.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 10px 0 0 10px;
-    height: 715px; }
+    background-size: 730px;
+    height: 730px;
+    border: 1px solid #6bc0e7;
+    border-right: none;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px; }
+    @media screen and (max-width: 1024px) {
+      .booking-examination .item-bg {
+        border-radius: 25px;
+        border-right: 1px solid #6bc0e7;
+        background-size: 1024px;
+        height: auto; } }
     .booking-examination .item-bg .content {
       padding: 1.875rem; }
       .booking-examination .item-bg .content strong {
@@ -1495,12 +1509,17 @@ footer {
         margin-top: .9375rem;
         font-weight: 600; }
   .booking-examination .medical-booking {
-    padding: 25px; }
-  .booking-examination .text-group {
-    font-size: 1.125rem;
-    color: #6bc0e7;
-    text-transform: uppercase;
-    border-bottom: 3px solid #6bc0e7; }
+    padding: 1.875rem 25px 2.5rem;
+    border: 1px solid #6bc0e7;
+    border-left: none;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    height: 730px; }
+    @media screen and (max-width: 1024px) {
+      .booking-examination .medical-booking {
+        border-radius: 25px;
+        border-left: 1px solid #6bc0e7;
+        height: auto; } }
   .booking-examination .wrap-form {
     @apply pointer-events-auto {} }
     .booking-examination .wrap-form .row {
@@ -1529,12 +1548,17 @@ footer {
       margin-bottom: 0.625rem;
       font-size: 1rem;
       color: #333333; }
+    .booking-examination .wrap-form .text-group {
+      font-size: 1.125rem;
+      color: #6bc0e7;
+      text-transform: uppercase;
+      border-bottom: 3px solid #6bc0e7; }
     .booking-examination .wrap-form .frm-btnwrap {
       @apply m-0 {} }
       .booking-examination .wrap-form .frm-btnwrap .frm-btn {
         @apply flex w-full justify-end {} }
         .booking-examination .wrap-form .frm-btnwrap .frm-btn input[type='submit'] {
-          @apply bg-azure text-16 text-white uppercase font-bold p-0 flex justify-center items-center {}          border-radius: 5px;
+          @apply bg-azure text-16 text-white uppercase font-bold p-0 flex justify-center items-center {}          border-radius: 25px;
           border: none;
           height: 40px;
           line-height: 16px; }
