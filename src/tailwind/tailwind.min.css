@@ -4482,6 +4482,52 @@ html body .RadInput input.riEmpty, html body .RadInput textarea.riEmpty, html bo
   .specialist-item .content {
     @apply pl-8 py-4 {} } }
 
+.medical-answer-detail {
+  padding: 3.125rem 0; }
+  .medical-answer-detail .title {
+    color: #27519e;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.9375rem; }
+  .medical-answer-detail .section-social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 1.875rem; }
+    .medical-answer-detail .section-social time {
+      font-size: 0.875rem; }
+    .medical-answer-detail .section-social .social * {
+      font-size: 1.125rem;
+      color: #014293; }
+    .medical-answer-detail .section-social .social a:first-child {
+      margin-right: 1.25rem; }
+  .medical-answer-detail .anwser-question * {
+    line-height: 1.25; }
+  .medical-answer-detail .anwser-question img {
+    margin: 0 auto 30px; }
+  .medical-answer-detail .anwser-question ul li {
+    list-style-type: disc;
+    list-style-position: inside; }
+
+.medical-answer-detail-2 {
+  padding-bottom: 3.4375rem; }
+  .medical-answer-detail-2 .title {
+    color: #27519e;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 1.875rem; }
+  .medical-answer-detail-2 .content {
+    margin-bottom: 1.875rem; }
+    .medical-answer-detail-2 .content * {
+      display: block;
+      color: #333333;
+      line-height: 1.5rem; }
+
+.mb-80 {
+  margin-bottom: 5rem; }
+
 .service-detail {
   background: #f2fbff;
   padding: 3.75rem 0 3.75rem 0; }
