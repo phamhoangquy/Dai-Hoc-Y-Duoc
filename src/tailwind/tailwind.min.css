@@ -1628,27 +1628,6 @@ footer {
     .contact .wrap-form {
       margin: 0;
       padding: 0 10px; } }
-  .contact .wrap-form .frm-btnwrap {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 1.875rem; }
-    .contact .wrap-form .frm-btnwrap .frm-btn input {
-      width: 160px;
-      height: 40px;
-      color: #ffffff;
-      background: #6bc0e7;
-      cursor: pointer;
-      font-size: 16px;
-      font-weight: 700;
-      text-align: center;
-      border: none;
-      border-radius: 50px;
-      line-height: 0; }
-      .contact .wrap-form .frm-btnwrap .frm-btn input:nth-last-child(2) {
-        display: none; }
-      @media screen and (max-width: 1024px) {
-        .contact .wrap-form .frm-btnwrap .frm-btn input input {
-          padding: 0 15px; } }
   .contact .wrap-form .form-group {
     margin: 0px 0 20px 0; }
     .contact .wrap-form .form-group span {
@@ -1672,58 +1651,27 @@ footer {
     .contact .wrap-form .form-group textarea {
       height: 10rem;
       padding: 10px 0 0 20px; }
-  .contact .wrap-form .frm-captcha {
-    display: flex; }
-    @media screen and (max-width: 576px) {
-      .contact .wrap-form .frm-captcha {
-        display: flex;
-        flex-wrap: wrap; } }
-    .contact .wrap-form .frm-captcha .frm-captcha-input {
-      order: 2;
-      padding-left: 50px;
-      width: 45%;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-      @media screen and (max-width: 1200px) {
-        .contact .wrap-form .frm-captcha .frm-captcha-input {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          padding-left: 20px;
-          width: 40%; } }
+  .contact .wrap-form .frm-btnwrap {
+    display: flex;
+    justify-content: flex-end;
+    @apply mt-8 {} }
+    .contact .wrap-form .frm-btnwrap .frm-btn input {
+      width: 160px;
+      height: 40px;
+      color: #ffffff;
+      background: #6bc0e7;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 700;
+      text-align: center;
+      border: none;
+      border-radius: 50px;
+      line-height: 0; }
+      .contact .wrap-form .frm-btnwrap .frm-btn input:nth-last-child(2) {
+        display: none; }
       @media screen and (max-width: 1024px) {
-        .contact .wrap-form .frm-captcha .frm-captcha-input {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          padding-left: 20px; } }
-      @media screen and (max-width: 768px) {
-        .contact .wrap-form .frm-captcha .frm-captcha-input {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          padding-left: 20px; } }
-      @media screen and (max-width: 576px) {
-        .contact .wrap-form .frm-captcha .frm-captcha-input {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          padding-left: 20px;
-          width: 100%; } }
-      @media screen and (max-width: 576px) {
-        .contact .wrap-form .frm-captcha .frm-captcha-input {
-          padding-top: 30px;
-          order: 1; } }
-  .contact .wrap-form .RadCaptcha_Default {
-    width: 25%;
-    max-width: 25%; }
-    @media screen and (max-width: 576px) {
-      .contact .wrap-form .RadCaptcha_Default {
-        flex: 0 0 100%;
-        max-width: 100%; } }
-    .contact .wrap-form .RadCaptcha_Default #ctl00_mainContent_ctl04_captcha_SpamProtectorPanel #ctl00_mainContent_ctl04_captcha_ctl01 .rcRefreshImage {
-      display: none; }
+        .contact .wrap-form .frm-btnwrap .frm-btn input input {
+          padding: 0 15px; } }
 
 .tab {
   padding-top: 1.875rem;
@@ -3151,6 +3099,8 @@ footer {
     @apply text-white {} }
   .footer-top .item {
     @apply flex justify-start items-center {} }
+    .footer-top .item .ModuleContent {
+      @apply flex justify-start items-center {} }
     .footer-top .item .image-wrap {
       @apply pr-8 {} }
       .footer-top .item .image-wrap img, .footer-top .item .image-wrap svg {
@@ -3211,6 +3161,11 @@ footer {
     @media screen and (max-width: 767px) {
       .footer-middle .social-wrapper {
         @apply justify-center {} } }
+    .footer-middle .social-wrapper .ModuleContent {
+      @apply flex justify-start items-center pt-6 {} }
+      @media screen and (max-width: 767px) {
+        .footer-middle .social-wrapper .ModuleContent {
+          @apply justify-center {} } }
     .footer-middle .social-wrapper a {
       @apply flex items-center justify-center bg-white  rounded-full {}      width: 32px;
       height: 32px; }
@@ -3321,18 +3276,22 @@ footer {
       .footer-bottom .wrapper {
         @apply justify-center flex-col  relative {} } }
   .footer-bottom .back-to-top {
-    @apply cursor-pointer {} }
+    @apply cursor-pointer {}    width: 30px;
+    height: 16px; }
     @media screen and (max-width: 1024px) {
       .footer-bottom .back-to-top {
         @apply absolute bottom-0 right-0 {} } }
     @media screen and (max-width: 576px) {
       .footer-bottom .back-to-top {
         bottom: 50px; } }
-    .footer-bottom .back-to-top em {
-      font-size: 30px;
-      line-height: 20px;
-      height: 20px;
-      @apply text-azure {} }
+    .footer-bottom .back-to-top .lnr-chevron-up {
+      display: block;
+      width: 30px;
+      height: 16px;
+      background: url("../img/icon/chevron-up.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center; }
 
 header {
   @apply fixed top-0 left-0 right-0 w-full bg-white {}  height: 100px;
@@ -3411,7 +3370,8 @@ header {
     @apply flex flex  justify-between items-center h-full {} } }
     @media screen and (max-width: 1024px) {
       header .button-wrap {
-        order: 2; } }
+        order: 2;
+        @apply px-4 {} } }
     @media screen and (max-width: 1024px) {
       header .button-wrap .btn {
         @apply w-full m-0 my-4 {} } }
@@ -3426,6 +3386,8 @@ header {
       line-height: 18px; }
   header .nav-brand {
     @apply h-full {} }
+    header .nav-brand .Module, header .nav-brand .ModuleContent {
+      @apply h-full {} }
     header .nav-brand a {
       @apply flex justify-start items-center h-full {} }
       header .nav-brand a img, header .nav-brand a svg {
@@ -3581,7 +3543,7 @@ header {
       @apply flex ml-4 items-center {} } }
 
 .global-breadcrumb {
-  @apply pt-5 {} }
+  @apply py-2 bg-grey-1 {}  height: 40px; }
   @media screen and (max-width: 400px) {
     .global-breadcrumb {
       @apply hidden {} } }
@@ -3595,6 +3557,8 @@ header {
       line-height: 23px;
       padding-right: 15px;
       position: relative; }
+      .global-breadcrumb ol li.active span, .global-breadcrumb ol li.active a {
+        @apply text-blue-1 {} }
       .global-breadcrumb ol li:after {
         content: '';
         display: block;
@@ -3610,14 +3574,15 @@ header {
       .global-breadcrumb ol li:last-child:after {
         display: none; }
       .global-breadcrumb ol li:last-child a {
-        color: #333333;
-        @apply underline {} }
+        color: #333333; }
       .global-breadcrumb ol li a, .global-breadcrumb ol li span {
         text-decoration: none;
-        font-size: 12px;
+        font-size: 14px;
         font-weight: 400;
         line-height: 20px;
         color: #333333; }
+        .global-breadcrumb ol li a.active span, .global-breadcrumb ol li span.active span {
+          @apply text-blue-1 {} }
   @media screen and (max-width: 1200px) {
     .global-breadcrumb {
       margin-bottom: 0; } }
@@ -3820,7 +3785,7 @@ header {
       border-radius: 3px;
       border: 1px solid #0a72bf;
       height: 28px;
-      @apply text-13 text-white {} }
+      @apply text-13 text-white px-4 {} }
       .medical-form .wrap-form .form-group input[type='text']::placeholder, .medical-form .wrap-form .form-group select::placeholder, .medical-form .wrap-form .form-group textarea::placeholder, .medical-form .wrap-form .form-group input[type='date']::placeholder {
         @apply text-white text-13 {} }
     .medical-form .wrap-form .form-group input[type='date'] {
@@ -3842,12 +3807,28 @@ header {
           height: 40px;
           line-height: 16px; }
 
+.RadPicker {
+  width: 100% !important; }
+
+div.RadPicker table.rcSingle .rcInputCell {
+  width: 100% !important;
+  display: inline-block; }
+
+.RadPicker_Default {
+  width: 100%; }
+
+.RadPicker_Default .rcCalPopup {
+  @apply absolute top-50 translate-y-50 right-0 {} }
+
+.rcTable tbody tr {
+  @apply relative inline-block w-full {} }
+
 html body .RadInput_Default .riTextBox, html body .RadInputMgr_Default {
   border: none !important;
-  height: 40px !important;
+  height: 28px !important;
   font-family: 'Montserrat' !important;
   font-size: .875rem !important;
-  font-weight: 600 !important; }
+  font-weight: 400 !important; }
 
 html body .RadInput_Default .riError, html body .RadInput_Error_Default {
   background-position: 97% -290px !important; }
@@ -3856,12 +3837,26 @@ html body .RadInput_Default .riError, html body .RadInput_Error_Default {
   display: none !important; }
 
 .RadPicker_Default a.rcCalPopup:hover, .RadPicker_Default a.rcCalPopup:focus, .RadPicker_Default a.rcCalPopup:active {
-  background-position: 0 0 !important; }
+  background-position: center !important; }
 
 .RadPicker_Default .rcCalPopup, .RadPicker_Default .rcTimePopup {
-  background-image: url("../img/icon/calendar.png") !important; }
+  background-image: url("../img/icon/calenda.png") !important;
+  background-position: center !important; }
   .RadPicker_Default .rcCalPopup:hover, .RadPicker_Default .rcTimePopup:hover {
-    background-image: url("../img/icon/calendar.png") !important; }
+    background-image: url("../img/icon/calenda.png") !important;
+    background-position: center !important; }
+
+.RadPicker_Default .rcCalPopup:hover {
+  background-position: center !important; }
+
+html body .RadInput input.riEmpty, html body .RadInput textarea.riEmpty, html body input.RadInput_Empty {
+  font-style: normal !important;
+  font-weight: 400 !important;
+  @apply text-white text-13 {} }
+  html body .RadInput input.riEmpty::placeholder, html body .RadInput textarea.riEmpty::placeholder, html body input.RadInput_Empty::placeholder {
+    font-style: normal !important;
+    font-weight: 400 !important;
+    @apply text-white text-13 {} }
 
 .medical-check-banner {
   @apply py-24 {} }

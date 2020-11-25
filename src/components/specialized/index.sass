@@ -1,4 +1,5 @@
 .specialized
+<<<<<<< HEAD
     padding: 50/16*1rem 0 40/16*1rem
     .row
         >.col:first-child
@@ -44,3 +45,50 @@
                 @apply pl-8 py-4
     .section-title
         margin-bottom: 30/16*1rem
+=======
+	padding: 50px 0 0 0
+	.row
+		>.col:first-child
+			@media screen and ( max-width: 1024px )
+				margin-bottom: 0
+	.specialist-item
+		@apply flex flex-wrap flex-row  items-center w-full	 overflow-hidden bg-white
+		justify-content: flex-start
+		height: 80px
+		border-radius: 10px
+		margin-top: 25px
+		// +boxshadow
+		&:hover
+			.btn-view-more
+				span
+					@apply text-blue-1
+					border-bottom: 1px solid $blue-1
+		.image-wrap
+			flex: 0 1 auto
+			background: linear-gradient( 180deg, rgb(41,154,226) 0%, rgb(39,81,158) 100%)
+			width: 80px
+			height: 80px
+			@apply p-2 flex items-center justify-center
+			a
+				display: block
+				height: 50px
+				width: auto
+				img
+					width: 100%
+					height: 100%
+					object-fit: contain
+		.sub-title
+			a
+				@apply pb-2
+				display: -webkit-box
+				-webkit-line-clamp: 2
+				-webkit-box-orient: vertical
+				overflow: hidden
+			&:hover
+				a
+					@apply text-blue-1
+		.content
+			@apply px-4
+			@screen lg
+				@apply pl-8 py-4
+>>>>>>> 4cd114b0f554c826373f52087ea9580303fa8842

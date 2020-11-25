@@ -1,5 +1,6 @@
 .global-breadcrumb
-	@apply pt-5
+	@apply py-2 bg-grey-1
+	height: 40px
 	@media screen and(max-width: 400px)
 		@apply hidden
 	ol
@@ -12,6 +13,9 @@
 			line-height: 23px
 			padding-right: 15px
 			position: relative
+			&.active
+				span,a
+					@apply text-blue-1
 			&:after
 				content: ''
 				display: block
@@ -29,13 +33,16 @@
 					display: none
 				a
 					color: #333333
-					@apply underline
+	
 			a,span
 				text-decoration: none
-				font-size: 12px
+				font-size: 14px
 				font-weight: 400
 				line-height: 20px
 				color: #333333
+				&.active
+					span
+						@apply text-blue-1
 	@media screen and(max-width: 1200px)
 		margin-bottom: 0
 	@media screen and(max-width: 768px)

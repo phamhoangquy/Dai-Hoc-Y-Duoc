@@ -120,7 +120,7 @@
 				border-radius: 3px
 				border: 1px solid #0a72bf
 				height: 28px
-				@apply text-13 text-white
+				@apply text-13 text-white px-4
 				&::placeholder
 					@apply text-white text-13
 			input[type='date']
@@ -142,20 +142,47 @@
 					border: none
 					height: 40px
 					line-height: 16px
-
+.RadPicker
+	width: 100% !important
+div.RadPicker table.rcSingle .rcInputCell
+	width: 100% !important
+	display: inline-block
+.RadPicker_Default
+	width: 100%
+.RadPicker_Default 
+	.rcCalPopup
+		@apply absolute top-50 translate-y-50 right-0
+.rcTable 
+	tbody
+		tr
+			@apply relative inline-block w-full
 html body .RadInput_Default .riTextBox, html body .RadInputMgr_Default
 	border: none !important
-	height: 40px !important
+	height: 28px !important
 	font-family: 'Montserrat' !important
 	font-size: .875rem !important
-	font-weight: 600 !important
+	font-weight: 400 !important
 html body .RadInput_Default .riError, html body .RadInput_Error_Default
 	background-position:  97% -290px !important
 .frm-btn-reset
 	display: none !important
 .RadPicker_Default a.rcCalPopup:hover, .RadPicker_Default a.rcCalPopup:focus, .RadPicker_Default a.rcCalPopup:active
-	background-position: 0 0 !important
+	background-position: center !important
 .RadPicker_Default .rcCalPopup,.RadPicker_Default .rcTimePopup
-	background-image: url('../img/icon/calendar.png') !important
+	background-image: url('../img/icon/calenda.png') !important
+	background-position: center !important
 	&:hover
-		background-image: url('../img/icon/calendar.png') !important
+		background-image: url('../img/icon/calenda.png') !important
+		background-position: center !important
+.RadPicker_Default
+	.rcCalPopup
+		&:hover
+			background-position: center !important
+html body .RadInput input.riEmpty, html body .RadInput textarea.riEmpty, html body input.RadInput_Empty
+	font-style: normal !important
+	font-weight: 400 !important
+	@apply text-white text-13
+	&::placeholder
+		font-style: normal !important
+		font-weight: 400 !important
+		@apply text-white text-13
