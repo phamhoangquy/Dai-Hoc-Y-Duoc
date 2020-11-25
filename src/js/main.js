@@ -135,6 +135,7 @@ function swiperInit() {
 				}
 
 			},
+			spaceBetween: 10,
 			navigation: {
 				nextEl: '.facility-swiper .nav-arrow-next',
 				prevEl: '.facility-swiper .nav-arrow-prev',
