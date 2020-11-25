@@ -11,104 +11,153 @@
 					<xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
 				</div>
 				<div class="section-social">
-					<time>09.05.2020</time>
-					<div class="social"><a href=""><em class="mdi mdi-facebook"></em></a><a href=""><em
-								class="mdi mdi-twitter"></em></a></div>
+					<time>
+						<xsl:value-of disable-output-escaping="yes" select="CreatedDate"></xsl:value-of>
+					</time>
+					<div class="social"> <a target="_blank" class="mr-2">
+							<xsl:attribute name='href'>
+								<xsl:text>https://twitter.com/intent/tweet?text=</xsl:text>
+								<xsl:value-of select='/NewsDetail/FullUrl'></xsl:value-of>
+							</xsl:attribute>
+							<em class="mdi mdi-facebook"> </em>
+						</a>
+						<a target="_blank">
+							<xsl:attribute name='href'>
+								<xsl:text>https://www.facebook.com/sharer/sharer.php?u=</xsl:text>
+								<xsl:value-of select='/NewsDetail/FullUrl'></xsl:value-of>
+							</xsl:attribute>
+							<em class="mdi mdi-twitter"></em>
+						</a></div>
 				</div>
 				<div class="anwser-question">
-					<p>Tỉ lệ mắc ung thư đang có xu hướng tăng nhanh, số lượng người trẻ bị bệnh ngày càng cao. Năm
-						2018,
-						Việt Nam có hơn 165.000 ca ung thư mới, dự báo con số này có thể lên đến 190.000 người vào cuối
-						năm
-						2020 (Theo thống kê của Tổ chức Nghiên cứu ung thư quốc tế IARC). Do đó, việc tầm soát ung thư
-						định
-						kỳ là rất quan trọng để có thể phát hiện sớm và điều trị hiệu quả ung thư.</p><img
-						class="lazyloaded" src="./img/medicine-answer/6.png" alt="">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-						labore
-						et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-						ut
-						aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-						culpa
-						qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error
-						sit
-						voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
-						inventore
-						veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
-						voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-						voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-						consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore
-						magnam aliquam quaerat voluptatem.</p><img class="lazyloaded" src="./img/medicine-answer/6.png"
-						alt="">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-						labore
-						et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-						ut
-						aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-						culpa
-						qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error
-						sit
-						voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
-						inventore
-						veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
-						voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-						voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-						consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore
-						magnam aliquam quaerat voluptatem.</p><img class="lazyloaded" src="./img/medicine-answer/6.png"
-						alt="">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-						labore
-						et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-						ut
-						aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-						culpa
-						qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error
-						sit
-						voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
-						inventore
-						veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
-						voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-						voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-						consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore
-						magnam aliquam quaerat voluptatem.</p>
-					<ul>
-						<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates molestias perferendis,
-							quibusdam alias cum illo porro beatae magnam rerum harum ipsam nostrum reiciendis
-							consequatur
-							dignissimos maxime fugiat quas ratione voluptatum?</li>
-					</ul>
+					<xsl:value-of disable-output-escaping="yes" select="FullContent"></xsl:value-of>
 				</div>
 			</div>
 		</section>
-		<section class="medical-answer-detail-2">
+		<xsl:if test="count(NewsRelated) >0">
+			<section class="medical-answer-detail-2">
+				<div class="container">
+
+					<div class="row">
+						<div class="col w-full lg:w-10/12">
+							<xsl:apply-templates select="NewsRelated"></xsl:apply-templates>
+						</div>
+					</div>
+				</div>
+			</section>
+		</xsl:if>
+		<section class="news-other mb-80">
 			<div class="container">
-				<div class="title">PHÒNG KHÁM BỆNH VIỆN ĐẠI HỌC Y DƯỢC 1</div>
-				<div class="content"><span>+ 20-22 Dương Quang Trung, Phường 12, Quận 10</span><span>+ Hotline: 1800
-						6023</span><span>+ Website: www.umcclinic.com.vn</span></div>
-				<div class="row">
-					<div class="col w-full lg:w-10/12">
-						<div class="section-card"><a class="image-wrap shine" href="#"><img
-									src="./img/medicine-answer/6.png" alt=""></a>
-							<div class="wrap-text">
-								<div class="name">PGS.TS.BS Lê Anh Thư</div>
-								<div class="desc">Số năm kinh nghiệm: 10 năm</div>
-								<div class="desc">Bằng cấp chuyên môn: Phó giáo sư tiến sĩ chuyên khoa Nhi</div>
-								<div class="wrap-btn">
-									<div class="btn-left"><a class="btn btn-primary blue" href=""><span>Xem chi
-												tiết</span></a></div>
-									<div class="btn-left medical-check-banner"><a class="btn btn-booking"
-											href=""><span>Đặt
-												lịch khám</span><em class="mdi mdi-calendar"></em></a></div>
-								</div>
-							</div>
+				<div class="section-title"><span>tin tức khác</span><em
+						class="mdi mdi-gamepad"><span></span><span></span></em>
+				</div>
+				<div class="swiper-news-other">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<xsl:apply-templates select="NewsOther"></xsl:apply-templates>
+						</div>
+					</div>
+					<div class="swiper-nav-wrap">
+						<div class="nav-arrow-prev">
+							<div class="icon-chevron-left"></div>
+						</div>
+						<div class="nav-arrow-next">
+							<div class="icon-chevron-right"></div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
+	</xsl:template>
+	<xsl:template match="NewsRelated">
+		<div class="section-card"><a class="image-wrap shine">
+
+
+
+				<xsl:attribute name="href">
+					<xsl:value-of select="Url"></xsl:value-of>
+				</xsl:attribute>
+				<xsl:attribute name="title">
+					<xsl:value-of select="Title"></xsl:value-of>
+				</xsl:attribute>
+
+
+				<img>
+				<xsl:attribute name="src">
+					<xsl:value-of select="ImageUrl"></xsl:value-of>
+				</xsl:attribute>
+				<xsl:attribute name="alt">
+					<xsl:value-of select="Title"></xsl:value-of>
+				</xsl:attribute>
+				</img>
+			</a>
+			<div class="wrap-text">
+				<div class="name">
+					<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
+					<xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
+				</div>
+				<div class="briefcontent">
+					<xsl:value-of disable-output-escaping="yes" select="BriefContent"></xsl:value-of>
+				</div>
+				<div class="wrap-btn">
+					<div class="btn-left"><a class="btn btn-primary blue">
+
+							<xsl:attribute name="href">
+								<xsl:value-of select="Url"></xsl:value-of>
+							</xsl:attribute>
+							<xsl:attribute name="title">
+								<xsl:value-of select="Title"></xsl:value-of>
+							</xsl:attribute>
+							<span>Xem chi
+								tiết</span>
+						</a></div>
+					<div class="btn-left medical-check-banner"><a class="btn btn-booking" href="/dang-ky-kham"><span>Đặt
+								lịch khám</span><em class="mdi mdi-calendar"></em></a></div>
+				</div>
+			</div>
+		</div>
+	</xsl:template>
+	<xsl:template match="NewsOther">
+		<div class="swiper-slide">
+			<div class="news-figure">
+				<div class="image-wrap opacity">
+
+					<a>
+						<xsl:attribute name="href">
+							<xsl:value-of select="Url"></xsl:value-of>
+						</xsl:attribute>
+						<xsl:attribute name="title">
+							<xsl:value-of select="Title"></xsl:value-of>
+						</xsl:attribute>
+
+						<img>
+						<xsl:attribute name="src">
+							<xsl:value-of select="ImageUrl"></xsl:value-of>
+						</xsl:attribute>
+						<xsl:attribute name="alt">
+							<xsl:value-of select="Title"></xsl:value-of>
+						</xsl:attribute>
+						</img>
+					</a>
+				</div>
+				<div class="content">
+					<time>
+						<xsl:value-of disable-output-escaping="yes" select="CreatedDate"></xsl:value-of>
+					</time>
+					<div class="title">
+						<a>
+							<xsl:attribute name="href">
+								<xsl:value-of select="Url"></xsl:value-of>
+							</xsl:attribute>
+							<xsl:attribute name="title">
+								<xsl:value-of select="Title"></xsl:value-of>
+							</xsl:attribute>
+							<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
 	</xsl:template>
 
 </xsl:stylesheet>
