@@ -11,7 +11,7 @@
 		<div class="swiper-home-specialist">
 			<div class="swiper-container">
 				<div class="swiper-wrapper">
-					<xsl:apply-templates select="/ZoneList/Zone"></xsl:apply-templates>
+					<xsl:apply-templates select="/ZoneList/Zone/Zone"></xsl:apply-templates>
 
 				</div>
 			</div>
