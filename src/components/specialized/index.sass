@@ -1,14 +1,24 @@
 .specialized
     padding: 50/16*1rem 0
     .row
+        @media screen and ( max-width: 576px )
+            margin-bottom: 0
+        .col
+            @media screen and ( max-width: 576px )
+                margin-bottom: 0
         >.col:first-child
             @media screen and ( max-width: 1024px )
                 margin-bottom: 0
+            
+                
     .specialist-item
         @apply flex flex-wrap flex-row  items-center w-full	 overflow-hidden bg-white
         justify-content: flex-start
         height: 80px
         border-radius: 10px
+        &:first-child
+            @media screen and ( max-width: 576px )
+                margin-bottom: 30px
         // +boxshadow
         &:hover
             .btn-view-more

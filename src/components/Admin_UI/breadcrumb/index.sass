@@ -1,6 +1,8 @@
 .global-breadcrumb
 	@apply py-2 bg-grey-1
 	height: 40px
+	@media screen and(max-width: 576px)
+		@apply hidden
 	@media screen and(max-width: 400px)
 		@apply hidden
 	ol

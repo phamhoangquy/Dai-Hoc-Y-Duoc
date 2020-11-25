@@ -2120,10 +2120,10 @@ footer {
     height: 392px; }
     @media screen and (max-width: 1024px) {
       .service .image-wrap a {
-        height: 330px; } }
+        height: auto; } }
     .service .image-wrap a img {
       width: 100%;
-      height: 100%;
+      height: auto;
       object-fit: cover; }
   .service .service-text {
     height: 392px;
@@ -2188,6 +2188,12 @@ footer {
 
 .specialized {
   padding: 3.125rem 0; }
+  @media screen and (max-width: 576px) {
+    .specialized .row {
+      margin-bottom: 0; } }
+  @media screen and (max-width: 576px) {
+    .specialized .row .col {
+      margin-bottom: 0; } }
   @media screen and (max-width: 1024px) {
     .specialized .row > .col:first-child {
       margin-bottom: 0; } }
@@ -2195,6 +2201,9 @@ footer {
     @apply flex flex-wrap flex-row  items-center w-full	 overflow-hidden bg-white {}    justify-content: flex-start;
     height: 80px;
     border-radius: 10px; }
+    @media screen and (max-width: 576px) {
+      .specialized .specialist-item:first-child {
+        margin-bottom: 30px; } }
     .specialized .specialist-item:hover .btn-view-more span {
       @apply text-primary {} }
     .specialized .specialist-item .image-wrap {
@@ -2313,6 +2322,8 @@ footer {
     .section-card .wrap-text .wrap-btn {
       display: flex;
       margin-top: 7.1875rem; }
+      .section-card .wrap-text .wrap-btn .btn-left .btn.btn-primary {
+        width: 130px; }
       @media screen and (max-width: 768px) {
         .section-card .wrap-text .wrap-btn {
           display: block;
@@ -2379,6 +2390,128 @@ footer {
     .thankyou .medical-check-banner .banner-content .name-cover {
       padding-top: 0;
       text-transform: none; }
+
+.tutorial-client {
+  padding: 3.125rem 0 0 0; }
+  .tutorial-client .news-figure {
+    border-radius: 10px;
+    @apply overflow-hidden {} }
+    @media screen and (max-width: 576px) {
+      .tutorial-client .news-figure {
+        @apply mb-8 {} } }
+    .tutorial-client .news-figure:hover .content {
+      background: linear-gradient(180deg, #68c0e6 2%, #3789c4 99%); }
+    .tutorial-client .news-figure:hover time {
+      @apply text-white {} }
+    .tutorial-client .news-figure:hover .title a {
+      @apply text-white {} }
+    .tutorial-client .news-figure:hover .caption {
+      @apply text-white {} }
+      .tutorial-client .news-figure:hover .caption * {
+        @apply text-white {} }
+
+@screen sm {
+  .tutorial-client .news-figure.big {
+    @apply mb-8 {} } }
+    .tutorial-client .news-figure.big .title a {
+      @apply text-16 my-4 {} }
+
+@screen sm {
+  .tutorial-client .news-figure.big .image-wrap a {
+    height: 300px; } }
+    .tutorial-client .news-figure .image-wrap a {
+      display: block;
+      height: 145px;
+      width: auto; }
+      .tutorial-client .news-figure .image-wrap a img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .tutorial-client .news-figure .content {
+      @apply p-5 bg-grey-7 transition {} }
+    .tutorial-client .news-figure .title a {
+      @apply text-14 text-main font-bold uppercase transition my-2 {}      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden; }
+  .tutorial-client .section-title {
+    margin-bottom: 1.875rem; }
+  .tutorial-client .faq-figure {
+    border-radius: 10px 0 0 10px; }
+  @media screen and (max-width: 1024px) {
+    .tutorial-client .faq-figure {
+      border-radius: 10px 10px 0 0; } }
+  .tutorial-client .image-wrap a {
+    display: block;
+    width: auto;
+    height: 392px; }
+    @media screen and (max-width: 1024px) {
+      .tutorial-client .image-wrap a {
+        height: 330px; } }
+    .tutorial-client .image-wrap a img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  .tutorial-client .wrap-text {
+    height: 392px;
+    padding: 3.75rem 1.875rem 1.875rem 2.8125rem;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.1); }
+    @media screen and (max-width: 1024px) {
+      .tutorial-client .wrap-text {
+        height: auto; } }
+    @media screen and (max-width: 1024px) {
+      .tutorial-client .wrap-text {
+        border-radius: 0 0 10px 10px; } }
+    .tutorial-client .wrap-text .title {
+      margin-bottom: 1.75rem; }
+      .tutorial-client .wrap-text .title a {
+        line-height: 1.5rem;
+        font-size: 1.125rem;
+        font-weight: 700;
+        color: #333333;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+        overflow: hidden; }
+    .tutorial-client .wrap-text .content {
+      color: #333333;
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      margin-bottom: 2.9375rem; }
+    .tutorial-client .wrap-text .btn-primary {
+      width: 150px; }
+      .tutorial-client .wrap-text .btn-primary span {
+        text-transform: none; }
+  .tutorial-client .news-figure {
+    box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.1); }
+    .tutorial-client .news-figure .content {
+      background-color: #ffffff; }
+      .tutorial-client .news-figure .content .title a {
+        font-size: 1.125rem;
+        font-weight: 700;
+        text-transform: none; }
+    .tutorial-client .news-figure .image-wrap a {
+      height: 244px; }
+    @media screen and (max-width: 576px) {
+      .tutorial-client .news-figure {
+        margin-bottom: 0; } }
+  .tutorial-client .row {
+    margin-bottom: 0; }
+    @media screen and (max-width: 1024px) {
+      .tutorial-client .row {
+        margin-bottom: 0; } }
+  @media screen and (max-width: 1024px) {
+    .tutorial-client .row:nth-child(n+2) > * {
+      margin-bottom: 1.875rem; } }
+  @media screen and (max-width: 1024px) {
+    .tutorial-client .pr-0 {
+      padding-right: 15px;
+      margin-bottom: 0 !important; } }
+  @media screen and (max-width: 1024px) {
+    .tutorial-client .pl-0 {
+      padding-left: 15px; } }
 
 @-webkit-keyframes fade-in {
   0% {
@@ -3094,128 +3227,6 @@ main {
 .four-swiper, .trinity-swiper {
   @apply relative {} }
 
-.tutorial-client {
-  padding: 3.125rem 0 0 0; }
-  .tutorial-client .news-figure {
-    border-radius: 10px;
-    @apply overflow-hidden {} }
-    @media screen and (max-width: 576px) {
-      .tutorial-client .news-figure {
-        @apply mb-8 {} } }
-    .tutorial-client .news-figure:hover .content {
-      background: linear-gradient(180deg, #68c0e6 2%, #3789c4 99%); }
-    .tutorial-client .news-figure:hover time {
-      @apply text-white {} }
-    .tutorial-client .news-figure:hover .title a {
-      @apply text-white {} }
-    .tutorial-client .news-figure:hover .caption {
-      @apply text-white {} }
-      .tutorial-client .news-figure:hover .caption * {
-        @apply text-white {} }
-
-@screen sm {
-  .tutorial-client .news-figure.big {
-    @apply mb-8 {} } }
-    .tutorial-client .news-figure.big .title a {
-      @apply text-16 my-4 {} }
-
-@screen sm {
-  .tutorial-client .news-figure.big .image-wrap a {
-    height: 300px; } }
-    .tutorial-client .news-figure .image-wrap a {
-      display: block;
-      height: 145px;
-      width: auto; }
-      .tutorial-client .news-figure .image-wrap a img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover; }
-    .tutorial-client .news-figure .content {
-      @apply p-5 bg-grey-7 transition {} }
-    .tutorial-client .news-figure .title a {
-      @apply text-14 text-main font-bold uppercase transition my-2 {}      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-      overflow: hidden; }
-  .tutorial-client .section-title {
-    margin-bottom: 1.875rem; }
-  .tutorial-client .faq-figure {
-    border-radius: 10px 0 0 10px; }
-  @media screen and (max-width: 1024px) {
-    .tutorial-client .faq-figure {
-      border-radius: 10px 10px 0 0; } }
-  .tutorial-client .image-wrap a {
-    display: block;
-    width: auto;
-    height: 392px; }
-    @media screen and (max-width: 1024px) {
-      .tutorial-client .image-wrap a {
-        height: 330px; } }
-    .tutorial-client .image-wrap a img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover; }
-  .tutorial-client .wrap-text {
-    height: 392px;
-    padding: 3.75rem 1.875rem 1.875rem 2.8125rem;
-    border-radius: 0 10px 10px 0;
-    box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.1); }
-    @media screen and (max-width: 1024px) {
-      .tutorial-client .wrap-text {
-        height: auto; } }
-    @media screen and (max-width: 1024px) {
-      .tutorial-client .wrap-text {
-        border-radius: 0 0 10px 10px; } }
-    .tutorial-client .wrap-text .title {
-      margin-bottom: 1.75rem; }
-      .tutorial-client .wrap-text .title a {
-        line-height: 1.5rem;
-        font-size: 1.125rem;
-        font-weight: 700;
-        color: #333333;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
-        display: -webkit-box;
-        overflow: hidden; }
-    .tutorial-client .wrap-text .content {
-      color: #333333;
-      font-weight: 400;
-      font-size: 1rem;
-      line-height: 1.5rem;
-      margin-bottom: 2.9375rem; }
-    .tutorial-client .wrap-text .btn-primary {
-      width: 150px; }
-      .tutorial-client .wrap-text .btn-primary span {
-        text-transform: none; }
-  .tutorial-client .news-figure {
-    box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.1); }
-    .tutorial-client .news-figure .content {
-      background-color: #ffffff; }
-      .tutorial-client .news-figure .content .title a {
-        font-size: 1.125rem;
-        font-weight: 700;
-        text-transform: none; }
-    .tutorial-client .news-figure .image-wrap a {
-      height: 244px; }
-    @media screen and (max-width: 576px) {
-      .tutorial-client .news-figure {
-        margin-bottom: 0; } }
-  .tutorial-client .row {
-    margin-bottom: 0; }
-    @media screen and (max-width: 1024px) {
-      .tutorial-client .row {
-        margin-bottom: 0; } }
-  @media screen and (max-width: 1024px) {
-    .tutorial-client .row:nth-child(n+2) > * {
-      margin-bottom: 1.875rem; } }
-  @media screen and (max-width: 1024px) {
-    .tutorial-client .pr-0 {
-      padding-right: 15px;
-      margin-bottom: 0 !important; } }
-  @media screen and (max-width: 1024px) {
-    .tutorial-client .pl-0 {
-      padding-left: 15px; } }
-
 footer {
   background: #e5f7ff; }
 
@@ -3674,6 +3685,9 @@ header {
 
 .global-breadcrumb {
   @apply py-2 bg-grey-1 {}  height: 40px; }
+  @media screen and (max-width: 576px) {
+    .global-breadcrumb {
+      @apply hidden {} } }
   @media screen and (max-width: 400px) {
     .global-breadcrumb {
       @apply hidden {} } }
@@ -4621,8 +4635,7 @@ html body .RadInput input.riEmpty, html body .RadInput textarea.riEmpty, html bo
 .service-detail-3 .card-body {
   padding-top: 1.5625rem;
   border-radius: 10px;
-  background-color: white;
-  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1); }
+  background-color: white; }
   .service-detail-3 .card-body table {
     width: 100%; }
     .service-detail-3 .card-body table thead {
@@ -4650,7 +4663,6 @@ html body .RadInput input.riEmpty, html body .RadInput textarea.riEmpty, html bo
           border-right: 1px solid #e0e0e0;
           padding: 0.0625rem 0.0625rem 0.0625rem 1.875rem;
           background: #ffffff;
-          font-weight: 700;
           font-size: 1rem;
           color: #333333; }
           .service-detail-3 .card-body table tbody tr td .sce-detail-table {
@@ -4720,11 +4732,51 @@ html body .RadInput input.riEmpty, html body .RadInput textarea.riEmpty, html bo
         justify-content: center;
         align-items: center;
         border-radius: 50%; }
+        .service-detail-4 .swiper-container .swiper-slide .image-wrap a img {
+          width: 75px;
+          height: 75px;
+          object-fit: contain; }
 
 .service-detail-5 {
   padding: 3.125rem 0; }
   .service-detail-5 .news-figure {
     padding-top: 1.5625rem; }
+  .service-detail-5 .swiper-service-detail {
+    margin-top: 1.875rem;
+    @apply relative {} }
+    @media screen and (max-width: 1024px) {
+      .service-detail-5 .swiper-service-detail {
+        @apply px-8 {} } }
+    @media screen and (max-width: 1024px) {
+      .service-detail-5 .swiper-service-detail .swiper-nav-wrap {
+        @apply flex items-center justify-center pt-6 {} } }
+    .service-detail-5 .swiper-service-detail .nav-arrow-prev, .service-detail-5 .swiper-service-detail .nav-arrow-next {
+      @apply absolute top-50 translate-y-50 z-30 {} }
+      @media screen and (max-width: 1024px) {
+        .service-detail-5 .swiper-service-detail .nav-arrow-prev, .service-detail-5 .swiper-service-detail .nav-arrow-next {
+          @apply static mx-4 {} } }
+  .service-detail-5 .swiper-container .swiper-slide {
+    @apply flex flex-col justify-center {}    height: auto; }
+    .service-detail-5 .swiper-container .swiper-slide.swiper-slide-prev .item, .service-detail-5 .swiper-container .swiper-slide.swiper-slide-next .item {
+      height: auto; }
+      .service-detail-5 .swiper-container .swiper-slide.swiper-slide-prev .item .title a, .service-detail-5 .swiper-container .swiper-slide.swiper-slide-next .item .title a {
+        @apply text-18 {} }
+      .service-detail-5 .swiper-container .swiper-slide.swiper-slide-prev .item .image-wrap a, .service-detail-5 .swiper-container .swiper-slide.swiper-slide-next .item .image-wrap a {
+        position: relative;
+        display: block;
+        height: 0;
+        overflow: hidden;
+        padding-top: 57.5%; }
+        .service-detail-5 .swiper-container .swiper-slide.swiper-slide-prev .item .image-wrap a img, .service-detail-5 .swiper-container .swiper-slide.swiper-slide-prev .item .image-wrap a iframe, .service-detail-5 .swiper-container .swiper-slide.swiper-slide-prev .item .image-wrap a video, .service-detail-5 .swiper-container .swiper-slide.swiper-slide-next .item .image-wrap a img, .service-detail-5 .swiper-container .swiper-slide.swiper-slide-next .item .image-wrap a iframe, .service-detail-5 .swiper-container .swiper-slide.swiper-slide-next .item .image-wrap a video {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          object-fit: cover;
+          transition: .3s ease-in-out all; }
+    .service-detail-5 .swiper-container .swiper-slide.swiper-slide-active {
+      max-height: 650px; }
   .service-detail-5 .service-check-banner {
     position: relative;
     @apply py-24 {} }
