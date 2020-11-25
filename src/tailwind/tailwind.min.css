@@ -1698,9 +1698,9 @@ footer {
       @apply hidden {} } }
   @media screen and (max-width: 1024px) {
     .facility-swiper .swiper-wrapper {
-      @apply flex-wrap {} } }
-  .facility-swiper .swiper-slide {
-    margin-top: 10px; }
+      @apply flex-wrap {} }
+      .facility-swiper .swiper-wrapper .swiper-slide {
+        margin-top: 10px; } }
 
 @media screen and (max-width: 1024px) {
   .grid-container {
