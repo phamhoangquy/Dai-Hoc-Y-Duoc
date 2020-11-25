@@ -32,8 +32,12 @@
 										</xsl:value-of>
 									</div>
 									<div class="wrap-btn">
-										<div class="btn-left medical-check-banner"><a class="btn btn-booking"
-												href=""><span>Đặt lịch khám</span><em class="mdi mdi-calendar"></em></a>
+										<div class="btn-left medical-check-banner"><a class="btn btn-booking">
+												<xsl:attribute name="href">
+													<xsl:text>/dang-ky-kham</xsl:text>
+												</xsl:attribute>
+												<span>Đặt lịch khám</span><em class="mdi mdi-calendar"></em>
+											</a>
 										</div>
 									</div>
 								</div>
@@ -51,16 +55,19 @@
 				<xsl:apply-templates select="NewsAttributes"></xsl:apply-templates>
 			</div>
 		</section>
-		<section class="doctor-detail-3">
-			<div class="container">
-				<div class="section-title"><span>Bài viết y khoa</span><em
-						class="mdi mdi-gamepad"><span></span><span></span></em></div>
-				<div class="row">
-					<xsl:apply-templates select="NewsRelated"></xsl:apply-templates>
+		<xsl:if test="count(NewsRelated) >0">
+			<section class="doctor-detail-3">
+				<div class="container">
+					<div class="section-title"><span>Bài viết y khoa</span><em
+							class="mdi mdi-gamepad"><span></span><span></span></em></div>
+					<div class="row">
+						<xsl:apply-templates select="NewsRelated"></xsl:apply-templates>
 
+					</div>
 				</div>
-			</div>
-		</section>
+			</section>
+		</xsl:if>
+
 		<section class="doctor-detail-4">
 			<div class="container">
 				<div class="section-title"><span>Bác sĩ cùng khoa</span><em

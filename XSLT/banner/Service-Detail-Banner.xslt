@@ -42,11 +42,9 @@
 			</h2>
 			<xsl:value-of disable-output-escaping="yes" select="Description"></xsl:value-of>
 			<div class="btn-center"><a class="btn btn-booking" href="javascript:;">
-					<xsl:if test="Url !=''">
-						<xsl:attribute name="href">
-							<xsl:value-of select="Url"></xsl:value-of>
-						</xsl:attribute>
-					</xsl:if>
+					<xsl:attribute name="href">
+						<xsl:text>/dang-ky-kham</xsl:text>
+					</xsl:attribute>
 					<span>Đặt lịch khám </span><em class="mdi mdi-calendar"></em>
 				</a></div>
 		</div>
