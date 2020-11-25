@@ -1979,7 +1979,8 @@ footer {
       @apply text-14 text-main font-bold uppercase transition my-2 {}      display: -webkit-box;
       -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
-      overflow: hidden; }
+      overflow: hidden;
+      height: 45px; }
   .service .section-title {
     margin-bottom: 1.875rem; }
   .service .faq-figure {
@@ -2060,7 +2061,7 @@ footer {
       padding-left: 15px; } }
 
 .specialized {
-  padding: 3.125rem 0 2.5rem; }
+  padding: 3.125rem 0; }
   @media screen and (max-width: 1024px) {
     .specialized .row > .col:first-child {
       margin-bottom: 0; } }
@@ -2252,128 +2253,6 @@ footer {
     .thankyou .medical-check-banner .banner-content .name-cover {
       padding-top: 0;
       text-transform: none; }
-
-.tutorial-client {
-  padding: 3.125rem 0 0 0; }
-  .tutorial-client .news-figure {
-    border-radius: 10px;
-    @apply overflow-hidden {} }
-    @media screen and (max-width: 576px) {
-      .tutorial-client .news-figure {
-        @apply mb-8 {} } }
-    .tutorial-client .news-figure:hover .content {
-      background: linear-gradient(180deg, #68c0e6 2%, #3789c4 99%); }
-    .tutorial-client .news-figure:hover time {
-      @apply text-white {} }
-    .tutorial-client .news-figure:hover .title a {
-      @apply text-white {} }
-    .tutorial-client .news-figure:hover .caption {
-      @apply text-white {} }
-      .tutorial-client .news-figure:hover .caption * {
-        @apply text-white {} }
-
-@screen sm {
-  .tutorial-client .news-figure.big {
-    @apply mb-8 {} } }
-    .tutorial-client .news-figure.big .title a {
-      @apply text-16 my-4 {} }
-
-@screen sm {
-  .tutorial-client .news-figure.big .image-wrap a {
-    height: 300px; } }
-    .tutorial-client .news-figure .image-wrap a {
-      display: block;
-      height: 145px;
-      width: auto; }
-      .tutorial-client .news-figure .image-wrap a img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover; }
-    .tutorial-client .news-figure .content {
-      @apply p-5 bg-grey-7 transition {} }
-    .tutorial-client .news-figure .title a {
-      @apply text-14 text-main font-bold uppercase transition my-2 {}      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-      overflow: hidden; }
-  .tutorial-client .section-title {
-    margin-bottom: 1.875rem; }
-  .tutorial-client .faq-figure {
-    border-radius: 10px 0 0 10px; }
-  @media screen and (max-width: 1024px) {
-    .tutorial-client .faq-figure {
-      border-radius: 10px 10px 0 0; } }
-  .tutorial-client .image-wrap a {
-    display: block;
-    width: auto;
-    height: 392px; }
-    @media screen and (max-width: 1024px) {
-      .tutorial-client .image-wrap a {
-        height: 330px; } }
-    .tutorial-client .image-wrap a img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover; }
-  .tutorial-client .wrap-text {
-    height: 392px;
-    padding: 3.75rem 1.875rem 1.875rem 2.8125rem;
-    border-radius: 0 10px 10px 0;
-    box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.1); }
-    @media screen and (max-width: 1024px) {
-      .tutorial-client .wrap-text {
-        height: auto; } }
-    @media screen and (max-width: 1024px) {
-      .tutorial-client .wrap-text {
-        border-radius: 0 0 10px 10px; } }
-    .tutorial-client .wrap-text .title {
-      margin-bottom: 1.75rem; }
-      .tutorial-client .wrap-text .title a {
-        line-height: 1.5rem;
-        font-size: 1.125rem;
-        font-weight: 700;
-        color: #333333;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
-        display: -webkit-box;
-        overflow: hidden; }
-    .tutorial-client .wrap-text .content {
-      color: #333333;
-      font-weight: 400;
-      font-size: 1rem;
-      line-height: 1.5rem;
-      margin-bottom: 2.9375rem; }
-    .tutorial-client .wrap-text .btn-primary {
-      width: 150px; }
-      .tutorial-client .wrap-text .btn-primary span {
-        text-transform: none; }
-  .tutorial-client .news-figure {
-    box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.1); }
-    .tutorial-client .news-figure .content {
-      background-color: #ffffff; }
-      .tutorial-client .news-figure .content .title a {
-        font-size: 1.125rem;
-        font-weight: 700;
-        text-transform: none; }
-    .tutorial-client .news-figure .image-wrap a {
-      height: 244px; }
-    @media screen and (max-width: 576px) {
-      .tutorial-client .news-figure {
-        margin-bottom: 0; } }
-  .tutorial-client .row {
-    margin-bottom: 0; }
-    @media screen and (max-width: 1024px) {
-      .tutorial-client .row {
-        margin-bottom: 0; } }
-  @media screen and (max-width: 1024px) {
-    .tutorial-client .row:nth-child(n+2) > * {
-      margin-bottom: 1.875rem; } }
-  @media screen and (max-width: 1024px) {
-    .tutorial-client .pr-0 {
-      padding-right: 15px;
-      margin-bottom: 0 !important; } }
-  @media screen and (max-width: 1024px) {
-    .tutorial-client .pl-0 {
-      padding-left: 15px; } }
 
 @-webkit-keyframes fade-in {
   0% {
@@ -3085,6 +2964,128 @@ main {
 
 .four-swiper, .trinity-swiper {
   @apply relative {} }
+
+.tutorial-client {
+  padding: 3.125rem 0 0 0; }
+  .tutorial-client .news-figure {
+    border-radius: 10px;
+    @apply overflow-hidden {} }
+    @media screen and (max-width: 576px) {
+      .tutorial-client .news-figure {
+        @apply mb-8 {} } }
+    .tutorial-client .news-figure:hover .content {
+      background: linear-gradient(180deg, #68c0e6 2%, #3789c4 99%); }
+    .tutorial-client .news-figure:hover time {
+      @apply text-white {} }
+    .tutorial-client .news-figure:hover .title a {
+      @apply text-white {} }
+    .tutorial-client .news-figure:hover .caption {
+      @apply text-white {} }
+      .tutorial-client .news-figure:hover .caption * {
+        @apply text-white {} }
+
+@screen sm {
+  .tutorial-client .news-figure.big {
+    @apply mb-8 {} } }
+    .tutorial-client .news-figure.big .title a {
+      @apply text-16 my-4 {} }
+
+@screen sm {
+  .tutorial-client .news-figure.big .image-wrap a {
+    height: 300px; } }
+    .tutorial-client .news-figure .image-wrap a {
+      display: block;
+      height: 145px;
+      width: auto; }
+      .tutorial-client .news-figure .image-wrap a img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .tutorial-client .news-figure .content {
+      @apply p-5 bg-grey-7 transition {} }
+    .tutorial-client .news-figure .title a {
+      @apply text-14 text-main font-bold uppercase transition my-2 {}      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden; }
+  .tutorial-client .section-title {
+    margin-bottom: 1.875rem; }
+  .tutorial-client .faq-figure {
+    border-radius: 10px 0 0 10px; }
+  @media screen and (max-width: 1024px) {
+    .tutorial-client .faq-figure {
+      border-radius: 10px 10px 0 0; } }
+  .tutorial-client .image-wrap a {
+    display: block;
+    width: auto;
+    height: 392px; }
+    @media screen and (max-width: 1024px) {
+      .tutorial-client .image-wrap a {
+        height: 330px; } }
+    .tutorial-client .image-wrap a img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  .tutorial-client .wrap-text {
+    height: 392px;
+    padding: 3.75rem 1.875rem 1.875rem 2.8125rem;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.1); }
+    @media screen and (max-width: 1024px) {
+      .tutorial-client .wrap-text {
+        height: auto; } }
+    @media screen and (max-width: 1024px) {
+      .tutorial-client .wrap-text {
+        border-radius: 0 0 10px 10px; } }
+    .tutorial-client .wrap-text .title {
+      margin-bottom: 1.75rem; }
+      .tutorial-client .wrap-text .title a {
+        line-height: 1.5rem;
+        font-size: 1.125rem;
+        font-weight: 700;
+        color: #333333;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+        overflow: hidden; }
+    .tutorial-client .wrap-text .content {
+      color: #333333;
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      margin-bottom: 2.9375rem; }
+    .tutorial-client .wrap-text .btn-primary {
+      width: 150px; }
+      .tutorial-client .wrap-text .btn-primary span {
+        text-transform: none; }
+  .tutorial-client .news-figure {
+    box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.1); }
+    .tutorial-client .news-figure .content {
+      background-color: #ffffff; }
+      .tutorial-client .news-figure .content .title a {
+        font-size: 1.125rem;
+        font-weight: 700;
+        text-transform: none; }
+    .tutorial-client .news-figure .image-wrap a {
+      height: 244px; }
+    @media screen and (max-width: 576px) {
+      .tutorial-client .news-figure {
+        margin-bottom: 0; } }
+  .tutorial-client .row {
+    margin-bottom: 0; }
+    @media screen and (max-width: 1024px) {
+      .tutorial-client .row {
+        margin-bottom: 0; } }
+  @media screen and (max-width: 1024px) {
+    .tutorial-client .row:nth-child(n+2) > * {
+      margin-bottom: 1.875rem; } }
+  @media screen and (max-width: 1024px) {
+    .tutorial-client .pr-0 {
+      padding-right: 15px;
+      margin-bottom: 0 !important; } }
+  @media screen and (max-width: 1024px) {
+    .tutorial-client .pl-0 {
+      padding-left: 15px; } }
 
 footer {
   background: #e5f7ff; }
@@ -4537,7 +4538,8 @@ html body .RadInput input.riEmpty, html body .RadInput textarea.riEmpty, html bo
   .service-detail-4 .sub-text {
     text-align: center;
     font-size: 1rem;
-    color: #333333; }
+    color: #333333;
+    padding-top: 1.5625rem; }
     .service-detail-4 .sub-text p:first-child {
       padding-top: 0.625rem; }
   .service-detail-4 .silde-service-detail {
@@ -4861,7 +4863,9 @@ html body .RadInput input.riEmpty, html body .RadInput textarea.riEmpty, html bo
     flex: 0 1 auto;
     background: linear-gradient(180deg, #299ae2 0%, #27519e 100%);
     border-radius: 10px;
-    @apply p-2 flex items-center justify-center {} }
+    @apply p-2 flex items-center justify-center {}    width: 80px;
+    margin-left: auto;
+    margin-right: auto; }
     .specialized-detail-2 .swiper-container .swiper-slide .image-wrap a {
       display: block;
       height: 50px;
