@@ -1,5 +1,5 @@
 .specialized
-    padding: 50px 0 0 0
+    padding: 50/16*1rem 0 40/16*1rem
     .row
         >.col:first-child
             @media screen and ( max-width: 1024px )
@@ -9,13 +9,11 @@
         justify-content: flex-start
         height: 80px
         border-radius: 10px
-        margin-top: 25px
         // +boxshadow
         &:hover
             .btn-view-more
                 span
-                    @apply text-blue-1
-                    border-bottom: 1px solid $blue-1
+                    @apply text-primary
         .image-wrap
             flex: 0 1 auto
             background: linear-gradient( 180deg, rgb(41,154,226) 0%, rgb(39,81,158) 100%)
@@ -44,3 +42,5 @@
             @apply px-4
             @screen lg
                 @apply pl-8 py-4
+    .section-title
+        margin-bottom: 30/16*1rem

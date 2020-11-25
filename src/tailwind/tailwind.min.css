@@ -2112,17 +2112,16 @@ footer {
       padding-left: 15px; } }
 
 .specialized {
-  padding: 50px 0 0 0; }
+  padding: 3.125rem 0 2.5rem; }
   @media screen and (max-width: 1024px) {
     .specialized .row > .col:first-child {
       margin-bottom: 0; } }
   .specialized .specialist-item {
     @apply flex flex-wrap flex-row  items-center w-full	 overflow-hidden bg-white {}    justify-content: flex-start;
     height: 80px;
-    border-radius: 10px;
-    margin-top: 25px; }
+    border-radius: 10px; }
     .specialized .specialist-item:hover .btn-view-more span {
-      @apply text-blue-1 {}      border-bottom: 1px solid #27519e; }
+      @apply text-primary {} }
     .specialized .specialist-item .image-wrap {
       flex: 0 1 auto;
       background: linear-gradient(180deg, #299ae2 0%, #27519e 100%);
@@ -2150,6 +2149,8 @@ footer {
 @screen lg {
   .specialized .specialist-item .content {
     @apply pl-8 py-4 {} } }
+  .specialized .section-title {
+    margin-bottom: 1.875rem; }
 
 .team-doctor {
   padding: 3.125rem 0 2.5rem; }
