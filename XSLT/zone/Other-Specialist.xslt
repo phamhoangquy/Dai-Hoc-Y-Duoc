@@ -4,8 +4,7 @@
 	<xsl:output method="html" indent="yes" />
 
 	<xsl:template match="/">
-		<section class="specialized-detail-2">
-			<div class="container">
+
 				<div class="section-title"><span>Chuyên khoa khác</span><em
 						class="mdi mdi-gamepad"><span></span><span></span></em></div>
 				<div class="silde-spe-detail-2">
@@ -25,8 +24,6 @@
 					</div>
 				</div>
 
-			</div>
-		</section>
 	</xsl:template>
 	<xsl:template match="Zone">
 		<div class="swiper-slide">

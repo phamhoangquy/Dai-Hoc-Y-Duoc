@@ -40,7 +40,7 @@
 			<div class="btn-center"><a class="btn btn-booking">
 
 					<xsl:attribute name="href">
-						<xsl:value-of select="Url"></xsl:value-of>
+						<xsl:text>/dang-ky-kham</xsl:text>
 					</xsl:attribute>
 					<xsl:attribute name="title">
 						<xsl:value-of select="Title"></xsl:value-of>
