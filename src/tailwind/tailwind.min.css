@@ -2349,51 +2349,6 @@ footer {
             right: 0;
             top: -0; }
 
-.thankyou {
-  padding: 3.75rem 0 0; }
-  .thankyou .img {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 14px; }
-    .thankyou .img img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover; }
-  .thankyou .title {
-    font-size: 1.875rem;
-    color: #333333;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 0.3px;
-    font-weight: 700;
-    margin-bottom: 14px; }
-  .thankyou .content {
-    font-size: 1rem;
-    font-weight: 400;
-    letter-spacing: 0.16px;
-    text-align: center;
-    color: #333333;
-    margin-bottom: 13px; }
-  .thankyou .medical-check-banner .banner-content {
-    padding-right: 1.75rem;
-    padding-left: 1.75rem;
-    padding-bottom: 1.875rem;
-    position: unset;
-    max-width: 420px;
-    height: 325px;
-    margin: 0 auto;
-    transform: unset; }
-    @media screen and (max-width: 1024px) {
-      .thankyou .medical-check-banner .banner-content {
-        height: auto; } }
-    .thankyou .medical-check-banner .banner-content .text {
-      margin-top: 1.875rem; }
-    .thankyou .medical-check-banner .banner-content .name {
-      margin-bottom: 15px; }
-    .thankyou .medical-check-banner .banner-content .name-cover {
-      padding-top: 0;
-      text-transform: none; }
-
 .tutorial-client {
   padding: 3.125rem 0 0 0; }
   .tutorial-client .news-figure {
@@ -2515,6 +2470,51 @@ footer {
   @media screen and (max-width: 1024px) {
     .tutorial-client .pl-0 {
       padding-left: 15px; } }
+
+.thankyou {
+  padding: 3.75rem 0 0; }
+  .thankyou .img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 14px; }
+    .thankyou .img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  .thankyou .title {
+    font-size: 1.875rem;
+    color: #333333;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    font-weight: 700;
+    margin-bottom: 14px; }
+  .thankyou .content {
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.16px;
+    text-align: center;
+    color: #333333;
+    margin-bottom: 13px; }
+  .thankyou .medical-check-banner .banner-content {
+    padding-right: 1.75rem;
+    padding-left: 1.75rem;
+    padding-bottom: 1.875rem;
+    position: unset;
+    max-width: 420px;
+    height: 325px;
+    margin: 0 auto;
+    transform: unset; }
+    @media screen and (max-width: 1024px) {
+      .thankyou .medical-check-banner .banner-content {
+        height: auto; } }
+    .thankyou .medical-check-banner .banner-content .text {
+      margin-top: 1.875rem; }
+    .thankyou .medical-check-banner .banner-content .name {
+      margin-bottom: 15px; }
+    .thankyou .medical-check-banner .banner-content .name-cover {
+      padding-top: 0;
+      text-transform: none; }
 
 @-webkit-keyframes fade-in {
   0% {
@@ -3810,6 +3810,82 @@ header {
     .top-banner .wrapper a {
       height: 250px; } }
 
+.medical-check-banner {
+  @apply py-24 {} }
+
+@screen lg {
+  .medical-check-banner {
+    @apply py-16 {} } }
+  .medical-check-banner .container {
+    @apply relative {} }
+  @media screen and (max-width: 1024px) {
+    .medical-check-banner .image-wrap {
+      @apply hidden {} } }
+  .medical-check-banner .banner-content {
+    @apply absolute top-50 translate-y-50  px-14 pb-18 {}    right: 75px;
+    background-image: linear-gradient(90deg, rgba(2, 79, 161, 0.6) 0%, rgba(0, 137, 200, 0.6) 100%);
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px; }
+    @media screen and (max-width: 1024px) {
+      .medical-check-banner .banner-content {
+        @apply static translate-0 px-8 {} } }
+    @media screen and (max-width: 350px) {
+      .medical-check-banner .banner-content {
+        @apply px-4 {} } }
+    .medical-check-banner .banner-content .brand-logo {
+      @apply flex items-center justify-center {} }
+      .medical-check-banner .banner-content .brand-logo a {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        @apply bg-white flex items-center justify-center relative {}        margin-top: -50px; }
+        @media screen and (max-width: 1024px) {
+          .medical-check-banner .banner-content .brand-logo a {
+            width: 80px;
+            height: 80px; } }
+    .medical-check-banner .banner-content .name {
+      @apply text-16 text-white uppercase font-bold text-center pt-4 mb-5 {} }
+    .medical-check-banner .banner-content .phone-wrap {
+      @apply flex items-center justify-center py-1 {}      border: 2px solid white;
+      border-radius: 10px; }
+      .medical-check-banner .banner-content .phone-wrap span {
+        @apply text-30 text-white font-bold {} }
+      .medical-check-banner .banner-content .phone-wrap em {
+        font-size: 24px;
+        height: 24px;
+        line-height: 24px;
+        @apply text-white inline-block pr-2 {} }
+    .medical-check-banner .banner-content .text {
+      @apply text-16 text-white font-bold text-center uppercase my-4 {} }
+    .medical-check-banner .banner-content .time-wrap {
+      @apply flex justify-center items-center {} }
+      .medical-check-banner .banner-content .time-wrap .item {
+        @apply px-2 {} }
+        .medical-check-banner .banner-content .time-wrap .item span {
+          @apply text-16 text-white font-bold {} }
+        .medical-check-banner .banner-content .time-wrap .item em {
+          font-size: 16px;
+          height: 16px;
+          line-height: 16px;
+          @apply text-white inline-block pr-1 {} }
+        .medical-check-banner .banner-content .time-wrap .item:first-child {
+          border-right: 1px solid #ffffff; }
+  .medical-check-banner .btn-center {
+    @apply relative {} }
+  .medical-check-banner .btn-booking {
+    border-radius: 27px;
+    height: 54px;
+    @apply bg-azure relative px-10 pr-16 {}    margin-bottom: -120px; }
+    .medical-check-banner .btn-booking span {
+      @apply text-16 text-white font-bold uppercase {} }
+    .medical-check-banner .btn-booking em {
+      @apply flex items-center justify-center bg-white absolute text-azure {}      top: 2px;
+      right: 2px;
+      border-radius: 50%;
+      font-size: 18px;
+      height: 46px;
+      width: 46px; }
+
 .primary-banner {
   @apply relative {} }
   @media screen and (max-width: 1024px) {
@@ -4004,82 +4080,6 @@ html body .RadInput input.riEmpty, html body .RadInput textarea.riEmpty, html bo
     font-style: normal !important;
     font-weight: 400 !important;
     @apply text-white text-13 {} }
-
-.medical-check-banner {
-  @apply py-24 {} }
-
-@screen lg {
-  .medical-check-banner {
-    @apply py-16 {} } }
-  .medical-check-banner .container {
-    @apply relative {} }
-  @media screen and (max-width: 1024px) {
-    .medical-check-banner .image-wrap {
-      @apply hidden {} } }
-  .medical-check-banner .banner-content {
-    @apply absolute top-50 translate-y-50  px-14 pb-18 {}    right: 75px;
-    background-image: linear-gradient(90deg, rgba(2, 79, 161, 0.6) 0%, rgba(0, 137, 200, 0.6) 100%);
-    border-top-left-radius: 30px;
-    border-bottom-right-radius: 30px; }
-    @media screen and (max-width: 1024px) {
-      .medical-check-banner .banner-content {
-        @apply static translate-0 px-8 {} } }
-    @media screen and (max-width: 350px) {
-      .medical-check-banner .banner-content {
-        @apply px-4 {} } }
-    .medical-check-banner .banner-content .brand-logo {
-      @apply flex items-center justify-center {} }
-      .medical-check-banner .banner-content .brand-logo a {
-        border-radius: 50%;
-        width: 100px;
-        height: 100px;
-        @apply bg-white flex items-center justify-center relative {}        margin-top: -50px; }
-        @media screen and (max-width: 1024px) {
-          .medical-check-banner .banner-content .brand-logo a {
-            width: 80px;
-            height: 80px; } }
-    .medical-check-banner .banner-content .name {
-      @apply text-16 text-white uppercase font-bold text-center pt-4 mb-5 {} }
-    .medical-check-banner .banner-content .phone-wrap {
-      @apply flex items-center justify-center py-1 {}      border: 2px solid white;
-      border-radius: 10px; }
-      .medical-check-banner .banner-content .phone-wrap span {
-        @apply text-30 text-white font-bold {} }
-      .medical-check-banner .banner-content .phone-wrap em {
-        font-size: 24px;
-        height: 24px;
-        line-height: 24px;
-        @apply text-white inline-block pr-2 {} }
-    .medical-check-banner .banner-content .text {
-      @apply text-16 text-white font-bold text-center uppercase my-4 {} }
-    .medical-check-banner .banner-content .time-wrap {
-      @apply flex justify-center items-center {} }
-      .medical-check-banner .banner-content .time-wrap .item {
-        @apply px-2 {} }
-        .medical-check-banner .banner-content .time-wrap .item span {
-          @apply text-16 text-white font-bold {} }
-        .medical-check-banner .banner-content .time-wrap .item em {
-          font-size: 16px;
-          height: 16px;
-          line-height: 16px;
-          @apply text-white inline-block pr-1 {} }
-        .medical-check-banner .banner-content .time-wrap .item:first-child {
-          border-right: 1px solid #ffffff; }
-  .medical-check-banner .btn-center {
-    @apply relative {} }
-  .medical-check-banner .btn-booking {
-    border-radius: 27px;
-    height: 54px;
-    @apply bg-azure relative px-10 pr-16 {}    margin-bottom: -120px; }
-    .medical-check-banner .btn-booking span {
-      @apply text-16 text-white font-bold uppercase {} }
-    .medical-check-banner .btn-booking em {
-      @apply flex items-center justify-center bg-white absolute text-azure {}      top: 2px;
-      right: 2px;
-      border-radius: 50%;
-      font-size: 18px;
-      height: 46px;
-      width: 46px; }
 
 .home-faq {
   background: #edf9ff;
