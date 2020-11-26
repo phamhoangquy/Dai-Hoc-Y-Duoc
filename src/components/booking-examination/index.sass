@@ -1,92 +1,106 @@
 .booking-examination
-    padding: 50/16*1rem 0
-    @media screen and ( max-width: 1024px )
-        .pr-0
-            padding-right: 15px
-        .pl-0
-            padding-left: 15px
-    .border
-        margin-top: 1.5625rem
-    //     border: 1px solid #6bc0e7
-    //     .col
-    //         padding-right: 0
-    .item-bg
-        background-image: url('../img/bg/banner-bg-2.png')
-        background-position: center
-        background-repeat: no-repeat
-        background-size: 730px
-        height: 730px
-        border: 1px solid #6bc0e7
-        border-right: none
-        border-top-left-radius: 25px
-        border-bottom-left-radius: 25px
-        @media screen and ( max-width: 1024px )
-             border-radius: 25px
-             border-right: 1px solid #6bc0e7
-             background-size: 1024px
-             height: auto
-        .content
-            padding: 1.875rem
-            strong
-                font-size: 1rem
-                color: #ffffff
-            p
-                font-size: 1rem
-                color: #ffffff
-                margin-top: .9375rem
-                font-weight: 600
-    .medical-booking
-        padding: 30/16*1rem 25px 40/16*1rem
-        border: 1px solid #6bc0e7
-        border-left: none
-        border-top-right-radius: 25px
-        border-bottom-right-radius: 25px
-        height: 730px
-        @media screen and ( max-width: 1024px )
-             border-radius: 25px
-             border-left: 1px solid #6bc0e7
-             height: auto
-    .wrap-form
-        @apply pointer-events-auto
-        .row
-            margin: 0 -5px
-            .col
-                padding: 0 5px
-                margin-bottom: 15px
-        .form-group
-            input[type='text'],select,textarea,input[type='date']
-                background: rgba(white, .5)
-                border-radius: 3px
-                border: 1px solid #e0e0e0
-                height: 40px
-                @apply text-13 text-white
-                &::placeholder
-                    @apply text-white text-13
-            input[type='date']
-                @apply text-white text-13
-            select
-                @apply text-white text-13 w-full px-4
-                option
-                    @apply text-main text-13
-            textarea
-                height: 6rem
-                @apply pt-2
-            label
-                margin-bottom: 10/16*1rem
-                font-size: 1rem
-                color: #333333
-        .text-group
-            font-size: 1.125rem
-            color: #6bc0e7
-            text-transform: uppercase
-            border-bottom: 3px solid #6bc0e7
-        .frm-btnwrap
-            @apply m-0
-            .frm-btn
-                @apply flex w-full justify-end
-                input[type='submit']
-                    @apply bg-azure text-16 text-white uppercase font-bold p-0 flex justify-center items-center
-                    border-radius: 25px
-                    border: none
-                    height: 40px
-                    line-height: 16px
+	padding: 50/16*1rem 0
+	@media screen and ( max-width: 1024px )
+		.pr-0
+			padding-right: 15px
+		.pl-0
+			padding-left: 15px
+	.border
+		margin-top: 1.5625rem
+	//     border: 1px solid #6bc0e7
+	//     .col
+	//         padding-right: 0
+	.item-bg
+		background-image: url('../img/bg/banner-bg-2.png')
+		background-position: center
+		background-repeat: no-repeat
+		background-size: 730px
+		height: 730px
+		border: 1px solid #6bc0e7
+		border-right: none
+		border-top-left-radius: 25px
+		border-bottom-left-radius: 25px
+		@media screen and ( max-width: 1024px )
+			 border-radius: 25px
+			 border-right: 1px solid #6bc0e7
+			 background-size: 1024px
+			 height: auto
+		.content
+			padding: 1.875rem
+			strong
+				font-size: 1rem
+				color: #ffffff
+			p
+				font-size: 1rem
+				color: #ffffff
+				margin-top: .9375rem
+				font-weight: 600
+	.medical-booking
+		padding: 30/16*1rem 25px 40/16*1rem
+		border: 1px solid #6bc0e7
+		border-left: none
+		border-top-right-radius: 25px
+		border-bottom-right-radius: 25px
+		height: 730px
+		@media screen and ( max-width: 1024px )
+			 border-radius: 25px
+			 border-left: 1px solid #6bc0e7
+			 height: auto
+	.wrap-form
+		@apply pointer-events-auto
+		.row
+			margin: 0 -5px
+			.col
+				padding: 0 5px
+				margin-bottom: 15px
+		.form-group
+			.RadPicker_Default 
+				.rcCalPopup
+					background-image: url(../img/icon/date-grey.png)!important
+			.RadPicker_Default 
+				.rcTimePopup
+					background-image: url(../img/icon/date-grey.png)!important
+			.RadPicker
+				.RadInput
+						input
+							background: rgba(white, .5) !important
+							border-radius: 3px !important
+							border: 1px solid #e0e0e0 !important
+							height: 40px !important
+			input[type='text'],select,textarea,input[type='date']
+				background: rgba(white, .5)
+				border-radius: 3px
+				border: 1px solid #e0e0e0
+				height: 40px
+				@apply text-13 text-main
+				&::placeholder
+					@apply text-main text-13
+			input[type='date']
+				@apply text-main text-13
+			select
+				@apply text-main text-13 w-full px-4
+				option
+					@apply text-main text-13
+			textarea
+				height: 6rem
+				@apply pt-2 text-main
+			label
+				margin-bottom: 10/16*1rem
+				font-size: 1rem
+				color: #333333
+				@apply text-main
+		.text-group
+			font-size: 1.125rem
+			color: #6bc0e7
+			text-transform: uppercase
+			border-bottom: 3px solid #6bc0e7
+		.frm-btnwrap
+			@apply m-0
+			.frm-btn
+				@apply flex w-full justify-end
+				input[type='submit']
+					@apply bg-azure text-16 text-white uppercase font-bold p-0 flex justify-center items-center
+					border-radius: 25px
+					border: none
+					height: 40px
+					line-height: 16px

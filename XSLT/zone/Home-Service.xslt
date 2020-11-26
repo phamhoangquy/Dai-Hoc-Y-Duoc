@@ -34,7 +34,7 @@
 						<xsl:attribute name="title">
 							<xsl:value-of select="Title"></xsl:value-of>
 						</xsl:attribute>
-						<img class="swiper-lazy">
+						<img class="lazyload">
 						<xsl:attribute name="data-src">
 							<xsl:value-of select="ImageUrl"></xsl:value-of>
 						</xsl:attribute>
