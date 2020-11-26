@@ -1802,10 +1802,10 @@ footer {
 .tab {
   padding-top: 1.875rem;
   padding-bottom: 11px;
-  border-bottom: 2px solid #e1e1e1; }
+  border-bottom: 2px solid #e1e1e1;
+  overflow: auto; }
   .tab .tab-primary {
-    display: flex;
-    justify-content: center; }
+    display: flex; }
     .tab .tab-primary .tab-item {
       display: flex;
       justify-content: center;
@@ -1813,7 +1813,8 @@ footer {
       font-size: 1.125rem;
       font-weight: 700;
       margin-right: 2.3125rem;
-      position: relative; }
+      position: relative;
+      white-space: nowrap; }
       .tab .tab-primary .tab-item:last-child {
         margin-right: 0; }
       .tab .tab-primary .tab-item.active {
@@ -1871,7 +1872,8 @@ footer {
       @apply text-14 text-main font-bold uppercase transition my-2 {}      display: -webkit-box;
       -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
-      overflow: hidden; }
+      overflow: hidden;
+      height: 45px; }
   .medical .section-title {
     margin-bottom: 1.875rem; }
   .medical .faq-figure {
@@ -2000,7 +2002,8 @@ footer {
     border-bottom: 1px solid #27519e; }
     .medical-answer .section-card .image-wrap {
       width: 100px;
-      height: 100px; }
+      height: 100px;
+      margin: 0 auto; }
       @media screen and (max-width: 576px) {
         .medical-answer .section-card .image-wrap {
           margin: 0 auto; } }
