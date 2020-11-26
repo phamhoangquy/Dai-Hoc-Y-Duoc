@@ -1812,10 +1812,10 @@ footer {
 .tab {
   padding-top: 1.875rem;
   padding-bottom: 11px;
-  border-bottom: 2px solid #e1e1e1; }
+  border-bottom: 2px solid #e1e1e1;
+  overflow: auto; }
   .tab .tab-primary {
-    display: flex;
-    justify-content: center; }
+    display: flex; }
     .tab .tab-primary .tab-item {
       display: flex;
       justify-content: center;
@@ -1823,7 +1823,8 @@ footer {
       font-size: 1.125rem;
       font-weight: 700;
       margin-right: 2.3125rem;
-      position: relative; }
+      position: relative;
+      white-space: nowrap; }
       .tab .tab-primary .tab-item:last-child {
         margin-right: 0; }
       .tab .tab-primary .tab-item.active {
@@ -1881,7 +1882,8 @@ footer {
       @apply text-14 text-main font-bold uppercase transition my-2 {}      display: -webkit-box;
       -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
-      overflow: hidden; }
+      overflow: hidden;
+      height: 45px; }
   .medical .section-title {
     margin-bottom: 1.875rem; }
   .medical .faq-figure {
@@ -2010,7 +2012,8 @@ footer {
     border-bottom: 1px solid #27519e; }
     .medical-answer .section-card .image-wrap {
       width: 100px;
-      height: 100px; }
+      height: 100px;
+      margin: 0 auto; }
       @media screen and (max-width: 576px) {
         .medical-answer .section-card .image-wrap {
           margin: 0 auto; } }
@@ -3697,6 +3700,46 @@ header {
     .main-menu-toggle {
       @apply flex ml-4 items-center {} } }
 
+.modulepager {
+  @apply flex items-center justify-center pt-8 pb-0 {}  padding-bottom: 30px; }
+  .modulepager ul {
+    padding: 0;
+    margin: 0;
+    position: relative; }
+    .modulepager ul li {
+      display: inline-block;
+      padding: 0 10px; }
+      .modulepager ul li:last-child() {
+        position: relative; }
+        .modulepager ul li:last-child():after {
+          font-family: 'Material Design Icons';
+          content: '\f142';
+          font-size: 20px; }
+      .modulepager ul li.active a, .modulepager ul li.active span {
+        color: #ffffff;
+        background: #3159a3;
+        border: none; }
+      .modulepager ul li:hover a, .modulepager ul li:hover span {
+        color: #ffffff;
+        background: #3159a3;
+        border: none; }
+      .modulepager ul li span, .modulepager ul li a {
+        display: flex;
+        border: none;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        background: #6bc0e7;
+        text-decoration: none;
+        color: #ffffff;
+        border-radius: 50%;
+        font-size: 1rem; }
+        @media screen and (max-width: 1024px) {
+          .modulepager ul li span, .modulepager ul li a {
+            height: 32px;
+            width: 32px; } }
+
 .global-breadcrumb {
   @apply py-2 bg-grey-1 {}  height: 40px; }
   @media screen and (max-width: 576px) {
@@ -3759,46 +3802,6 @@ header {
           font-size: 12px;
           line-height: 20px;
           @apply font-light {} } }
-
-.modulepager {
-  @apply flex items-center justify-center pt-8 pb-0 {}  padding-bottom: 30px; }
-  .modulepager ul {
-    padding: 0;
-    margin: 0;
-    position: relative; }
-    .modulepager ul li {
-      display: inline-block;
-      padding: 0 10px; }
-      .modulepager ul li:last-child() {
-        position: relative; }
-        .modulepager ul li:last-child():after {
-          font-family: 'Material Design Icons';
-          content: '\f142';
-          font-size: 20px; }
-      .modulepager ul li.active a, .modulepager ul li.active span {
-        color: #ffffff;
-        background: #3159a3;
-        border: none; }
-      .modulepager ul li:hover a, .modulepager ul li:hover span {
-        color: #ffffff;
-        background: #3159a3;
-        border: none; }
-      .modulepager ul li span, .modulepager ul li a {
-        display: flex;
-        border: none;
-        justify-content: center;
-        align-items: center;
-        width: 40px;
-        height: 40px;
-        background: #6bc0e7;
-        text-decoration: none;
-        color: #ffffff;
-        border-radius: 50%;
-        font-size: 1rem; }
-        @media screen and (max-width: 1024px) {
-          .modulepager ul li span, .modulepager ul li a {
-            height: 32px;
-            width: 32px; } }
 
 .top-banner .wrapper a {
   height: 450px;
