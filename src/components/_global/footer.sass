@@ -118,8 +118,6 @@ footer
 				@apply flex items-center
 			@media screen and ( max-width: 576px)
 				@apply mb-2
-				
-				
 		.image
 			width: 50px
 			min-width: 50px
@@ -132,14 +130,17 @@ footer
 				width: 50px
 				@media screen and ( max-width: 576px)
 					width: 40px
-					
 	ul
 		li
 			@apply py-2
 
 		a
-			@apply text-16 text-main font-normal 
+			span
+				@apply text-16 text-main font-normal 
 			+left-plus
+			&:hover
+				span
+					@apply underline
 	ol
 		li
 			border-bottom: 1px solid rgba(white, .5)

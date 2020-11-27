@@ -30,10 +30,12 @@
 		.swiper-slide
 			@apply flex flex-col justify-center
 			height: auto 
+			.item
+				@apply transition
 			&.swiper-slide-prev,&.swiper-slide-next
-					
 				.item
-					height: auto
+					@screen lg
+						height: 460px
 					.title
 						a
 							@apply text-18
@@ -41,12 +43,14 @@
 						a
 							+img-ratio(230/400)
 			&.swiper-slide-next
-				padding-right: 150px
+				.item
+					padding: 30px
+					padding-right: 200px
 			&.swiper-slide-prev
-				padding-left: 150px
+				.item
+					padding: 30px
+					padding-left: 200px
 			&.swiper-slide-active
-
-				max-height: 650px
 				.content
 					background: linear-gradient( 0deg, rgb(104,192,230) 0%, rgb(2,79,161) 100%)
 				.title
@@ -64,14 +68,14 @@
 						@apply relative
 						&::after
 							content: ''
-							@apply block absolute pointer-events-none left-0 bottom-0 z-10  transition w-full h-full
+							@apply block absolute pointer-events-none left-0 bottom-0 z-10  transition w-full h-full transition
 							background: rgba(white, .9 )
 	.item
 		.wrap
 			border-radius: 25px
 			@apply overflow-hidden
 		.content
-			@apply bg-white p-5
+			@apply bg-white p-5 transition
 		.image-wrap
 			a
 				+img-ratio(460/810)
