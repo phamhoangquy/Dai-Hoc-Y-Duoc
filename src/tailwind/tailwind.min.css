@@ -1473,6 +1473,106 @@ footer {
       transition: .3s all ease-in-out;
       height: 18px; }
 
+.booking-examination {
+  padding: 3.125rem 0; }
+  @media screen and (max-width: 1024px) {
+    .booking-examination .pr-0 {
+      padding-right: 15px; }
+    .booking-examination .pl-0 {
+      padding-left: 15px; } }
+  .booking-examination .border {
+    margin-top: 1.5625rem; }
+  .booking-examination .item-bg {
+    background-image: url("../img/bg/banner-bg-2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 730px;
+    height: 730px;
+    border: 1px solid #6bc0e7;
+    border-right: none;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px; }
+    @media screen and (max-width: 1024px) {
+      .booking-examination .item-bg {
+        border-radius: 25px;
+        border-right: 1px solid #6bc0e7;
+        background-size: 1024px;
+        height: auto; } }
+    .booking-examination .item-bg .content {
+      padding: 1.875rem; }
+      .booking-examination .item-bg .content strong {
+        font-size: 1rem;
+        color: #ffffff; }
+      .booking-examination .item-bg .content p {
+        font-size: 1rem;
+        color: #ffffff;
+        margin-top: .9375rem;
+        font-weight: 600; }
+  .booking-examination .medical-booking {
+    padding: 1.875rem 25px 2.5rem;
+    border: 1px solid #6bc0e7;
+    border-left: none;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    height: 730px; }
+    @media screen and (max-width: 1024px) {
+      .booking-examination .medical-booking {
+        border-radius: 25px;
+        border-left: 1px solid #6bc0e7;
+        height: auto; } }
+  .booking-examination .wrap-form {
+    @apply pointer-events-auto {} }
+    .booking-examination .wrap-form .row {
+      margin: 0 -5px; }
+      .booking-examination .wrap-form .row .col {
+        padding: 0 5px;
+        margin-bottom: 15px; }
+    .booking-examination .wrap-form .form-group .RadPicker_Default .rcCalPopup {
+      background-image: url(../img/icon/date-grey.png) !important; }
+    .booking-examination .wrap-form .form-group .RadPicker_Default .rcTimePopup {
+      background-image: url(../img/icon/date-grey.png) !important; }
+    .booking-examination .wrap-form .form-group .RadPicker .RadInput input {
+      background: rgba(255, 255, 255, 0.5) !important;
+      border-radius: 3px !important;
+      border: 1px solid #e0e0e0 !important;
+      height: 40px !important; }
+    .booking-examination .wrap-form .form-group input[type='text'], .booking-examination .wrap-form .form-group select, .booking-examination .wrap-form .form-group textarea, .booking-examination .wrap-form .form-group input[type='date'] {
+      background: rgba(255, 255, 255, 0.5);
+      border-radius: 3px;
+      border: 1px solid #e0e0e0;
+      height: 40px;
+      @apply text-13 text-main {} }
+      .booking-examination .wrap-form .form-group input[type='text']::placeholder, .booking-examination .wrap-form .form-group select::placeholder, .booking-examination .wrap-form .form-group textarea::placeholder, .booking-examination .wrap-form .form-group input[type='date']::placeholder {
+        @apply text-main text-13 {} }
+    .booking-examination .wrap-form .form-group input[type='date'] {
+      @apply text-main text-13 {} }
+    .booking-examination .wrap-form .form-group select {
+      @apply text-main text-13 w-full px-4 {} }
+      .booking-examination .wrap-form .form-group select option {
+        @apply text-main text-13 {} }
+    .booking-examination .wrap-form .form-group textarea {
+      height: 6rem;
+      @apply pt-2 text-main {} }
+    .booking-examination .wrap-form .form-group label {
+      margin-bottom: 0.625rem;
+      font-size: 1rem;
+      color: #333333;
+      @apply text-main {} }
+    .booking-examination .wrap-form .text-group {
+      font-size: 1.125rem;
+      color: #6bc0e7;
+      text-transform: uppercase;
+      border-bottom: 3px solid #6bc0e7; }
+    .booking-examination .wrap-form .frm-btnwrap {
+      @apply m-0 {} }
+      .booking-examination .wrap-form .frm-btnwrap .frm-btn {
+        @apply flex w-full justify-end {} }
+        .booking-examination .wrap-form .frm-btnwrap .frm-btn input[type='submit'] {
+          @apply bg-azure text-16 text-white uppercase font-bold p-0 flex justify-center items-center {}          border-radius: 25px;
+          border: none;
+          height: 40px;
+          line-height: 16px; }
+
 .contact {
   padding: 3.75rem 0; }
   .contact .row {
@@ -1708,106 +1808,6 @@ footer {
         width: 100%;
         height: 100%;
         object-fit: cover; } }
-
-.booking-examination {
-  padding: 3.125rem 0; }
-  @media screen and (max-width: 1024px) {
-    .booking-examination .pr-0 {
-      padding-right: 15px; }
-    .booking-examination .pl-0 {
-      padding-left: 15px; } }
-  .booking-examination .border {
-    margin-top: 1.5625rem; }
-  .booking-examination .item-bg {
-    background-image: url("../img/bg/banner-bg-2.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 730px;
-    height: 730px;
-    border: 1px solid #6bc0e7;
-    border-right: none;
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px; }
-    @media screen and (max-width: 1024px) {
-      .booking-examination .item-bg {
-        border-radius: 25px;
-        border-right: 1px solid #6bc0e7;
-        background-size: 1024px;
-        height: auto; } }
-    .booking-examination .item-bg .content {
-      padding: 1.875rem; }
-      .booking-examination .item-bg .content strong {
-        font-size: 1rem;
-        color: #ffffff; }
-      .booking-examination .item-bg .content p {
-        font-size: 1rem;
-        color: #ffffff;
-        margin-top: .9375rem;
-        font-weight: 600; }
-  .booking-examination .medical-booking {
-    padding: 1.875rem 25px 2.5rem;
-    border: 1px solid #6bc0e7;
-    border-left: none;
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
-    height: 730px; }
-    @media screen and (max-width: 1024px) {
-      .booking-examination .medical-booking {
-        border-radius: 25px;
-        border-left: 1px solid #6bc0e7;
-        height: auto; } }
-  .booking-examination .wrap-form {
-    @apply pointer-events-auto {} }
-    .booking-examination .wrap-form .row {
-      margin: 0 -5px; }
-      .booking-examination .wrap-form .row .col {
-        padding: 0 5px;
-        margin-bottom: 15px; }
-    .booking-examination .wrap-form .form-group .RadPicker_Default .rcCalPopup {
-      background-image: url(../img/icon/date-grey.png) !important; }
-    .booking-examination .wrap-form .form-group .RadPicker_Default .rcTimePopup {
-      background-image: url(../img/icon/date-grey.png) !important; }
-    .booking-examination .wrap-form .form-group .RadPicker .RadInput input {
-      background: rgba(255, 255, 255, 0.5) !important;
-      border-radius: 3px !important;
-      border: 1px solid #e0e0e0 !important;
-      height: 40px !important; }
-    .booking-examination .wrap-form .form-group input[type='text'], .booking-examination .wrap-form .form-group select, .booking-examination .wrap-form .form-group textarea, .booking-examination .wrap-form .form-group input[type='date'] {
-      background: rgba(255, 255, 255, 0.5);
-      border-radius: 3px;
-      border: 1px solid #e0e0e0;
-      height: 40px;
-      @apply text-13 text-main {} }
-      .booking-examination .wrap-form .form-group input[type='text']::placeholder, .booking-examination .wrap-form .form-group select::placeholder, .booking-examination .wrap-form .form-group textarea::placeholder, .booking-examination .wrap-form .form-group input[type='date']::placeholder {
-        @apply text-main text-13 {} }
-    .booking-examination .wrap-form .form-group input[type='date'] {
-      @apply text-main text-13 {} }
-    .booking-examination .wrap-form .form-group select {
-      @apply text-main text-13 w-full px-4 {} }
-      .booking-examination .wrap-form .form-group select option {
-        @apply text-main text-13 {} }
-    .booking-examination .wrap-form .form-group textarea {
-      height: 6rem;
-      @apply pt-2 text-main {} }
-    .booking-examination .wrap-form .form-group label {
-      margin-bottom: 0.625rem;
-      font-size: 1rem;
-      color: #333333;
-      @apply text-main {} }
-    .booking-examination .wrap-form .text-group {
-      font-size: 1.125rem;
-      color: #6bc0e7;
-      text-transform: uppercase;
-      border-bottom: 3px solid #6bc0e7; }
-    .booking-examination .wrap-form .frm-btnwrap {
-      @apply m-0 {} }
-      .booking-examination .wrap-form .frm-btnwrap .frm-btn {
-        @apply flex w-full justify-end {} }
-        .booking-examination .wrap-form .frm-btnwrap .frm-btn input[type='submit'] {
-          @apply bg-azure text-16 text-white uppercase font-bold p-0 flex justify-center items-center {}          border-radius: 25px;
-          border: none;
-          height: 40px;
-          line-height: 16px; }
 
 .tab {
   padding-top: 1.875rem;
@@ -4258,6 +4258,31 @@ html body .RadInput input.riEmpty, html body .RadInput textarea.riEmpty, html bo
   @media screen and (max-width: 576px) {
     .news-figure {
       @apply mb-8 {} } }
+
+@screen lg {
+  .news-figure:not(.big) .image-wrap a {
+    display: block;
+    height: 145px;
+    width: auto; }
+    .news-figure:not(.big) .image-wrap a img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; } }
+  @media screen and (max-width: 1024px) {
+    .news-figure:not(.big) .image-wrap a {
+      position: relative;
+      display: block;
+      height: 0;
+      overflow: hidden;
+      padding-top: 50.87719%; }
+      .news-figure:not(.big) .image-wrap a img, .news-figure:not(.big) .image-wrap a iframe, .news-figure:not(.big) .image-wrap a video {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        transition: .3s ease-in-out all; } }
   .news-figure:hover .content {
     background: linear-gradient(180deg, #68c0e6 2%, #3789c4 99%); }
   .news-figure:hover time {
@@ -4275,10 +4300,16 @@ html body .RadInput input.riEmpty, html body .RadInput textarea.riEmpty, html bo
   .news-figure.big .title a {
     @apply text-16 my-4 {} }
 
-@screen sm {
+@screen lg {
   .news-figure.big .image-wrap a {
-    height: 300px; } }
-  @media screen and (max-width: 576px) {
+    display: block;
+    height: 300px;
+    width: auto; }
+    .news-figure.big .image-wrap a img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; } }
+  @media screen and (max-width: 1024px) {
     .news-figure.big .image-wrap a {
       position: relative;
       display: block;
@@ -4293,14 +4324,6 @@ html body .RadInput input.riEmpty, html body .RadInput textarea.riEmpty, html bo
         left: 0;
         object-fit: cover;
         transition: .3s ease-in-out all; } }
-  .news-figure .image-wrap a {
-    display: block;
-    height: 145px;
-    width: auto; }
-    .news-figure .image-wrap a img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover; }
   .news-figure .content {
     @apply p-5 bg-grey-7 transition {} }
   .news-figure .title a {
@@ -4345,10 +4368,18 @@ html body .RadInput input.riEmpty, html body .RadInput textarea.riEmpty, html bo
       @media screen and (max-width: 1280px) {
         .home-our-mission .home-choose-us .nav-arrow-next {
           right: 300px; } }
+  @media screen and (min-width: 1280px) {
+    .home-our-mission .swiper-container {
+      height: 540px; } }
   .home-our-mission .swiper-container .swiper-slide {
     @apply flex flex-col justify-center {}    height: auto; }
-    .home-our-mission .swiper-container .swiper-slide .item {
-      @apply transition {} }
+
+@screen lg {
+  .home-our-mission .swiper-container .swiper-slide .item {
+    @apply transition {} } }
+    @media screen and (max-width: 1280px) {
+      .home-our-mission .swiper-container .swiper-slide.swiper-slide-prev .item, .home-our-mission .swiper-container .swiper-slide.swiper-slide-next .item {
+        @apply flex flex-col items-center justify-center {} } }
 
 @screen lg {
   .home-our-mission .swiper-container .swiper-slide.swiper-slide-prev .item, .home-our-mission .swiper-container .swiper-slide.swiper-slide-next .item {
@@ -4370,11 +4401,20 @@ html body .RadInput input.riEmpty, html body .RadInput textarea.riEmpty, html bo
         object-fit: cover;
         transition: .3s ease-in-out all; }
     .home-our-mission .swiper-container .swiper-slide.swiper-slide-next .item {
-      padding: 30px;
-      padding-right: 200px; }
+      padding: 30px; }
+      @media screen and (min-width: 1280px) {
+        .home-our-mission .swiper-container .swiper-slide.swiper-slide-next .item {
+          padding-right: 200px; } }
     .home-our-mission .swiper-container .swiper-slide.swiper-slide-prev .item {
-      padding: 30px;
-      padding-left: 200px; }
+      padding: 30px; }
+      @media screen and (min-width: 1280px) {
+        .home-our-mission .swiper-container .swiper-slide.swiper-slide-prev .item {
+          padding-left: 200px; } }
+    @media screen and (min-width: 1280px) {
+      .home-our-mission .swiper-container .swiper-slide.swiper-slide-active {
+        height: 540px; }
+        .home-our-mission .swiper-container .swiper-slide.swiper-slide-active .caption {
+          height: 44px; } }
     .home-our-mission .swiper-container .swiper-slide.swiper-slide-active .content {
       background: linear-gradient(0deg, #68c0e6 0%, #024fa1 100%); }
     .home-our-mission .swiper-container .swiper-slide.swiper-slide-active .title a {
@@ -4387,7 +4427,7 @@ html body .RadInput input.riEmpty, html body .RadInput textarea.riEmpty, html bo
       @apply relative {} }
       .home-our-mission .swiper-container .swiper-slide:not(.swiper-slide-active) .item .wrap::after {
         content: '';
-        @apply block absolute pointer-events-none left-0 bottom-0 z-10  transition w-full h-full transition {}        background: rgba(255, 255, 255, 0.9); }
+        @apply block absolute pointer-events-none left-0 bottom-0 z-10   w-full h-full {}        background: rgba(255, 255, 255, 0.9); }
   .home-our-mission .item .wrap {
     border-radius: 25px;
     @apply overflow-hidden {} }
@@ -4461,6 +4501,23 @@ html body .RadInput input.riEmpty, html body .RadInput textarea.riEmpty, html bo
     background: linear-gradient(180deg, #299ae2 0%, #27519e 100%); }
   .news-service:hover .sub-title a {
     @apply text-white {} }
+  @media screen and (max-width: 1024px) {
+    .news-service .image-wrap a {
+      position: relative;
+      display: block;
+      height: 0;
+      overflow: hidden;
+      padding-top: 61.81818%; }
+      .news-service .image-wrap a img, .news-service .image-wrap a iframe, .news-service .image-wrap a video {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        transition: .3s ease-in-out all; } }
+
+@screen lg {
   .news-service .image-wrap a {
     display: block;
     height: 170px;
@@ -4468,7 +4525,7 @@ html body .RadInput input.riEmpty, html body .RadInput textarea.riEmpty, html bo
     .news-service .image-wrap a img {
       width: 100%;
       height: 100%;
-      object-fit: cover; }
+      object-fit: cover; } }
   .news-service .content {
     background: #f8f8f8;
     height: 70px;

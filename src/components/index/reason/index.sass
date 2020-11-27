@@ -27,13 +27,19 @@
 			@media screen and ( max-width:  1280px)
 				right: 300px
 	.swiper-container
+		@media screen and ( min-width: 1280px)
+			height: 540px
 		.swiper-slide
 			@apply flex flex-col justify-center
 			height: auto 
 			.item
-				@apply transition
+				@screen lg
+					@apply transition
 			&.swiper-slide-prev,&.swiper-slide-next
 				.item
+					@media screen and ( max-width: 1280px)
+						@apply flex flex-col items-center justify-center
+						
 					@screen lg
 						height: 460px
 					.title
@@ -45,12 +51,18 @@
 			&.swiper-slide-next
 				.item
 					padding: 30px
-					padding-right: 200px
+					@media screen and ( min-width: 1280px)
+						padding-right: 200px
 			&.swiper-slide-prev
 				.item
 					padding: 30px
-					padding-left: 200px
+					@media screen and ( min-width: 1280px)
+						padding-left: 200px
 			&.swiper-slide-active
+				@media screen and ( min-width: 1280px)
+					height: 540px
+					.caption
+						height: 44px
 				.content
 					background: linear-gradient( 0deg, rgb(104,192,230) 0%, rgb(2,79,161) 100%)
 				.title
@@ -68,7 +80,7 @@
 						@apply relative
 						&::after
 							content: ''
-							@apply block absolute pointer-events-none left-0 bottom-0 z-10  transition w-full h-full transition
+							@apply block absolute pointer-events-none left-0 bottom-0 z-10   w-full h-full 
 							background: rgba(white, .9 )
 	.item
 		.wrap
