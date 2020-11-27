@@ -114,7 +114,7 @@ function swiperInit() {
             }
 
         },
-        spaceBetween: 30,
+        spaceBetween: 0,
         navigation: {
             nextEl: '.home-our-mission .nav-arrow-next',
             prevEl: '.home-our-mission .nav-arrow-prev',
@@ -133,7 +133,6 @@ function swiperInit() {
                 1024: {
                     slidesPerView: 1.1,
                 }
-
             },
             navigation: {
                 nextEl: '.facility-swiper .nav-arrow-next',
