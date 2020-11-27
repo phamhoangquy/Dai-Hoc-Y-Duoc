@@ -31,7 +31,22 @@
 	@apply overflow-hidden
 	@media screen and ( max-width:  576px)
 		@apply mb-8
-		
+	&:not(.big)
+		.image-wrap
+			@screen lg
+				a
+					display: block
+					height: 145px
+					width: auto
+					img
+						width: 100%
+						height: 100%
+						object-fit: cover
+			@media screen and ( max-width: 1024px)
+				a
+					+img-ratio(145/285)
+				
+
 	&:hover
 		.content
 			background: linear-gradient( 180deg, rgb(104,192,230) 2%, rgb(55,137,196) 99%)
@@ -51,22 +66,20 @@
 			a
 				@apply text-16 my-4
 		.image-wrap
-			@screen sm
+			@screen lg
 				a
+					display: block
 					height: 300px
-			@media screen and ( max-width:  576px)
+					width: auto
+					img
+						width: 100%
+						height: 100%
+						object-fit: cover
+			@media screen and ( max-width:  1024px)
 				a
 					+img-ratio(300/600)
 
-	.image-wrap
-		a
-			display: block
-			height: 145px
-			width: auto
-			img
-				width: 100%
-				height: 100%
-				object-fit: cover
+
 	.content
 		@apply p-5 bg-grey-7 transition
 	.title
