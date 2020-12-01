@@ -396,7 +396,7 @@ function swiperInit() {
                 slidesPerView: 1,
                 slidesPerColumn: 4,
             },
-            1024: {
+            1280: {
                 slidesPerView: 1,
                 slidesPerColumn: 5,
             }

@@ -160,7 +160,7 @@
 							<div class="copyright">
 								<portal:CopyrightLabel id="cl1" runat="server" ShowYear="true" BeginYear="2020" />
 							</div>
-							<div class="back-to-top"><span class="lnr-chevron-up"></span></div>
+							<div class="back-to-top"><em class="lnr lnr-chevron-up"></em></div>
 						</div>
 					</div>
 				</section>
