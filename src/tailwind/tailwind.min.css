@@ -4742,6 +4742,8 @@ html body .RadInput input.riEmpty, html body .RadInput textarea.riEmpty, html bo
   padding-top: 1.5625rem;
   border-radius: 10px;
   background-color: white; }
+  .service-detail-3 .card-body img {
+    margin: 0 auto; }
   .service-detail-3 .card-body table {
     width: 100%; }
     .service-detail-3 .card-body table thead {
