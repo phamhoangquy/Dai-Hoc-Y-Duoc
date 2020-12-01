@@ -4402,14 +4402,8 @@ html body .RadInput input.riEmpty, html body .RadInput textarea.riEmpty, html bo
         transition: .3s ease-in-out all; }
     .home-our-mission .swiper-container .swiper-slide.swiper-slide-next .item {
       padding: 30px; }
-      @media screen and (min-width: 1280px) {
-        .home-our-mission .swiper-container .swiper-slide.swiper-slide-next .item {
-          padding-right: 200px; } }
     .home-our-mission .swiper-container .swiper-slide.swiper-slide-prev .item {
       padding: 30px; }
-      @media screen and (min-width: 1280px) {
-        .home-our-mission .swiper-container .swiper-slide.swiper-slide-prev .item {
-          padding-left: 200px; } }
     @media screen and (min-width: 1280px) {
       .home-our-mission .swiper-container .swiper-slide.swiper-slide-active {
         height: 540px; }
