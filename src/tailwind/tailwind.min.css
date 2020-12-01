@@ -596,7 +596,6 @@ footer {
           display: -webkit-box;
           overflow: hidden; } }
       .about-2 .about-figure .content p {
-        text-transform: uppercase;
         font-size: 1rem;
         color: #ffffff; }
 
@@ -1585,6 +1584,9 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
     padding: 3.75rem; }
+    @media screen and (max-width: 1280px) {
+      .contact .left-wrapper {
+        padding: 3.2rem; } }
     .contact .left-wrapper .logo-contact {
       display: flex;
       justify-content: center;
@@ -1644,7 +1646,8 @@ footer {
       color: #ffffff;
       font-size: 13px; }
       .contact .wrap-form .form-group span.fa-exclamation-triangle {
-        color: firebrick; }
+        color: firebrick;
+        left: 15px; }
     .contact .wrap-form .form-group input, .contact .wrap-form .form-group textarea {
       padding-left: 20px;
       border: 1px solid #e0e0e0;
@@ -1929,7 +1932,14 @@ footer {
       font-weight: 400;
       font-size: 1rem;
       line-height: 1.5rem;
-      margin-bottom: 2.9375rem; }
+      margin-bottom: 2.9375rem;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+      display: -webkit-box;
+      overflow: hidden; }
+      @media screen and (max-width: 1280px) {
+        .medical .wrap-text .content {
+          margin-bottom: 2.6rem; } }
     .medical .wrap-text .btn-primary {
       width: 150px; }
       .medical .wrap-text .btn-primary span {
@@ -2143,6 +2153,10 @@ footer {
     padding: 3.75rem 1.875rem 1.875rem 2.8125rem;
     border-radius: 0 10px 10px 0;
     box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.1); }
+    @media screen and (max-width: 1280px) {
+      .service .service-text {
+        height: auto;
+        padding: 1.875rem; } }
     @media screen and (max-width: 1024px) {
       .service .service-text {
         height: auto; } }
@@ -2165,7 +2179,14 @@ footer {
       font-weight: 400;
       font-size: 1rem;
       line-height: 1.5rem;
-      margin-bottom: 2.9375rem; }
+      margin-bottom: 2.9375rem;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+      display: -webkit-box;
+      overflow: hidden; }
+      @media screen and (max-width: 1280px) {
+        .service .service-text .content {
+          margin-bottom: 2.6rem; } }
     .service .service-text .btn-primary {
       width: 150px; }
       .service .service-text .btn-primary span {
@@ -3871,6 +3892,9 @@ header {
         background: linear-gradient(-88deg, #68c0e6 0%, #3769dc 99%); }
   .primary-banner .title {
     @apply text-32 text-white uppercase font-bold absolute left-50 translate-x-50 text-center w-full {}    bottom: 50px; }
+    @media screen and (max-width: 1280px) {
+      .primary-banner .title {
+        font-size: 2.5rem !important; } }
     @media screen and (max-width: 400px) {
       .primary-banner .title {
         @apply text-20 {}        bottom: 35px; } }
@@ -3954,6 +3978,9 @@ header {
     .medical-form .wrap-form .form-group textarea {
       height: 6rem;
       @apply pt-2 {} }
+    @media screen and (max-width: 1280px) {
+      .medical-form .wrap-form .form-group.RadPicker.RadPicker_Default .fa.fa-exclamation-triangle {
+        font-size: .5rem !important; } }
     .medical-form .wrap-form .frm-btnwrap {
       @apply m-0 {} }
       .medical-form .wrap-form .frm-btnwrap .frm-btn {
@@ -4137,6 +4164,9 @@ html body .RadInput input.riEmpty, html body .RadInput textarea.riEmpty, html bo
         @apply text-14 {} } }
   .faq-figure.big .content {
     @apply p-6 {} }
+    @media screen and (max-width: 1280px) {
+      .faq-figure.big .content {
+        padding: 1.7rem; } }
   .faq-figure.big .sub-title a {
     @apply text-24 leading-normal mb-2 mt-1 {}    display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -4165,6 +4195,9 @@ html body .RadInput input.riEmpty, html body .RadInput textarea.riEmpty, html bo
       -webkit-box-orient: vertical;
       overflow: hidden;
       @apply leading-normal {} }
+      @media screen and (max-width: 1280px) {
+        .faq-figure.side .sub-title a {
+          font-size: .875rem; } }
     .faq-figure.side .content {
       @apply p-4 {}      width: calc( 100% - 315px); }
       @media screen and (max-width: 1280px) {
@@ -4588,8 +4621,8 @@ html body .RadInput input.riEmpty, html body .RadInput textarea.riEmpty, html bo
     .medical-answer-detail .section-social .social * {
       font-size: 1.125rem;
       color: #014293; }
-    .medical-answer-detail .section-social .social a:first-child {
-      margin-right: 1.25rem; }
+      .medical-answer-detail .section-social .social *:hover {
+        color: #ff4c4c; }
   .medical-answer-detail .anwser-question * {
     line-height: 1.25; }
   .medical-answer-detail .anwser-question img {

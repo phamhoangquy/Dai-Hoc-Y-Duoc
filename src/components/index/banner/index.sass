@@ -52,6 +52,8 @@
 			&.swiper-pagination-bullet-active
 				background: linear-gradient( -88deg, rgb(104,192,230) 0%, rgb(55,105,220) 99%)
 	.title
+		@media screen and ( max-width: 1280px )
+			font-size: 2.5rem !important
 		@media screen and ( max-width: 400px)
 			@apply text-20
 			bottom: 35px 
@@ -132,6 +134,10 @@
 			textarea
 				height: 6rem
 				@apply pt-2
+			&.RadPicker.RadPicker_Default
+				.fa.fa-exclamation-triangle
+					@media screen and ( max-width: 1280px )
+						font-size: .5rem !important
 		.frm-btnwrap
 			@apply m-0
 			.frm-btn

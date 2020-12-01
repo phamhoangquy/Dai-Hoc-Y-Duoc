@@ -30,6 +30,8 @@
 				
 		.content
 			@apply p-6
+			@media screen and ( max-width: 1280px)
+				padding: 1.7rem
 		.sub-title
 			a
 				@apply text-24 leading-normal mb-2 mt-1
@@ -63,6 +65,8 @@
 				-webkit-box-orient: vertical
 				overflow: hidden
 				@apply leading-normal
+				@media screen and ( max-width: 1280px )
+					font-size: .875rem
 		.content
 			@apply p-4
 			width: calc( 100% - 315px )
@@ -74,11 +78,8 @@
 		.image-wrap
 			@media screen and ( min-width:  1024.1px) and ( max-width:  1280px)
 				width: 200px
-		
-				
 			@screen xl
 				width: 315px
-
 				a
 					display: block
 					height: 175px
