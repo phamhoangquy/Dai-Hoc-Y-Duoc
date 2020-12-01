@@ -24,10 +24,10 @@
 			@apply mr-4
 	.swiper-home-specialist
 		.swiper-container
-			@screen lg
+			@media screen and ( min-width:  1300.1px)
 				height: 510px
-			@media screen and ( max-width:  1024px)
-				height: 310px
+			@media screen and ( min-width:  1024.1px) and ( max-width:  1300.1px)
+				height: 430px
 			.swiper-slide
 				height: auto !important
 .news-service
@@ -40,10 +40,10 @@
 			a
 				@apply text-white
 	.image-wrap
-		@media screen and ( max-width: 1024px)
+		@media screen and ( max-width: 1300.8px)
 			a
 				+img-ratio(170/275)
-		@screen lg
+		@media screen and ( min-width: 1300.9px)
 			a
 				display: block
 				height: 170px
@@ -71,6 +71,9 @@
 	height: 85px
 	border-radius: 10px
 	+boxshadow
+	@media screen and ( min-width:  1024.1px) and ( max-width:  1300.1px)
+		height: 92px
+		
 	&:hover
 		.btn-view-more
 			span
@@ -81,6 +84,9 @@
 		width: 85px
 		height: 85px
 		@apply p-2 flex items-center justify-center
+		@media screen and ( min-width:  1024.1px) and ( max-width:  1300.1px)
+			width: 92px
+			height: 92px
 		a
 			display: block
 			height: 50px

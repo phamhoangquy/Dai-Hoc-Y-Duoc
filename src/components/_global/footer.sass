@@ -114,8 +114,8 @@ footer
 		@apply flex
 		.text
 			@apply text-16 text-white font-bold uppercase leading-tight pl-3
-			@media screen and ( max-width: 1280px)
-				@apply flex items-center
+			@media screen and ( max-width: 1300px)
+				@apply flex items-center text-12
 			@media screen and ( max-width: 576px)
 				@apply mb-2
 		.image
@@ -162,9 +162,9 @@ footer
 				@apply text-14 mb-0
 				strong
 					@apply font-bold text-20 leading-tight
-					@screen lg
-						@apply text-24
-					@screen xl
+					@media screen and ( max-width: 1300px)
+						@apply text-18
+					@media screen and ( min-width: 1300.1px)
 						@apply text-30
 			span
 				@apply text-14 leading-relaxed inline-block
