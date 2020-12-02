@@ -2292,6 +2292,9 @@ footer {
   .team-doctor .section-list .list-body {
     padding: 1.125rem 4.3125rem 1.875rem 1.1875rem;
     background-color: #f0f9fd; }
+    @media screen and (max-width: 1280px) {
+      .team-doctor .section-list .list-body {
+        padding: 1.125rem 1.1875rem 1.875rem 1.1875rem; } }
     @media screen and (max-width: 1024px) {
       .team-doctor .section-list .list-body {
         padding: 1.875rem; } }
@@ -2302,6 +2305,9 @@ footer {
       font-weight: 400;
       letter-spacing: 0.16px;
       margin-bottom: 1.875rem; }
+      @media screen and (max-width: 1280px) {
+        .team-doctor .section-list .list-body .list-item {
+          font-size: .9rem; } }
       @media screen and (max-width: 1024px) {
         .team-doctor .section-list .list-body .list-item {
           text-align: center; } }
