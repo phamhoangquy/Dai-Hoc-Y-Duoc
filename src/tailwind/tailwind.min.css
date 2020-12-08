@@ -2439,6 +2439,11 @@ footer {
     @media screen and (max-width: 576px) {
       .tutorial-client .news-figure {
         @apply mb-8 {} } }
+    .tutorial-client .news-figure .caption {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden; }
     .tutorial-client .news-figure:hover .content {
       background: linear-gradient(180deg, #68c0e6 2%, #3789c4 99%); }
     .tutorial-client .news-figure:hover time {
@@ -4275,6 +4280,11 @@ html body .RadInput input.riEmpty, html body .RadInput textarea.riEmpty, html bo
     @apply mb-0 {} }
     .home-news .row .col {
       @apply mt-0 {} }
+  .home-news .news-figure.big .caption {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden; }
 
 .single-swiper {
   @apply relative {} }

@@ -148,11 +148,7 @@
 							<span>Xem chi tiết</span>
 						</a></div>
 					<div class="btn-left medical-check-banner"><a class="btn btn-booking">
-							<xsl:attribute name="href">
-								<xsl:text>/dang-ky-kham</xsl:text>
-							</xsl:attribute>
-							<span>Đặt lịch khám</span><em class="mdi mdi-calendar"></em>
-						</a></div>
+						<span>Đặt lịch khám</span><em class="mdi mdi-calendar"></em></a></div>
 				</div>
 			</div>
 		</div>

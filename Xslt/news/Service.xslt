@@ -4,7 +4,7 @@
 	<xsl:output method="html" indent="yes" />
 
 	<xsl:template match="/">
-		<section class="tutorial-client">
+		<section class="service">
 			<div class="container">
 				<div class="section-title"><span>
 						<xsl:value-of disable-output-escaping="yes" select="/NewsList/ZoneTitle"></xsl:value-of>
@@ -12,15 +12,17 @@
 				<xsl:apply-templates select="/NewsList/News" mode='Big'></xsl:apply-templates>
 				<div class="row">
 					<xsl:apply-templates select="/NewsList/News"></xsl:apply-templates>
+
 				</div>
 			</div>
 		</section>
 	</xsl:template>
 	<xsl:template match="News" mode='Big'>
-		<xsl:if test="position()=1">
+		<xsl:if test="poisition()=1">
+
 			<div class="row">
 				<div class="col w-full lg:w-1/2 pr-0">
-					<div class="faq-figure">
+					<div class="service-figure">
 						<div class="image-wrap shine">
 							<a>
 								<xsl:attribute name="href">
@@ -38,12 +40,15 @@
 								</xsl:attribute>
 								</img>
 							</a>
+
 						</div>
 					</div>
 				</div>
 				<div class="col w-full lg:w-1/2 pl-0">
-					<div class="wrap-text">
+					<div class="service-text">
 						<div class="title">
+
+
 							<a>
 								<xsl:attribute name="href">
 									<xsl:value-of select="Url"></xsl:value-of>
@@ -56,16 +61,18 @@
 							</a>
 						</div>
 						<div class="content">
-
 							<xsl:value-of disable-output-escaping="yes" select="BriefContent"></xsl:value-of>
 						</div>
 						<div class="btn-left"><a class="btn btn-primary blue">
+
 								<xsl:attribute name="href">
 									<xsl:value-of select="Url"></xsl:value-of>
 								</xsl:attribute>
 								<xsl:attribute name="title">
 									<xsl:value-of select="Title"></xsl:value-of>
 								</xsl:attribute>
+
+
 								<span>Xem chi tiết</span>
 							</a>
 						</div>
@@ -73,12 +80,16 @@
 				</div>
 			</div>
 		</xsl:if>
+
 	</xsl:template>
 	<xsl:template match="News">
-		<xsl:if test="position()> 1">
+		<xsl:if test="position()>1">
+
 			<div class="col w-full lg:w-4/12">
 				<div class="news-figure">
-					<div class="image-wrap opacity">
+					<div class="image-wrap zoom-in">
+
+
 						<a>
 							<xsl:attribute name="href">
 								<xsl:value-of select="Url"></xsl:value-of>

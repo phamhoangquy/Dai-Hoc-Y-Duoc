@@ -32,10 +32,7 @@
 					<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
 					<xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
 				</div>
-				<div class="briefcontent">
-					<xsl:value-of disable-output-escaping="yes" select="BriefContent">
-					</xsl:value-of>
-				</div>
+				<xsl:value-of disable-output-escaping="yes" select="BriefContent"></xsl:value-of>
 				<div class="wrap-btn">
 					<div class="btn-left"><a class="btn btn-primary blue">
 							<xsl:attribute name="href">
@@ -47,8 +44,7 @@
 
 							<span>Xem chi tiết</span>
 						</a></div>
-					<div class="btn-left medical-check-banner"><a class="btn btn-booking" href=""><span>Đặt lịch
-								khám</span><em class="mdi mdi-calendar"></em></a></div>
+					<div class="btn-left medical-check-banner"><a class="btn btn-booking" href=""><span>Đặt lịch khám</span><em class="mdi mdi-calendar"></em></a></div>
 				</div>
 			</div>
 		</div>
