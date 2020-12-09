@@ -27,7 +27,7 @@
 					&lt;div class=&quot;col w-full&quot;&gt;
 				</xsl:text>
 				<div class="news-figure big">
-					<div class="image-wrap zoom-in">
+					<div class="image-wrap shine">
 						<a>
 							<xsl:attribute name="href">
 								<xsl:value-of select="Url"></xsl:value-of>
@@ -70,7 +70,7 @@
 			<xsl:when test="position() mod 3 = 2">
 				<div class="col w-full sm:w-1/2">
 					<div class="news-figure">
-						<div class="image-wrap zoom-in">
+						<div class="image-wrap shine">
 
 							<a>
 								<xsl:attribute name="href">
@@ -110,7 +110,7 @@
 			<xsl:when test="position() mod 3 = 0">
 				<div class="col w-full sm:w-1/2">
 					<div class="news-figure">
-						<div class="image-wrap zoom-in">
+						<div class="image-wrap shine">
 
 							<a>
 								<xsl:attribute name="href">

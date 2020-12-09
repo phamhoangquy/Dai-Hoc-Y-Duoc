@@ -24,7 +24,7 @@
 	<xsl:template match="News">
 		<xsl:if test="position()=1">
 			<div class="faq-figure big">
-				<div class="image-wrap zoom-in">
+				<div class="image-wrap shine">
 					<a>
 						<xsl:attribute name="href">
 							<xsl:value-of select="Url"></xsl:value-of>
@@ -69,7 +69,7 @@
 	<xsl:template match="News" mode='Side'>
 		<xsl:if test="position()>1">
 			<div class="faq-figure side">
-				<div class="image-wrap zoom-in">
+				<div class="image-wrap shine">
 					<a>
 						<xsl:attribute name="href">
 							<xsl:value-of select="Url"></xsl:value-of>

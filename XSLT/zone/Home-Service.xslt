@@ -26,7 +26,7 @@
 	<xsl:template match="Zone">
 		<div class="swiper-slide">
 			<div class="news-service">
-				<div class="image-wrap zoom-in">
+				<div class="image-wrap shine">
 					<a>
 						<xsl:attribute name="href">
 							<xsl:value-of select="Url"></xsl:value-of>

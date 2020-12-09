@@ -627,220 +627,6 @@ footer {
       padding-top: 15px;
       text-align: center; }
 
-.booking-examination {
-  padding: 3.125rem 0; }
-  @media screen and (max-width: 1024px) {
-    .booking-examination .pr-0 {
-      padding-right: 15px; }
-    .booking-examination .pl-0 {
-      padding-left: 15px; } }
-  .booking-examination .border {
-    margin-top: 1.5625rem; }
-  .booking-examination .item-bg {
-    background-image: url("../img/bg/banner-bg-2.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 730px;
-    height: 730px;
-    border: 1px solid #6bc0e7;
-    border-right: none;
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px; }
-    @media screen and (max-width: 1024px) {
-      .booking-examination .item-bg {
-        border-radius: 25px;
-        border-right: 1px solid #6bc0e7;
-        background-size: 1024px;
-        height: auto; } }
-    .booking-examination .item-bg .content {
-      padding: 1.875rem; }
-      .booking-examination .item-bg .content strong {
-        font-size: 1rem;
-        color: #ffffff; }
-      .booking-examination .item-bg .content p {
-        font-size: 1rem;
-        color: #ffffff;
-        margin-top: .9375rem;
-        font-weight: 600; }
-  .booking-examination .medical-booking {
-    padding: 1.875rem 25px 2.5rem;
-    border: 1px solid #6bc0e7;
-    border-left: none;
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
-    height: 730px; }
-    @media screen and (max-width: 1024px) {
-      .booking-examination .medical-booking {
-        border-radius: 25px;
-        border-left: 1px solid #6bc0e7;
-        height: auto; } }
-  .booking-examination .wrap-form {
-    @apply pointer-events-auto {} }
-    .booking-examination .wrap-form .row {
-      margin: 0 -5px; }
-      .booking-examination .wrap-form .row .col {
-        padding: 0 5px;
-        margin-bottom: 15px; }
-    .booking-examination .wrap-form .form-group .RadPicker_Default .rcCalPopup {
-      background-image: url(../img/icon/date-grey.png) !important; }
-    .booking-examination .wrap-form .form-group .RadPicker_Default .rcTimePopup {
-      background-image: url(../img/icon/date-grey.png) !important; }
-    .booking-examination .wrap-form .form-group .RadPicker .RadInput input {
-      background: rgba(255, 255, 255, 0.5) !important;
-      border-radius: 3px !important;
-      border: 1px solid #e0e0e0 !important;
-      height: 40px !important; }
-    .booking-examination .wrap-form .form-group input[type='text'], .booking-examination .wrap-form .form-group select, .booking-examination .wrap-form .form-group textarea, .booking-examination .wrap-form .form-group input[type='date'] {
-      background: rgba(255, 255, 255, 0.5);
-      border-radius: 3px;
-      border: 1px solid #e0e0e0;
-      height: 40px;
-      @apply text-13 text-main {} }
-      .booking-examination .wrap-form .form-group input[type='text']::placeholder, .booking-examination .wrap-form .form-group select::placeholder, .booking-examination .wrap-form .form-group textarea::placeholder, .booking-examination .wrap-form .form-group input[type='date']::placeholder {
-        @apply text-main text-13 {} }
-    .booking-examination .wrap-form .form-group input[type='date'] {
-      @apply text-main text-13 {} }
-    .booking-examination .wrap-form .form-group select {
-      @apply text-main text-13 w-full px-4 {} }
-      .booking-examination .wrap-form .form-group select option {
-        @apply text-main text-13 {} }
-    .booking-examination .wrap-form .form-group textarea {
-      height: 6rem;
-      @apply pt-2 text-main {} }
-    .booking-examination .wrap-form .form-group label {
-      margin-bottom: 0.625rem;
-      font-size: 1rem;
-      color: #333333;
-      @apply text-main {} }
-    .booking-examination .wrap-form .text-group {
-      font-size: 1.125rem;
-      color: #6bc0e7;
-      text-transform: uppercase;
-      border-bottom: 3px solid #6bc0e7; }
-    .booking-examination .wrap-form .frm-btnwrap {
-      @apply m-0 {} }
-      .booking-examination .wrap-form .frm-btnwrap .frm-btn {
-        @apply flex w-full justify-end {} }
-        .booking-examination .wrap-form .frm-btnwrap .frm-btn input[type='submit'] {
-          @apply bg-azure text-16 text-white uppercase font-bold p-0 flex justify-center items-center {}          border-radius: 25px;
-          border: none;
-          height: 40px;
-          line-height: 16px; }
-
-.contact {
-  padding: 3.75rem 0; }
-  .contact .row {
-    margin-top: 1.5625rem; }
-  .contact .box-shaw {
-    background: #f5f5f5;
-    padding: 1.5625rem; }
-  .contact .left-wrapper {
-    background-image: url("../img/bg/contact-bg.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 3.75rem; }
-    @media screen and (max-width: 1280px) {
-      .contact .left-wrapper {
-        padding: 3.2rem; } }
-    .contact .left-wrapper .logo-contact {
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-      .contact .left-wrapper .logo-contact a {
-        background: #ffffff;
-        border-radius: 50%;
-        width: 130px;
-        height: 130px;
-        display: flex;
-        justify-content: center;
-        align-items: center; }
-        .contact .left-wrapper .logo-contact a img {
-          width: 100%;
-          height: 100%;
-          object-fit: scale-down; }
-    .contact .left-wrapper .title-contact {
-      font-size: 1rem;
-      color: #ffffff;
-      text-transform: uppercase;
-      font-weight: 700;
-      text-align: center;
-      padding-top: 2.1875rem; }
-    .contact .left-wrapper .card-body {
-      padding-top: 2.5rem; }
-      .contact .left-wrapper .card-body ul {
-        padding: 0;
-        list-style: none; }
-        .contact .left-wrapper .card-body ul li {
-          display: flex;
-          font-size: 1rem;
-          color: #ffffff;
-          padding-bottom: 0.9375rem; }
-          .contact .left-wrapper .card-body ul li p {
-            font-size: 1rem;
-            color: #ffffff;
-            padding-left: 1.25rem;
-            font-weight: 500; }
-  .contact .map-wrapper {
-    margin-left: -30px; }
-    @media screen and (max-width: 1024.98px) {
-      .contact .map-wrapper {
-        margin-left: 0;
-        margin-top: -1.875rem; } }
-  .contact .text-form {
-    font-size: 1rem;
-    color: #333333;
-    text-align: center;
-    padding-top: 3.75rem; }
-  @media screen and (max-width: 1025px) {
-    .contact .wrap-form {
-      margin: 0;
-      padding: 0 10px; } }
-  .contact .wrap-form .form-group {
-    margin: 0px 0 20px 0; }
-    .contact .wrap-form .form-group span {
-      color: #ffffff;
-      font-size: 13px; }
-      .contact .wrap-form .form-group span.fa-exclamation-triangle {
-        color: firebrick;
-        left: 15px; }
-    .contact .wrap-form .form-group input, .contact .wrap-form .form-group textarea {
-      padding-left: 20px;
-      border: 1px solid #e0e0e0;
-      height: 42px;
-      width: 100%;
-      color: #999999;
-      background: #ffffff;
-      transition: .3s all ease-in-out; }
-      .contact .wrap-form .form-group input:focus, .contact .wrap-form .form-group textarea:focus {
-        outline: none;
-        box-shadow: 0px 5px 15px 0px rgba(56, 50, 44, 0.15); }
-    .contact .wrap-form .form-group label {
-      display: none; }
-    .contact .wrap-form .form-group textarea {
-      height: 10rem;
-      padding: 10px 0 0 20px; }
-  .contact .wrap-form .frm-btnwrap {
-    display: flex;
-    justify-content: flex-end;
-    @apply mt-8 {} }
-    .contact .wrap-form .frm-btnwrap .frm-btn input {
-      width: 160px;
-      height: 40px;
-      color: #ffffff;
-      background: #6bc0e7;
-      cursor: pointer;
-      font-size: 16px;
-      font-weight: 700;
-      text-align: center;
-      border: none;
-      border-radius: 50px;
-      line-height: 0; }
-      .contact .wrap-form .frm-btnwrap .frm-btn input:nth-last-child(2) {
-        display: none; }
-      @media screen and (max-width: 1024px) {
-        .contact .wrap-form .frm-btnwrap .frm-btn input input {
-          padding: 0 15px; } }
-
 .shopping-cart-toggle {
   @apply flex items-center justify-center  static {} }
 
@@ -1685,6 +1471,220 @@ footer {
       @apply text-white transition mr-2 {}      font-size: 18px;
       transition: .3s all ease-in-out;
       height: 18px; }
+
+.booking-examination {
+  padding: 3.125rem 0; }
+  @media screen and (max-width: 1024px) {
+    .booking-examination .pr-0 {
+      padding-right: 15px; }
+    .booking-examination .pl-0 {
+      padding-left: 15px; } }
+  .booking-examination .border {
+    margin-top: 1.5625rem; }
+  .booking-examination .item-bg {
+    background-image: url("../img/bg/banner-bg-2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 730px;
+    height: 730px;
+    border: 1px solid #6bc0e7;
+    border-right: none;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px; }
+    @media screen and (max-width: 1024px) {
+      .booking-examination .item-bg {
+        border-radius: 25px;
+        border-right: 1px solid #6bc0e7;
+        background-size: 1024px;
+        height: auto; } }
+    .booking-examination .item-bg .content {
+      padding: 1.875rem; }
+      .booking-examination .item-bg .content strong {
+        font-size: 1rem;
+        color: #ffffff; }
+      .booking-examination .item-bg .content p {
+        font-size: 1rem;
+        color: #ffffff;
+        margin-top: .9375rem;
+        font-weight: 600; }
+  .booking-examination .medical-booking {
+    padding: 1.875rem 25px 2.5rem;
+    border: 1px solid #6bc0e7;
+    border-left: none;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    height: 730px; }
+    @media screen and (max-width: 1024px) {
+      .booking-examination .medical-booking {
+        border-radius: 25px;
+        border-left: 1px solid #6bc0e7;
+        height: auto; } }
+  .booking-examination .wrap-form {
+    @apply pointer-events-auto {} }
+    .booking-examination .wrap-form .row {
+      margin: 0 -5px; }
+      .booking-examination .wrap-form .row .col {
+        padding: 0 5px;
+        margin-bottom: 15px; }
+    .booking-examination .wrap-form .form-group .RadPicker_Default .rcCalPopup {
+      background-image: url(../img/icon/date-grey.png) !important; }
+    .booking-examination .wrap-form .form-group .RadPicker_Default .rcTimePopup {
+      background-image: url(../img/icon/date-grey.png) !important; }
+    .booking-examination .wrap-form .form-group .RadPicker .RadInput input {
+      background: rgba(255, 255, 255, 0.5) !important;
+      border-radius: 3px !important;
+      border: 1px solid #e0e0e0 !important;
+      height: 40px !important; }
+    .booking-examination .wrap-form .form-group input[type='text'], .booking-examination .wrap-form .form-group select, .booking-examination .wrap-form .form-group textarea, .booking-examination .wrap-form .form-group input[type='date'] {
+      background: rgba(255, 255, 255, 0.5);
+      border-radius: 3px;
+      border: 1px solid #e0e0e0;
+      height: 40px;
+      @apply text-13 text-main {} }
+      .booking-examination .wrap-form .form-group input[type='text']::placeholder, .booking-examination .wrap-form .form-group select::placeholder, .booking-examination .wrap-form .form-group textarea::placeholder, .booking-examination .wrap-form .form-group input[type='date']::placeholder {
+        @apply text-main text-13 {} }
+    .booking-examination .wrap-form .form-group input[type='date'] {
+      @apply text-main text-13 {} }
+    .booking-examination .wrap-form .form-group select {
+      @apply text-main text-13 w-full px-4 {} }
+      .booking-examination .wrap-form .form-group select option {
+        @apply text-main text-13 {} }
+    .booking-examination .wrap-form .form-group textarea {
+      height: 6rem;
+      @apply pt-2 text-main {} }
+    .booking-examination .wrap-form .form-group label {
+      margin-bottom: 0.625rem;
+      font-size: 1rem;
+      color: #333333;
+      @apply text-main {} }
+    .booking-examination .wrap-form .text-group {
+      font-size: 1.125rem;
+      color: #6bc0e7;
+      text-transform: uppercase;
+      border-bottom: 3px solid #6bc0e7; }
+    .booking-examination .wrap-form .frm-btnwrap {
+      @apply m-0 {} }
+      .booking-examination .wrap-form .frm-btnwrap .frm-btn {
+        @apply flex w-full justify-end {} }
+        .booking-examination .wrap-form .frm-btnwrap .frm-btn input[type='submit'] {
+          @apply bg-azure text-16 text-white uppercase font-bold p-0 flex justify-center items-center {}          border-radius: 25px;
+          border: none;
+          height: 40px;
+          line-height: 16px; }
+
+.contact {
+  padding: 3.75rem 0; }
+  .contact .row {
+    margin-top: 1.5625rem; }
+  .contact .box-shaw {
+    background: #f5f5f5;
+    padding: 1.5625rem; }
+  .contact .left-wrapper {
+    background-image: url("../img/bg/contact-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 3.75rem; }
+    @media screen and (max-width: 1280px) {
+      .contact .left-wrapper {
+        padding: 3.2rem; } }
+    .contact .left-wrapper .logo-contact {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .contact .left-wrapper .logo-contact a {
+        background: #ffffff;
+        border-radius: 50%;
+        width: 130px;
+        height: 130px;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .contact .left-wrapper .logo-contact a img {
+          width: 100%;
+          height: 100%;
+          object-fit: scale-down; }
+    .contact .left-wrapper .title-contact {
+      font-size: 1rem;
+      color: #ffffff;
+      text-transform: uppercase;
+      font-weight: 700;
+      text-align: center;
+      padding-top: 2.1875rem; }
+    .contact .left-wrapper .card-body {
+      padding-top: 2.5rem; }
+      .contact .left-wrapper .card-body ul {
+        padding: 0;
+        list-style: none; }
+        .contact .left-wrapper .card-body ul li {
+          display: flex;
+          font-size: 1rem;
+          color: #ffffff;
+          padding-bottom: 0.9375rem; }
+          .contact .left-wrapper .card-body ul li p {
+            font-size: 1rem;
+            color: #ffffff;
+            padding-left: 1.25rem;
+            font-weight: 500; }
+  .contact .map-wrapper {
+    margin-left: -30px; }
+    @media screen and (max-width: 1024.98px) {
+      .contact .map-wrapper {
+        margin-left: 0;
+        margin-top: -1.875rem; } }
+  .contact .text-form {
+    font-size: 1rem;
+    color: #333333;
+    text-align: center;
+    padding-top: 3.75rem; }
+  @media screen and (max-width: 1025px) {
+    .contact .wrap-form {
+      margin: 0;
+      padding: 0 10px; } }
+  .contact .wrap-form .form-group {
+    margin: 0px 0 20px 0; }
+    .contact .wrap-form .form-group span {
+      color: #ffffff;
+      font-size: 13px; }
+      .contact .wrap-form .form-group span.fa-exclamation-triangle {
+        color: firebrick;
+        left: 15px; }
+    .contact .wrap-form .form-group input, .contact .wrap-form .form-group textarea {
+      padding-left: 20px;
+      border: 1px solid #e0e0e0;
+      height: 42px;
+      width: 100%;
+      color: #999999;
+      background: #ffffff;
+      transition: .3s all ease-in-out; }
+      .contact .wrap-form .form-group input:focus, .contact .wrap-form .form-group textarea:focus {
+        outline: none;
+        box-shadow: 0px 5px 15px 0px rgba(56, 50, 44, 0.15); }
+    .contact .wrap-form .form-group label {
+      display: none; }
+    .contact .wrap-form .form-group textarea {
+      height: 10rem;
+      padding: 10px 0 0 20px; }
+  .contact .wrap-form .frm-btnwrap {
+    display: flex;
+    justify-content: flex-end;
+    @apply mt-8 {} }
+    .contact .wrap-form .frm-btnwrap .frm-btn input {
+      width: 160px;
+      height: 40px;
+      color: #ffffff;
+      background: #6bc0e7;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 700;
+      text-align: center;
+      border: none;
+      border-radius: 50px;
+      line-height: 0; }
+      .contact .wrap-form .frm-btnwrap .frm-btn input:nth-last-child(2) {
+        display: none; }
+      @media screen and (max-width: 1024px) {
+        .contact .wrap-form .frm-btnwrap .frm-btn input input {
+          padding: 0 15px; } }
 
 .facility-display {
   @apply py-16 {} }
@@ -3856,6 +3856,82 @@ header {
     .top-banner .wrapper a {
       height: 250px; } }
 
+.medical-check-banner {
+  @apply py-24 {} }
+
+@screen lg {
+  .medical-check-banner {
+    @apply py-16 {} } }
+  .medical-check-banner .container {
+    @apply relative {} }
+  @media screen and (max-width: 1024px) {
+    .medical-check-banner .image-wrap {
+      @apply hidden {} } }
+  .medical-check-banner .banner-content {
+    @apply absolute top-50 translate-y-50  px-14 pb-18 {}    right: 75px;
+    background-image: linear-gradient(90deg, rgba(2, 79, 161, 0.6) 0%, rgba(0, 137, 200, 0.6) 100%);
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px; }
+    @media screen and (max-width: 1024px) {
+      .medical-check-banner .banner-content {
+        @apply static translate-0 px-8 {} } }
+    @media screen and (max-width: 350px) {
+      .medical-check-banner .banner-content {
+        @apply px-4 {} } }
+    .medical-check-banner .banner-content .brand-logo {
+      @apply flex items-center justify-center {} }
+      .medical-check-banner .banner-content .brand-logo a {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        @apply bg-white flex items-center justify-center relative {}        margin-top: -50px; }
+        @media screen and (max-width: 1024px) {
+          .medical-check-banner .banner-content .brand-logo a {
+            width: 80px;
+            height: 80px; } }
+    .medical-check-banner .banner-content .name {
+      @apply text-16 text-white uppercase font-bold text-center pt-4 mb-5 {} }
+    .medical-check-banner .banner-content .phone-wrap {
+      @apply flex items-center justify-center py-1 {}      border: 2px solid white;
+      border-radius: 10px; }
+      .medical-check-banner .banner-content .phone-wrap span {
+        @apply text-30 text-white font-bold {} }
+      .medical-check-banner .banner-content .phone-wrap em {
+        font-size: 24px;
+        height: 24px;
+        line-height: 24px;
+        @apply text-white inline-block pr-2 {} }
+    .medical-check-banner .banner-content .text {
+      @apply text-16 text-white font-bold text-center uppercase my-4 {} }
+    .medical-check-banner .banner-content .time-wrap {
+      @apply flex justify-center items-center {} }
+      .medical-check-banner .banner-content .time-wrap .item {
+        @apply px-2 {} }
+        .medical-check-banner .banner-content .time-wrap .item span {
+          @apply text-16 text-white font-bold {} }
+        .medical-check-banner .banner-content .time-wrap .item em {
+          font-size: 16px;
+          height: 16px;
+          line-height: 16px;
+          @apply text-white inline-block pr-1 {} }
+        .medical-check-banner .banner-content .time-wrap .item:first-child {
+          border-right: 1px solid #ffffff; }
+  .medical-check-banner .btn-center {
+    @apply relative {} }
+  .medical-check-banner .btn-booking {
+    border-radius: 27px;
+    height: 54px;
+    @apply bg-azure relative px-10 pr-16 {}    margin-bottom: -120px; }
+    .medical-check-banner .btn-booking span {
+      @apply text-16 text-white font-bold uppercase {} }
+    .medical-check-banner .btn-booking em {
+      @apply flex items-center justify-center bg-white absolute text-azure {}      top: 2px;
+      right: 2px;
+      border-radius: 50%;
+      font-size: 18px;
+      height: 46px;
+      width: 46px; }
+
 .primary-banner {
   @apply relative {} }
   @media screen and (max-width: 1024px) {
@@ -4056,82 +4132,6 @@ html body .RadInput input.riEmpty, html body .RadInput textarea.riEmpty, html bo
     font-style: normal !important;
     font-weight: 400 !important;
     @apply text-white text-13 {} }
-
-.medical-check-banner {
-  @apply py-24 {} }
-
-@screen lg {
-  .medical-check-banner {
-    @apply py-16 {} } }
-  .medical-check-banner .container {
-    @apply relative {} }
-  @media screen and (max-width: 1024px) {
-    .medical-check-banner .image-wrap {
-      @apply hidden {} } }
-  .medical-check-banner .banner-content {
-    @apply absolute top-50 translate-y-50  px-14 pb-18 {}    right: 75px;
-    background-image: linear-gradient(90deg, rgba(2, 79, 161, 0.6) 0%, rgba(0, 137, 200, 0.6) 100%);
-    border-top-left-radius: 30px;
-    border-bottom-right-radius: 30px; }
-    @media screen and (max-width: 1024px) {
-      .medical-check-banner .banner-content {
-        @apply static translate-0 px-8 {} } }
-    @media screen and (max-width: 350px) {
-      .medical-check-banner .banner-content {
-        @apply px-4 {} } }
-    .medical-check-banner .banner-content .brand-logo {
-      @apply flex items-center justify-center {} }
-      .medical-check-banner .banner-content .brand-logo a {
-        border-radius: 50%;
-        width: 100px;
-        height: 100px;
-        @apply bg-white flex items-center justify-center relative {}        margin-top: -50px; }
-        @media screen and (max-width: 1024px) {
-          .medical-check-banner .banner-content .brand-logo a {
-            width: 80px;
-            height: 80px; } }
-    .medical-check-banner .banner-content .name {
-      @apply text-16 text-white uppercase font-bold text-center pt-4 mb-5 {} }
-    .medical-check-banner .banner-content .phone-wrap {
-      @apply flex items-center justify-center py-1 {}      border: 2px solid white;
-      border-radius: 10px; }
-      .medical-check-banner .banner-content .phone-wrap span {
-        @apply text-30 text-white font-bold {} }
-      .medical-check-banner .banner-content .phone-wrap em {
-        font-size: 24px;
-        height: 24px;
-        line-height: 24px;
-        @apply text-white inline-block pr-2 {} }
-    .medical-check-banner .banner-content .text {
-      @apply text-16 text-white font-bold text-center uppercase my-4 {} }
-    .medical-check-banner .banner-content .time-wrap {
-      @apply flex justify-center items-center {} }
-      .medical-check-banner .banner-content .time-wrap .item {
-        @apply px-2 {} }
-        .medical-check-banner .banner-content .time-wrap .item span {
-          @apply text-16 text-white font-bold {} }
-        .medical-check-banner .banner-content .time-wrap .item em {
-          font-size: 16px;
-          height: 16px;
-          line-height: 16px;
-          @apply text-white inline-block pr-1 {} }
-        .medical-check-banner .banner-content .time-wrap .item:first-child {
-          border-right: 1px solid #ffffff; }
-  .medical-check-banner .btn-center {
-    @apply relative {} }
-  .medical-check-banner .btn-booking {
-    border-radius: 27px;
-    height: 54px;
-    @apply bg-azure relative px-10 pr-16 {}    margin-bottom: -120px; }
-    .medical-check-banner .btn-booking span {
-      @apply text-16 text-white font-bold uppercase {} }
-    .medical-check-banner .btn-booking em {
-      @apply flex items-center justify-center bg-white absolute text-azure {}      top: 2px;
-      right: 2px;
-      border-radius: 50%;
-      font-size: 18px;
-      height: 46px;
-      width: 46px; }
 
 .home-faq {
   background: #edf9ff;
