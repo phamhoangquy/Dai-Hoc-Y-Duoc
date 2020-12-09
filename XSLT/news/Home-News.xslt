@@ -70,7 +70,7 @@
 			<xsl:when test="position() mod 3 = 2">
 				<div class="col w-full sm:w-1/2">
 					<div class="news-figure">
-						<div class="image-wrap opacity">
+						<div class="image-wrap zoom-in">
 
 							<a>
 								<xsl:attribute name="href">
@@ -110,7 +110,7 @@
 			<xsl:when test="position() mod 3 = 0">
 				<div class="col w-full sm:w-1/2">
 					<div class="news-figure">
-						<div class="image-wrap opacity">
+						<div class="image-wrap zoom-in">
 
 							<a>
 								<xsl:attribute name="href">

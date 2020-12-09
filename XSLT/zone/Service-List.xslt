@@ -25,7 +25,6 @@
 	</xsl:template>
 	<xsl:template match="Zone" mode='Big'>
 		<xsl:if test="position()=1">
-
 			<div class="row">
 				<div class="col w-full lg:w-1/2 pr-0">
 					<div class="service-figure">
@@ -53,8 +52,6 @@
 				<div class="col w-full lg:w-1/2 pl-0">
 					<div class="service-text">
 						<div class="title">
-
-
 							<a>
 								<xsl:attribute name="href">
 									<xsl:value-of select="Url"></xsl:value-of>
@@ -91,7 +88,7 @@
 		<xsl:if test="position()>1">
 			<div class="col w-full lg:w-4/12">
 				<div class="news-figure">
-					<div class="image-wrap zoom-in">
+					<div class="image-wrap shine">
 
 
 						<a>

@@ -5,6 +5,8 @@
 	overflow: auto
 	.tab-primary
 		display: flex
+		justify-content: center
+		align-items: center
 		.tab-item
 			display: flex
 			justify-content: center
@@ -66,7 +68,7 @@
 		.image-wrap
 			a
 				display: block
-				height: 145px
+				height: auto
 				width: auto
 				img
 					width: 100%
@@ -168,10 +170,12 @@
 	.news-figure
 		box-shadow: none
 		.image-wrap
-			height: 196px
+			height: auto
 			width: auto
-			img
-				width: auto
+			a
+				height: auto!important
+				img
+					width: auto
 		.content
 			padding: 15/16*1rem 35/16*1rem 25/16*1rem 15/16*1rem
 			background-color: #f8f8f8

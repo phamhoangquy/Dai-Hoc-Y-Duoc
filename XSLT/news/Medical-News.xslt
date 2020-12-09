@@ -89,7 +89,7 @@
 			<div class="col w-full lg:w-4/12 md:w-6/12">
 				<div class="col-match-height">
 					<div class="news-figure">
-						<div class="image-wrap zoom-in">
+						<div class="image-wrap shine">
 							<a>
 								<xsl:attribute name="href">
 									<xsl:value-of select="Url"></xsl:value-of>
