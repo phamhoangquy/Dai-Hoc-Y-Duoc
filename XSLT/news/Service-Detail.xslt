@@ -135,7 +135,7 @@
 								<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
 								<xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
 							</span><em class="mdi mdi-gamepad"><span></span><span></span></em></div>
-						<div class="content-sce-detail">
+						<div class="content-sce-detail-2">
 							<xsl:value-of disable-output-escaping="yes" select="FullContent"></xsl:value-of>
 						</div>
 					</div>

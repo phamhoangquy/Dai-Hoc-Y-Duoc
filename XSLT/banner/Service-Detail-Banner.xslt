@@ -47,7 +47,7 @@
 							<xsl:value-of select="Url"></xsl:value-of>
 						</xsl:attribute>
 					</xsl:if>
-					<span>Đặt lịch khám </span><em class="mdi mdi-calendar"></em>
+					<span>Đăng ký khám </span><em class="mdi mdi-calendar"></em>
 				</a></div>
 		</div>
 	</xsl:template>

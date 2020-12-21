@@ -30,9 +30,13 @@
 						</xsl:if>
 						<xsl:choose>
 							<xsl:when test="position()=1">
-								<img>
-								<xsl:attribute name="src">
-									<xsl:value-of select="ImageUrl"></xsl:value-of>
+								<img class='swiper-lazy'>
+
+								<xsl:attribute name="data-srcset">
+									<xsl:value-of disable-output-escaping="yes" select="ThumbnailUrl">
+									</xsl:value-of>
+									<xsl:text> 1024w, </xsl:text>
+									<xsl:value-of disable-output-escaping="yes" select="ImageUrl"></xsl:value-of>
 								</xsl:attribute>
 								<xsl:attribute name="alt">
 									<xsl:value-of select="Title"></xsl:value-of>
@@ -58,7 +62,7 @@
 
 
 					</a>
-				
+
 				</div>
 				<xsl:if test="Title !=''">
 

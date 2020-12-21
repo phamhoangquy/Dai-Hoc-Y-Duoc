@@ -21,7 +21,7 @@ header
 	.header-wrap-left
 		@apply flex items-center justify-between 
 		@media screen and ( max-width: 1024px)
-			@apply w-full
+			@apply w-full relative justify-end
 			
 	.header-wrap-right
 		@apply hidden
@@ -93,6 +93,8 @@ header
 		@apply h-full
 		.Module,.ModuleContent
 			@apply h-full
+		@media screen and ( max-width: 1024px)
+			@apply absolute top-50 left-50 translate-50
 		a
 			@apply flex justify-start items-center h-full
 			img,svg

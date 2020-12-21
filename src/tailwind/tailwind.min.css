@@ -2091,13 +2091,18 @@ footer {
       max-height: 650px; }
 
 .service {
-  padding: 3.125rem 0 0 0; }
+  @apply pt-16 pb-10 {} }
   .service .news-figure {
     border-radius: 10px;
     @apply overflow-hidden {} }
     @media screen and (max-width: 576px) {
       .service .news-figure {
         @apply mb-8 {} } }
+    .service .news-figure .caption {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden; }
     .service .news-figure:hover .content {
       background: linear-gradient(180deg, #68c0e6 2%, #3789c4 99%); }
     .service .news-figure:hover time {
@@ -2224,56 +2229,6 @@ footer {
     .service .pl-0 {
       padding-left: 15px; } }
 
-.specialized {
-  padding: 3.125rem 0; }
-  @media screen and (max-width: 576px) {
-    .specialized .row {
-      margin-bottom: 0; } }
-  @media screen and (max-width: 576px) {
-    .specialized .row .col {
-      margin-bottom: 0; } }
-  @media screen and (max-width: 1024px) {
-    .specialized .row > .col:first-child {
-      margin-bottom: 0; } }
-  .specialized .specialist-item {
-    @apply flex flex-wrap flex-row  items-center w-full	 overflow-hidden bg-white {}    justify-content: flex-start;
-    height: 80px;
-    border-radius: 10px; }
-    @media screen and (max-width: 576px) {
-      .specialized .specialist-item:first-child {
-        margin-bottom: 30px; } }
-    .specialized .specialist-item:hover .btn-view-more span {
-      @apply text-primary {} }
-    .specialized .specialist-item .image-wrap {
-      flex: 0 1 auto;
-      background: linear-gradient(180deg, #299ae2 0%, #27519e 100%);
-      width: 80px;
-      height: 80px;
-      @apply p-2 flex items-center justify-center {} }
-      .specialized .specialist-item .image-wrap a {
-        display: block;
-        height: 50px;
-        width: auto; }
-        .specialized .specialist-item .image-wrap a img {
-          width: 100%;
-          height: 100%;
-          object-fit: contain; }
-    .specialized .specialist-item .sub-title a {
-      @apply pb-2 {}      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-      overflow: hidden; }
-    .specialized .specialist-item .sub-title:hover a {
-      @apply text-blue-1 {} }
-    .specialized .specialist-item .content {
-      @apply px-4 {} }
-
-@screen lg {
-  .specialized .specialist-item .content {
-    @apply pl-8 py-4 {} } }
-  .specialized .section-title {
-    margin-bottom: 1.875rem; }
-
 .team-doctor {
   padding: 3.125rem 0 2.5rem; }
   .team-doctor .pad-l-30 {
@@ -2389,6 +2344,56 @@ footer {
             height: 38px;
             right: 0;
             top: -0; }
+
+.specialized {
+  padding: 3.125rem 0; }
+  @media screen and (max-width: 576px) {
+    .specialized .row {
+      margin-bottom: 0; } }
+  @media screen and (max-width: 576px) {
+    .specialized .row .col {
+      margin-bottom: 0; } }
+  @media screen and (max-width: 1024px) {
+    .specialized .row > .col:first-child {
+      margin-bottom: 0; } }
+  .specialized .specialist-item {
+    @apply flex flex-wrap flex-row  items-center w-full	 overflow-hidden bg-white {}    justify-content: flex-start;
+    height: 80px;
+    border-radius: 10px; }
+    @media screen and (max-width: 576px) {
+      .specialized .specialist-item:first-child {
+        margin-bottom: 30px; } }
+    .specialized .specialist-item:hover .btn-view-more span {
+      @apply text-primary {} }
+    .specialized .specialist-item .image-wrap {
+      flex: 0 1 auto;
+      background: linear-gradient(180deg, #299ae2 0%, #27519e 100%);
+      width: 80px;
+      height: 80px;
+      @apply p-2 flex items-center justify-center {} }
+      .specialized .specialist-item .image-wrap a {
+        display: block;
+        height: 50px;
+        width: auto; }
+        .specialized .specialist-item .image-wrap a img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain; }
+    .specialized .specialist-item .sub-title a {
+      @apply pb-2 {}      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden; }
+    .specialized .specialist-item .sub-title:hover a {
+      @apply text-blue-1 {} }
+    .specialized .specialist-item .content {
+      @apply px-4 {} }
+
+@screen lg {
+  .specialized .specialist-item .content {
+    @apply pl-8 py-4 {} } }
+  .specialized .section-title {
+    margin-bottom: 1.875rem; }
 
 .thankyou {
   padding: 3.75rem 0 0; }
@@ -3508,7 +3513,7 @@ header {
     @apply flex items-center justify-between {} }
     @media screen and (max-width: 1024px) {
       header .header-wrap-left {
-        @apply w-full {} } }
+        @apply w-full relative justify-end {} } }
   header .header-wrap-right {
     @apply hidden {} }
 
@@ -3580,6 +3585,9 @@ header {
     @apply h-full {} }
     header .nav-brand .Module, header .nav-brand .ModuleContent {
       @apply h-full {} }
+    @media screen and (max-width: 1024px) {
+      header .nav-brand {
+        @apply absolute top-50 left-50 translate-50 {} } }
     header .nav-brand a {
       @apply flex justify-start items-center h-full {} }
       header .nav-brand a img, header .nav-brand a svg {
@@ -3856,6 +3864,216 @@ header {
     .top-banner .wrapper a {
       height: 250px; } }
 
+.primary-banner {
+  @apply relative {} }
+  @media screen and (max-width: 1024px) and (max-width: 1280px) {
+    .primary-banner .banner-container {
+      display: block;
+      height: 480px; } }
+  @media screen and (max-width: 1024px) {
+    .primary-banner .banner-container {
+      position: relative;
+      display: block;
+      height: 0;
+      overflow: hidden;
+      padding-top: 80%; }
+      .primary-banner .banner-container .swiper-container {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0; } }
+  @media screen and (min-width: 1280.1px) {
+    .primary-banner .swiper-container {
+      height: 550px; } }
+  @media screen and (max-width: 1280px) {
+    .primary-banner .swiper-container .image-wrap img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain; } }
+  @media screen and (min-width: 1280.1px) {
+    .primary-banner .swiper-container .image-wrap a {
+      display: block;
+      height: 550px;
+      width: auto; }
+      .primary-banner .swiper-container .image-wrap a img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; } }
+  .primary-banner .swiper-pagination {
+    @apply absolute  translate-x-50 w-auto {}    left: 50% !important;
+    bottom: 30px !important; }
+    @media screen and (max-width: 400px) {
+      .primary-banner .swiper-pagination {
+        bottom: 15px !important; } }
+    .primary-banner .swiper-pagination .swiper-pagination-bullet {
+      @apply z-20 pointer-events-auto  transition {}      background: none;
+      border: 1px solid white;
+      border-radius: 50%;
+      width: 10px;
+      height: 10px;
+      opacity: 1; }
+      .primary-banner .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        background: linear-gradient(-88deg, #68c0e6 0%, #3769dc 99%); }
+  .primary-banner .title {
+    @apply text-32 text-white uppercase font-bold absolute left-50 translate-x-50 text-center w-full {}    bottom: 50px; }
+    @media screen and (max-width: 1280px) {
+      .primary-banner .title {
+        font-size: 2.5rem !important; } }
+    @media screen and (max-width: 400px) {
+      .primary-banner .title {
+        @apply text-20 {}        bottom: 35px; } }
+
+@screen lg {
+  .primary-banner .title {
+    @apply text-36  left-0 translate-0 text-left {}    bottom: 80px; } }
+
+@screen xl {
+  .primary-banner .title {
+    @apply text-48 {} } }
+  .primary-banner .wrap .container {
+    @apply absolute top-50 left-50 translate-50 h-full {} }
+    .primary-banner .wrap .container .row {
+      @apply h-full {} }
+
+@screen lg {
+  .primary-banner .wrap .container .col {
+    @apply relative {} } }
+
+.medical-form {
+  @apply py-10 px-0 {} }
+
+@screen md {
+  .medical-form {
+    @apply py-14 {} } }
+
+@screen lg {
+  .medical-form {
+    @apply absolute top-50 left-50 translate-50 z-20 flex justify-end  p-0 pointer-events-none {} } }
+  .medical-form .container {
+    @apply flex justify-end w-full {} }
+  .medical-form .icon-wrap {
+    @apply bg-blue-1 flex items-center justify-center relative z-20 {}    width: 50px;
+    height: 50px; }
+    @media screen and (max-width: 576px) {
+      .medical-form .icon-wrap {
+        @apply hidden {} } }
+  .medical-form .medical-form-wrapper {
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    background: url("../img/bg/banner-bg.png"), linear-gradient(160deg, #00a8e6 0%, #00379b 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom right;
+    width: 420px;
+    box-shadow: 0px 0px 0px 6px rgba(0, 0, 0, 0.15);
+    @apply p-8 {} }
+    @media screen and (max-width: 1280px) {
+      .medical-form .medical-form-wrapper {
+        background: linear-gradient(160deg, #00a8e6 0%, #00379b 100%);
+        width: 360px;
+        padding: 15px 30px; } }
+    @media screen and (max-width: 1024px) {
+      .medical-form .medical-form-wrapper {
+        @apply w-full px-6 {} } }
+    .medical-form .medical-form-wrapper .text {
+      @apply text-20 text-white uppercase font-bold {} }
+    .medical-form .medical-form-wrapper .caption {
+      @apply text-13 text-white font-normal {} }
+  .medical-form .wrap-form {
+    @apply pointer-events-auto {} }
+    .medical-form .wrap-form .row {
+      margin: 0 -5px; }
+      .medical-form .wrap-form .row .col {
+        padding: 0 5px;
+        margin-bottom: 15px; }
+    .medical-form .wrap-form .form-group input[type='text'], .medical-form .wrap-form .form-group select, .medical-form .wrap-form .form-group textarea, .medical-form .wrap-form .form-group input[type='date'] {
+      background: rgba(255, 255, 255, 0.5);
+      border-radius: 3px;
+      border: 1px solid #0a72bf;
+      height: 28px;
+      @apply text-13 text-white px-4 {} }
+      .medical-form .wrap-form .form-group input[type='text']::placeholder, .medical-form .wrap-form .form-group select::placeholder, .medical-form .wrap-form .form-group textarea::placeholder, .medical-form .wrap-form .form-group input[type='date']::placeholder {
+        @apply text-white text-13 {} }
+    .medical-form .wrap-form .form-group input[type='date'] {
+      @apply text-white text-13 {} }
+    .medical-form .wrap-form .form-group select {
+      @apply text-white text-13 w-full px-4 {} }
+      .medical-form .wrap-form .form-group select option {
+        @apply text-main text-13 {} }
+    .medical-form .wrap-form .form-group textarea {
+      height: 6rem;
+      @apply pt-2 {} }
+      @media screen and (max-width: 1280px) {
+        .medical-form .wrap-form .form-group textarea {
+          height: 4rem; } }
+    @media screen and (max-width: 1280px) {
+      .medical-form .wrap-form .form-group.RadPicker.RadPicker_Default .fa.fa-exclamation-triangle {
+        font-size: .5rem !important; } }
+    .medical-form .wrap-form .frm-btnwrap {
+      @apply m-0 {} }
+      @media screen and (max-width: 1280px) {
+        .medical-form .wrap-form .frm-btnwrap label {
+          @apply hidden {} } }
+      .medical-form .wrap-form .frm-btnwrap .frm-btn {
+        @apply flex w-full justify-end {} }
+        .medical-form .wrap-form .frm-btnwrap .frm-btn input[type='submit'] {
+          @apply bg-azure text-16 text-white uppercase font-bold p-0 flex justify-center items-center {}          border-radius: 5px;
+          border: none;
+          height: 40px;
+          line-height: 16px; }
+
+.RadPicker {
+  width: 100% !important; }
+
+div.RadPicker table.rcSingle .rcInputCell {
+  width: 100% !important;
+  display: inline-block; }
+
+.RadPicker_Default {
+  width: 100%; }
+
+.RadPicker_Default .rcCalPopup {
+  @apply absolute top-50 translate-y-50 right-0 {} }
+
+.rcTable tbody tr {
+  @apply relative inline-block w-full {} }
+
+html body .RadInput_Default .riTextBox, html body .RadInputMgr_Default {
+  border: none !important;
+  height: 28px !important;
+  font-family: 'Montserrat' !important;
+  font-size: .875rem !important;
+  font-weight: 400 !important; }
+
+html body .RadInput_Default .riError, html body .RadInput_Error_Default {
+  background-position: 97% -290px !important; }
+
+.frm-btn-reset {
+  display: none !important; }
+
+.RadPicker_Default a.rcCalPopup:hover, .RadPicker_Default a.rcCalPopup:focus, .RadPicker_Default a.rcCalPopup:active {
+  background-position: center !important; }
+
+.RadPicker_Default .rcCalPopup, .RadPicker_Default .rcTimePopup {
+  background-image: url("../img/icon/calenda.png") !important;
+  background-position: center !important; }
+  .RadPicker_Default .rcCalPopup:hover, .RadPicker_Default .rcTimePopup:hover {
+    background-image: url("../img/icon/calenda.png") !important;
+    background-position: center !important; }
+
+.RadPicker_Default .rcCalPopup:hover {
+  background-position: center !important; }
+
+html body .RadInput input.riEmpty, html body .RadInput textarea.riEmpty, html body input.RadInput_Empty {
+  font-style: normal !important;
+  font-weight: 400 !important;
+  @apply text-white text-13 {} }
+  html body .RadInput input.riEmpty::placeholder, html body .RadInput textarea.riEmpty::placeholder, html body input.RadInput_Empty::placeholder {
+    font-style: normal !important;
+    font-weight: 400 !important;
+    @apply text-white text-13 {} }
+
 .medical-check-banner {
   @apply py-24 {} }
 
@@ -3932,207 +4150,6 @@ header {
       height: 46px;
       width: 46px; }
 
-.primary-banner {
-  @apply relative {} }
-  @media screen and (max-width: 1024px) {
-    .primary-banner .banner-container {
-      position: relative;
-      display: block;
-      height: 0;
-      overflow: hidden;
-      padding-top: 37.33333%; }
-      .primary-banner .banner-container .swiper-container {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0; } }
-
-@screen lg {
-  .primary-banner .swiper-container {
-    height: 550px; } }
-  @media screen and (max-width: 1024px) {
-    .primary-banner .swiper-container .image-wrap img {
-      height: 100%;
-      width: 100%;
-      object-fit: cover; } }
-
-@screen lg {
-  .primary-banner .swiper-container .image-wrap a {
-    display: block;
-    height: 550px;
-    width: auto; }
-    .primary-banner .swiper-container .image-wrap a img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover; } }
-  .primary-banner .swiper-pagination {
-    @apply absolute  translate-x-50 w-auto {}    left: 50% !important;
-    bottom: 30px !important; }
-    @media screen and (max-width: 400px) {
-      .primary-banner .swiper-pagination {
-        bottom: 15px !important; } }
-    .primary-banner .swiper-pagination .swiper-pagination-bullet {
-      @apply z-20 pointer-events-auto  transition {}      background: none;
-      border: 1px solid white;
-      border-radius: 50%;
-      width: 10px;
-      height: 10px;
-      opacity: 1; }
-      .primary-banner .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
-        background: linear-gradient(-88deg, #68c0e6 0%, #3769dc 99%); }
-  .primary-banner .title {
-    @apply text-32 text-white uppercase font-bold absolute left-50 translate-x-50 text-center w-full {}    bottom: 50px; }
-    @media screen and (max-width: 1280px) {
-      .primary-banner .title {
-        font-size: 2.5rem !important; } }
-    @media screen and (max-width: 400px) {
-      .primary-banner .title {
-        @apply text-20 {}        bottom: 35px; } }
-
-@screen lg {
-  .primary-banner .title {
-    @apply text-36  left-0 translate-0 text-left {}    bottom: 80px; } }
-
-@screen xl {
-  .primary-banner .title {
-    @apply text-48 {} } }
-  .primary-banner .wrap .container {
-    @apply absolute top-50 left-50 translate-50 h-full {} }
-    .primary-banner .wrap .container .row {
-      @apply h-full {} }
-
-@screen lg {
-  .primary-banner .wrap .container .col {
-    @apply relative {} } }
-
-.medical-form {
-  @apply py-10 px-0 {} }
-
-@screen md {
-  .medical-form {
-    @apply py-14 {} } }
-
-@screen lg {
-  .medical-form {
-    @apply absolute top-50 left-50 translate-50 z-20 flex justify-end  p-0 pointer-events-none {} } }
-  .medical-form .container {
-    @apply flex justify-end w-full {} }
-  .medical-form .icon-wrap {
-    @apply bg-blue-1 flex items-center justify-center relative z-20 {}    width: 50px;
-    height: 50px; }
-    @media screen and (max-width: 576px) {
-      .medical-form .icon-wrap {
-        @apply hidden {} } }
-  .medical-form .medical-form-wrapper {
-    border-top-right-radius: 25px;
-    border-bottom-left-radius: 25px;
-    background: url("../img/bg/banner-bg.png"), linear-gradient(160deg, #00a8e6 0%, #00379b 100%);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom right;
-    width: 420px;
-    box-shadow: 0px 0px 0px 6px rgba(0, 0, 0, 0.15);
-    @apply p-8 {} }
-    @media screen and (max-width: 1280px) {
-      .medical-form .medical-form-wrapper {
-        background: linear-gradient(160deg, #00a8e6 0%, #00379b 100%);
-        width: 360px; } }
-    @media screen and (max-width: 1024px) {
-      .medical-form .medical-form-wrapper {
-        @apply w-full px-6 {} } }
-    .medical-form .medical-form-wrapper .text {
-      @apply text-20 text-white uppercase font-bold {} }
-    .medical-form .medical-form-wrapper .caption {
-      @apply text-13 text-white font-normal {} }
-  .medical-form .wrap-form {
-    @apply pointer-events-auto {} }
-    .medical-form .wrap-form .row {
-      margin: 0 -5px; }
-      .medical-form .wrap-form .row .col {
-        padding: 0 5px;
-        margin-bottom: 15px; }
-    .medical-form .wrap-form .form-group input[type='text'], .medical-form .wrap-form .form-group select, .medical-form .wrap-form .form-group textarea, .medical-form .wrap-form .form-group input[type='date'] {
-      background: rgba(255, 255, 255, 0.5);
-      border-radius: 3px;
-      border: 1px solid #0a72bf;
-      height: 28px;
-      @apply text-13 text-white px-4 {} }
-      .medical-form .wrap-form .form-group input[type='text']::placeholder, .medical-form .wrap-form .form-group select::placeholder, .medical-form .wrap-form .form-group textarea::placeholder, .medical-form .wrap-form .form-group input[type='date']::placeholder {
-        @apply text-white text-13 {} }
-    .medical-form .wrap-form .form-group input[type='date'] {
-      @apply text-white text-13 {} }
-    .medical-form .wrap-form .form-group select {
-      @apply text-white text-13 w-full px-4 {} }
-      .medical-form .wrap-form .form-group select option {
-        @apply text-main text-13 {} }
-    .medical-form .wrap-form .form-group textarea {
-      height: 6rem;
-      @apply pt-2 {} }
-    @media screen and (max-width: 1280px) {
-      .medical-form .wrap-form .form-group.RadPicker.RadPicker_Default .fa.fa-exclamation-triangle {
-        font-size: .5rem !important; } }
-    .medical-form .wrap-form .frm-btnwrap {
-      @apply m-0 {} }
-      .medical-form .wrap-form .frm-btnwrap .frm-btn {
-        @apply flex w-full justify-end {} }
-        .medical-form .wrap-form .frm-btnwrap .frm-btn input[type='submit'] {
-          @apply bg-azure text-16 text-white uppercase font-bold p-0 flex justify-center items-center {}          border-radius: 5px;
-          border: none;
-          height: 40px;
-          line-height: 16px; }
-
-.RadPicker {
-  width: 100% !important; }
-
-div.RadPicker table.rcSingle .rcInputCell {
-  width: 100% !important;
-  display: inline-block; }
-
-.RadPicker_Default {
-  width: 100%; }
-
-.RadPicker_Default .rcCalPopup {
-  @apply absolute top-50 translate-y-50 right-0 {} }
-
-.rcTable tbody tr {
-  @apply relative inline-block w-full {} }
-
-html body .RadInput_Default .riTextBox, html body .RadInputMgr_Default {
-  border: none !important;
-  height: 28px !important;
-  font-family: 'Montserrat' !important;
-  font-size: .875rem !important;
-  font-weight: 400 !important; }
-
-html body .RadInput_Default .riError, html body .RadInput_Error_Default {
-  background-position: 97% -290px !important; }
-
-.frm-btn-reset {
-  display: none !important; }
-
-.RadPicker_Default a.rcCalPopup:hover, .RadPicker_Default a.rcCalPopup:focus, .RadPicker_Default a.rcCalPopup:active {
-  background-position: center !important; }
-
-.RadPicker_Default .rcCalPopup, .RadPicker_Default .rcTimePopup {
-  background-image: url("../img/icon/calenda.png") !important;
-  background-position: center !important; }
-  .RadPicker_Default .rcCalPopup:hover, .RadPicker_Default .rcTimePopup:hover {
-    background-image: url("../img/icon/calenda.png") !important;
-    background-position: center !important; }
-
-.RadPicker_Default .rcCalPopup:hover {
-  background-position: center !important; }
-
-html body .RadInput input.riEmpty, html body .RadInput textarea.riEmpty, html body input.RadInput_Empty {
-  font-style: normal !important;
-  font-weight: 400 !important;
-  @apply text-white text-13 {} }
-  html body .RadInput input.riEmpty::placeholder, html body .RadInput textarea.riEmpty::placeholder, html body input.RadInput_Empty::placeholder {
-    font-style: normal !important;
-    font-weight: 400 !important;
-    @apply text-white text-13 {} }
-
 .home-faq {
   background: #edf9ff;
   @apply pb-8 pt-16 {} }
@@ -4190,6 +4207,9 @@ html body .RadInput input.riEmpty, html body .RadInput textarea.riEmpty, html bo
     @media screen and (max-width: 1280px) {
       .faq-figure.big .sub-title a {
         @apply text-20 {} } }
+    @media screen and (max-width: 1024px) {
+      .faq-figure.big .sub-title a {
+        font-size: 1rem; } }
   .faq-figure.big .caption {
     @apply text-16 text-grey-2 leading-normal mb-0 {}    display: -webkit-box;
     -webkit-line-clamp: 4;
@@ -4213,6 +4233,9 @@ html body .RadInput input.riEmpty, html body .RadInput textarea.riEmpty, html bo
       @media screen and (max-width: 1280px) {
         .faq-figure.side .sub-title a {
           font-size: .875rem; } }
+      @media screen and (max-width: 1024px) {
+        .faq-figure.side .sub-title a {
+          font-size: 1rem; } }
     .faq-figure.side .content {
       @apply p-4 {}      width: calc( 100% - 315px); }
       @media screen and (max-width: 1280px) {
@@ -4284,11 +4307,21 @@ html body .RadInput input.riEmpty, html body .RadInput textarea.riEmpty, html bo
     @apply mb-0 {} }
     .home-news .row .col {
       @apply mt-0 {} }
+  .home-news .news-figure .caption {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden; }
+  .home-news .news-figure.big .title a {
+    @apply text-16 {} }
   .home-news .news-figure.big .caption {
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden; }
+
+.home-medical-news .news-figure.big .title a {
+  @apply text-16 {} }
 
 .single-swiper {
   @apply relative {} }
@@ -4349,7 +4382,11 @@ html body .RadInput input.riEmpty, html body .RadInput textarea.riEmpty, html bo
   .news-figure.big {
     @apply mb-8 {} } }
   .news-figure.big .title a {
-    @apply text-16 my-4 {} }
+    @apply text-18 my-4 {} }
+
+@screen lg {
+  .news-figure.big .title a {
+    @apply text-16 {} } }
 
 @screen lg {
   .news-figure.big .image-wrap a {
@@ -4378,10 +4415,14 @@ html body .RadInput input.riEmpty, html body .RadInput textarea.riEmpty, html bo
   .news-figure .content {
     @apply p-5 bg-grey-7 transition {} }
   .news-figure .title a {
-    @apply text-14 text-main font-bold uppercase transition my-2 {}    display: -webkit-box;
+    @apply text-16 text-main font-bold uppercase transition my-2 {}    display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden; }
+
+@screen lg {
+  .news-figure .title a {
+    @apply text-14 {} } }
   .news-figure .caption {
     @apply text-14 text-main leading-normal transition {} }
     .news-figure .caption * {
@@ -4681,6 +4722,9 @@ html body .RadInput input.riEmpty, html body .RadInput textarea.riEmpty, html bo
       width: 100%;
       height: 100%;
       object-fit: cover; }
+  .service-detail .content-sce-detail-2 {
+    padding: 0 0.9375rem;
+    @apply pt-8 {} }
   .service-detail .content-sce-detail {
     padding: 0 0.9375rem;
     overflow-y: scroll;
@@ -4722,6 +4766,28 @@ html body .RadInput input.riEmpty, html body .RadInput textarea.riEmpty, html bo
       width: 100%;
       height: 100%;
       object-fit: cover; }
+  .service-detail-2 .content-sce-detail-2 {
+    @apply pt-8 {} }
+    .service-detail-2 .content-sce-detail-2 ul {
+      list-style: none;
+      padding: 0; }
+      .service-detail-2 .content-sce-detail-2 ul li {
+        position: relative;
+        padding-left: 1.25rem;
+        padding-bottom: 0.625rem; }
+        .service-detail-2 .content-sce-detail-2 ul li::before {
+          position: absolute;
+          top: 3px;
+          left: 0;
+          z-index: 9;
+          display: inline-block;
+          font: normal normal normal 24px/1 "Material Design Icons";
+          font-size: inherit;
+          text-rendering: auto;
+          line-height: inherit;
+          -webkit-font-smoothing: antialiased;
+          content: "\F0296";
+          color: #6bc0e7; }
   .service-detail-2 .content-sce-detail {
     padding: 0 0.9375rem;
     overflow-y: scroll;
@@ -4983,6 +5049,195 @@ html body .RadInput input.riEmpty, html body .RadInput textarea.riEmpty, html bo
         font-size: 18px;
         height: 46px;
         width: 46px; }
+
+.doctor-detail-1 {
+  padding: 3.125rem 0 1.875rem; }
+  .doctor-detail-1 .section-title {
+    margin-bottom: 3.125rem; }
+  .doctor-detail-1 .border-bottom {
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 1.875rem;
+    margin-bottom: 1.875rem; }
+    .doctor-detail-1 .border-bottom .section-card {
+      background-color: white; }
+      @media screen and (max-width: 1024px) {
+        .doctor-detail-1 .border-bottom .section-card .image-wrap {
+          width: 100%; }
+          .doctor-detail-1 .border-bottom .section-card .image-wrap img {
+            object-position: top; } }
+      .doctor-detail-1 .border-bottom .section-card .wrap-text {
+        padding-top: 1.25rem;
+        padding-left: 0; }
+        @media screen and (max-width: 1024px) {
+          .doctor-detail-1 .border-bottom .section-card .wrap-text {
+            padding-top: 0; } }
+        @media screen and (min-width: 1024.1px) {
+          .doctor-detail-1 .border-bottom .section-card .wrap-text .wrap-btn {
+            position: absolute;
+            bottom: 0;
+            left: 0; } }
+        @media screen and (max-width: 1024px) {
+          .doctor-detail-1 .border-bottom .section-card .wrap-text .wrap-btn {
+            position: unset;
+            margin-top: 1.875rem; } }
+        .doctor-detail-1 .border-bottom .section-card .wrap-text .wrap-btn .medical-check-banner {
+          margin-left: 0.9375rem; }
+          @media screen and (max-width: 1024px) {
+            .doctor-detail-1 .border-bottom .section-card .wrap-text .wrap-btn .medical-check-banner {
+              margin-left: 0; } }
+        .doctor-detail-1 .border-bottom .section-card .wrap-text .name {
+          margin-bottom: 1.5625rem; }
+        .doctor-detail-1 .border-bottom .section-card .wrap-text .content {
+          margin-top: 1.5625rem;
+          font-size: 1rem;
+          line-height: 1.5rem; }
+  .doctor-detail-1 .news-detail {
+    border-bottom: 1px solid #e0e0e0; }
+    .doctor-detail-1 .news-detail * {
+      margin-bottom: 1.875rem; }
+    .doctor-detail-1 .news-detail .image-wrap {
+      width: 100%;
+      height: 650px; }
+      @media screen and (max-width: 1024px) {
+        .doctor-detail-1 .news-detail .image-wrap {
+          height: 350px; } }
+      .doctor-detail-1 .news-detail .image-wrap img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .doctor-detail-1 .news-detail .content {
+      line-height: 1.5rem; }
+
+.doctor-detail-2 {
+  padding-bottom: 3.125rem; }
+  .doctor-detail-2 .section-title {
+    margin-bottom: 1.875rem; }
+  .doctor-detail-2 table {
+    width: 100%; }
+    .doctor-detail-2 table tr:not(:first-child) td:first-child {
+      color: #27519e;
+      font-weight: 500; }
+    .doctor-detail-2 table tr:not(:first-child) td {
+      border: 1px solid #e0e0e0; }
+    .doctor-detail-2 table tr:first-child td {
+      background-color: #6bc0e7;
+      color: #ffffff;
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 0.16px;
+      border-right: 1px solid #e0e0e0; }
+    .doctor-detail-2 table tr:first-child td:first-child {
+      border-radius: 5px 0 0 0; }
+    .doctor-detail-2 table tr:first-child td:last-child {
+      border-radius: 0 5px 0 0;
+      border-right: 0; }
+    .doctor-detail-2 table tr:last-child td:first-child {
+      border-radius: 0 0 0 5px; }
+    .doctor-detail-2 table tr:last-child td:last-child {
+      border-radius: 0 0 5px 0; }
+    .doctor-detail-2 table tr td {
+      text-align: center;
+      padding: 16px 0;
+      width: 150px; }
+      .doctor-detail-2 table tr td em {
+        background-color: white;
+        color: #6bc0e7;
+        font-size: 1.5625rem; }
+        .doctor-detail-2 table tr td em::before {
+          width: 20px;
+          height: 20px; }
+    .doctor-detail-2 table tr td:first-child {
+      width: 180px; }
+
+.doctor-detail-3 {
+  padding-bottom: 2.5rem; }
+  .doctor-detail-3 .section-title {
+    margin-bottom: 1.875rem; }
+  @media screen and (max-width: 576px) {
+    .doctor-detail-3 .news-figure {
+      margin-bottom: 0; } }
+  .doctor-detail-3 .news-figure .image-wrap a {
+    height: 200px; }
+    @media screen and (max-width: 1024px) {
+      .doctor-detail-3 .news-figure .image-wrap a {
+        height: 330px; } }
+  @media screen and (min-width: 1024.1px) {
+    .doctor-detail-3 .news-figure .content {
+      padding-top: 0.625rem; }
+    .doctor-detail-3 .news-figure .title a {
+      line-height: 1.5rem; } }
+
+.doctor-detail-4 {
+  padding-bottom: 5rem; }
+  .doctor-detail-4 .section-title {
+    margin-bottom: 1.5625rem; }
+  .doctor-detail-4 .silde-doctor-detail {
+    margin-top: 1.875rem;
+    @apply relative {} }
+    @media screen and (max-width: 1024px) {
+      .doctor-detail-4 .silde-doctor-detail {
+        @apply px-8 {} } }
+    @media screen and (max-width: 1024px) {
+      .doctor-detail-4 .silde-doctor-detail .swiper-nav-wrap {
+        @apply flex items-center justify-center pt-6 {} } }
+    .doctor-detail-4 .silde-doctor-detail .nav-arrow-prev, .doctor-detail-4 .silde-doctor-detail .nav-arrow-next {
+      @apply absolute top-50 translate-y-50 z-30 {} }
+      @media screen and (max-width: 1024px) {
+        .doctor-detail-4 .silde-doctor-detail .nav-arrow-prev, .doctor-detail-4 .silde-doctor-detail .nav-arrow-next {
+          @apply static mx-4 {} } }
+  .doctor-detail-4 .swiper-container .swiper-slide {
+    @apply flex flex-col justify-center {}    height: auto; }
+    .doctor-detail-4 .swiper-container .swiper-slide.swiper-slide-prev .item, .doctor-detail-4 .swiper-container .swiper-slide.swiper-slide-next .item {
+      height: auto; }
+      .doctor-detail-4 .swiper-container .swiper-slide.swiper-slide-prev .item .title a, .doctor-detail-4 .swiper-container .swiper-slide.swiper-slide-next .item .title a {
+        @apply text-18 {} }
+      .doctor-detail-4 .swiper-container .swiper-slide.swiper-slide-prev .item .image-wrap a, .doctor-detail-4 .swiper-container .swiper-slide.swiper-slide-next .item .image-wrap a {
+        position: relative;
+        display: block;
+        height: 0;
+        overflow: hidden;
+        padding-top: 57.5%; }
+        .doctor-detail-4 .swiper-container .swiper-slide.swiper-slide-prev .item .image-wrap a img, .doctor-detail-4 .swiper-container .swiper-slide.swiper-slide-prev .item .image-wrap a iframe, .doctor-detail-4 .swiper-container .swiper-slide.swiper-slide-prev .item .image-wrap a video, .doctor-detail-4 .swiper-container .swiper-slide.swiper-slide-next .item .image-wrap a img, .doctor-detail-4 .swiper-container .swiper-slide.swiper-slide-next .item .image-wrap a iframe, .doctor-detail-4 .swiper-container .swiper-slide.swiper-slide-next .item .image-wrap a video {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          object-fit: cover;
+          transition: .3s ease-in-out all; }
+    .doctor-detail-4 .swiper-container .swiper-slide.swiper-slide-active {
+      max-height: 650px; }
+    .doctor-detail-4 .swiper-container .swiper-slide .wapper-doctor {
+      margin-bottom: 1.25rem; }
+      .doctor-detail-4 .swiper-container .swiper-slide .wapper-doctor .image-wrap {
+        margin: 0 auto;
+        margin-bottom: -2.5625rem;
+        width: 82px;
+        height: 82px;
+        border-radius: 50%; }
+        .doctor-detail-4 .swiper-container .swiper-slide .wapper-doctor .image-wrap img {
+          border-radius: 50%;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: top; }
+      .doctor-detail-4 .swiper-container .swiper-slide .wapper-doctor .wrap-panel {
+        box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.1);
+        padding-top: 3.4375rem;
+        height: 121px;
+        text-align: center;
+        cursor: pointer; }
+        .doctor-detail-4 .swiper-container .swiper-slide .wapper-doctor .wrap-panel .name {
+          font-size: 1.1875rem;
+          font-weight: 400;
+          text-transform: uppercase;
+          margin-bottom: 0.875rem; }
+        .doctor-detail-4 .swiper-container .swiper-slide .wapper-doctor .wrap-panel .btn-view-more {
+          color: #999999;
+          font-size: 1rem;
+          letter-spacing: 0.12px; }
+        .doctor-detail-4 .swiper-container .swiper-slide .wapper-doctor .wrap-panel:hover .btn-view-more {
+          color: #27519e; }
 
 .specialized-detail {
   padding: 3.125rem 0; }
@@ -5268,192 +5523,3 @@ html body .RadInput input.riEmpty, html body .RadInput textarea.riEmpty, html bo
       font-size: 18px;
       height: 46px;
       width: 46px; }
-
-.doctor-detail-1 {
-  padding: 3.125rem 0 1.875rem; }
-  .doctor-detail-1 .section-title {
-    margin-bottom: 3.125rem; }
-  .doctor-detail-1 .border-bottom {
-    border-bottom: 1px solid #e0e0e0;
-    padding-bottom: 1.875rem;
-    margin-bottom: 1.875rem; }
-    .doctor-detail-1 .border-bottom .section-card {
-      background-color: white; }
-      @media screen and (max-width: 1024px) {
-        .doctor-detail-1 .border-bottom .section-card .image-wrap {
-          width: 100%; }
-          .doctor-detail-1 .border-bottom .section-card .image-wrap img {
-            object-position: top; } }
-      .doctor-detail-1 .border-bottom .section-card .wrap-text {
-        padding-top: 1.25rem;
-        padding-left: 0; }
-        @media screen and (max-width: 1024px) {
-          .doctor-detail-1 .border-bottom .section-card .wrap-text {
-            padding-top: 0; } }
-        @media screen and (min-width: 1024.1px) {
-          .doctor-detail-1 .border-bottom .section-card .wrap-text .wrap-btn {
-            position: absolute;
-            bottom: 0;
-            left: 0; } }
-        @media screen and (max-width: 1024px) {
-          .doctor-detail-1 .border-bottom .section-card .wrap-text .wrap-btn {
-            position: unset;
-            margin-top: 1.875rem; } }
-        .doctor-detail-1 .border-bottom .section-card .wrap-text .wrap-btn .medical-check-banner {
-          margin-left: 0.9375rem; }
-          @media screen and (max-width: 1024px) {
-            .doctor-detail-1 .border-bottom .section-card .wrap-text .wrap-btn .medical-check-banner {
-              margin-left: 0; } }
-        .doctor-detail-1 .border-bottom .section-card .wrap-text .name {
-          margin-bottom: 1.5625rem; }
-        .doctor-detail-1 .border-bottom .section-card .wrap-text .content {
-          margin-top: 1.5625rem;
-          font-size: 1rem;
-          line-height: 1.5rem; }
-  .doctor-detail-1 .news-detail {
-    border-bottom: 1px solid #e0e0e0; }
-    .doctor-detail-1 .news-detail * {
-      margin-bottom: 1.875rem; }
-    .doctor-detail-1 .news-detail .image-wrap {
-      width: 100%;
-      height: 650px; }
-      @media screen and (max-width: 1024px) {
-        .doctor-detail-1 .news-detail .image-wrap {
-          height: 350px; } }
-      .doctor-detail-1 .news-detail .image-wrap img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover; }
-    .doctor-detail-1 .news-detail .content {
-      line-height: 1.5rem; }
-
-.doctor-detail-2 {
-  padding-bottom: 3.125rem; }
-  .doctor-detail-2 .section-title {
-    margin-bottom: 1.875rem; }
-  .doctor-detail-2 table {
-    width: 100%; }
-    .doctor-detail-2 table tr:not(:first-child) td:first-child {
-      color: #27519e;
-      font-weight: 500; }
-    .doctor-detail-2 table tr:not(:first-child) td {
-      border: 1px solid #e0e0e0; }
-    .doctor-detail-2 table tr:first-child td {
-      background-color: #6bc0e7;
-      color: #ffffff;
-      font-size: 1rem;
-      font-weight: 700;
-      letter-spacing: 0.16px;
-      border-right: 1px solid #e0e0e0; }
-    .doctor-detail-2 table tr:first-child td:first-child {
-      border-radius: 5px 0 0 0; }
-    .doctor-detail-2 table tr:first-child td:last-child {
-      border-radius: 0 5px 0 0;
-      border-right: 0; }
-    .doctor-detail-2 table tr:last-child td:first-child {
-      border-radius: 0 0 0 5px; }
-    .doctor-detail-2 table tr:last-child td:last-child {
-      border-radius: 0 0 5px 0; }
-    .doctor-detail-2 table tr td {
-      text-align: center;
-      padding: 16px 0;
-      width: 150px; }
-      .doctor-detail-2 table tr td em {
-        background-color: white;
-        color: #6bc0e7;
-        font-size: 1.5625rem; }
-        .doctor-detail-2 table tr td em::before {
-          width: 20px;
-          height: 20px; }
-    .doctor-detail-2 table tr td:first-child {
-      width: 180px; }
-
-.doctor-detail-3 {
-  padding-bottom: 2.5rem; }
-  .doctor-detail-3 .section-title {
-    margin-bottom: 1.875rem; }
-  @media screen and (max-width: 576px) {
-    .doctor-detail-3 .news-figure {
-      margin-bottom: 0; } }
-  .doctor-detail-3 .news-figure .image-wrap a {
-    height: 200px; }
-    @media screen and (max-width: 1024px) {
-      .doctor-detail-3 .news-figure .image-wrap a {
-        height: 330px; } }
-  @media screen and (min-width: 1024.1px) {
-    .doctor-detail-3 .news-figure .content {
-      padding-top: 0.625rem; }
-    .doctor-detail-3 .news-figure .title a {
-      line-height: 1.5rem; } }
-
-.doctor-detail-4 {
-  padding-bottom: 5rem; }
-  .doctor-detail-4 .section-title {
-    margin-bottom: 1.5625rem; }
-  .doctor-detail-4 .silde-doctor-detail {
-    margin-top: 1.875rem;
-    @apply relative {} }
-    @media screen and (max-width: 1024px) {
-      .doctor-detail-4 .silde-doctor-detail {
-        @apply px-8 {} } }
-    @media screen and (max-width: 1024px) {
-      .doctor-detail-4 .silde-doctor-detail .swiper-nav-wrap {
-        @apply flex items-center justify-center pt-6 {} } }
-    .doctor-detail-4 .silde-doctor-detail .nav-arrow-prev, .doctor-detail-4 .silde-doctor-detail .nav-arrow-next {
-      @apply absolute top-50 translate-y-50 z-30 {} }
-      @media screen and (max-width: 1024px) {
-        .doctor-detail-4 .silde-doctor-detail .nav-arrow-prev, .doctor-detail-4 .silde-doctor-detail .nav-arrow-next {
-          @apply static mx-4 {} } }
-  .doctor-detail-4 .swiper-container .swiper-slide {
-    @apply flex flex-col justify-center {}    height: auto; }
-    .doctor-detail-4 .swiper-container .swiper-slide.swiper-slide-prev .item, .doctor-detail-4 .swiper-container .swiper-slide.swiper-slide-next .item {
-      height: auto; }
-      .doctor-detail-4 .swiper-container .swiper-slide.swiper-slide-prev .item .title a, .doctor-detail-4 .swiper-container .swiper-slide.swiper-slide-next .item .title a {
-        @apply text-18 {} }
-      .doctor-detail-4 .swiper-container .swiper-slide.swiper-slide-prev .item .image-wrap a, .doctor-detail-4 .swiper-container .swiper-slide.swiper-slide-next .item .image-wrap a {
-        position: relative;
-        display: block;
-        height: 0;
-        overflow: hidden;
-        padding-top: 57.5%; }
-        .doctor-detail-4 .swiper-container .swiper-slide.swiper-slide-prev .item .image-wrap a img, .doctor-detail-4 .swiper-container .swiper-slide.swiper-slide-prev .item .image-wrap a iframe, .doctor-detail-4 .swiper-container .swiper-slide.swiper-slide-prev .item .image-wrap a video, .doctor-detail-4 .swiper-container .swiper-slide.swiper-slide-next .item .image-wrap a img, .doctor-detail-4 .swiper-container .swiper-slide.swiper-slide-next .item .image-wrap a iframe, .doctor-detail-4 .swiper-container .swiper-slide.swiper-slide-next .item .image-wrap a video {
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          top: 0;
-          left: 0;
-          object-fit: cover;
-          transition: .3s ease-in-out all; }
-    .doctor-detail-4 .swiper-container .swiper-slide.swiper-slide-active {
-      max-height: 650px; }
-    .doctor-detail-4 .swiper-container .swiper-slide .wapper-doctor {
-      margin-bottom: 1.25rem; }
-      .doctor-detail-4 .swiper-container .swiper-slide .wapper-doctor .image-wrap {
-        margin: 0 auto;
-        margin-bottom: -2.5625rem;
-        width: 82px;
-        height: 82px;
-        border-radius: 50%; }
-        .doctor-detail-4 .swiper-container .swiper-slide .wapper-doctor .image-wrap img {
-          border-radius: 50%;
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          object-position: top; }
-      .doctor-detail-4 .swiper-container .swiper-slide .wapper-doctor .wrap-panel {
-        box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.1);
-        padding-top: 3.4375rem;
-        height: 121px;
-        text-align: center;
-        cursor: pointer; }
-        .doctor-detail-4 .swiper-container .swiper-slide .wapper-doctor .wrap-panel .name {
-          font-size: 1.1875rem;
-          font-weight: 400;
-          text-transform: uppercase;
-          margin-bottom: 0.875rem; }
-        .doctor-detail-4 .swiper-container .swiper-slide .wapper-doctor .wrap-panel .btn-view-more {
-          color: #999999;
-          font-size: 1rem;
-          letter-spacing: 0.12px; }
-        .doctor-detail-4 .swiper-container .swiper-slide .wapper-doctor .wrap-panel:hover .btn-view-more {
-          color: #27519e; }

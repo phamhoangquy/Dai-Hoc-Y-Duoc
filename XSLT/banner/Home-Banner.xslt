@@ -45,7 +45,7 @@
 					<xsl:attribute name="title">
 						<xsl:value-of select="Title"></xsl:value-of>
 					</xsl:attribute>
-					<span>Đặt lịch khám </span><em class="mdi mdi-calendar"></em>
+					<span>Đặng ký khám </span><em class="mdi mdi-calendar"></em>
 				</a></div>
 		</div>
 	</xsl:template>

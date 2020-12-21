@@ -1,331 +1,356 @@
 .service-detail
-    background: #f2fbff
-    padding: 60/16*1rem 0 60/16*1rem 0
-    .img-wrapper
-        a
-            display: block
-            width: auto
-            max-height: 100%
-            height: 100%
-            img
-                width: 100%
-                height: 100%
-                object-fit: cover
-    .content-sce-detail
-        padding: 0 15/16*1rem
-        overflow-y: scroll
-        scrollbar-width: thin
-        scrollbar-color: $blue-1
-        height: 245px
-        &::-webkit-scrollbar
-            background: $blue-1
-            width: 3px
-        &::-webkit-scrollbar-track
-            -webkit-box-shadow: inset 0 0 6px #b2b2b2
-            background-color: #b2b2b2
-        &::-webkit-scrollbar-thumb
-            background-color: $blue-1
-        
-        p
-            color: #333333
-            font-size: 1rem
-            margin-bottom: 20px
-            &:first-child
-                margin-top: 10px
+	background: #f2fbff
+	padding: 60/16*1rem 0 60/16*1rem 0
+	.img-wrapper
+		a
+			display: block
+			width: auto
+			max-height: 100%
+			height: 100%
+			img
+				width: 100%
+				height: 100%
+				object-fit: cover
+	.content-sce-detail-2
+		padding: 0 15/16*1rem
+		@apply pt-8
+	.content-sce-detail
+		padding: 0 15/16*1rem
+		overflow-y: scroll
+		scrollbar-width: thin
+		scrollbar-color: $blue-1
+		height: 245px
+		&::-webkit-scrollbar
+			background: $blue-1
+			width: 3px
+		&::-webkit-scrollbar-track
+			-webkit-box-shadow: inset 0 0 6px #b2b2b2
+			background-color: #b2b2b2
+		&::-webkit-scrollbar-thumb
+			background-color: $blue-1
+		
+		p
+			color: #333333
+			font-size: 1rem
+			margin-bottom: 20px
+			&:first-child
+				margin-top: 10px
 
 .service-detail-2
-    padding: 60/16*1rem 0 0 0
-    .row
-        margin-bottom: 60/16*1rem
-        &:nth-child(2n+1)
-            .col
-                &:nth-child(2n+1)
-                    order: 2
-                    @media screen and ( max-width: 1024.98px )
-                        order: inherit
-                &:nth-child(2n)
-                    .content-sce-detail
-                        ul
-                            li
-                                &::before
-                                    display: none
+	padding: 60/16*1rem 0 0 0
+	.row
+		margin-bottom: 60/16*1rem
+		&:nth-child(2n+1)
+			.col
+				&:nth-child(2n+1)
+					order: 2
+					@media screen and ( max-width: 1024.98px )
+						order: inherit
+				&:nth-child(2n)
+					.content-sce-detail
+						ul
+							li
+								&::before
+									display: none
 
-    .img-wrapper
-        a
-            display: block
-            width: auto
-            max-height: 100%
-            height: 100%
-            img
-                width: 100%
-                height: 100%
-                object-fit: cover
-    .content-sce-detail
-        padding: 0 15/16*1rem
-        overflow-y: scroll
-        scrollbar-width: thin
-        scrollbar-color: $blue-1
-        height: 220px
-        margin-top: 20/16*1rem
-        &::-webkit-scrollbar
-            background: $blue-1
-            width: 3px
-        &::-webkit-scrollbar-track
-            -webkit-box-shadow: inset 0 0 6px #b2b2b2
-            background-color: #b2b2b2
-        &::-webkit-scrollbar-thumb
-            background-color: $blue-1
-        ul
-            list-style: none
-            padding: 0
-            li
-                position: relative
-                padding-left: 20/16*1rem
-                padding-bottom: 10/16*1rem
-                &::before
-                    position: absolute
-                    top: 3px
-                    left: 0
-                    z-index: 9
-                    display: inline-block
-                    font: normal normal normal 24px/1 "Material Design Icons"
-                    font-size: inherit
-                    text-rendering: auto
-                    line-height: inherit
-                    -webkit-font-smoothing: antialiased
-                    content: "\F0296"
-                    color: #6bc0e7
+	.img-wrapper
+		a
+			display: block
+			width: auto
+			max-height: 100%
+			height: 100%
+			img
+				width: 100%
+				height: 100%
+				object-fit: cover
+	.content-sce-detail-2
+		@apply pt-8
+		ul
+			list-style: none
+			padding: 0
+			li
+				position: relative
+				padding-left: 20/16*1rem
+				padding-bottom: 10/16*1rem
+				&::before
+					position: absolute
+					top: 3px
+					left: 0
+					z-index: 9
+					display: inline-block
+					font: normal normal normal 24px/1 "Material Design Icons"
+					font-size: inherit
+					text-rendering: auto
+					line-height: inherit
+					-webkit-font-smoothing: antialiased
+					content: "\F0296"
+					color: #6bc0e7
+	.content-sce-detail
+		padding: 0 15/16*1rem
+		overflow-y: scroll
+		scrollbar-width: thin
+		scrollbar-color: $blue-1
+		height: 220px
+		margin-top: 20/16*1rem
+		&::-webkit-scrollbar
+			background: $blue-1
+			width: 3px
+		&::-webkit-scrollbar-track
+			-webkit-box-shadow: inset 0 0 6px #b2b2b2
+			background-color: #b2b2b2
+		&::-webkit-scrollbar-thumb
+			background-color: $blue-1
+		ul
+			list-style: none
+			padding: 0
+			li
+				position: relative
+				padding-left: 20/16*1rem
+				padding-bottom: 10/16*1rem
+				&::before
+					position: absolute
+					top: 3px
+					left: 0
+					z-index: 9
+					display: inline-block
+					font: normal normal normal 24px/1 "Material Design Icons"
+					font-size: inherit
+					text-rendering: auto
+					line-height: inherit
+					-webkit-font-smoothing: antialiased
+					content: "\F0296"
+					color: #6bc0e7
 
 
 .service-detail-3
-    .card-body
-        padding-top: 25/16*1rem
-        border-radius: 10px
-        background-color: rgb(255, 255, 255)
-        // box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1)
-        img
-            margin: 0 auto
-        table
-            width: 100%
-            thead
-                background: #6bc0e7
-                color: #ffffff
-                border-radius: 10px 10px 0 0
-                tr
-                    width: 100%
-                    height: 50px
-                    th 
-                        padding-left: 30px
-                        border-right: 1px solid #e0e0e0
-                        font-size: 1.125rem
-            tbody
-                font-size: 14px
-                color: #333
-                border: 1px solid #e0e0e0
-                tr
-                    width: 100%
-                    height: 50px
-                    &:first-child
-                        td
-                            background: #f5f5f5
-                    td
-                        border-bottom: 1px solid #e0e0e0
-                        border-right: 1px solid #e0e0e0
-                        padding: 1/16*1rem 1/16*1rem 1/16*1rem 30/16*1rem
-                        background: #ffffff
-                        font-size: 1rem
-                        color: #333333
-                        .sce-detail-table
-                            list-style: unset
-                        &:first-child
-                            width: 10%
-                        &:nth-child(2)
-                            width: 40%
-                    
+	.card-body
+		padding-top: 25/16*1rem
+		border-radius: 10px
+		background-color: rgb(255, 255, 255)
+		// box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1)
+		img
+			margin: 0 auto
+		table
+			width: 100%
+			thead
+				background: #6bc0e7
+				color: #ffffff
+				border-radius: 10px 10px 0 0
+				tr
+					width: 100%
+					height: 50px
+					th 
+						padding-left: 30px
+						border-right: 1px solid #e0e0e0
+						font-size: 1.125rem
+			tbody
+				font-size: 14px
+				color: #333
+				border: 1px solid #e0e0e0
+				tr
+					width: 100%
+					height: 50px
+					&:first-child
+						td
+							background: #f5f5f5
+					td
+						border-bottom: 1px solid #e0e0e0
+						border-right: 1px solid #e0e0e0
+						padding: 1/16*1rem 1/16*1rem 1/16*1rem 30/16*1rem
+						background: #ffffff
+						font-size: 1rem
+						color: #333333
+						.sce-detail-table
+							list-style: unset
+						&:first-child
+							width: 10%
+						&:nth-child(2)
+							width: 40%
+					
 .service-detail-4
-    margin-top: 60/16*1rem
-    padding: 50/16*1rem 0
-    background: #f2fbff
-    .sub-text
-        text-align: center
-        font-size: 1rem
-        color: #333333
-        padding-top: 25/16*1rem
-        p
-            &:first-child
-                padding-top: 10/16*1rem
-    .silde-service-detail
-        margin-top: 30/16*1rem
-        @apply relative
-        @media screen and ( max-width:  1024px)
-            @apply px-8
-        .swiper-nav-wrap
-            @media screen and ( max-width:  1024px)
-                @apply flex items-center justify-center pt-6
-                
-        .nav-arrow-prev,.nav-arrow-next
-            @apply absolute top-50 translate-y-50 z-30
-            @media screen and ( max-width:  1024px)
-                @apply static mx-4
+	margin-top: 60/16*1rem
+	padding: 50/16*1rem 0
+	background: #f2fbff
+	.sub-text
+		text-align: center
+		font-size: 1rem
+		color: #333333
+		padding-top: 25/16*1rem
+		p
+			&:first-child
+				padding-top: 10/16*1rem
+	.silde-service-detail
+		margin-top: 30/16*1rem
+		@apply relative
+		@media screen and ( max-width:  1024px)
+			@apply px-8
+		.swiper-nav-wrap
+			@media screen and ( max-width:  1024px)
+				@apply flex items-center justify-center pt-6
+				
+		.nav-arrow-prev,.nav-arrow-next
+			@apply absolute top-50 translate-y-50 z-30
+			@media screen and ( max-width:  1024px)
+				@apply static mx-4
 
-    .swiper-container
-        .swiper-slide
-            @apply flex flex-col justify-center
-            height: auto
-            &.swiper-slide-prev,&.swiper-slide-next
-                    
-                .item
-                    height: auto
-                    .title
-                        a
-                            @apply text-18
-                    .image-wrap
-                        a
-                            +img-ratio(230/400)
-            // &.swiper-slide-next
-            //     padding-right: 150px
-            // &.swiper-slide-prev
-            //     padding-left: 150px
-            &.swiper-slide-active
-                max-height: 650px
-            .image-wrap
-                display: flex
-                justify-content: center
-                align-items: center
-                a
-                    background: #ffffff
-                    width: 120px
-                    height: 120px
-                    display: block
-                    display: flex
-                    justify-content: center
-                    align-items: center
-                    border-radius: 50%
-                    img
-                        width: 75px
-                        height: 75px
-                        object-fit: contain
+	.swiper-container
+		.swiper-slide
+			@apply flex flex-col justify-center
+			height: auto
+			&.swiper-slide-prev,&.swiper-slide-next
+					
+				.item
+					height: auto
+					.title
+						a
+							@apply text-18
+					.image-wrap
+						a
+							+img-ratio(230/400)
+			// &.swiper-slide-next
+			//     padding-right: 150px
+			// &.swiper-slide-prev
+			//     padding-left: 150px
+			&.swiper-slide-active
+				max-height: 650px
+			.image-wrap
+				display: flex
+				justify-content: center
+				align-items: center
+				a
+					background: #ffffff
+					width: 120px
+					height: 120px
+					display: block
+					display: flex
+					justify-content: center
+					align-items: center
+					border-radius: 50%
+					img
+						width: 75px
+						height: 75px
+						object-fit: contain
 
 .service-detail-5
-    padding: 50/16*1rem 0
-    .news-figure
-        padding-top: 25/16*1rem
-    .swiper-service-detail
-        margin-top: 30/16*1rem
-        @apply relative
-        @media screen and ( max-width:  1024px)
-            @apply px-8
-        .swiper-nav-wrap
-            @media screen and ( max-width:  1024px)
-                @apply flex items-center justify-center pt-6
-                
-        .nav-arrow-prev,.nav-arrow-next
-            @apply absolute top-50 translate-y-50 z-30
-            @media screen and ( max-width:  1024px)
-                @apply static mx-4
+	padding: 50/16*1rem 0
+	.news-figure
+		padding-top: 25/16*1rem
+	.swiper-service-detail
+		margin-top: 30/16*1rem
+		@apply relative
+		@media screen and ( max-width:  1024px)
+			@apply px-8
+		.swiper-nav-wrap
+			@media screen and ( max-width:  1024px)
+				@apply flex items-center justify-center pt-6
+				
+		.nav-arrow-prev,.nav-arrow-next
+			@apply absolute top-50 translate-y-50 z-30
+			@media screen and ( max-width:  1024px)
+				@apply static mx-4
 
-    .swiper-container
-        .swiper-slide
-            @apply flex flex-col justify-center
-            height: auto
-            &.swiper-slide-prev,&.swiper-slide-next
-                    
-                .item
-                    height: auto
-                    .title
-                        a
-                            @apply text-18
-                    .image-wrap
-                        a
-                            +img-ratio(230/400)
-            // &.swiper-slide-next
-            //     padding-right: 150px
-            // &.swiper-slide-prev
-            //     padding-left: 150px
-            &.swiper-slide-active
-                max-height: 650px
-    .service-check-banner
-        position: relative
-        @apply py-24
-        @screen lg
-            @apply py-16
-        .container
-            @apply relative
-        
-        .image-wrap
-            @media screen and ( max-width:  1024px)
-                @apply hidden
-            a
-                height: 500px
+	.swiper-container
+		.swiper-slide
+			@apply flex flex-col justify-center
+			height: auto
+			&.swiper-slide-prev,&.swiper-slide-next
+					
+				.item
+					height: auto
+					.title
+						a
+							@apply text-18
+					.image-wrap
+						a
+							+img-ratio(230/400)
+			// &.swiper-slide-next
+			//     padding-right: 150px
+			// &.swiper-slide-prev
+			//     padding-left: 150px
+			&.swiper-slide-active
+				max-height: 650px
+	.service-check-banner
+		position: relative
+		@apply py-24
+		@screen lg
+			@apply py-16
+		.container
+			@apply relative
+		
+		.image-wrap
+			@media screen and ( max-width:  1024px)
+				@apply hidden
+			a
+				height: 500px
 
-        .banner-content
-            @apply absolute top-50 translate-y-50  px-14 pb-18
-            right: 75px
-            background-image: linear-gradient( 90deg, rgba(2,79,161,.6) 0%, rgba(0,137,200,.6) 100%)
-            border-top-left-radius: 30px
-            border-bottom-right-radius: 30px
-            @media screen and ( max-width:  1024px)
-                @apply static translate-0 px-8
-            @media screen and ( max-width:  350px)
-                @apply px-4
-                
-                
-            .brand-logo
-                @apply flex items-center justify-center
-                a
-                    border-radius: 50%
-                    width: 100px
-                    height: 100px
-                    @apply bg-white flex items-center justify-center relative
-                    margin-top: -50px
-                    @media screen and ( max-width:  1024px)
-                        width: 80px
-                        height: 80px
+		.banner-content
+			@apply absolute top-50 translate-y-50  px-14 pb-18
+			right: 75px
+			background-image: linear-gradient( 90deg, rgba(2,79,161,.6) 0%, rgba(0,137,200,.6) 100%)
+			border-top-left-radius: 30px
+			border-bottom-right-radius: 30px
+			@media screen and ( max-width:  1024px)
+				@apply static translate-0 px-8
+			@media screen and ( max-width:  350px)
+				@apply px-4
+				
+				
+			.brand-logo
+				@apply flex items-center justify-center
+				a
+					border-radius: 50%
+					width: 100px
+					height: 100px
+					@apply bg-white flex items-center justify-center relative
+					margin-top: -50px
+					@media screen and ( max-width:  1024px)
+						width: 80px
+						height: 80px
 
-                        
-            .name
-                @apply text-16 text-white uppercase font-bold text-center pt-4 mb-5
-            .phone-wrap
-                @apply flex items-center justify-center py-1
-                border: 2px solid white
-                border-radius: 10px 
-                span
-                    @apply text-30 text-white font-bold
-                em
-                    font-size: 24px
-                    height: 24px
-                    line-height: 24px
-                    @apply text-white inline-block pr-2
-            .text
-                @apply text-16 text-white font-bold text-center uppercase my-4
-            .time-wrap
-                @apply flex justify-center items-center
-                .item
-                    @apply px-2
-                    span
-                        @apply text-16 text-white font-bold
-                    em
-                        font-size: 16px
-                        height: 16px
-                        line-height: 16px
-                        @apply text-white inline-block pr-1
-                    &:first-child
-                        border-right: 1px solid #ffffff
-        .btn-center
-            @apply relative
-        .btn-booking
+						
+			.name
+				@apply text-16 text-white uppercase font-bold text-center pt-4 mb-5
+			.phone-wrap
+				@apply flex items-center justify-center py-1
+				border: 2px solid white
+				border-radius: 10px 
+				span
+					@apply text-30 text-white font-bold
+				em
+					font-size: 24px
+					height: 24px
+					line-height: 24px
+					@apply text-white inline-block pr-2
+			.text
+				@apply text-16 text-white font-bold text-center uppercase my-4
+			.time-wrap
+				@apply flex justify-center items-center
+				.item
+					@apply px-2
+					span
+						@apply text-16 text-white font-bold
+					em
+						font-size: 16px
+						height: 16px
+						line-height: 16px
+						@apply text-white inline-block pr-1
+					&:first-child
+						border-right: 1px solid #ffffff
+		.btn-center
+			@apply relative
+		.btn-booking
 
-            border-radius: 27px
-            height: 54px
-            @apply bg-azure relative px-10 pr-16
-            margin-bottom: -120px
-            span
-                @apply text-16 text-white font-bold uppercase
-            em
-                @apply flex items-center justify-center bg-white absolute text-azure
-                top: 2px
-                right: 2px
-                border-radius: 50%
-                font-size: 18px
-                height: 46px
-                width: 46px
+			border-radius: 27px
+			height: 54px
+			@apply bg-azure relative px-10 pr-16
+			margin-bottom: -120px
+			span
+				@apply text-16 text-white font-bold uppercase
+			em
+				@apply flex items-center justify-center bg-white absolute text-azure
+				top: 2px
+				right: 2px
+				border-radius: 50%
+				font-size: 18px
+				height: 46px
+				width: 46px
