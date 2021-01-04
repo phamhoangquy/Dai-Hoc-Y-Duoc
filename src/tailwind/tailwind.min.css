@@ -3526,7 +3526,7 @@ header {
         transition: none;
         width: 320px;
         top: 60px;
-        background: linear-gradient(-60deg, #00a8e6 0%, #00379b 100%); }
+        background: #ffffff; }
         header .header-wrap-right.active {
           @apply flex flex-col  opacity-100 pointer-events-auto  z-50 {}          transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
           transform: translateX(0); }
@@ -3587,7 +3587,7 @@ header {
       @apply h-full {} }
     @media screen and (max-width: 1024px) {
       header .nav-brand {
-        @apply absolute top-50 left-50 translate-50 {} } }
+        @apply absolute top-50 translate-50 {}        left: 95px; } }
     header .nav-brand a {
       @apply flex justify-start items-center h-full {} }
       header .nav-brand a img, header .nav-brand a svg {
@@ -3739,6 +3739,15 @@ header {
   @media screen and (max-width: 1024px) {
     .main-menu-toggle {
       @apply flex ml-4 items-center {} } }
+
+.navbar-primary-menu ul li .title a {
+  color: #00379b; }
+
+.navbar-primary-menu ul li .title em {
+  color: #00379b; }
+
+.navbar-primary-menu ul li .sub-nav li a {
+  color: #00379b !important; }
 
 .global-breadcrumb {
   @apply py-2 bg-grey-1 {}  height: 40px; }
