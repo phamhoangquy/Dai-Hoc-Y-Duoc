@@ -3728,8 +3728,6 @@ header {
 @screen lg {
   .navbar-primary-menu li:hover {
     @apply bg-azure {} } }
-    .navbar-primary-menu li:hover a, .navbar-primary-menu li:hover em {
-      @apply text-white {} }
     .navbar-primary-menu li.active > a::after, .navbar-primary-menu li.active .title a::after {
       opacity: 1; }
     .navbar-primary-menu li.active > a::before, .navbar-primary-menu li.active .title a::before {
@@ -3749,9 +3747,12 @@ header {
   color: #00379b; }
 
 .navbar-primary-menu ul li a {
-  color: #00379b !important; }
+  color: #00379b; }
 
 .navbar-primary-menu ul li .sub-nav li a {
+  color: #00379b; }
+
+.navbar-primary-menu ul .open-sub a {
   color: #00379b !important; }
 
 .global-breadcrumb {

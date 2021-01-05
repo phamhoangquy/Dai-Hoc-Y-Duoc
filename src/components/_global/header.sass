@@ -158,6 +158,7 @@ header
 						-webkit-animation: fade-in .3s cubic-bezier(0.39, 0.575, 0.565, 1) both
 						animation: fade-in .3s cubic-bezier(0.39, 0.575, 0.565, 1) both
 						background: linear-gradient( -60deg, rgb(0,168,230) 0%, rgb(0,55,155) 100%)
+						// background: #ffffff
 			.sub-nav
 				@apply hidden h-auto p-5
 				@screen lg
@@ -231,11 +232,10 @@ header
 				@apply bg-azure
 				
 		&:hover
-
 			@screen lg
 				@apply bg-azure
-			a,em
-				@apply text-white
+			// a,em
+			// 	@apply text-white
 			
 			
 		&.active
@@ -262,8 +262,11 @@ header
 				em
 					color: rgb(0,55,155)
 			a
-				color: rgb(0,55,155) !important
+				color: rgb(0,55,155)
 			.sub-nav
 				li
 					a
-						color: rgb(0,55,155) !important
+						color: rgb(0,55,155)
+		.open-sub
+			a
+				color: rgb(0,55,155) !important
