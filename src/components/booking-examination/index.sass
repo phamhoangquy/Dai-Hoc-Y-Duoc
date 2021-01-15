@@ -6,7 +6,10 @@
 		.pl-0
 			padding-left: 15px
 	.border
+		margin: 0
 		margin-top: 1.5625rem
+		.col
+			padding: 0
 	//     border: 1px solid #6bc0e7
 	//     .col
 	//         padding-right: 0
@@ -36,23 +39,34 @@
 				margin-top: .9375rem
 				font-weight: 600
 	.medical-booking
-		padding: 30/16*1rem 25px 40/16*1rem
+		padding: 0
 		border: 1px solid #6bc0e7
 		border-left: none
 		border-top-right-radius: 25px
 		border-bottom-right-radius: 25px
 		height: 730px
+		padding:  0 10px 0  20px
 		@media screen and ( max-width: 1024px )
-			 border-radius: 25px
-			 border-left: 1px solid #6bc0e7
-			 height: auto
+			border-radius: 25px
+			border-left: 1px solid #6bc0e7
+			height: auto
+			padding: 0 10px
+		.text
+			@apply text-blue-1 font-bold uppercase text-20
+		.caption
+			@apply text-16 text-blue-1 font-normal block pt-2
+
 	.wrap-form
 		@apply pointer-events-auto
+		.fa-exclamation-triangle
+			bottom: -15px
+			font-size: 10px
+			left: 7px
 		.row
 			margin: 0 -5px
 			.col
 				padding: 0 5px
-				margin-bottom: 15px
+				margin-bottom: 20px
 		.form-group
 			.RadPicker_Default 
 				.rcCalPopup
@@ -72,7 +86,7 @@
 				border-radius: 3px
 				border: 1px solid #e0e0e0
 				height: 40px
-				@apply text-13 text-main
+				@apply text-13 text-main px-6
 				&::placeholder
 					@apply text-main text-13
 			input[type='date']

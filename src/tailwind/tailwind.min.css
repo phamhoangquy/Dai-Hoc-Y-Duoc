@@ -504,128 +504,118 @@ footer {
 
 @tailwind components;
 @tailwind utilities;
-.about {
-  padding: 50px 0 0 0;
-  overflow: hidden; }
-  .about .text {
-    color: #010101;
-    font-size: 1rem;
-    font-weight: 600;
-    text-align: center;
-    padding-top: 25px; }
-  .about .big-bg {
-    width: 100%;
-    padding-top: 25px; }
-    .about .big-bg .img-wrapper {
-      width: auto;
-      height: 445px;
-      max-height: 100%; }
-      @media screen and (max-width: 576px) {
-        .about .big-bg .img-wrapper {
-          height: auto; } }
-      .about .big-bg .img-wrapper img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover; }
-  .about .background {
-    background: #e5f7ff;
-    padding: 80px 40px;
-    height: 445px;
-    margin-left: -30px; }
-    @media screen and (max-width: 1024.98px) {
-      .about .background {
-        margin-left: 0;
-        height: auto;
-        margin-top: -30px;
-        padding: 30px 30px; } }
-    .about .background .content {
-      padding-right: 60px; }
-      @media screen and (max-width: 576px) {
-        .about .background .content {
-          padding-right: 0; } }
-      .about .background .content p {
-        color: #010101;
-        font-weight: 600;
-        padding-bottom: 20px; }
-
-.about-2 {
-  background-image: url("../img/about/bg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding: 50px 50px; }
-  .about-2 .about-figure {
-    margin-top: 25px;
-    position: relative; }
-    .about-2 .about-figure::before {
-      content: '';
-      background: rgba(34, 34, 34, 0.6);
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%; }
-    .about-2 .about-figure .img-wrapper {
-      width: auto;
-      max-height: 100%;
-      height: 290px; }
-      .about-2 .about-figure .img-wrapper img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover; }
-    .about-2 .about-figure .caption {
-      position: absolute;
-      left: 50%;
-      top: 30%;
-      text-transform: uppercase;
-      font-size: 2rem;
-      color: #ffffff;
-      font-weight: 700;
-      transform: translate(-50%, -50%); }
-    .about-2 .about-figure .content {
-      position: absolute;
-      left: 60px;
-      right: 60px;
-      top: 50%;
-      text-align: center;
-      line-height: 1.5; }
-      @media screen and (max-width: 576px) {
-        .about-2 .about-figure .content {
-          -webkit-line-clamp: 4;
-          -webkit-box-orient: vertical;
-          display: -webkit-box;
-          overflow: hidden; } }
-      .about-2 .about-figure .content p {
+.booking-examination {
+  padding: 3.125rem 0; }
+  @media screen and (max-width: 1024px) {
+    .booking-examination .pr-0 {
+      padding-right: 15px; }
+    .booking-examination .pl-0 {
+      padding-left: 15px; } }
+  .booking-examination .border {
+    margin: 0;
+    margin-top: 1.5625rem; }
+    .booking-examination .border .col {
+      padding: 0; }
+  .booking-examination .item-bg {
+    background-image: url("../img/bg/banner-bg-2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 730px;
+    height: 730px;
+    border: 1px solid #6bc0e7;
+    border-right: none;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px; }
+    @media screen and (max-width: 1024px) {
+      .booking-examination .item-bg {
+        border-radius: 25px;
+        border-right: 1px solid #6bc0e7;
+        background-size: 1024px;
+        height: auto; } }
+    .booking-examination .item-bg .content {
+      padding: 1.875rem; }
+      .booking-examination .item-bg .content strong {
         font-size: 1rem;
         color: #ffffff; }
-
-.about-3 {
-  padding: 50px 0 50px 0; }
-  .about-3 .col {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-  .about-3 .big-img {
-    padding-top: 25px; }
-    .about-3 .big-img .border-img {
-      display: flex;
-      flex: 0 1 auto;
-      align-items: center;
-      justify-content: center;
-      background: -webkit-gradient(linear, left top, left bottom, from(#299ae2), to(#27519e));
-      background: -o-linear-gradient(top, #299ae2 0, #27519e 100%);
-      background: linear-gradient(180deg, #299ae2, #27519e);
-      padding: 20px;
-      width: 120px;
-      height: 120px;
-      border-radius: 50%; }
-    .about-3 .big-img .text {
+      .booking-examination .item-bg .content p {
+        font-size: 1rem;
+        color: #ffffff;
+        margin-top: .9375rem;
+        font-weight: 600; }
+  .booking-examination .medical-booking {
+    padding: 0;
+    border: 1px solid #6bc0e7;
+    border-left: none;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    height: 730px;
+    padding: 0 10px 0  20px; }
+    @media screen and (max-width: 1024px) {
+      .booking-examination .medical-booking {
+        border-radius: 25px;
+        border-left: 1px solid #6bc0e7;
+        height: auto;
+        padding: 0 10px; } }
+    .booking-examination .medical-booking .text {
+      @apply text-blue-1 font-bold uppercase text-20 {} }
+    .booking-examination .medical-booking .caption {
+      @apply text-16 text-blue-1 font-normal block pt-2 {} }
+  .booking-examination .wrap-form {
+    @apply pointer-events-auto {} }
+    .booking-examination .wrap-form .fa-exclamation-triangle {
+      bottom: -15px;
+      font-size: 10px;
+      left: 7px; }
+    .booking-examination .wrap-form .row {
+      margin: 0 -5px; }
+      .booking-examination .wrap-form .row .col {
+        padding: 0 5px;
+        margin-bottom: 20px; }
+    .booking-examination .wrap-form .form-group .RadPicker_Default .rcCalPopup {
+      background-image: url(../img/icon/date-grey.png) !important; }
+    .booking-examination .wrap-form .form-group .RadPicker_Default .rcTimePopup {
+      background-image: url(../img/icon/date-grey.png) !important; }
+    .booking-examination .wrap-form .form-group .RadPicker .RadInput input {
+      background: rgba(255, 255, 255, 0.5) !important;
+      border-radius: 3px !important;
+      border: 1px solid #e0e0e0 !important;
+      height: 40px !important; }
+    .booking-examination .wrap-form .form-group input[type='text'], .booking-examination .wrap-form .form-group select, .booking-examination .wrap-form .form-group textarea, .booking-examination .wrap-form .form-group input[type='date'] {
+      background: rgba(255, 255, 255, 0.5);
+      border-radius: 3px;
+      border: 1px solid #e0e0e0;
+      height: 40px;
+      @apply text-13 text-main px-6 {} }
+      .booking-examination .wrap-form .form-group input[type='text']::placeholder, .booking-examination .wrap-form .form-group select::placeholder, .booking-examination .wrap-form .form-group textarea::placeholder, .booking-examination .wrap-form .form-group input[type='date']::placeholder {
+        @apply text-main text-13 {} }
+    .booking-examination .wrap-form .form-group input[type='date'] {
+      @apply text-main text-13 {} }
+    .booking-examination .wrap-form .form-group select {
+      @apply text-main text-13 w-full px-4 {} }
+      .booking-examination .wrap-form .form-group select option {
+        @apply text-main text-13 {} }
+    .booking-examination .wrap-form .form-group textarea {
+      height: 6rem;
+      @apply pt-2 text-main {} }
+    .booking-examination .wrap-form .form-group label {
+      margin-bottom: 0.625rem;
       font-size: 1rem;
-      color: #27519e;
-      font-weight: 700;
+      color: #333333;
+      @apply text-main {} }
+    .booking-examination .wrap-form .text-group {
+      font-size: 1.125rem;
+      color: #6bc0e7;
       text-transform: uppercase;
-      padding-top: 15px;
-      text-align: center; }
+      border-bottom: 3px solid #6bc0e7; }
+    .booking-examination .wrap-form .frm-btnwrap {
+      @apply m-0 {} }
+      .booking-examination .wrap-form .frm-btnwrap .frm-btn {
+        @apply flex w-full justify-end {} }
+        .booking-examination .wrap-form .frm-btnwrap .frm-btn input[type='submit'] {
+          @apply bg-azure text-16 text-white uppercase font-bold p-0 flex justify-center items-center {}          border-radius: 25px;
+          border: none;
+          height: 40px;
+          line-height: 16px; }
 
 .shopping-cart-toggle {
   @apply flex items-center justify-center  static {} }
@@ -1471,106 +1461,6 @@ footer {
       @apply text-white transition mr-2 {}      font-size: 18px;
       transition: .3s all ease-in-out;
       height: 18px; }
-
-.booking-examination {
-  padding: 3.125rem 0; }
-  @media screen and (max-width: 1024px) {
-    .booking-examination .pr-0 {
-      padding-right: 15px; }
-    .booking-examination .pl-0 {
-      padding-left: 15px; } }
-  .booking-examination .border {
-    margin-top: 1.5625rem; }
-  .booking-examination .item-bg {
-    background-image: url("../img/bg/banner-bg-2.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 730px;
-    height: 730px;
-    border: 1px solid #6bc0e7;
-    border-right: none;
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px; }
-    @media screen and (max-width: 1024px) {
-      .booking-examination .item-bg {
-        border-radius: 25px;
-        border-right: 1px solid #6bc0e7;
-        background-size: 1024px;
-        height: auto; } }
-    .booking-examination .item-bg .content {
-      padding: 1.875rem; }
-      .booking-examination .item-bg .content strong {
-        font-size: 1rem;
-        color: #ffffff; }
-      .booking-examination .item-bg .content p {
-        font-size: 1rem;
-        color: #ffffff;
-        margin-top: .9375rem;
-        font-weight: 600; }
-  .booking-examination .medical-booking {
-    padding: 1.875rem 25px 2.5rem;
-    border: 1px solid #6bc0e7;
-    border-left: none;
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
-    height: 730px; }
-    @media screen and (max-width: 1024px) {
-      .booking-examination .medical-booking {
-        border-radius: 25px;
-        border-left: 1px solid #6bc0e7;
-        height: auto; } }
-  .booking-examination .wrap-form {
-    @apply pointer-events-auto {} }
-    .booking-examination .wrap-form .row {
-      margin: 0 -5px; }
-      .booking-examination .wrap-form .row .col {
-        padding: 0 5px;
-        margin-bottom: 15px; }
-    .booking-examination .wrap-form .form-group .RadPicker_Default .rcCalPopup {
-      background-image: url(../img/icon/date-grey.png) !important; }
-    .booking-examination .wrap-form .form-group .RadPicker_Default .rcTimePopup {
-      background-image: url(../img/icon/date-grey.png) !important; }
-    .booking-examination .wrap-form .form-group .RadPicker .RadInput input {
-      background: rgba(255, 255, 255, 0.5) !important;
-      border-radius: 3px !important;
-      border: 1px solid #e0e0e0 !important;
-      height: 40px !important; }
-    .booking-examination .wrap-form .form-group input[type='text'], .booking-examination .wrap-form .form-group select, .booking-examination .wrap-form .form-group textarea, .booking-examination .wrap-form .form-group input[type='date'] {
-      background: rgba(255, 255, 255, 0.5);
-      border-radius: 3px;
-      border: 1px solid #e0e0e0;
-      height: 40px;
-      @apply text-13 text-main {} }
-      .booking-examination .wrap-form .form-group input[type='text']::placeholder, .booking-examination .wrap-form .form-group select::placeholder, .booking-examination .wrap-form .form-group textarea::placeholder, .booking-examination .wrap-form .form-group input[type='date']::placeholder {
-        @apply text-main text-13 {} }
-    .booking-examination .wrap-form .form-group input[type='date'] {
-      @apply text-main text-13 {} }
-    .booking-examination .wrap-form .form-group select {
-      @apply text-main text-13 w-full px-4 {} }
-      .booking-examination .wrap-form .form-group select option {
-        @apply text-main text-13 {} }
-    .booking-examination .wrap-form .form-group textarea {
-      height: 6rem;
-      @apply pt-2 text-main {} }
-    .booking-examination .wrap-form .form-group label {
-      margin-bottom: 0.625rem;
-      font-size: 1rem;
-      color: #333333;
-      @apply text-main {} }
-    .booking-examination .wrap-form .text-group {
-      font-size: 1.125rem;
-      color: #6bc0e7;
-      text-transform: uppercase;
-      border-bottom: 3px solid #6bc0e7; }
-    .booking-examination .wrap-form .frm-btnwrap {
-      @apply m-0 {} }
-      .booking-examination .wrap-form .frm-btnwrap .frm-btn {
-        @apply flex w-full justify-end {} }
-        .booking-examination .wrap-form .frm-btnwrap .frm-btn input[type='submit'] {
-          @apply bg-azure text-16 text-white uppercase font-bold p-0 flex justify-center items-center {}          border-radius: 25px;
-          border: none;
-          height: 40px;
-          line-height: 16px; }
 
 .contact {
   padding: 3.75rem 0; }
@@ -2450,6 +2340,129 @@ footer {
       padding-top: 0;
       text-transform: none; }
 
+.about {
+  padding: 50px 0 0 0;
+  overflow: hidden; }
+  .about .text {
+    color: #010101;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 25px; }
+  .about .big-bg {
+    width: 100%;
+    padding-top: 25px; }
+    .about .big-bg .img-wrapper {
+      width: auto;
+      height: 445px;
+      max-height: 100%; }
+      @media screen and (max-width: 576px) {
+        .about .big-bg .img-wrapper {
+          height: auto; } }
+      .about .big-bg .img-wrapper img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+  .about .background {
+    background: #e5f7ff;
+    padding: 80px 40px;
+    height: 445px;
+    margin-left: -30px; }
+    @media screen and (max-width: 1024.98px) {
+      .about .background {
+        margin-left: 0;
+        height: auto;
+        margin-top: -30px;
+        padding: 30px 30px; } }
+    .about .background .content {
+      padding-right: 60px; }
+      @media screen and (max-width: 576px) {
+        .about .background .content {
+          padding-right: 0; } }
+      .about .background .content p {
+        color: #010101;
+        font-weight: 600;
+        padding-bottom: 20px; }
+
+.about-2 {
+  background-image: url("../img/about/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 50px 50px; }
+  .about-2 .about-figure {
+    margin-top: 25px;
+    position: relative; }
+    .about-2 .about-figure::before {
+      content: '';
+      background: rgba(34, 34, 34, 0.6);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+    .about-2 .about-figure .img-wrapper {
+      width: auto;
+      max-height: 100%;
+      height: 290px; }
+      .about-2 .about-figure .img-wrapper img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .about-2 .about-figure .caption {
+      position: absolute;
+      left: 50%;
+      top: 30%;
+      text-transform: uppercase;
+      font-size: 2rem;
+      color: #ffffff;
+      font-weight: 700;
+      transform: translate(-50%, -50%); }
+    .about-2 .about-figure .content {
+      position: absolute;
+      left: 60px;
+      right: 60px;
+      top: 50%;
+      text-align: center;
+      line-height: 1.5; }
+      @media screen and (max-width: 576px) {
+        .about-2 .about-figure .content {
+          -webkit-line-clamp: 4;
+          -webkit-box-orient: vertical;
+          display: -webkit-box;
+          overflow: hidden; } }
+      .about-2 .about-figure .content p {
+        font-size: 1rem;
+        color: #ffffff; }
+
+.about-3 {
+  padding: 50px 0 50px 0; }
+  .about-3 .col {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .about-3 .big-img {
+    padding-top: 25px; }
+    .about-3 .big-img .border-img {
+      display: flex;
+      flex: 0 1 auto;
+      align-items: center;
+      justify-content: center;
+      background: -webkit-gradient(linear, left top, left bottom, from(#299ae2), to(#27519e));
+      background: -o-linear-gradient(top, #299ae2 0, #27519e 100%);
+      background: linear-gradient(180deg, #299ae2, #27519e);
+      padding: 20px;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%; }
+    .about-3 .big-img .text {
+      font-size: 1rem;
+      color: #27519e;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding-top: 15px;
+      text-align: center; }
+
 @-webkit-keyframes fade-in {
   0% {
     opacity: 0; }
@@ -3167,133 +3180,6 @@ main {
 .news-detail-page .medical-answer .anwser-question p img {
   margin: 0 auto; }
 
-.tutorial-client {
-  padding: 3.125rem 0 0 0; }
-  .tutorial-client .news-figure {
-    border-radius: 10px;
-    @apply overflow-hidden {} }
-    @media screen and (max-width: 576px) {
-      .tutorial-client .news-figure {
-        @apply mb-8 {} } }
-    .tutorial-client .news-figure .caption {
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-      overflow: hidden; }
-    .tutorial-client .news-figure:hover .content {
-      background: linear-gradient(180deg, #68c0e6 2%, #3789c4 99%); }
-    .tutorial-client .news-figure:hover time {
-      @apply text-white {} }
-    .tutorial-client .news-figure:hover .title a {
-      @apply text-white {} }
-    .tutorial-client .news-figure:hover .caption {
-      @apply text-white {} }
-      .tutorial-client .news-figure:hover .caption * {
-        @apply text-white {} }
-
-@screen sm {
-  .tutorial-client .news-figure.big {
-    @apply mb-8 {} } }
-    .tutorial-client .news-figure.big .title a {
-      @apply text-16 my-4 {} }
-
-@screen sm {
-  .tutorial-client .news-figure.big .image-wrap a {
-    height: 300px; } }
-    .tutorial-client .news-figure .image-wrap a {
-      display: block;
-      height: auto !important;
-      width: auto; }
-      .tutorial-client .news-figure .image-wrap a img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover; }
-    .tutorial-client .news-figure .content {
-      @apply p-5 bg-grey-7 transition {} }
-    .tutorial-client .news-figure .title a {
-      @apply text-14 text-main font-bold uppercase transition my-2 {}      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-      overflow: hidden; }
-  .tutorial-client .section-title {
-    margin-bottom: 1.875rem; }
-  .tutorial-client .faq-figure {
-    border-radius: 10px 0 0 10px; }
-  @media screen and (max-width: 1024px) {
-    .tutorial-client .faq-figure {
-      border-radius: 10px 10px 0 0; } }
-  .tutorial-client .image-wrap a {
-    display: block;
-    width: auto;
-    height: 392px; }
-    @media screen and (max-width: 1024px) {
-      .tutorial-client .image-wrap a {
-        height: 330px; } }
-    .tutorial-client .image-wrap a img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover; }
-  .tutorial-client .wrap-text {
-    height: 392px;
-    padding: 3.75rem 1.875rem 1.875rem 2.8125rem;
-    border-radius: 0 10px 10px 0;
-    box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.1); }
-    @media screen and (max-width: 1024px) {
-      .tutorial-client .wrap-text {
-        height: auto; } }
-    @media screen and (max-width: 1024px) {
-      .tutorial-client .wrap-text {
-        border-radius: 0 0 10px 10px; } }
-    .tutorial-client .wrap-text .title {
-      margin-bottom: 1.75rem; }
-      .tutorial-client .wrap-text .title a {
-        line-height: 1.5rem;
-        font-size: 1.125rem;
-        font-weight: 700;
-        color: #333333;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
-        display: -webkit-box;
-        overflow: hidden; }
-    .tutorial-client .wrap-text .content {
-      color: #333333;
-      font-weight: 400;
-      font-size: 1rem;
-      line-height: 1.5rem;
-      margin-bottom: 2.9375rem; }
-    .tutorial-client .wrap-text .btn-primary {
-      width: 150px; }
-      .tutorial-client .wrap-text .btn-primary span {
-        text-transform: none; }
-  .tutorial-client .news-figure {
-    box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.1); }
-    .tutorial-client .news-figure .content {
-      background-color: #ffffff; }
-      .tutorial-client .news-figure .content .title a {
-        font-size: 1.125rem;
-        font-weight: 700;
-        text-transform: none; }
-    .tutorial-client .news-figure .image-wrap a {
-      height: 244px; }
-    @media screen and (max-width: 576px) {
-      .tutorial-client .news-figure {
-        margin-bottom: 0; } }
-  .tutorial-client .row {
-    margin-bottom: 0; }
-    @media screen and (max-width: 1024px) {
-      .tutorial-client .row {
-        margin-bottom: 0; } }
-  @media screen and (max-width: 1024px) {
-    .tutorial-client .row:nth-child(n+2) > * {
-      margin-bottom: 1.875rem; } }
-  @media screen and (max-width: 1024px) {
-    .tutorial-client .pr-0 {
-      padding-right: 15px;
-      margin-bottom: 0 !important; } }
-  @media screen and (max-width: 1024px) {
-    .tutorial-client .pl-0 {
-      padding-left: 15px; } }
-
 footer {
   background: #e5f7ff; }
 
@@ -3768,6 +3654,133 @@ header {
 
 .navbar-primary-menu ul .open-sub a {
   color: #00379b !important; }
+
+.tutorial-client {
+  padding: 3.125rem 0 0 0; }
+  .tutorial-client .news-figure {
+    border-radius: 10px;
+    @apply overflow-hidden {} }
+    @media screen and (max-width: 576px) {
+      .tutorial-client .news-figure {
+        @apply mb-8 {} } }
+    .tutorial-client .news-figure .caption {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden; }
+    .tutorial-client .news-figure:hover .content {
+      background: linear-gradient(180deg, #68c0e6 2%, #3789c4 99%); }
+    .tutorial-client .news-figure:hover time {
+      @apply text-white {} }
+    .tutorial-client .news-figure:hover .title a {
+      @apply text-white {} }
+    .tutorial-client .news-figure:hover .caption {
+      @apply text-white {} }
+      .tutorial-client .news-figure:hover .caption * {
+        @apply text-white {} }
+
+@screen sm {
+  .tutorial-client .news-figure.big {
+    @apply mb-8 {} } }
+    .tutorial-client .news-figure.big .title a {
+      @apply text-16 my-4 {} }
+
+@screen sm {
+  .tutorial-client .news-figure.big .image-wrap a {
+    height: 300px; } }
+    .tutorial-client .news-figure .image-wrap a {
+      display: block;
+      height: auto !important;
+      width: auto; }
+      .tutorial-client .news-figure .image-wrap a img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .tutorial-client .news-figure .content {
+      @apply p-5 bg-grey-7 transition {} }
+    .tutorial-client .news-figure .title a {
+      @apply text-14 text-main font-bold uppercase transition my-2 {}      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden; }
+  .tutorial-client .section-title {
+    margin-bottom: 1.875rem; }
+  .tutorial-client .faq-figure {
+    border-radius: 10px 0 0 10px; }
+  @media screen and (max-width: 1024px) {
+    .tutorial-client .faq-figure {
+      border-radius: 10px 10px 0 0; } }
+  .tutorial-client .image-wrap a {
+    display: block;
+    width: auto;
+    height: 392px; }
+    @media screen and (max-width: 1024px) {
+      .tutorial-client .image-wrap a {
+        height: 330px; } }
+    .tutorial-client .image-wrap a img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  .tutorial-client .wrap-text {
+    height: 392px;
+    padding: 3.75rem 1.875rem 1.875rem 2.8125rem;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.1); }
+    @media screen and (max-width: 1024px) {
+      .tutorial-client .wrap-text {
+        height: auto; } }
+    @media screen and (max-width: 1024px) {
+      .tutorial-client .wrap-text {
+        border-radius: 0 0 10px 10px; } }
+    .tutorial-client .wrap-text .title {
+      margin-bottom: 1.75rem; }
+      .tutorial-client .wrap-text .title a {
+        line-height: 1.5rem;
+        font-size: 1.125rem;
+        font-weight: 700;
+        color: #333333;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+        overflow: hidden; }
+    .tutorial-client .wrap-text .content {
+      color: #333333;
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      margin-bottom: 2.9375rem; }
+    .tutorial-client .wrap-text .btn-primary {
+      width: 150px; }
+      .tutorial-client .wrap-text .btn-primary span {
+        text-transform: none; }
+  .tutorial-client .news-figure {
+    box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.1); }
+    .tutorial-client .news-figure .content {
+      background-color: #ffffff; }
+      .tutorial-client .news-figure .content .title a {
+        font-size: 1.125rem;
+        font-weight: 700;
+        text-transform: none; }
+    .tutorial-client .news-figure .image-wrap a {
+      height: 244px; }
+    @media screen and (max-width: 576px) {
+      .tutorial-client .news-figure {
+        margin-bottom: 0; } }
+  .tutorial-client .row {
+    margin-bottom: 0; }
+    @media screen and (max-width: 1024px) {
+      .tutorial-client .row {
+        margin-bottom: 0; } }
+  @media screen and (max-width: 1024px) {
+    .tutorial-client .row:nth-child(n+2) > * {
+      margin-bottom: 1.875rem; } }
+  @media screen and (max-width: 1024px) {
+    .tutorial-client .pr-0 {
+      padding-right: 15px;
+      margin-bottom: 0 !important; } }
+  @media screen and (max-width: 1024px) {
+    .tutorial-client .pl-0 {
+      padding-left: 15px; } }
 
 .global-breadcrumb {
   @apply py-2 bg-grey-1 {}  height: 40px; }
