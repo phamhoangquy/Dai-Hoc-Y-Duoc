@@ -3291,6 +3291,9 @@ main {
 .four-swiper, .trinity-swiper {
   @apply relative {} }
 
+.news-detail-page .medical-answer .anwser-question p img {
+  margin: 0 auto; }
+
 footer {
   background: #e5f7ff; }
 
