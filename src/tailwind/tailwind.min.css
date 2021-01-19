@@ -504,6 +504,129 @@ footer {
 
 @tailwind components;
 @tailwind utilities;
+.about {
+  padding: 50px 0 0 0;
+  overflow: hidden; }
+  .about .text {
+    color: #010101;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 25px; }
+  .about .big-bg {
+    width: 100%;
+    padding-top: 25px; }
+    .about .big-bg .img-wrapper {
+      width: auto;
+      height: 445px;
+      max-height: 100%; }
+      @media screen and (max-width: 576px) {
+        .about .big-bg .img-wrapper {
+          height: auto; } }
+      .about .big-bg .img-wrapper img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+  .about .background {
+    background: #e5f7ff;
+    padding: 80px 40px;
+    height: 445px;
+    margin-left: -30px; }
+    @media screen and (max-width: 1024.98px) {
+      .about .background {
+        margin-left: 0;
+        height: auto;
+        margin-top: -30px;
+        padding: 30px 30px; } }
+    .about .background .content {
+      padding-right: 60px; }
+      @media screen and (max-width: 576px) {
+        .about .background .content {
+          padding-right: 0; } }
+      .about .background .content p {
+        color: #010101;
+        font-weight: 600;
+        padding-bottom: 20px; }
+
+.about-2 {
+  background-image: url("../img/about/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 50px 50px; }
+  .about-2 .about-figure {
+    margin-top: 25px;
+    position: relative; }
+    .about-2 .about-figure::before {
+      content: '';
+      background: rgba(34, 34, 34, 0.6);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+    .about-2 .about-figure .img-wrapper {
+      width: auto;
+      max-height: 100%;
+      height: 290px; }
+      .about-2 .about-figure .img-wrapper img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .about-2 .about-figure .caption {
+      position: absolute;
+      left: 50%;
+      top: 30%;
+      text-transform: uppercase;
+      font-size: 2rem;
+      color: #ffffff;
+      font-weight: 700;
+      transform: translate(-50%, -50%); }
+    .about-2 .about-figure .content {
+      position: absolute;
+      left: 60px;
+      right: 60px;
+      top: 50%;
+      text-align: center;
+      line-height: 1.5; }
+      @media screen and (max-width: 576px) {
+        .about-2 .about-figure .content {
+          -webkit-line-clamp: 4;
+          -webkit-box-orient: vertical;
+          display: -webkit-box;
+          overflow: hidden; } }
+      .about-2 .about-figure .content p {
+        font-size: 1rem;
+        color: #ffffff; }
+
+.about-3 {
+  padding: 50px 0 50px 0; }
+  .about-3 .col {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .about-3 .big-img {
+    padding-top: 25px; }
+    .about-3 .big-img .border-img {
+      display: flex;
+      flex: 0 1 auto;
+      align-items: center;
+      justify-content: center;
+      background: -webkit-gradient(linear, left top, left bottom, from(#299ae2), to(#27519e));
+      background: -o-linear-gradient(top, #299ae2 0, #27519e 100%);
+      background: linear-gradient(180deg, #299ae2, #27519e);
+      padding: 20px;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%; }
+    .about-3 .big-img .text {
+      font-size: 1rem;
+      color: #27519e;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding-top: 15px;
+      text-align: center; }
+
 .shopping-cart-toggle {
   @apply flex items-center justify-center  static {} }
 
@@ -1349,129 +1472,6 @@ footer {
       transition: .3s all ease-in-out;
       height: 18px; }
 
-.about {
-  padding: 50px 0 0 0;
-  overflow: hidden; }
-  .about .text {
-    color: #010101;
-    font-size: 1rem;
-    font-weight: 600;
-    text-align: center;
-    padding-top: 25px; }
-  .about .big-bg {
-    width: 100%;
-    padding-top: 25px; }
-    .about .big-bg .img-wrapper {
-      width: auto;
-      height: 445px;
-      max-height: 100%; }
-      @media screen and (max-width: 576px) {
-        .about .big-bg .img-wrapper {
-          height: auto; } }
-      .about .big-bg .img-wrapper img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover; }
-  .about .background {
-    background: #e5f7ff;
-    padding: 80px 40px;
-    height: 445px;
-    margin-left: -30px; }
-    @media screen and (max-width: 1024.98px) {
-      .about .background {
-        margin-left: 0;
-        height: auto;
-        margin-top: -30px;
-        padding: 30px 30px; } }
-    .about .background .content {
-      padding-right: 60px; }
-      @media screen and (max-width: 576px) {
-        .about .background .content {
-          padding-right: 0; } }
-      .about .background .content p {
-        color: #010101;
-        font-weight: 600;
-        padding-bottom: 20px; }
-
-.about-2 {
-  background-image: url("../img/about/bg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding: 50px 50px; }
-  .about-2 .about-figure {
-    margin-top: 25px;
-    position: relative; }
-    .about-2 .about-figure::before {
-      content: '';
-      background: rgba(34, 34, 34, 0.6);
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%; }
-    .about-2 .about-figure .img-wrapper {
-      width: auto;
-      max-height: 100%;
-      height: 290px; }
-      .about-2 .about-figure .img-wrapper img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover; }
-    .about-2 .about-figure .caption {
-      position: absolute;
-      left: 50%;
-      top: 30%;
-      text-transform: uppercase;
-      font-size: 2rem;
-      color: #ffffff;
-      font-weight: 700;
-      transform: translate(-50%, -50%); }
-    .about-2 .about-figure .content {
-      position: absolute;
-      left: 60px;
-      right: 60px;
-      top: 50%;
-      text-align: center;
-      line-height: 1.5; }
-      @media screen and (max-width: 576px) {
-        .about-2 .about-figure .content {
-          -webkit-line-clamp: 4;
-          -webkit-box-orient: vertical;
-          display: -webkit-box;
-          overflow: hidden; } }
-      .about-2 .about-figure .content p {
-        font-size: 1rem;
-        color: #ffffff; }
-
-.about-3 {
-  padding: 50px 0 50px 0; }
-  .about-3 .col {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-  .about-3 .big-img {
-    padding-top: 25px; }
-    .about-3 .big-img .border-img {
-      display: flex;
-      flex: 0 1 auto;
-      align-items: center;
-      justify-content: center;
-      background: -webkit-gradient(linear, left top, left bottom, from(#299ae2), to(#27519e));
-      background: -o-linear-gradient(top, #299ae2 0, #27519e 100%);
-      background: linear-gradient(180deg, #299ae2, #27519e);
-      padding: 20px;
-      width: 120px;
-      height: 120px;
-      border-radius: 50%; }
-    .about-3 .big-img .text {
-      font-size: 1rem;
-      color: #27519e;
-      font-weight: 700;
-      text-transform: uppercase;
-      padding-top: 15px;
-      text-align: center; }
-
 .booking-examination {
   padding: 3.125rem 0; }
   @media screen and (max-width: 1024px) {
@@ -1916,6 +1916,12 @@ footer {
     @media screen and (max-width: 1024px) {
       .medical .image-wrap a {
         height: 330px; } }
+    @media screen and (max-width: 1023px) {
+      .medical .image-wrap a {
+        height: auto; } }
+    @media screen and (max-width: 576px) {
+      .medical .image-wrap a {
+        height: auto; } }
     .medical .image-wrap a img {
       width: 100%;
       height: 100%;
@@ -2417,51 +2423,6 @@ footer {
             height: 38px;
             right: 0;
             top: -0; }
-
-.thankyou {
-  padding: 3.75rem 0 0; }
-  .thankyou .img {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 14px; }
-    .thankyou .img img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover; }
-  .thankyou .title {
-    font-size: 1.875rem;
-    color: #333333;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 0.3px;
-    font-weight: 700;
-    margin-bottom: 14px; }
-  .thankyou .content {
-    font-size: 1rem;
-    font-weight: 400;
-    letter-spacing: 0.16px;
-    text-align: center;
-    color: #333333;
-    margin-bottom: 13px; }
-  .thankyou .medical-check-banner .banner-content {
-    padding-right: 1.75rem;
-    padding-left: 1.75rem;
-    padding-bottom: 1.875rem;
-    position: unset;
-    max-width: 420px;
-    height: 325px;
-    margin: 0 auto;
-    transform: unset; }
-    @media screen and (max-width: 1024px) {
-      .thankyou .medical-check-banner .banner-content {
-        height: auto; } }
-    .thankyou .medical-check-banner .banner-content .text {
-      margin-top: 1.875rem; }
-    .thankyou .medical-check-banner .banner-content .name {
-      margin-bottom: 15px; }
-    .thankyou .medical-check-banner .banner-content .name-cover {
-      padding-top: 0;
-      text-transform: none; }
 
 .tutorial-client {
   padding: 3.125rem 0 0 0; }
@@ -3353,6 +3314,51 @@ main {
               width: 10%; }
             .news-detail-page .medical-answer .anwser-question .card-body table tbody tr td:nth-child(2) {
               width: 40%; }
+
+.thankyou {
+  padding: 3.75rem 0 0; }
+  .thankyou .img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 14px; }
+    .thankyou .img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  .thankyou .title {
+    font-size: 1.875rem;
+    color: #333333;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    font-weight: 700;
+    margin-bottom: 14px; }
+  .thankyou .content {
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.16px;
+    text-align: center;
+    color: #333333;
+    margin-bottom: 13px; }
+  .thankyou .medical-check-banner .banner-content {
+    padding-right: 1.75rem;
+    padding-left: 1.75rem;
+    padding-bottom: 1.875rem;
+    position: unset;
+    max-width: 420px;
+    height: 325px;
+    margin: 0 auto;
+    transform: unset; }
+    @media screen and (max-width: 1024px) {
+      .thankyou .medical-check-banner .banner-content {
+        height: auto; } }
+    .thankyou .medical-check-banner .banner-content .text {
+      margin-top: 1.875rem; }
+    .thankyou .medical-check-banner .banner-content .name {
+      margin-bottom: 15px; }
+    .thankyou .medical-check-banner .banner-content .name-cover {
+      padding-top: 0;
+      text-transform: none; }
 
 footer {
   background: #e5f7ff; }
