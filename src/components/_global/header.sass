@@ -158,7 +158,24 @@ header
 						-webkit-animation: fade-in .3s cubic-bezier(0.39, 0.575, 0.565, 1) both
 						animation: fade-in .3s cubic-bezier(0.39, 0.575, 0.565, 1) both
 						background: linear-gradient( -60deg, rgb(0,168,230) 0%, rgb(0,55,155) 100%)
-						// background: #ffffff
+				.sub-nav
+					a
+						position: relative
+						&:after
+							content: ''
+							position: absolute
+							width: 12px
+							height: 6px
+							border-style: solid
+							border-width: 0 6px 6px 6px
+							border-color: transparent transparent #ffffff transparent
+						&:before
+							content: ''
+							position: absolute
+							width: 100%
+							height: 2px
+							background: #ffffff
+							color: #ffffff
 			.sub-nav
 				@apply hidden h-auto p-5
 				@screen lg
@@ -184,6 +201,7 @@ header
 						a
 							@apply underline
 							background: none
+					
 				a
 					@apply text-16 font-normal normal-case text-white  py-2
 		.title
