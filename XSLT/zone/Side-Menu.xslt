@@ -4,10 +4,16 @@
 	<xsl:output method="html" indent="yes" />
 
 	<xsl:template match="/">
+		<div class="tool-doctor">
+			<div class="wrapper">
+				<div class="btn btn-cate">Chuyên khoa</div>
+			</div>
+		</div>
 		<div class="section-list">
 			<div class="list-header">Chuyên khoa</div>
 			<div class="list-body">
 				<xsl:apply-templates select="/ZoneList/Zone"></xsl:apply-templates>
+				<div id="cls_filter">Đóng</div>
 			</div>
 		</div>
 	</xsl:template>

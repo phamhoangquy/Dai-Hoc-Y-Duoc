@@ -7,6 +7,29 @@
 	.section-title
 		margin-bottom: 30/16*1rem
 	.section-list
+		@media screen and ( max-width: 1024px )
+			visibility: hidden
+			transform: translateY(30px)
+			opacity: 0
+			position: fixed
+			bottom: 0px
+			left: 0
+			right: 0
+			z-index: 11
+			margin-bottom: 40px
+			overflow: auto
+			background-color: white
+			transition: .3s all  ease-in-out
+			&::-webkit-scrollbar
+				width: 3px
+				height: 3px
+			&::-webkit-scrollbar-thumb
+				border-radius: 2.5px
+				background-color: #27519e
+			&.active
+				visibility: visible
+				opacity: 1
+				transform: translate(0)
 		.list-header
 			display: flex
 			justify-content: center
@@ -38,6 +61,20 @@
 				&:last-child
 					margin-bottom: 0
 				&:hover
+					color: #27519e
+					font-weight: 700
+			.active
+				color:#27519e
+				font-weight: 700
+				display: block
+				margin-bottom: 20px
+			// .active
+			// 	margin-bottom: 30/16*1rem
+			@media screen and ( max-width: 1024px)
+				.active
+					display: flex
+					justify-content: center
+					align-items: center
 					color: #27519e
 					font-weight: 700
 	.title
@@ -104,3 +141,51 @@
 						height: 38px
 						right: 0
 						top: -0
+
+#cls_filter
+	display: none
+	@media screen and ( max-width: 1024px)
+		display: block
+		text-align: center
+		font-size: 18px
+		color: #fff
+		width: 145px
+		height: 40px
+		background: #27519e
+		padding-top: 10px
+		margin: auto
+.tool-doctor
+	display: none
+	@media screen and ( max-width: 1024px )
+		display: block
+		position: fixed
+		bottom: 0
+		left: 0
+		right: 0
+		z-index: 10
+		font-size: r(16px)
+		font-weight: 400
+		.wrapper
+			display: flex
+			justify-content: space-between
+			align-items: center
+			.btn-cate
+				font-size: 18px
+				background: #27519e
+				color: #ffffff
+		.btn
+			min-height: 40px
+			flex: 1
+			display: flex
+			padding: 0.5rem 1rem
+			justify-content: center
+			align-items: center
+			border: thin solid #cccccc
+			background-color: white
+			box-shadow: 0px 0px 15px #0000000b
+			white-space: nowrap
+			font-weight: 700
+			span
+				margin-right: 10px
+				@media screen and ( max-width: 375px )
+					margin-right: 5px

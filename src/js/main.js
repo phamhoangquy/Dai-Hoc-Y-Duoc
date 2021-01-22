@@ -14,8 +14,8 @@ $(document).ready(function() {
     //Declare NEW function Javascript
     backToTop();
     watchMoreDetail();
+    filterCate();
 });
-
 
 function backToTop() {
     let btn = $(".back-to-top");
@@ -632,7 +632,6 @@ function stickyNav() {
 }
 
 //Tab active
-
 function tabActive() {
     $(".tab-navigation li a").on("click", function() {
         $(this)
@@ -664,5 +663,21 @@ function setBackground() {
             "background-image": "url(" + background + ")",
             "background-repeat": "repeat",
         });
+    });
+}
+
+function filterCate() {
+    var cate_menu = $('.section-list')
+    var tool = $('.tool-doctor')
+    var cate = $('.tool-doctor .btn-cate')
+    var close = $('#cls_filter')
+    setTimeout(() => {
+        var header = $("header").outerHeight();
+    });
+    cate.on('click', function() {
+        cate_menu.toggleClass('active')
+    });
+    close.on('click', function() {
+        cate_menu.removeClass('active')
     });
 }
