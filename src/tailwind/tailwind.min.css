@@ -3482,6 +3482,14 @@ main {
             .news-detail-page .medical-answer .anwser-question .card-body table tbody tr td:nth-child(2) {
               width: 40%; }
 
+@media screen and (max-width: 1024px) {
+  .medical .news-figure .image-wrap a {
+    padding-top: 62.7% !important; } }
+
+@media screen and (max-width: 1024px) {
+  .service-page .medical .news-figure .image-wrap a {
+    padding-top: 66.7% !important; } }
+
 footer {
   background: #e5f7ff; }
 
@@ -4412,7 +4420,7 @@ html body .RadInput input.riEmpty, html body .RadInput textarea.riEmpty, html bo
 @screen lg {
   .faq-figure.big .image-wrap a {
     display: block;
-    height: 330px;
+    height: auto;
     width: auto; }
     .faq-figure.big .image-wrap a img {
       width: 100%;
@@ -4439,7 +4447,7 @@ html body .RadInput input.riEmpty, html body .RadInput textarea.riEmpty, html bo
       .faq-figure.big time {
         @apply text-14 {} } }
   .faq-figure.big .content {
-    @apply p-6 {} }
+    @apply p-4 {} }
     @media screen and (max-width: 1280px) {
       .faq-figure.big .content {
         padding: 1.7rem; } }
@@ -4635,7 +4643,7 @@ html body .RadInput input.riEmpty, html body .RadInput textarea.riEmpty, html bo
 @screen lg {
   .news-figure.big .image-wrap a {
     display: block;
-    height: 300px;
+    height: auto;
     width: auto; }
     .news-figure.big .image-wrap a img {
       width: 100%;
@@ -4647,7 +4655,7 @@ html body .RadInput input.riEmpty, html body .RadInput textarea.riEmpty, html bo
       display: block;
       height: 0;
       overflow: hidden;
-      padding-top: 50%; }
+      padding-top: 66.66667%; }
       .news-figure.big .image-wrap a img, .news-figure.big .image-wrap a iframe, .news-figure.big .image-wrap a video {
         position: absolute;
         width: 100%;
@@ -4836,7 +4844,7 @@ html body .RadInput input.riEmpty, html body .RadInput textarea.riEmpty, html bo
       display: block;
       height: 0;
       overflow: hidden;
-      padding-top: 61.81818%; }
+      padding-top: 67.27273%; }
       .news-service .image-wrap a img, .news-service .image-wrap a iframe, .news-service .image-wrap a video {
         position: absolute;
         width: 100%;
@@ -4852,8 +4860,7 @@ html body .RadInput input.riEmpty, html body .RadInput textarea.riEmpty, html bo
       width: auto; }
       .news-service .image-wrap a img {
         width: 100%;
-        height: 100%;
-        object-fit: cover; } }
+        height: 100%; } }
   .news-service .content {
     background: #f8f8f8;
     height: 70px;
