@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
     //Library Base function
     $('[data-fancybox=""]').fancybox({
         smallBtn: true,
@@ -295,7 +294,7 @@ function swiperInit() {
 
             },
             400: {
-                slidesPerView: 2,
+                slidesPerView: 1,
 
             },
             480: {
@@ -668,6 +667,7 @@ function setBackground() {
 
 function filterCate() {
     var cate_menu = $('.section-list')
+    var list_header = $('.list-header')
     var tool = $('.tool-doctor')
     var cate = $('.tool-doctor .btn-cate')
     var close = $('#cls_filter')
@@ -676,8 +676,10 @@ function filterCate() {
     });
     cate.on('click', function() {
         cate_menu.toggleClass('active')
+        list_header.remove('.list-header')
     });
     close.on('click', function() {
         cate_menu.removeClass('active')
+        list_header.toggleClass('list-header')
     });
 }

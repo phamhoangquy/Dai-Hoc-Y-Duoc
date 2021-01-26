@@ -582,6 +582,10 @@ footer {
       color: #ffffff;
       font-weight: 700;
       transform: translate(-50%, -50%); }
+      @media screen and (max-width: 576px) {
+        .about-2 .about-figure .caption {
+          font-size: 18px;
+          top: 40%; } }
     .about-2 .about-figure .content {
       position: absolute;
       left: 60px;
@@ -2315,20 +2319,25 @@ footer {
         padding-left: 15px; } }
   .team-doctor .section-title {
     margin-bottom: 1.875rem; }
+    @media screen and (max-width: 1024px) {
+      .team-doctor .section-title {
+        padding-top: 30px; } }
   @media screen and (max-width: 1024px) {
     .team-doctor .section-list {
       visibility: hidden;
       transform: translateY(30px);
       opacity: 0;
       position: fixed;
-      bottom: 0px;
+      top: 100px;
       left: 0;
       right: 0;
       z-index: 11;
       margin-bottom: 40px;
       overflow: auto;
       background-color: white;
-      transition: .3s all  ease-in-out; }
+      transition: .3s all  ease-in-out;
+      background-color: #f0f9fd;
+      height: 100%; }
       .team-doctor .section-list::-webkit-scrollbar {
         width: 3px;
         height: 3px; }
@@ -2478,9 +2487,9 @@ footer {
     .tool-doctor {
       display: block;
       position: fixed;
-      bottom: 0;
       left: 0;
       right: 0;
+      top: 60px;
       z-index: 10;
       font-size: r(16px);
       font-weight: 400; }
@@ -2489,7 +2498,8 @@ footer {
         justify-content: space-between;
         align-items: center; }
         .tool-doctor .wrapper .btn-cate {
-          font-size: 18px;
+          font-size: 15px;
+          font-weight: 400;
           background: #27519e;
           color: #ffffff; }
       .tool-doctor .btn {
@@ -3489,6 +3499,20 @@ main {
 @media screen and (max-width: 1024px) {
   .service-page .medical .news-figure .image-wrap a {
     padding-top: 66.7% !important; } }
+
+@media screen and (max-width: 1024px) {
+  .news-other .news-figure .image-wrap a {
+    padding-top: 62.7% !important; } }
+
+.news-other .news-figure .image-wrap a img {
+  object-fit: unset; }
+
+@media screen and (max-width: 1024px) {
+  .news-detail-page .news-other .news-figure .image-wrap a {
+    padding-top: 66.7% !important; } }
+
+.news-detail-page .news-other .news-figure .image-wrap a img {
+  object-fit: unset; }
 
 footer {
   background: #e5f7ff; }
@@ -5562,6 +5586,9 @@ html body .RadInput input.riEmpty, html body .RadInput textarea.riEmpty, html bo
           width: auto;
           height: 260px;
           max-height: 100%; }
+          @media screen and (max-width: 1024px) {
+            .specialized-detail .spe-news-slide .swiper-container .swiper-slide .image-wrap a {
+              height: auto; } }
           .specialized-detail .spe-news-slide .swiper-container .swiper-slide .image-wrap a img {
             width: 100%;
             height: 100%;
