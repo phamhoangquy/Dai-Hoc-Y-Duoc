@@ -3570,6 +3570,21 @@ main {
 .news-detail-page .news-other .news-figure .image-wrap a img {
   object-fit: unset; }
 
+.homepage .primary-banner .medical-form {
+  height: 512px; }
+  @media screen and (max-width: 1024px) {
+    .homepage .primary-banner .medical-form {
+      height: auto; } }
+  @media screen and (max-width: 768px) {
+    .homepage .primary-banner .medical-form {
+      height: auto; } }
+  @media screen and (max-width: 576px) {
+    .homepage .primary-banner .medical-form {
+      height: auto; } }
+  @media screen and (max-width: 1280px) {
+    .homepage .primary-banner .medical-form .medical-form-wrapper {
+      padding: 30px !important; } }
+
 footer {
   background: #e5f7ff; }
 
