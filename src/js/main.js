@@ -14,8 +14,14 @@ $(document).ready(function() {
     backToTop();
     watchMoreDetail();
     filterCate();
+    ClickFormBanner();
 });
-
+const ClickFormBanner = () => {
+    $(".medical-form-wrapper").prepend('<div class="icon-close"></div>');
+    $(".medical-form-wrapper .icon-close").click(function () {
+		$(".medical-form").toggleClass("close");
+	});
+};
 function backToTop() {
     let btn = $(".back-to-top");
     btn.on("click", function(e) {
@@ -646,7 +652,7 @@ function tabActive() {
         $("#" + display).addClass("active");
     });
 }
-// Side 
+// Side
 function setBackground() {
     $("[setBackground]").each(function() {
         var background = $(this).attr("setBackground");

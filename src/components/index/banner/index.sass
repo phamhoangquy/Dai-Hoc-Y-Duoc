@@ -16,7 +16,7 @@
 				height: 100%
 				top: 0
 				left: 0
-		
+
 	.swiper-container
 		@media screen and ( min-width: 1280.1px)
 			height: 550px
@@ -31,22 +31,22 @@
 					display: block
 					height: 550px
 					width: auto
-				
+
 					img
 						width: 100%
 						height: 100%
 						object-fit: cover
-	
+
 	.swiper-pagination
 		@apply absolute  translate-x-50 w-auto
 		left: 50% !important
 		bottom: 30px !important
 		@media screen and ( max-width:  400px)
 			bottom: 15px !important
-		.swiper-pagination-bullet 
+		.swiper-pagination-bullet
 			@apply z-20 pointer-events-auto  transition
 			background: none
-			border: 1px solid white 
+			border: 1px solid white
 			border-radius: 50%
 			width: 10px
 			height: 10px
@@ -58,15 +58,15 @@
 			font-size: 2.5rem !important
 		@media screen and ( max-width: 400px)
 			@apply text-20
-			bottom: 35px 
-			
+			bottom: 35px
+
 		@apply text-32 text-white uppercase font-bold absolute left-50 translate-x-50 text-center w-full
-		bottom: 50px 
+		bottom: 50px
 		@screen lg
 			@apply text-36  left-0 translate-0 text-left
 			bottom: 80px
 		@screen xl
-			@apply text-48 
+			@apply text-48
 	.wrap
 		.container
 			@apply absolute top-50 left-50 translate-50 h-full
@@ -88,26 +88,27 @@
 		@apply bg-blue-1 flex items-center justify-center relative z-20
 		width: 50px
 		height: 50px
+		pointer-events: auto!important
+		cursor: pointer
 		@media screen and ( max-width: 576px)
 			@apply hidden
-			
 	.medical-form-wrapper
 		border-top-right-radius: 25px
 		border-bottom-left-radius: 25px
-		background:  url('../img/bg/banner-bg.png'), linear-gradient( 160deg, rgb(0,168,230) 0%, rgb(0,55,155) 100%) 
+		background:  url('../img/bg/banner-bg.png'), linear-gradient( 160deg, rgb(0,168,230) 0%, rgb(0,55,155) 100%)
 		background-repeat: no-repeat
-		background-size: cover 
+		background-size: cover
 		background-position: bottom right
 		width: 420px
 		box-shadow: 0px 0px 0px 6px rgba(0,0,0,0.15)
 		@apply p-8
 		@media screen and ( max-width: 1280px)
-			background: linear-gradient( 160deg, rgb(0,168,230) 0%, rgb(0,55,155) 100%) 
+			background: linear-gradient( 160deg, rgb(0,168,230) 0%, rgb(0,55,155) 100%)
 			width: 360px
 			padding: 15px 30px
 		@media screen and ( max-width: 1024px)
 			@apply w-full px-6
-			
+
 		.text
 			@apply text-20 text-white uppercase font-bold
 		.caption
@@ -172,10 +173,10 @@ div.RadPicker table.rcSingle .rcInputCell
 	display: inline-block
 .RadPicker_Default
 	width: 100%
-.RadPicker_Default 
+.RadPicker_Default
 	.rcCalPopup
 		@apply absolute top-50 translate-y-50 right-0
-.rcTable 
+.rcTable
 	tbody
 		tr
 			@apply relative inline-block w-full

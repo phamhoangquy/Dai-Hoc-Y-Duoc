@@ -4,3 +4,59 @@ main
 		padding-top: 60px
 .four-swiper,.trinity-swiper
 	@apply relative
+.medical-form
+	@media screen and ( min-width: 1024.1px )
+		height: 550px
+		align-items: center
+		z-index: 999
+		transition: .3s all  ease-in-out
+		&.close
+			top: 136.7%
+			.medical-form-wrapper
+				padding-top: 16px
+			.caption
+				margin-top: 8px
+			.icon-close
+				&::before
+					top: -25%
+				&::after
+					top: 50%
+
+.medical-form-wrapper
+	transition: .3s all  ease-in-out
+	position: relative
+	overflow: hidden
+	.icon-close
+		&::before
+			content: 'x'
+			position: absolute
+			top: 50%
+			transition: .7s all  ease-in-out
+			transform: translateY(-50%)
+		&::after
+			content: "\F005D"
+			font: normal normal normal 24px/1 "Material Design Icons"
+			position: absolute
+			top: 120%
+			transition: .5s all  ease-in-out
+			transform: translateY(-50%)
+		width: 37px
+		color: white
+		overflow: hidden
+		background-color: #0770bb
+		font-weight: bold
+		height: 50px
+		display: flex
+		z-index: 99
+		align-items: center
+		justify-content: center
+		position: absolute
+		cursor: pointer
+		right: 0
+		top: 0
+		pointer-events: auto
+	.caption
+		transition: .3s all  ease-in-out
+.primary-banner
+	overflow: hidden
+
