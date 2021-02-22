@@ -2022,6 +2022,105 @@ footer {
         overflow: hidden;
         margin-bottom: 0; }
 
+.medical-answer {
+  padding: 3.75rem 0 0; }
+  .medical-answer .title {
+    color: #27519e;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.9375rem; }
+  .medical-answer .section-social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 1.25rem; }
+    .medical-answer .section-social time {
+      font-size: 0.875rem; }
+    .medical-answer .section-social .social * {
+      font-size: 1.125rem;
+      color: #014293; }
+    .medical-answer .section-social .social a:first-child {
+      margin-right: 1.25rem; }
+  .medical-answer .section-card {
+    @apply bg-white {}    padding: 1.875rem 0 1.25rem;
+    border-bottom: 1px solid #27519e; }
+    .medical-answer .section-card .image-wrap {
+      width: 100px;
+      height: 100px;
+      margin: 0 auto; }
+      @media screen and (max-width: 576px) {
+        .medical-answer .section-card .image-wrap {
+          margin: 0 auto; } }
+      .medical-answer .section-card .image-wrap img {
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top; }
+    .medical-answer .section-card .wrap-text {
+      padding: 0.9375rem; }
+      .medical-answer .section-card .wrap-text .name {
+        text-transform: uppercase;
+        margin-bottom: 1.25rem; }
+        @media screen and (max-width: 576px) {
+          .medical-answer .section-card .wrap-text .name {
+            text-align: center; } }
+    .medical-answer .section-card .wrap-btn {
+      margin-top: 1.5625rem; }
+      .medical-answer .section-card .wrap-btn .btn span {
+        @apply normal-case {} }
+  .medical-answer .anwser-question {
+    padding-bottom: 1.875rem; }
+    .medical-answer .anwser-question * {
+      margin-bottom: 1.875rem; }
+    .medical-answer .anwser-question .question {
+      font-weight: 700;
+      color: #333333;
+      font-size: 1rem; }
+    .medical-answer .anwser-question .image-wrap img {
+      margin: 0 auto;
+      width: auto;
+      max-height: 355px; }
+
+.news-other {
+  padding: 3.4375rem 0 3.75rem;
+  background-color: #e5f7ff; }
+  .news-other .section-title {
+    margin-bottom: 1.875rem; }
+  .news-other .swiper-news-other {
+    margin-top: 1.875rem;
+    @apply relative {} }
+    @media screen and (max-width: 1024px) {
+      .news-other .swiper-news-other {
+        @apply px-8 {} } }
+    @media screen and (max-width: 1024px) {
+      .news-other .swiper-news-other .swiper-nav-wrap {
+        @apply flex items-center justify-center pt-6 {} } }
+    .news-other .swiper-news-other .nav-arrow-prev, .news-other .swiper-news-other .nav-arrow-next {
+      @apply absolute top-50 translate-y-50 z-30 {} }
+      @media screen and (max-width: 1024px) {
+        .news-other .swiper-news-other .nav-arrow-prev, .news-other .swiper-news-other .nav-arrow-next {
+          @apply static mx-4 {} } }
+  .news-other .swiper-container .swiper-slide {
+    @apply flex flex-col justify-center {}    height: auto; }
+    .news-other .swiper-container .swiper-slide.swiper-slide-prev .item, .news-other .swiper-container .swiper-slide.swiper-slide-next .item {
+      height: auto; }
+      .news-other .swiper-container .swiper-slide.swiper-slide-prev .item .title a, .news-other .swiper-container .swiper-slide.swiper-slide-next .item .title a {
+        @apply text-18 {} }
+    .news-other .swiper-container .swiper-slide.swiper-slide-active {
+      max-height: 650px; }
+  .news-other .news-figure .image-wrap a {
+    height: auto !important; }
+  .news-other .news-figure .content .title a {
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    -o-text-overflow: ellipsis;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 32px; }
+
 .service {
   @apply pt-16 pb-10 {} }
   .service .news-figure {
@@ -2160,105 +2259,6 @@ footer {
   @media screen and (max-width: 1024px) {
     .service .pl-0 {
       padding-left: 15px; } }
-
-.medical-answer {
-  padding: 3.75rem 0 0; }
-  .medical-answer .title {
-    color: #27519e;
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-bottom: 0.9375rem; }
-  .medical-answer .section-social {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #e5e5e5;
-    padding-bottom: 1.25rem; }
-    .medical-answer .section-social time {
-      font-size: 0.875rem; }
-    .medical-answer .section-social .social * {
-      font-size: 1.125rem;
-      color: #014293; }
-    .medical-answer .section-social .social a:first-child {
-      margin-right: 1.25rem; }
-  .medical-answer .section-card {
-    @apply bg-white {}    padding: 1.875rem 0 1.25rem;
-    border-bottom: 1px solid #27519e; }
-    .medical-answer .section-card .image-wrap {
-      width: 100px;
-      height: 100px;
-      margin: 0 auto; }
-      @media screen and (max-width: 576px) {
-        .medical-answer .section-card .image-wrap {
-          margin: 0 auto; } }
-      .medical-answer .section-card .image-wrap img {
-        border-radius: 50%;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: top; }
-    .medical-answer .section-card .wrap-text {
-      padding: 0.9375rem; }
-      .medical-answer .section-card .wrap-text .name {
-        text-transform: uppercase;
-        margin-bottom: 1.25rem; }
-        @media screen and (max-width: 576px) {
-          .medical-answer .section-card .wrap-text .name {
-            text-align: center; } }
-    .medical-answer .section-card .wrap-btn {
-      margin-top: 1.5625rem; }
-      .medical-answer .section-card .wrap-btn .btn span {
-        @apply normal-case {} }
-  .medical-answer .anwser-question {
-    padding-bottom: 1.875rem; }
-    .medical-answer .anwser-question * {
-      margin-bottom: 1.875rem; }
-    .medical-answer .anwser-question .question {
-      font-weight: 700;
-      color: #333333;
-      font-size: 1rem; }
-    .medical-answer .anwser-question .image-wrap img {
-      margin: 0 auto;
-      width: auto;
-      max-height: 355px; }
-
-.news-other {
-  padding: 3.4375rem 0 3.75rem;
-  background-color: #e5f7ff; }
-  .news-other .section-title {
-    margin-bottom: 1.875rem; }
-  .news-other .swiper-news-other {
-    margin-top: 1.875rem;
-    @apply relative {} }
-    @media screen and (max-width: 1024px) {
-      .news-other .swiper-news-other {
-        @apply px-8 {} } }
-    @media screen and (max-width: 1024px) {
-      .news-other .swiper-news-other .swiper-nav-wrap {
-        @apply flex items-center justify-center pt-6 {} } }
-    .news-other .swiper-news-other .nav-arrow-prev, .news-other .swiper-news-other .nav-arrow-next {
-      @apply absolute top-50 translate-y-50 z-30 {} }
-      @media screen and (max-width: 1024px) {
-        .news-other .swiper-news-other .nav-arrow-prev, .news-other .swiper-news-other .nav-arrow-next {
-          @apply static mx-4 {} } }
-  .news-other .swiper-container .swiper-slide {
-    @apply flex flex-col justify-center {}    height: auto; }
-    .news-other .swiper-container .swiper-slide.swiper-slide-prev .item, .news-other .swiper-container .swiper-slide.swiper-slide-next .item {
-      height: auto; }
-      .news-other .swiper-container .swiper-slide.swiper-slide-prev .item .title a, .news-other .swiper-container .swiper-slide.swiper-slide-next .item .title a {
-        @apply text-18 {} }
-    .news-other .swiper-container .swiper-slide.swiper-slide-active {
-      max-height: 650px; }
-  .news-other .news-figure .image-wrap a {
-    height: auto !important; }
-  .news-other .news-figure .content .title a {
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-    -o-text-overflow: ellipsis;
-    display: -webkit-box;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    height: 32px; }
 
 .specialized {
   padding: 3.125rem 0; }
@@ -3459,6 +3459,9 @@ main {
 
 .primary-banner {
   overflow: hidden; }
+
+.medical-form .medical-form-wrapper .wrap-form .frm-btnwrap {
+  margin-top: 0; }
 
 .news-detail-page .medical-answer .anwser-question {
   padding-top: 1.875rem; }
@@ -5015,6 +5018,164 @@ html body .RadInput input.riEmpty, html body .RadInput textarea.riEmpty, html bo
   .specialist-item .content {
     @apply pl-8 py-4 {} } }
 
+.medical-answer-detail {
+  padding: 3.125rem 0; }
+  .medical-answer-detail .title {
+    color: #27519e;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.9375rem; }
+  .medical-answer-detail .section-social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 1.875rem; }
+    .medical-answer-detail .section-social time {
+      font-size: 0.875rem; }
+    .medical-answer-detail .section-social .social * {
+      font-size: 1.125rem;
+      color: #014293; }
+      .medical-answer-detail .section-social .social *:hover {
+        color: #ff4c4c; }
+  .medical-answer-detail .anwser-question * {
+    line-height: 1.25; }
+  .medical-answer-detail .anwser-question img {
+    margin: 0 auto 30px; }
+  .medical-answer-detail .anwser-question ul li {
+    list-style-type: disc;
+    list-style-position: inside; }
+  .medical-answer-detail h2 {
+    @apply text-28 text-blue-1 pb-6 mb-4 font-black uppercase z-10 relative text-center {} }
+
+@screen lg {
+  .medical-answer-detail h2 {
+    @apply text-30 {} } }
+    .medical-answer-detail h2:after {
+      content: "";
+      @apply block absolute pointer-events-none left-50 bottom-0 z-10  text-azure  px-2 z-10 translate-x-50 {}      line-height: 20px;
+      height: 20px;
+      width: 120px;
+      background: url("../img/plus.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center; }
+  .medical-answer-detail .card-body {
+    padding-top: 1.5625rem;
+    border-radius: 10px;
+    background-color: white; }
+    .medical-answer-detail .card-body img {
+      margin: 0 auto; }
+    .medical-answer-detail .card-body table {
+      width: 100%; }
+      .medical-answer-detail .card-body table thead {
+        background: #6bc0e7;
+        color: #ffffff;
+        border-radius: 10px 10px 0 0; }
+        .medical-answer-detail .card-body table thead tr {
+          width: 100%;
+          height: 50px; }
+          .medical-answer-detail .card-body table thead tr th {
+            padding-left: 30px;
+            border-right: 1px solid #e0e0e0;
+            font-size: 1.125rem; }
+      .medical-answer-detail .card-body table tbody {
+        font-size: 14px;
+        color: #333;
+        border: 1px solid #e0e0e0; }
+        .medical-answer-detail .card-body table tbody tr {
+          width: 100%;
+          height: 50px; }
+          .medical-answer-detail .card-body table tbody tr:first-child td {
+            background: #f5f5f5; }
+          .medical-answer-detail .card-body table tbody tr td {
+            border-bottom: 1px solid #e0e0e0;
+            border-right: 1px solid #e0e0e0;
+            padding: 0.0625rem 0.0625rem 0.0625rem 1.875rem;
+            background: #ffffff;
+            font-size: 1rem;
+            color: #333333; }
+            .medical-answer-detail .card-body table tbody tr td .sce-detail-table {
+              list-style: unset; }
+            .medical-answer-detail .card-body table tbody tr td:first-child {
+              width: 10%; }
+            .medical-answer-detail .card-body table tbody tr td:nth-child(2) {
+              width: 40%; }
+
+.medical-answer-detail-2 {
+  padding-bottom: 3.4375rem; }
+  .medical-answer-detail-2 .title {
+    color: #27519e;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 1.875rem; }
+  .medical-answer-detail-2 .content {
+    margin-bottom: 1.875rem; }
+    .medical-answer-detail-2 .content * {
+      display: block;
+      color: #333333;
+      line-height: 1.5rem; }
+  .medical-answer-detail-2 h2 {
+    @apply text-28 text-blue-1 pb-6 mb-4 font-black uppercase z-10 relative text-center {} }
+
+@screen lg {
+  .medical-answer-detail-2 h2 {
+    @apply text-30 {} } }
+    .medical-answer-detail-2 h2:after {
+      content: "";
+      @apply block absolute pointer-events-none left-50 bottom-0 z-10  text-azure  px-2 z-10 translate-x-50 {}      line-height: 20px;
+      height: 20px;
+      width: 120px;
+      background: url("../img/plus.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center; }
+  .medical-answer-detail-2 .card-body {
+    padding-top: 1.5625rem;
+    border-radius: 10px;
+    background-color: white; }
+    .medical-answer-detail-2 .card-body img {
+      margin: 0 auto; }
+    .medical-answer-detail-2 .card-body table {
+      width: 100%; }
+      .medical-answer-detail-2 .card-body table thead {
+        background: #6bc0e7;
+        color: #ffffff;
+        border-radius: 10px 10px 0 0; }
+        .medical-answer-detail-2 .card-body table thead tr {
+          width: 100%;
+          height: 50px; }
+          .medical-answer-detail-2 .card-body table thead tr th {
+            padding-left: 30px;
+            border-right: 1px solid #e0e0e0;
+            font-size: 1.125rem; }
+      .medical-answer-detail-2 .card-body table tbody {
+        font-size: 14px;
+        color: #333;
+        border: 1px solid #e0e0e0; }
+        .medical-answer-detail-2 .card-body table tbody tr {
+          width: 100%;
+          height: 50px; }
+          .medical-answer-detail-2 .card-body table tbody tr:first-child td {
+            background: #f5f5f5; }
+          .medical-answer-detail-2 .card-body table tbody tr td {
+            border-bottom: 1px solid #e0e0e0;
+            border-right: 1px solid #e0e0e0;
+            padding: 0.0625rem 0.0625rem 0.0625rem 1.875rem;
+            background: #ffffff;
+            font-size: 1rem;
+            color: #333333; }
+            .medical-answer-detail-2 .card-body table tbody tr td .sce-detail-table {
+              list-style: unset; }
+            .medical-answer-detail-2 .card-body table tbody tr td:first-child {
+              width: 10%; }
+            .medical-answer-detail-2 .card-body table tbody tr td:nth-child(2) {
+              width: 40%; }
+
+.mb-80 {
+  margin-bottom: 5rem; }
+
 .service-detail {
   background: #f2fbff;
   padding: 3.75rem 0 3.75rem 0; }
@@ -5363,164 +5524,6 @@ html body .RadInput input.riEmpty, html body .RadInput textarea.riEmpty, html bo
         height: 46px;
         width: 46px; }
 
-.medical-answer-detail {
-  padding: 3.125rem 0; }
-  .medical-answer-detail .title {
-    color: #27519e;
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-bottom: 0.9375rem; }
-  .medical-answer-detail .section-social {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #e5e5e5;
-    margin-bottom: 1.875rem; }
-    .medical-answer-detail .section-social time {
-      font-size: 0.875rem; }
-    .medical-answer-detail .section-social .social * {
-      font-size: 1.125rem;
-      color: #014293; }
-      .medical-answer-detail .section-social .social *:hover {
-        color: #ff4c4c; }
-  .medical-answer-detail .anwser-question * {
-    line-height: 1.25; }
-  .medical-answer-detail .anwser-question img {
-    margin: 0 auto 30px; }
-  .medical-answer-detail .anwser-question ul li {
-    list-style-type: disc;
-    list-style-position: inside; }
-  .medical-answer-detail h2 {
-    @apply text-28 text-blue-1 pb-6 mb-4 font-black uppercase z-10 relative text-center {} }
-
-@screen lg {
-  .medical-answer-detail h2 {
-    @apply text-30 {} } }
-    .medical-answer-detail h2:after {
-      content: "";
-      @apply block absolute pointer-events-none left-50 bottom-0 z-10  text-azure  px-2 z-10 translate-x-50 {}      line-height: 20px;
-      height: 20px;
-      width: 120px;
-      background: url("../img/plus.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center; }
-  .medical-answer-detail .card-body {
-    padding-top: 1.5625rem;
-    border-radius: 10px;
-    background-color: white; }
-    .medical-answer-detail .card-body img {
-      margin: 0 auto; }
-    .medical-answer-detail .card-body table {
-      width: 100%; }
-      .medical-answer-detail .card-body table thead {
-        background: #6bc0e7;
-        color: #ffffff;
-        border-radius: 10px 10px 0 0; }
-        .medical-answer-detail .card-body table thead tr {
-          width: 100%;
-          height: 50px; }
-          .medical-answer-detail .card-body table thead tr th {
-            padding-left: 30px;
-            border-right: 1px solid #e0e0e0;
-            font-size: 1.125rem; }
-      .medical-answer-detail .card-body table tbody {
-        font-size: 14px;
-        color: #333;
-        border: 1px solid #e0e0e0; }
-        .medical-answer-detail .card-body table tbody tr {
-          width: 100%;
-          height: 50px; }
-          .medical-answer-detail .card-body table tbody tr:first-child td {
-            background: #f5f5f5; }
-          .medical-answer-detail .card-body table tbody tr td {
-            border-bottom: 1px solid #e0e0e0;
-            border-right: 1px solid #e0e0e0;
-            padding: 0.0625rem 0.0625rem 0.0625rem 1.875rem;
-            background: #ffffff;
-            font-size: 1rem;
-            color: #333333; }
-            .medical-answer-detail .card-body table tbody tr td .sce-detail-table {
-              list-style: unset; }
-            .medical-answer-detail .card-body table tbody tr td:first-child {
-              width: 10%; }
-            .medical-answer-detail .card-body table tbody tr td:nth-child(2) {
-              width: 40%; }
-
-.medical-answer-detail-2 {
-  padding-bottom: 3.4375rem; }
-  .medical-answer-detail-2 .title {
-    color: #27519e;
-    font-size: 1rem;
-    text-transform: uppercase;
-    font-weight: 600;
-    margin-bottom: 1.875rem; }
-  .medical-answer-detail-2 .content {
-    margin-bottom: 1.875rem; }
-    .medical-answer-detail-2 .content * {
-      display: block;
-      color: #333333;
-      line-height: 1.5rem; }
-  .medical-answer-detail-2 h2 {
-    @apply text-28 text-blue-1 pb-6 mb-4 font-black uppercase z-10 relative text-center {} }
-
-@screen lg {
-  .medical-answer-detail-2 h2 {
-    @apply text-30 {} } }
-    .medical-answer-detail-2 h2:after {
-      content: "";
-      @apply block absolute pointer-events-none left-50 bottom-0 z-10  text-azure  px-2 z-10 translate-x-50 {}      line-height: 20px;
-      height: 20px;
-      width: 120px;
-      background: url("../img/plus.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center; }
-  .medical-answer-detail-2 .card-body {
-    padding-top: 1.5625rem;
-    border-radius: 10px;
-    background-color: white; }
-    .medical-answer-detail-2 .card-body img {
-      margin: 0 auto; }
-    .medical-answer-detail-2 .card-body table {
-      width: 100%; }
-      .medical-answer-detail-2 .card-body table thead {
-        background: #6bc0e7;
-        color: #ffffff;
-        border-radius: 10px 10px 0 0; }
-        .medical-answer-detail-2 .card-body table thead tr {
-          width: 100%;
-          height: 50px; }
-          .medical-answer-detail-2 .card-body table thead tr th {
-            padding-left: 30px;
-            border-right: 1px solid #e0e0e0;
-            font-size: 1.125rem; }
-      .medical-answer-detail-2 .card-body table tbody {
-        font-size: 14px;
-        color: #333;
-        border: 1px solid #e0e0e0; }
-        .medical-answer-detail-2 .card-body table tbody tr {
-          width: 100%;
-          height: 50px; }
-          .medical-answer-detail-2 .card-body table tbody tr:first-child td {
-            background: #f5f5f5; }
-          .medical-answer-detail-2 .card-body table tbody tr td {
-            border-bottom: 1px solid #e0e0e0;
-            border-right: 1px solid #e0e0e0;
-            padding: 0.0625rem 0.0625rem 0.0625rem 1.875rem;
-            background: #ffffff;
-            font-size: 1rem;
-            color: #333333; }
-            .medical-answer-detail-2 .card-body table tbody tr td .sce-detail-table {
-              list-style: unset; }
-            .medical-answer-detail-2 .card-body table tbody tr td:first-child {
-              width: 10%; }
-            .medical-answer-detail-2 .card-body table tbody tr td:nth-child(2) {
-              width: 40%; }
-
-.mb-80 {
-  margin-bottom: 5rem; }
-
 .specialized-detail {
   padding: 3.125rem 0; }
   .specialized-detail .spe-detail-wrapper {
@@ -5555,6 +5558,12 @@ html body .RadInput input.riEmpty, html body .RadInput textarea.riEmpty, html bo
           .specialized-detail .spe-detail-wrapper article .fullcontent .content-read-more p {
             font-size: 1.125rem;
             line-height: 1.5; }
+          .specialized-detail .spe-detail-wrapper article .fullcontent .content-read-more h2 {
+            color: #27519e;
+            font-weight: 600;
+            font-size: 20px; }
+            .specialized-detail .spe-detail-wrapper article .fullcontent .content-read-more h2 img {
+              margin: 0 auto; }
           .specialized-detail .spe-detail-wrapper article .fullcontent .content-read-more .desc p {
             font-size: 1rem;
             color: #333333;
