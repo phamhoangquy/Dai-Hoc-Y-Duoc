@@ -19,10 +19,18 @@
 			-webkit-line-clamp: 3
 			-webkit-box-orient: vertical
 			overflow: hidden
+			height: 65px
+			@media screen and ( max-width: 1024px)
+				height: auto
 		&.big
 			.title
 				a
 					@apply text-16
+					display: -webkit-box
+					-webkit-line-clamp: 2
+					-webkit-box-orient: vertical
+					overflow: hidden
+					height: 38px
 			.caption
 				display: -webkit-box
 				-webkit-line-clamp: 3
@@ -112,6 +120,7 @@
 			-webkit-line-clamp: 2
 			-webkit-box-orient: vertical
 			overflow: hidden
+			height: 31px
 			@screen lg
 				@apply text-14
 	.caption
