@@ -5054,6 +5054,13 @@ html body .RadInput input.riEmpty, html body .RadInput textarea.riEmpty, html bo
   .medical-answer-detail .anwser-question ul li {
     list-style-type: disc;
     list-style-position: inside; }
+  .medical-answer-detail .anwser-question h2 {
+    color: #27519e;
+    font-weight: 600;
+    font-size: 20px;
+    padding-bottom: 0; }
+    .medical-answer-detail .anwser-question h2::after {
+      display: none; }
   .medical-answer-detail h2 {
     @apply text-28 text-blue-1 pb-6 mb-4 font-black uppercase z-10 relative text-center {} }
 
