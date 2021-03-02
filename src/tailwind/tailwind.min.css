@@ -2082,6 +2082,8 @@ footer {
       margin: 0 auto;
       width: auto;
       max-height: 355px; }
+    .medical-answer .anwser-question p img {
+      margin-bottom: 0; }
 
 .news-other {
   padding: 3.4375rem 0 3.75rem;
@@ -5050,7 +5052,7 @@ html body .RadInput input.riEmpty, html body .RadInput textarea.riEmpty, html bo
   .medical-answer-detail .anwser-question * {
     line-height: 1.25; }
   .medical-answer-detail .anwser-question img {
-    margin: 0 auto 30px; }
+    margin: 0 auto; }
   .medical-answer-detail .anwser-question ul li {
     list-style-type: disc;
     list-style-position: inside; }
